@@ -12,3 +12,9 @@ Please note {development,production,staging}/vault.yml are added to gitignore.
 To add your credentials simply copy the vault.yml.dist to vault.yml and change your credentials accordingly.
 **Please change the vault.yml.dist files if you make changes to vault configurations.**
 
+# Theme
+For now the project only uses a starter theme included in Trellis: Sage.
+This will be used as a starting point to develop the frontend.
+After you install the project make sure to follow instructions from the link below (since the built assets are 
+not in the repo):
+https://roots.io/sage/docs/theme-development-and-building/

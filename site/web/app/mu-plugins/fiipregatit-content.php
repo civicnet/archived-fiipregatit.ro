@@ -17,6 +17,10 @@ add_action(
 
 class Fiipregatit_Content
 {
+    const POST_TYPE_GHID_EDUCATIV = 'ghid_educativ';
+    const POST_TYPE_CAMPANIE = 'campanie';
+    const POST_TYPE_LINK_UTIL = 'link_util';
+
     /**
      * Plugin instance.
      *
@@ -79,7 +83,7 @@ class Fiipregatit_Content
      */
     private function _registerCustomPostTypes()
     {
-        register_post_type( 'campanie',
+        register_post_type( self::POST_TYPE_CAMPANIE,
                 array (
                 'labels' => array (
                     'name' => __( 'Campanii' ),
@@ -91,7 +95,7 @@ class Fiipregatit_Content
             )
         );
 
-        register_post_type( 'ghid_educativ',
+        register_post_type( self::POST_TYPE_GHID_EDUCATIV,
             array (
                 'labels' => array (
                     'name' => __( 'Ghiduri educative' ),
@@ -103,7 +107,7 @@ class Fiipregatit_Content
             )
         );
 
-        register_post_type( 'link_util',
+        register_post_type( self::POST_TYPE_LINK_UTIL,
             array (
                 'labels' => array (
                     'name' => __( 'Linkuri utile' ),

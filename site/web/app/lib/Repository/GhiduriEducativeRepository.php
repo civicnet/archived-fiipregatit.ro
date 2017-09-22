@@ -8,7 +8,7 @@ class GhiduriEducativeRepository
     /**
      * @var string
      */
-    private $_customPostType = \Fiipregatit_Content::POST_TYPE_GHID_EDUCATIV;
+    private $_customPostType = \App::POST_TYPE_GHID_EDUCATIV;
 
     /**
      * @param int $count
@@ -55,40 +55,15 @@ class GhiduriEducativeRepository
         $ghid
             ->setTitle($post->post_title)
             ->setIntro($post->post_content)
-            ->setInainteaEvenimentului(
-                $this->_getPostMeta($post->ID, 'ghid_inaintea_evenimentului')
-            )
-            ->setInTimpulEvenimentului(
-                $this->_getPostMeta($post->ID, 'ghid_intimpul_evenimentului')
-            )
-            ->setDupaEveniment(
-                $this->_getPostMeta($post->ID, 'ghid_dupa_eveniment')
-            )
-            ->setAlteInformatii(
-                $this->_getPostMeta($post->ID, 'ghid_alte_informatii')
-            )
-            ->setFisier1(
-                $this->_getPostMeta($post->ID, 'ghid_fisier_pdf_1')
-            )
-            ->setFisier2(
-                $this->_getPostMeta($post->ID, 'ghid_fisier_pdf_2')
-            )
-            ->setFisier3(
-                $this->_getPostMeta($post->ID, 'ghid_fisier_pdf_3')
-            );
+            ->setInainteaEvenimentului( get_field('ghid_inaintea_evenimentului') )
+            ->setInTimpulEvenimentului( get_field('ghid_intimpul_evenimentului') )
+            ->setDupaEveniment( get_field('ghid_dupa_eveniment') )
+            ->setAlteInformatii( get_field('ghid_alte_informatii') )
+            ->setFisier1( get_field('ghid_fisier_pdf_1') )
+            ->setFisier2( get_field('ghid_fisier_pdf_2') )
+            ->setFisier3( get_field('ghid_fisier_pdf_3') )
+            ;
 
         return $ghid;
-    }
-
-
-    /**
-     * @param $id
-     * @param $key
-     * @return mixed
-     */
-    protected function _getPostMeta($id, $key)
-    {
-        $meta = get_post_meta($id, $key);
-        return (!empty($meta[0])) ? $meta[0] : null;
     }
 }

@@ -14,10 +14,10 @@ class RepoManager
      */
     public static function getGhidurEducativeRepository()
     {
-        if (empty(self::$repositories[Fiipregatit_Content::POST_TYPE_GHID_EDUCATIV])) {
-            self::$repositories[Fiipregatit_Content::POST_TYPE_GHID_EDUCATIV] = new GhiduriEducativeRepository();
+        if (empty(self::$repositories[App::POST_TYPE_GHID_EDUCATIV])) {
+            self::$repositories[App::POST_TYPE_GHID_EDUCATIV] = new GhiduriEducativeRepository();
         }
 
-        return self::$repositories[Fiipregatit_Content::POST_TYPE_GHID_EDUCATIV];
+        return self::$repositories[App::POST_TYPE_GHID_EDUCATIV];
     }
 }

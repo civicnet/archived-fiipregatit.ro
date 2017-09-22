@@ -2,6 +2,7 @@
 
 namespace Entity;
 
+use Field\File;
 
 class GhidEducativ
 {
@@ -41,17 +42,17 @@ class GhidEducativ
     private $_alteInformatii;
 
     /**
-     * @var string
+     * @var File | null
      */
     private $_fisier1;
 
     /**
-     * @var string
+     * @var File | null
      */
     private $_fisier2;
 
     /**
-     * @var string
+     * @var File | null
      */
     private $_fisier3;
 
@@ -181,7 +182,7 @@ class GhidEducativ
     }
 
     /**
-     * @return string
+     * @return array
      */
     public function getFisier1()
     {
@@ -189,17 +190,21 @@ class GhidEducativ
     }
 
     /**
-     * @param string $fisier1
+     * @param array|bool $fisier1
      * @return $this
      */
     public function setFisier1($fisier1)
     {
-        $this->_fisier1 = $fisier1;
+        $this->_fisier1 = null;
+        if (is_array($fisier1)) {
+            $this->_fisier1 = new File($fisier1);
+        }
+
         return $this;
     }
 
     /**
-     * @return string
+     * @return array
      */
     public function getFisier2()
     {
@@ -207,17 +212,20 @@ class GhidEducativ
     }
 
     /**
-     * @param string $fisier2
+     * @param array|bool $fisier2
      * @return $this
      */
     public function setFisier2($fisier2)
     {
-        $this->_fisier2 = $fisier2;
+        $this->_fisier2 = null;
+        if (is_array($fisier2)) {
+            $this->_fisier2 = new File($fisier2);
+        }
         return $this;
     }
 
     /**
-     * @return string
+     * @return array
      */
     public function getFisier3()
     {
@@ -225,15 +233,16 @@ class GhidEducativ
     }
 
     /**
-     * @param string $fisier3
+     * @param array|bool $fisier3
      * @return $this
      */
     public function setFisier3($fisier3)
     {
-        $this->_fisier3 = $fisier3;
+        $this->_fisier3 = null;
+        if (is_array($fisier3)) {
+            $this->_fisier3 = new File($fisier3);
+        }
         return $this;
     }
-
-
 }
 

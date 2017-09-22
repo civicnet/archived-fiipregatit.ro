@@ -37,7 +37,7 @@ class GhiduriEducativeRepository
         while ($my_query->have_posts()) {
             $my_query->the_post();
             $post = get_post(get_the_ID());
-            $ghiduri[get_the_ID()] = $this->_getGhid($post);
+            $ghiduri[get_the_ID()] = $this->_getGhid($post, true);
         }
         wp_reset_query();  // Restore global post data stomped by the_post().
 
@@ -48,7 +48,7 @@ class GhiduriEducativeRepository
      * @param \WP_Post $post
      * @return GhidEducativ
      */
-    private function _getGhid(\WP_Post $post)
+    private function _getGhid(\WP_Post $post, $includeRelated = false)
     {
         $ghid = new GhidEducativ($post->ID);
 
@@ -62,8 +62,30 @@ class GhiduriEducativeRepository
             ->setFisier1( get_field('ghid_fisier_pdf_1') )
             ->setFisier2( get_field('ghid_fisier_pdf_2') )
             ->setFisier3( get_field('ghid_fisier_pdf_3') )
-            ;
+        ;
+
+        if ($includeRelated) {
+            $ghid->setGhiduriAsemanatoare($this->_getGhiduriAsemanatoare());
+        }
 
         return $ghid;
+    }
+
+    /**
+     * @return array
+     */
+    private function _getGhiduriAsemanatoare()
+    {
+        $relatedPosts = get_field('ghiduri_asemanatoare');
+        if (!$relatedPosts) {
+            return [];
+        }
+
+        $ghiduriAsemanatoare = [];
+        foreach ($relatedPosts as $relatedPost){
+            $ghiduriAsemanatoare[] = self::_getGhid($relatedPost, false);
+        }
+
+        return $ghiduriAsemanatoare;
     }
 }

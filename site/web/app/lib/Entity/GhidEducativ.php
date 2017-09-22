@@ -57,6 +57,11 @@ class GhidEducativ
     private $_fisier3;
 
     /**
+     * @var GhidEducativ[]
+     */
+    private $_ghiduriAsemanatoare = [];
+
+    /**
      * GhidEducativ constructor.
      * @param int $id
      */
@@ -244,5 +249,25 @@ class GhidEducativ
         }
         return $this;
     }
+
+    /**
+     * @return GhidEducativ[]
+     */
+    public function getGhiduriAsemanatoare()
+    {
+        return $this->_ghiduriAsemanatoare;
+    }
+
+    /**
+     * @param GhidEducativ[] $ghiduriAsemanatoare
+     * @return $this
+     */
+    public function setGhiduriAsemanatoare($ghiduriAsemanatoare)
+    {
+        $this->_ghiduriAsemanatoare = $ghiduriAsemanatoare;
+        return $this;
+    }
+
+
 }
 

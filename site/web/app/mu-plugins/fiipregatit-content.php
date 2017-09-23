@@ -79,7 +79,7 @@ class Fiipregatit_Content
      */
     private function _registerCustomPostTypes()
     {
-        register_post_type( 'campanie',
+        register_post_type( App::POST_TYPE_CAMPANIE,
                 array (
                 'labels' => array (
                     'name' => __( 'Campanii' ),
@@ -91,7 +91,7 @@ class Fiipregatit_Content
             )
         );
 
-        register_post_type( 'ghid_educativ',
+        register_post_type( App::POST_TYPE_GHID_EDUCATIV,
             array (
                 'labels' => array (
                     'name' => __( 'Ghiduri educative' ),
@@ -103,7 +103,7 @@ class Fiipregatit_Content
             )
         );
 
-        register_post_type( 'link_util',
+        register_post_type( App::POST_TYPE_LINK_UTIL,
             array (
                 'labels' => array (
                     'name' => __( 'Linkuri utile' ),

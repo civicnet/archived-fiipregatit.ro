@@ -16,6 +16,13 @@
       "homepage": "https://github.com/retlehs"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "": [
+        "web/app/lib/"
+      ]
+    }
+  },
   "keywords": [
     "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
   ],

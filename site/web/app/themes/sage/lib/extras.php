@@ -2,6 +2,8 @@
 
 namespace Roots\Sage\Extras;
 
+use Repository\GhiduriEducativeRepository;
+use Repository\WordpressQuery;
 use Roots\Sage\Setup;
 
 /**

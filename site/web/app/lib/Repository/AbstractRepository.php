@@ -58,7 +58,7 @@ abstract class AbstractRepository
         if ($post->post_type !== $this->_customPostType) {
             throw new \RuntimeException(
                 sprintf(
-                    'You are trying to load an entity from the wrong repo. %s in %s',
+                    'You are trying to load an entity from the wrong repo. "%s" type in "%s" repo',
                     $post->post_type,
                     $this->_customPostType
                 )

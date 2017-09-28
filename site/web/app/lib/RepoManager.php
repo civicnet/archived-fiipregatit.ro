@@ -1,5 +1,7 @@
 <?php
 use Repository\GhiduriEducativeRepository;
+use Repository\CampaniiRepository;
+use Repository\LinkuriUtileRepository;
 
 class RepoManager
 {
@@ -19,5 +21,29 @@ class RepoManager
         }
 
         return self::$repositories[App::POST_TYPE_GHID_EDUCATIV];
+    }
+
+    /**
+     * @return CampaniiRepository
+     */
+    public static function getCampaniiRepository()
+    {
+        if (empty(self::$repositories[App::POST_TYPE_CAMPANIE])) {
+            self::$repositories[App::POST_TYPE_CAMPANIE] = new CampaniiRepository();
+        }
+
+        return self::$repositories[App::POST_TYPE_CAMPANIE];
+    }
+
+    /**
+     * @return LinkuriUtileRepository
+     */
+    public static function getLinkuriUtileRepository()
+    {
+        if (empty(self::$repositories[App::POST_TYPE_LINK_UTIL])) {
+            self::$repositories[App::POST_TYPE_LINK_UTIL] = new LinkuriUtileRepository();
+        }
+
+        return self::$repositories[App::POST_TYPE_LINK_UTIL];
     }
 }

@@ -4,13 +4,8 @@ namespace Entity;
 
 use Field\File;
 
-class GhidEducativ
+class GhidEducativ extends Entity
 {
-    /**
-     * @var int
-     */
-    private $_id;
-
     /**
      * @var string
      */
@@ -62,21 +57,9 @@ class GhidEducativ
     private $_ghiduriAsemanatoare = [];
 
     /**
-     * GhidEducativ constructor.
-     * @param int $id
+     * @var string
      */
-    public function __construct($id)
-    {
-        $this->_id = $id;
-    }
-
-    /**
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->_id;
-    }
+    private $_permalink;
 
     /**
      * @return string
@@ -268,6 +251,22 @@ class GhidEducativ
         return $this;
     }
 
+    /**
+     * @return string
+     */
+    public function getPermalink()
+    {
+        return $this->_permalink;
+    }
 
+    /**
+     * @param string $permalink
+     * @return $this
+     */
+    public function setPermalink($permalink)
+    {
+        $this->_permalink = $permalink;
+        return $this;
+    }
 }
 

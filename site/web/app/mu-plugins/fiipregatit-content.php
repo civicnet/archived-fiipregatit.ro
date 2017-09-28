@@ -80,11 +80,12 @@ class Fiipregatit_Content
     private function _registerCustomPostTypes()
     {
         register_post_type( App::POST_TYPE_CAMPANIE,
-                array (
+            array (
                 'labels' => array (
                     'name' => __( 'Campanii' ),
                     'singular_name' => __( 'Campanie' )
                 ),
+                'supports' => array( 'title', 'editor', 'thumbnail' ),
                 'public' => true,
                 'has_archive' => false,
                 'menu_icon' => 'dashicons-megaphone'
@@ -97,6 +98,7 @@ class Fiipregatit_Content
                     'name' => __( 'Ghiduri educative' ),
                     'singular_name' => __( 'Ghid educativ' )
                 ),
+                'supports' => array( 'title', 'editor', 'thumbnail' ),
                 'public' => true,
                 'has_archive' => false,
                 'menu_icon' => 'dashicons-clipboard'
@@ -114,5 +116,7 @@ class Fiipregatit_Content
                 'menu_icon' => 'dashicons-external'
             )
         );
+
+        add_theme_support( 'post-thumbnails' );
     }
 }

@@ -3,52 +3,19 @@ namespace Repository;
 
 use Entity\GhidEducativ;
 
-class GhiduriEducativeRepository
+class GhiduriEducativeRepository extends AbstractRepository
 {
     /**
      * @var string
      */
-    private $_customPostType = \App::POST_TYPE_GHID_EDUCATIV;
-
-    /**
-     * @param int $count
-     * @param array $extraArgs
-     * @return array
-     */
-    public function getList($count = -1, $extraArgs = [])
-    {
-        $args = array(
-            'post_type' => $this->_customPostType,
-            'post_status' => 'publish',
-            'posts_per_page' => $count,
-            'ignore_sticky_posts' => 1
-        );
-
-        if (!empty($extraArgs)) {
-            $args = array_merge($args, $extraArgs);
-        }
-
-        $my_query = new \WP_Query($args);
-        if (!$my_query->have_posts()) {
-            return [];
-        }
-
-        $ghiduri = [];
-        while ($my_query->have_posts()) {
-            $my_query->the_post();
-            $post = get_post(get_the_ID());
-            $ghiduri[get_the_ID()] = $this->_getGhid($post, true);
-        }
-        wp_reset_query();  // Restore global post data stomped by the_post().
-
-        return $ghiduri;
-    }
+    protected $_customPostType = \App::POST_TYPE_GHID_EDUCATIV;
 
     /**
      * @param \WP_Post $post
+     * @param bool $includeRelated
      * @return GhidEducativ
      */
-    private function _getGhid(\WP_Post $post, $includeRelated = false)
+    protected function _getEntity(\WP_Post $post, $includeRelated = false)
     {
         $ghid = new GhidEducativ($post->ID);
 
@@ -62,6 +29,7 @@ class GhiduriEducativeRepository
             ->setFisier1( get_field('ghid_fisier_pdf_1') )
             ->setFisier2( get_field('ghid_fisier_pdf_2') )
             ->setFisier3( get_field('ghid_fisier_pdf_3') )
+            ->setPermalink(get_the_permalink())
         ;
 
         if ($includeRelated) {
@@ -83,7 +51,7 @@ class GhiduriEducativeRepository
 
         $ghiduriAsemanatoare = [];
         foreach ($relatedPosts as $relatedPost){
-            $ghiduriAsemanatoare[] = self::_getGhid($relatedPost, false);
+            $ghiduriAsemanatoare[] = $this->_getEntity($relatedPost, false);
         }
 
         return $ghiduriAsemanatoare;

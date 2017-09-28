@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.8" created="2017-09-08 19:51" -->
+<!-- generator="WordPress/4.8.1" created="2017-09-28 20:01" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.1/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>fiipregatit.ro</title>
 	<link>http://fiipregatit.dev</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Fri, 08 Sep 2017 19:51:49 +0000</pubDate>
+	<pubDate>Thu, 28 Sep 2017 20:01:36 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
 	<wp:base_site_url>http://fiipregatit.dev/wp</wp:base_site_url>
@@ -58,11 +58,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2ecbd591e0</wp:meta_key>
-			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_59b2ecbd591e0";s:5:"label";s:23:"Inaintea Eventimentului";s:4:"name";s:28:"ghid_inaintea_eventimentului";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:48:"tips and tricks Continut Inaintea Eventimentului";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:5:"basic";s:12:"media_upload";s:2:"no";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_59b2ecbd591e0";s:5:"label";s:22:"Inaintea Evenimentului";s:4:"name";s:27:"ghid_inaintea_evenimentului";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:48:"tips and tricks Continut Inaintea Eventimentului";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:5:"basic";s:12:"media_upload";s:2:"no";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2ed46591e1</wp:meta_key>
-			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_59b2ed46591e1";s:5:"label";s:24:"In Timpul Eventimentului";s:4:"name";s:27:"ghid_intimpul_evenimentului";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:48:"tips and tricks Continut In Timpu Eventimentului";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:5:"basic";s:12:"media_upload";s:2:"no";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:11:{s:3:"key";s:19:"field_59b2ed46591e1";s:5:"label";s:23:"In Timpul Evenimentului";s:4:"name";s:27:"ghid_intimpul_evenimentului";s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:48:"tips and tricks Continut In Timpu Eventimentului";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:7:"toolbar";s:5:"basic";s:12:"media_upload";s:2:"no";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:1;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2ed95591e2</wp:meta_key>
@@ -70,7 +70,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2edc3591e3</wp:meta_key>
-			<wp:meta_value><![CDATA[a:13:{s:3:"key";s:19:"field_59b2edc3591e3";s:5:"label";s:15:"Alte informatii";s:4:"name";s:20:"ghid_alte_informatii";s:4:"type";s:8:"textarea";s:12:"instructions";s:31:"tips and tricks alte informatii";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:9:"maxlength";s:0:"";s:4:"rows";s:0:"";s:10:"formatting";s:2:"br";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:13:{s:3:"key";s:19:"field_59b2edc3591e3";s:5:"label";s:15:"Alte informatii";s:4:"name";s:20:"ghid_alte_informatii";s:4:"type";s:8:"textarea";s:12:"instructions";s:31:"tips and tricks alte informatii";s:8:"required";s:1:"0";s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:9:"maxlength";s:0:"";s:4:"rows";s:0:"";s:10:"formatting";s:2:"br";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:3;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2ee1c591e4</wp:meta_key>
@@ -78,11 +78,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2ee78591e5</wp:meta_key>
-			<wp:meta_value><![CDATA[a:10:{s:3:"key";s:19:"field_59b2ee78591e5";s:5:"label";s:12:"Fisier PDF 2";s:4:"name";s:12:"fisier_pdf_2";s:4:"type";s:4:"file";s:12:"instructions";s:19:"tips and tricks PDF";s:8:"required";s:1:"0";s:11:"save_format";s:6:"object";s:7:"library";s:3:"all";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:5;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:10:{s:3:"key";s:19:"field_59b2ee78591e5";s:5:"label";s:12:"Fisier PDF 2";s:4:"name";s:17:"ghid_fisier_pdf_2";s:4:"type";s:4:"file";s:12:"instructions";s:19:"tips and tricks PDF";s:8:"required";s:1:"0";s:11:"save_format";s:6:"object";s:7:"library";s:3:"all";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:5;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2ee81591e6</wp:meta_key>
-			<wp:meta_value><![CDATA[a:10:{s:3:"key";s:19:"field_59b2ee81591e6";s:5:"label";s:12:"Fisier PDF 3";s:4:"name";s:12:"fisier_pdf_3";s:4:"type";s:4:"file";s:12:"instructions";s:19:"tips and tricks PDF";s:8:"required";s:1:"0";s:11:"save_format";s:6:"object";s:7:"library";s:3:"all";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";s:5:"value";s:0:"";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:6;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:10:{s:3:"key";s:19:"field_59b2ee81591e6";s:5:"label";s:12:"Fisier PDF 3";s:4:"name";s:17:"ghid_fisier_pdf_3";s:4:"type";s:4:"file";s:12:"instructions";s:19:"tips and tricks PDF";s:8:"required";s:1:"0";s:11:"save_format";s:6:"object";s:7:"library";s:3:"all";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:2:{s:5:"field";s:4:"null";s:8:"operator";s:2:"==";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:6;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_59b2eebe591e7</wp:meta_key>

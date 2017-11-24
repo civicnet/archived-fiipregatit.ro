@@ -9,18 +9,24 @@ Documentation of Trellis is pretty straight-forward. If you have questions conta
 
 
 ## Getting started
-> NOTES: 
-> - This guide assumes you are using a unix-like based OS and you install the project in a folder called `fiipregatit.ro`
-> - Some parts described below can be automated via Vagrant provisioning (post-up)
-> - **Some things are subject to change as the project progresses, so some things described below will be deemed irrelevant or useless. Please make sure to update this file to keep it up to date!** 
+###Notes:### 
 
+- This guide assumes you are using a unix-like based OS and you install the project in a folder called `fiipregatit.ro`
+- Some parts described below can be automated via Vagrant provisioning (post-up)
+- **Some things are subject to change as the project progresses, so some things described below will be deemed irrelevant or useless. Please make sure to update this file to keep it up to date!** 
 
+###Prerequisites:###
+- virtualbox (or another vagrant provider): https://www.vagrantup.com/docs/providers/
+- Ansible 2.3.0: http://docs.ansible.com/ansible/latest/intro_installation.html
 
-1. Start vagrant from `fiipregatit.ro/trellis/` folder
+1. Start vagrant from the `fiipregatit.ro/trellis/` folder
+
 ```
 vagrant up
 ```
+
 Now you should be able to access the dev environment in the browser at `http://fiipregatit.dev`
+
 2. Now we need to enable our theme:
 - Login in WP-ADMIN @ `http://fiipregatit.dev/admin`; You can find the credentials in 
 `fiipregatit.ro/trellis/group_vars/development/vault.yml`

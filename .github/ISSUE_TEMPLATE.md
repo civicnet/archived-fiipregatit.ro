@@ -6,5 +6,4 @@
 
 #### Specificații de sistem:
 Commit hash:
-
 Sistem de operare:

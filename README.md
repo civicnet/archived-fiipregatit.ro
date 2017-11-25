@@ -39,7 +39,7 @@ Now you should be able to access the dev environment in the browser at `http://f
 - After is done click on `Run Importer`
 - On the next screen you'll have to import and XML. Now, you have 2 options:
   - `fiipregatit.ro/site/config/misc/advanced-custom-field-export.xml` includes all the custom fields. **They are mandatory for the website to run properly!**
-  - `fiipregatit.ro/site/config/misc/fiipregatitro.wordpress.2017-09-28.xml` includes all the custom fields from the file above plus some dummy data for posts, pages, etc. It's not much but it's something. So you might as well use this one. You decide.
+  - `fiipregatit.ro/site/config/misc/fiipregatitro.wordpress.YYYY-MM-DD.xml` includes all the custom fields from the file above plus some dummy data for posts, pages, etc. It's not much but it's something. These files are versioned so you should probably use the latest one. You decide.
 
 5. Current state of theme is very raw. This means no navigation. Check in WP-ADMIN permalinks of various pages/posts.
 6. For Frontend development:

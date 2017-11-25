@@ -1,2 +1,5 @@
 .idea
 /trellis/group_vars/*/vault.yml
+
+# pesky MacOS files
+.DS_Store

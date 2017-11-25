@@ -1,9 +1,136 @@
 html {
   font-family: 'Roboto', sans-serif;
+  counter-reset: element;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
 }
 
+.main {
+  background: #e4e4e4;
+  padding: 0 !important;
+}
 
+.jumbotron-fluid {
+  width: 100%;
+}
+
+.ghiduri-section,
+.plan-personal-section,
+.campanii-section,
+.app-section {
+  padding-top: 60px;
+}
+
+.ghiduri-section h3 {
+  text-transform: uppercase;
+  font-family: 'Roboto', serif;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+h2 {
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+
+h2:after {
+  content: ' ';
+  display: block;
+  border-bottom: 5px solid #993333;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.ghiduri-section .ghid-content {
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.ghiduri-section .ghid-content .btn {
+  font-size: 12px;
+  color: #993333;
+  border: 1px solid #999;
+  background: #ebebeb;
+  cursor: pointer;
+}
+
+.ghiduri-section .ghid-content .btn:hover {
+  background: #fff;
+}
+
+.all-button {
+  margin: 60px auto;
+  text-transform: uppercase;
+  color: #fff;
+  background: #993333;
+  font-size: 12px;
+}
+
+.summary-section {
+  padding: 40px 0;
+  background: #465d86;
+  color: #fff;
+}
+
+.summary-section .col {
+  text-align: center;
+}
+
+.summary-section .col i {
+  font-size: 48px;
+}
+
+.summary-section .count span {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.plan-personal-section {
+  background: #fff;
+}
+
+.plan-personal-section .headline {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.plan-personal-section .big-red {
+  color: #993333;
+}
+
+.plan-personal-section div:nth-of-type(3) {
+  margin-top: 10px;
+}
+
+.plan-personal-section .element::before {
+  counter-increment: element;
+  content: counter(element) '. ';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.app-section {
+  background: #fff;
+}
+
+.app-section h2 {
+  font-weight: normal;
+  text-align: left;
+  text-transform: none;
+}
+
+.app-section h2::after {
+  margin-left: 0;
+  margin-top: 20px;
+}

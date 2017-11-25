@@ -3,3 +3,5 @@
 
 # pesky MacOS files
 .DS_Store
+# vim coders unite
+.swp

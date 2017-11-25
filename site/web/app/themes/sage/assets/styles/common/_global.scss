@@ -14,6 +14,60 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron-fluid {
   width: 100%;
+  background: url('../images/header.jpg');
+  background-size: cover;
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.jumbotron-fluid::before {
+	content:"";
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.jumbotron-fluid h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.jumbotron-fluid h1.subtitle,
+.jumbotron-fluid h3 {
+  font-weight: 300;
+}
+
+.jumbotron-fluid h3::before,
+.jumbotron-fluid h3::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  border-bottom: 2px solid #fff;
+  margin: 5px 15px;
+}
+
+.jumbotron-fluid .input-group {
+  margin-top: 30px;
+  border: 12px solid rgba(255, 255, 255, 0.4);
+}
+
+.jumbotron-fluid input {
+  border-radius: 0;
+  border: 1px solid #999;
+  font-style: italic;
+  background: #ffffcc;
+  color: #333;
+}
+
+.jumbotron-fluid button {
+  border-radius: 0;
+  border: 1px solid #999;
+  background: #ffcc00;
 }
 
 .ghiduri-section,

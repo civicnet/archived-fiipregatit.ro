@@ -11,8 +11,9 @@
     <div class="row">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-3">Fii pregatit</h1>
-          <p class="lead">pentru situatii de urgenta</p>
+          <h1>Fii pregătit</h1>
+          <h3>pentru</h3>
+          <h1 class="subtitle">situații de urgență</h1>
           <div class="col-lg-6">
             <div class="input-group">
               <input

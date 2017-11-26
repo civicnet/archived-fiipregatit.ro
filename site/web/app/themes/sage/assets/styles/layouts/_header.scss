@@ -1,43 +1,43 @@
-header.banner {
+.navbar {
   background: #993333;
   border-bottom: 1px solid #fff;
+  position:relative;
 }
 
-header.banner .container {
-  height: 100px;
-  position: relative;
+.navbar-brand {
+  color: #ffffcc !important;
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-header.banner nav {
-  position: absolute;
-  bottom: 10px;
-  right: 0;
-}
-
-header.banner ul li {
+.navbar-brand div {
+  display: inline-block;
   margin-left: 15px;
 }
 
-header.banner ul li a {
-  color: #f9aaaa;
+.navbar-brand span.subtitle {
   text-transform: uppercase;
   font-size: 12px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+button.navbar-toggler {
+  background: #ffc;
+  vertical-align: middle;
+}
+
+.navbar .menu-item a {
+  color: #f9aaaa;
   padding-bottom: 10px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
 }
-
-header.banner ul li a:hover {
+.navbar-collapse ul li a:hover,
+.navbar-collapse ul li.current_page_item a {
   color: #fff;
-  text-decoration: none;
-  border-bottom: 3px solid #fff;
 }
 
-header.banner a.brand {
-  line-height: 100px;
-  color: #ffffcc;
-  font-family: 'Merriweather', serif;
-  font-size: 24px;
-}
-
-header.banner a.brand:hover {
-  text-decoration: none;
-}

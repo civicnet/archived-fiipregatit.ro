@@ -27,20 +27,20 @@
 
 <channel>
 	<title>fiipregatit.ro</title>
-	<link>http://fiipregatit.dev</link>
+	<link>http://dev.fiipregatit.ro</link>
 	<description>Just another WordPress site</description>
 	<pubDate>Thu, 28 Sep 2017 20:01:36 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
-	<wp:base_site_url>http://fiipregatit.dev/wp</wp:base_site_url>
-	<wp:base_blog_url>http://fiipregatit.dev</wp:base_blog_url>
-	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>admin</wp:author_login><wp:author_email>admin@fiipregatit.dev</wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:base_site_url>http://dev.fiipregatit.ro/wp</wp:base_site_url>
+	<wp:base_blog_url>http://dev.fiipregatit.ro</wp:base_blog_url>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login>admin</wp:author_login><wp:author_email>admin@dev.fiipregatit.ro</wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 	<item>
 		<title>Ghid Custom Fields</title>
-		<link>http://fiipregatit.dev/?acf=acf_ghid-custom-fields</link>
+		<link>http://dev.fiipregatit.ro/?acf=acf_ghid-custom-fields</link>
 		<pubDate>Fri, 08 Sep 2017 19:26:56 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=acf&#038;p=4</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=acf&#038;p=4</guid>
 		<wp:post_id>4</wp:post_id>
 		<wp:post_date>2017-09-08 19:26:56</wp:post_date>
 		<wp:post_date_gmt>2017-09-08 19:26:56</wp:post_date_gmt>
@@ -107,10 +107,10 @@
 	</item>
 	<item>
 		<title>Linkuri Utile Custom Fields</title>
-		<link>http://fiipregatit.dev/?acf=acf_linkuri-utile-custom-fields</link>
+		<link>http://dev.fiipregatit.ro/?acf=acf_linkuri-utile-custom-fields</link>
 		<pubDate>Fri, 08 Sep 2017 19:30:36 +0000</pubDate>
 		<dc:creator>admin</dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=acf&#038;p=6</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=acf&#038;p=6</guid>
 		<wp:post_id>6</wp:post_id>
 		<wp:post_date>2017-09-08 19:30:36</wp:post_date>
 		<wp:post_date_gmt>2017-09-08 19:30:36</wp:post_date_gmt>

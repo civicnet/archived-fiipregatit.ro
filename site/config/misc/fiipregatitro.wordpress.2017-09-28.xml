@@ -27,15 +27,15 @@
 
 <channel>
 	<title>fiipregatit.ro</title>
-	<link>http://fiipregatit.dev</link>
+	<link>http://dev.fiipregatit.ro</link>
 	<description>Just another WordPress site</description>
 	<pubDate>Thu, 28 Sep 2017 19:58:12 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://fiipregatit.dev</wp:base_site_url>
-	<wp:base_blog_url>http://fiipregatit.dev</wp:base_blog_url>
+	<wp:base_site_url>http://dev.fiipregatit.ro</wp:base_site_url>
+	<wp:base_blog_url>http://dev.fiipregatit.ro</wp:base_blog_url>
 
-	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@fiipregatit.dev]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@dev.fiipregatit.ro]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
 	<wp:category>
 		<wp:term_id>1</wp:term_id>
@@ -71,10 +71,10 @@
 
 	<item>
 		<title>Hello world!</title>
-		<link>http://fiipregatit.dev/?p=1</link>
+		<link>http://dev.fiipregatit.ro/?p=1</link>
 		<pubDate>Mon, 21 Aug 2017 20:37:02 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?p=1</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?p=1</guid>
 		<description></description>
 		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -115,10 +115,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 	</item>
 	<item>
 		<title>Sample Page</title>
-		<link>http://fiipregatit.dev/?page_id=2</link>
+		<link>http://dev.fiipregatit.ro/?page_id=2</link>
 		<pubDate>Mon, 21 Aug 2017 20:37:02 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?page_id=2</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?page_id=2</guid>
 		<description></description>
 		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
 
@@ -128,7 +128,7 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 
 <blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
 
-As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
+As a new WordPress user, you should go to <a href="http://dev.fiipregatit.ro/wp/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2</wp:post_id>
 		<wp:post_date><![CDATA[2017-08-21 20:37:02]]></wp:post_date>
@@ -161,10 +161,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Ghid Custom Fields</title>
-		<link>http://fiipregatit.dev/?acf=acf_ghid-custom-fields</link>
+		<link>http://dev.fiipregatit.ro/?acf=acf_ghid-custom-fields</link>
 		<pubDate>Fri, 08 Sep 2017 19:26:56 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=acf&#038;p=4</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=acf&#038;p=4</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -235,10 +235,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Linkuri Utile Custom Fields</title>
-		<link>http://fiipregatit.dev/?acf=acf_linkuri-utile-custom-fields</link>
+		<link>http://dev.fiipregatit.ro/?acf=acf_linkuri-utile-custom-fields</link>
 		<pubDate>Fri, 08 Sep 2017 19:30:36 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=acf&#038;p=6</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=acf&#038;p=6</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -281,10 +281,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Google.ro</title>
-		<link>http://fiipregatit.dev/?link_util=google-ro</link>
+		<link>http://dev.fiipregatit.ro/?link_util=google-ro</link>
 		<pubDate>Fri, 08 Sep 2017 19:31:03 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=link_util&#038;p=7</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=link_util&#038;p=7</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -315,10 +315,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Furtuna</title>
-		<link>http://fiipregatit.dev/?ghid_educativ=furtuna</link>
+		<link>http://dev.fiipregatit.ro/?ghid_educativ=furtuna</link>
 		<pubDate>Fri, 08 Sep 2017 19:32:48 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=ghid_educativ&#038;p=8</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=ghid_educativ&#038;p=8</guid>
 		<description></description>
 		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit fermentum quam eu facilisis. Morbi a dapibus odio, at hendrerit nulla. Nam et dolor dictum, dignissim eros et, semper quam. Quisque viverra elit vel ex iaculis pulvinar. Etiam pharetra tortor sit amet facilisis molestie. Nulla sit amet porta justo, a lacinia ante. Vivamus accumsan, ipsum ac maximus pharetra, nisi dolor congue dui, lobortis pretium magna metus a libero. Nullam condimentum lacinia mauris eget aliquet. In blandit facilisis arcu, at lobortis dui dictum quis. Nullam ut molestie ante. Suspendisse nisl justo, lobortis sed lectus gravida, semper congue metus. Nullam enim neque, bibendum in congue sed, aliquet eu nunc. Aliquam porta lectus vel mauris fermentum, et faucibus eros congue]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -413,10 +413,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Viscol</title>
-		<link>http://fiipregatit.dev/?ghid_educativ=viscol</link>
+		<link>http://dev.fiipregatit.ro/?ghid_educativ=viscol</link>
 		<pubDate>Fri, 08 Sep 2017 19:33:06 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=ghid_educativ&#038;p=9</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=ghid_educativ&#038;p=9</guid>
 		<description></description>
 		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit fermentum quam eu facilisis. Morbi a dapibus odio, at hendrerit nulla. Nam et dolor dictum, dignissim eros et, semper quam. Quisque viverra elit vel ex iaculis pulvinar. Etiam pharetra tortor sit amet facilisis molestie. Nulla sit amet porta justo, a lacinia ante. Vivamus accumsan, ipsum ac maximus pharetra, nisi dolor congue dui, lobortis pretium magna metus a libero. Nullam condimentum lacinia mauris eget aliquet. In blandit facilisis arcu, at lobortis dui dictum quis. Nullam ut molestie ante. Suspendisse nisl justo, lobortis sed lectus gravida, semper congue metus. Nullam enim neque, bibendum in congue sed, aliquet eu nunc. Aliquam porta lectus vel mauris fermentum, et faucibus eros congue]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -527,10 +527,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Un ghid PDF</title>
-		<link>http://fiipregatit.dev/?attachment_id=12</link>
+		<link>http://dev.fiipregatit.ro/?attachment_id=12</link>
 		<pubDate>Thu, 21 Sep 2017 21:42:18 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/app/uploads/2017/09/icon_set_vehicles_311512.zip</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/app/uploads/2017/09/icon_set_vehicles_311512.zip</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -546,7 +546,7 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://fiipregatit.dev/app/uploads/2017/09/icon_set_vehicles_311512.zip]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[http://dev.fiipregatit.ro/app/uploads/2017/09/icon_set_vehicles_311512.zip]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/09/icon_set_vehicles_311512.zip]]></wp:meta_value>
@@ -554,10 +554,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>O campanie</title>
-		<link>http://fiipregatit.dev/?campanie=o-campanie</link>
+		<link>http://dev.fiipregatit.ro/?campanie=o-campanie</link>
 		<pubDate>Sun, 24 Sep 2017 19:23:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?post_type=campanie&#038;p=13</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?post_type=campanie&#038;p=13</guid>
 		<description></description>
 		<content:encoded><![CDATA[O campanie]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -584,10 +584,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>250_iheartamsterdam_nl</title>
-		<link>http://fiipregatit.dev/?attachment_id=16</link>
+		<link>http://dev.fiipregatit.ro/?attachment_id=16</link>
 		<pubDate>Sun, 24 Sep 2017 19:38:54 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/app/uploads/2017/09/250_iheartamsterdam_nl.jpg</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/app/uploads/2017/09/250_iheartamsterdam_nl.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -603,7 +603,7 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://fiipregatit.dev/app/uploads/2017/09/250_iheartamsterdam_nl.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[http://dev.fiipregatit.ro/app/uploads/2017/09/250_iheartamsterdam_nl.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/09/250_iheartamsterdam_nl.jpg]]></wp:meta_value>
@@ -615,10 +615,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Home</title>
-		<link>http://fiipregatit.dev/?p=17</link>
+		<link>http://dev.fiipregatit.ro/?p=17</link>
 		<pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?p=17</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?p=17</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -664,7 +664,7 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://fiipregatit.dev/]]></wp:meta_value>
+			<wp:meta_value><![CDATA[http://dev.fiipregatit.ro/]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_orphaned]]></wp:meta_key>
@@ -673,10 +673,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title></title>
-		<link>http://fiipregatit.dev/?p=18</link>
+		<link>http://dev.fiipregatit.ro/?p=18</link>
 		<pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?p=18</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?p=18</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -731,10 +731,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Campanii</title>
-		<link>http://fiipregatit.dev/?page_id=20</link>
+		<link>http://dev.fiipregatit.ro/?page_id=20</link>
 		<pubDate>Thu, 28 Sep 2017 19:43:45 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?page_id=20</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?page_id=20</guid>
 		<description></description>
 		<content:encoded><![CDATA[Pagina in care aratam campaniile.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -761,10 +761,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Ghiduri educative</title>
-		<link>http://fiipregatit.dev/?page_id=22</link>
+		<link>http://dev.fiipregatit.ro/?page_id=22</link>
 		<pubDate>Thu, 28 Sep 2017 19:44:03 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?page_id=22</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?page_id=22</guid>
 		<description></description>
 		<content:encoded><![CDATA[Pagina in care adaugam campaniile.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -791,10 +791,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Contact</title>
-		<link>http://fiipregatit.dev/?page_id=24</link>
+		<link>http://dev.fiipregatit.ro/?page_id=24</link>
 		<pubDate>Thu, 28 Sep 2017 19:44:18 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?page_id=24</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?page_id=24</guid>
 		<description></description>
 		<content:encoded><![CDATA[Contact page.
 
@@ -823,10 +823,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title>Home</title>
-		<link>http://fiipregatit.dev/?p=26</link>
+		<link>http://dev.fiipregatit.ro/?p=26</link>
 		<pubDate>Thu, 28 Sep 2017 19:44:40 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?p=26</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?p=26</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -873,15 +873,15 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://fiipregatit.dev/]]></wp:meta_value>
+			<wp:meta_value><![CDATA[http://dev.fiipregatit.ro/]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
 		<title></title>
-		<link>http://fiipregatit.dev/?p=27</link>
+		<link>http://dev.fiipregatit.ro/?p=27</link>
 		<pubDate>Thu, 28 Sep 2017 19:44:40 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?p=27</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?p=27</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -933,10 +933,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title></title>
-		<link>http://fiipregatit.dev/?p=28</link>
+		<link>http://dev.fiipregatit.ro/?p=28</link>
 		<pubDate>Thu, 28 Sep 2017 19:44:40 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?p=28</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?p=28</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -988,10 +988,10 @@ As a new WordPress user, you should go to <a href="http://fiipregatit.dev/wp/wp-
 	</item>
 	<item>
 		<title></title>
-		<link>http://fiipregatit.dev/?p=29</link>
+		<link>http://dev.fiipregatit.ro/?p=29</link>
 		<pubDate>Thu, 28 Sep 2017 19:44:40 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://fiipregatit.dev/?p=29</guid>
+		<guid isPermaLink="false">http://dev.fiipregatit.ro/?p=29</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>

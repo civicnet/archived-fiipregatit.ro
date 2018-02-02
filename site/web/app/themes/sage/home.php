@@ -8,25 +8,23 @@
 ?>
 
   <div class="container-fluid">
-    <div class="row">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1>Fii pregătit</h1>
-          <h3>pentru</h3>
-          <h1 class="subtitle">situații de urgență</h1>
-          <div class="col-lg-6">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search for..."
-                aria-label="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </span>
-            </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Fii pregătit</h1>
+        <h3>pentru</h3>
+        <h1 class="subtitle">situații de urgență</h1>
+        <div class="align-self-center">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Scrie aici, de ex: furtuna"
+              aria-label="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </span>
           </div>
         </div>
       </div>

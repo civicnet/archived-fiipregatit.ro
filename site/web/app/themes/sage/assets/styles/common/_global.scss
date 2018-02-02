@@ -54,6 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron-fluid .input-group {
   margin-top: 30px;
   border: 12px solid rgba(255, 255, 255, 0.4);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .jumbotron-fluid input {

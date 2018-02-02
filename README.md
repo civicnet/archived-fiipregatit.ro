@@ -25,10 +25,10 @@ Documentation of Trellis is pretty straight-forward. If you have questions conta
 vagrant up
 ```
 
-Now you should be able to access the dev environment in the browser at `http://fiipregatit.dev`
+Now you should be able to access the dev environment in the browser at `http://dev.fiipregatit.ro`
 
 2. Now we need to enable our theme:
-- Login in WP-ADMIN @ `http://fiipregatit.dev/admin`; You can find the credentials in 
+- Login in WP-ADMIN @ `http://dev.fiipregatit.ro/admin`; You can find the credentials in 
 `fiipregatit.ro/trellis/group_vars/development/vault.yml`
 - Go to `appearance->themes` and enable **Sage Starter Theme**
 

@@ -5,15 +5,13 @@
 wordpress_sites:
   fiipregatit.ro:
     site_hosts:
-      - canonical: fiipregatit.dev
-        redirects:
-          - www.fiipregatit.dev
+      - canonical: dev.fiipregatit.ro
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@fiipregatit.dev
+    admin_email: admin@dev.fiipregatit.ro
     multisite:
       enabled: false
     ssl:
       enabled: false
       provider: self-signed
     cache:
-      enabled: false
+      enabled: false 

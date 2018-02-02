@@ -10,7 +10,7 @@
       class="d-inline-block align-top"
       alt="">
     <div>
-      <strong>fiipregatit</strong>.ro
+      <strong>fiipregătit</strong>.ro
       <span class="subtitle">
         Departamentul pentru Situații de Urgență
       </span>

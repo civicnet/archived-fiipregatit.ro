@@ -3,8 +3,8 @@
  * Plugin Name: Fiipregatit Content Setup
  * Description: Content setip
  * Plugin URI:
- * Version:     2017.08.19
- * Author:      Radu Voinea
+ * Version:     2018.02.02
+ * Author:      CivicTech Romania
  * License:     GPL
  * Text Domain: plugin_unique_name
  * Domain Path: /languages
@@ -92,11 +92,11 @@ class Fiipregatit_Content
             )
         );
 
-        register_post_type( App::POST_TYPE_GHID_EDUCATIV,
+        register_post_type( App::POST_TYPE_GHID,
             array (
                 'labels' => array (
-                    'name' => __( 'Ghiduri educative' ),
-                    'singular_name' => __( 'Ghid educativ' )
+                    'name' => __( 'Ghiduri' ),
+                    'singular_name' => __( 'Ghid' )
                 ),
                 'supports' => array( 'title', 'editor', 'thumbnail' ),
                 'public' => true,

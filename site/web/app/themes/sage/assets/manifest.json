@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://dev.fiipregatit.ro"
+    "devUrl": "https://dev.fiipregatit.ro"
   }
 }

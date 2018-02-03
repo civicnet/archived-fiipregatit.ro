@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "188ef7ca2b3aa6fc0b3ebe2aef75c8d8",
+    "hash": "40d03721fa28c1d220c9e527aa8711b6",
+    "content-hash": "4ad2625f4f245d001e03ffeaf799a1f6",
     "packages": [
         {
             "name": "composer/installers",
@@ -111,24 +112,24 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13T20:53:52+00:00"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.9.0",
+            "version": "4.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "b15c463dc04c79483058a3da16865c356393408d"
+                "reference": "34627d0b992bbe9ed909c73b27307297fb21f2a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b15c463dc04c79483058a3da16865c356393408d",
-                "reference": "b15c463dc04c79483058a3da16865c356393408d",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/34627d0b992bbe9ed909c73b27307297fb21f2a4",
+                "reference": "34627d0b992bbe9ed909c73b27307297fb21f2a4",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.9.0",
+                "johnpbloch/wordpress-core": "4.9.2",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -150,27 +151,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-16T01:32:51+00:00"
+            "time": "2018-01-16 23:12:18"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.0",
+            "version": "4.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "bf2ed9c364d35bcabd15c4bb139c2581ea8513a9"
+                "reference": "59292fac30315323ce99e1a1d362015581e5d8e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/bf2ed9c364d35bcabd15c4bb139c2581ea8513a9",
-                "reference": "bf2ed9c364d35bcabd15c4bb139c2581ea8513a9",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/59292fac30315323ce99e1a1d362015581e5d8e6",
+                "reference": "59292fac30315323ce99e1a1d362015581e5d8e6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.0"
+                "wordpress/core-implementation": "4.9.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -190,20 +191,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-16T01:32:46+00:00"
+            "time": "2018-01-16 23:12:12"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "1.0.0",
+            "version": "1.0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2"
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/e9e767f2d9f994f358c34b41def2c410ad8717f2",
-                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/7941acd71725710a789daabe0557429da63e7ac6",
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +240,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2017-05-31T18:42:33+00:00"
+            "time": "2018-01-29 14:49:29"
         },
         {
             "name": "oscarotero/env",
@@ -281,7 +282,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2017-07-17T20:41:59+00:00"
+            "time": "2017-07-17 20:41:59"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -338,7 +339,7 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
-            "time": "2016-03-01T16:27:06+00:00"
+            "time": "2016-03-01 16:27:06"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -388,19 +389,19 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01T10:05:43+00:00"
+            "time": "2016-09-01 10:05:43"
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.12",
+            "version": "5.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "tags/4.4.12"
+                "reference": "tags/5.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.12.zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.6.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -508,7 +509,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-05-22T02:43:20+00:00"
+            "time": "2017-05-22 02:43:20"
         }
     ],
     "aliases": [],

@@ -34,26 +34,33 @@
   <div class="container-fluid ghiduri-section">
     <div class="container">
       <h2>Ghiduri educative</h2>
-
+      <div class="row ghid-row">
 <?php
-  $ghiduri = \RepoManager::getGhidurEducativeRepository()
+  $ghiduri = \RepoManager::getGhiduriRepository()
     ->getList(App::HOMEPAGE_GHID_COUNT);
-?>
-      <div class="row">
-<?php
+
   $count_guides = 0;
   foreach ($ghiduri as $ghid) {
     $count_guides++;
 ?>
-    <div class="col ghid-box">
+    <div class="col ghid-box col-lg-3 col-md-3 col-sm-3 col-xs-6">
       <div class="ghid-content">
         <h3>
           <?=$ghid->getTitle();?>
         </h3>
-        <button type="button" class="btn btn-outline-secondary rounded-0">
+        <img
+          src="<?=$ghid->getPictograma()->getUrl(); ?>"
+          class="d-block mx-auto mt-3 mb-3 rounded-circle border border-dark"
+          width="80"
+          height="80"
+        />
+        <a
+          class="btn btn-outline-secondary rounded-0"
+          role="button"
+          href="<?=$ghid->getPermalink(); ?>">
           Vezi Ghid
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </button>
+        </a>
       </div>
     </div>
 <?php

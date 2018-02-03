@@ -10,6 +10,4 @@
 <?php
 
 $ghiduri = \RepoManager::getGhidurEducativeRepository()->getList(App::HOMEPAGE_GHID_COUNT);
-var_dup($ghiduri);
-
-
+var_dump($ghiduri);

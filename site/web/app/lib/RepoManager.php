@@ -1,5 +1,5 @@
 <?php
-use Repository\GhiduriEducativeRepository;
+use Repository\GhiduriRepository;
 use Repository\CampaniiRepository;
 use Repository\LinkuriUtileRepository;
 
@@ -12,15 +12,15 @@ class RepoManager
     static private $repositories = [];
 
     /**
-     * @return GhiduriEducativeRepository
+     * @return GhiduriRepository
      */
-    public static function getGhidurEducativeRepository()
+    public static function getGhiduriRepository()
     {
-        if (empty(self::$repositories[App::POST_TYPE_GHID_EDUCATIV])) {
-            self::$repositories[App::POST_TYPE_GHID_EDUCATIV] = new GhiduriEducativeRepository();
+        if (empty(self::$repositories[App::POST_TYPE_GHID])) {
+            self::$repositories[App::POST_TYPE_GHID] = new GhiduriRepository();
         }
 
-        return self::$repositories[App::POST_TYPE_GHID_EDUCATIV];
+        return self::$repositories[App::POST_TYPE_GHID];
     }
 
     /**

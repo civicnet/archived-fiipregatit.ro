@@ -1,6 +1,6 @@
 <?php
 use Repository\GhiduriRepository;
-use Repository\CampaniiRepository;
+use Repository\CampaignRepository;
 use Repository\LinkuriUtileRepository;
 
 class RepoManager
@@ -23,16 +23,12 @@ class RepoManager
         return self::$repositories[App::POST_TYPE_GHID];
     }
 
-    /**
-     * @return CampaniiRepository
-     */
-    public static function getCampaniiRepository()
-    {
-        if (empty(self::$repositories[App::POST_TYPE_CAMPANIE])) {
-            self::$repositories[App::POST_TYPE_CAMPANIE] = new CampaniiRepository();
+    public static function getCampaignRepository(): CampaignRepository {
+        if (empty(self::$repositories[App::POST_TYPE_CAMPAIGN])) {
+            self::$repositories[App::POST_TYPE_CAMPAIGN] = new CampaignRepository();
         }
 
-        return self::$repositories[App::POST_TYPE_CAMPANIE];
+        return self::$repositories[App::POST_TYPE_CAMPAIGN];
     }
 
     /**

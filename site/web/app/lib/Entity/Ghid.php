@@ -112,7 +112,7 @@ final class Ghid extends Entity {
     return $this;
   }
 
-  public function getPictograma(): \Field\File {
+  public function getPictograma(): File {
     return $this->pictograma;
   }
 

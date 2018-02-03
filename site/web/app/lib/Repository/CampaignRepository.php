@@ -1,0 +1,21 @@
+<?php
+namespace Repository;
+
+use Entity\Campaign;
+
+final class CampaignRepository extends AbstractRepository {
+  protected $customPostType = \App::POST_TYPE_CAMPAIGN;
+
+  protected function getEntity(
+    \WP_Post $post,
+    bool $includeRelated = false
+  ): Campaign {
+    return (new Campaign($post->ID))
+      ->setTitle($post->post_title)
+      ->setContent(get_field('continut'))
+      ->setDate(new \DateTime($post->post_date))
+      ->setPermalink(get_the_permalink())
+      ->setExtras(get_field('extras'))
+      ->setImage(get_field('imagine'));
+  }
+}

@@ -79,7 +79,7 @@ class Fiipregatit_Content
      */
     private function _registerCustomPostTypes()
     {
-        register_post_type( App::POST_TYPE_CAMPANIE,
+        register_post_type( App::POST_TYPE_CAMPAIGN,
             array (
                 'labels' => array (
                     'name' => __( 'Campanii' ),

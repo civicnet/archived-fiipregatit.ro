@@ -4,25 +4,6 @@
         "title": "Campanie",
         "fields": [
             {
-                "key": "field_5a74e95ae8870",
-                "label": "Titlu",
-                "name": "titlu",
-                "type": "text",
-                "instructions": "Titlul campaniei",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": 128
-            },
-            {
                 "key": "field_5a74e97ce8871",
                 "label": "Conținut",
                 "name": "continut",
@@ -73,12 +54,12 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "url",
+                "return_format": "array",
                 "preview_size": "large",
                 "library": "all",
                 "min_width": 640,
                 "min_height": 480,
-                "min_size": 1,
+                "min_size": ".1",
                 "max_width": "",
                 "max_height": "",
                 "max_size": 5,

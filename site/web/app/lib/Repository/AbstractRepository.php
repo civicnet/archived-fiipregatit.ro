@@ -55,12 +55,12 @@ abstract class AbstractRepository
      */
     public function getByPost(\WP_Post $post)
     {
-        if ($post->post_type !== $this->_customPostType) {
+        if ($post->post_type !== $this->customPostType) {
             throw new \RuntimeException(
                 sprintf(
                     'You are trying to load an entity from the wrong repo. "%s" type in "%s" repo',
                     $post->post_type,
-                    $this->_customPostType
+                    $this->customPostType
                 )
             );
         }

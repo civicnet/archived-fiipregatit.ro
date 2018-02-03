@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.2" created="2018-02-03 00:59" -->
+<!-- generator="WordPress/4.9.2" created="2018-02-03 05:56" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>fiipregatit.ro</title>
 	<link>https://dev.fiipregatit.ro</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Sat, 03 Feb 2018 00:59:02 +0000</pubDate>
+	<pubDate>Sat, 03 Feb 2018 05:56:55 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://dev.fiipregatit.ro</wp:base_site_url>
@@ -70,30 +70,356 @@
 	<generator>https://wordpress.org/?v=4.9.2</generator>
 
 	<item>
-		<title>Ghid</title>
-		<link>https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=41</link>
-		<pubDate>Fri, 02 Feb 2018 22:20:12 +0000</pubDate>
+		<title>Titlu</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=6</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=41</guid>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=6</guid>
 		<description></description>
-		<content:encoded><![CDATA[a:7:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"ghid";}}}s:8:"position";s:15:"acf_after_title";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";a:4:{i:0;s:11:"the_content";i:1;s:14:"featured_image";i:2;s:10:"categories";i:3;s:4:"tags";}s:11:"description";s:0:"";}]]></content:encoded>
-		<excerpt:encoded><![CDATA[ghid]]></excerpt:encoded>
-		<wp:post_id>41</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 22:20:12]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:4:"text";s:12:"instructions";s:16:"Titlul campaniei";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:9:"maxlength";i:128;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[titlu]]></excerpt:encoded>
+		<wp:post_id>6</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[group_5a74df208d183]]></wp:post_name>
+		<wp:post_name><![CDATA[field_5a74e95ae8870]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
+		<wp:post_parent>5</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[acf-field-group]]></wp:post_type>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
+	</item>
+	<item>
+		<title>Conținut</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=7</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=7</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:0:"";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:4:"tabs";s:6:"visual";s:7:"toolbar";s:5:"basic";s:12:"media_upload";i:1;s:5:"delay";i:0;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[continut]]></excerpt:encoded>
+		<wp:post_id>7</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e97ce8871]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>5</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Extras</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=8</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=8</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:8:"textarea";s:12:"instructions";s:92:"Acest extras de text va apărea pe homepage, dar și în rezultatele motoarelor de căutare.";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:0:"";s:9:"maxlength";i:256;s:4:"rows";s:0:"";s:9:"new_lines";s:0:"";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[extras]]></excerpt:encoded>
+		<wp:post_id>8</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e99ee8872]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>5</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Imagine</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=9</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=9</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:15:{s:4:"type";s:5:"image";s:12:"instructions";s:107:"Această imagine va fi afișată atât pe homepage, împreună cu extrasul, cât și pe pagina de campanie.";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:3:"url";s:12:"preview_size";s:5:"large";s:7:"library";s:3:"all";s:9:"min_width";i:640;s:10:"min_height";i:480;s:8:"min_size";i:1;s:9:"max_width";s:0:"";s:10:"max_height";s:0:"";s:8:"max_size";i:5;s:10:"mime_types";s:23:".jpg, .png, .jpeg, .gif";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[imagine]]></excerpt:encoded>
+		<wp:post_id>9</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74ea28e8873]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>5</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Materiale de informare</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=10</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=10</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:4:"file";s:12:"instructions";s:127:"O listă de materiale de informare pentru această campanie. Aici puteți adăuga fișiere PDF sau imagini specifice campaniei.";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:5:"array";s:7:"library";s:3:"all";s:8:"min_size";s:0:"";s:8:"max_size";i:10;s:10:"mime_types";s:29:".jpg, .jpeg, .png, .gif, .pdf";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[materiale_de_informare]]></excerpt:encoded>
+		<wp:post_id>10</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74ea8ee8874]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>5</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Ghiduri sugerate</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=11</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=11</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:11:{s:4:"type";s:11:"post_object";s:12:"instructions";s:154:"Dacă doriți să promovați anumite ghiduri care au legătură cu această campanie, le puteți selecta aici (doar primele patru sugestii vor fi incluse)";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:9:"post_type";a:1:{i:0;s:4:"ghid";}s:8:"taxonomy";a:0:{}s:10:"allow_null";i:0;s:8:"multiple";i:1;s:13:"return_format";s:6:"object";s:2:"ui";i:1;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[ghiduri_sugerate]]></excerpt:encoded>
+		<wp:post_id>11</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74eaf6e8875]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>5</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Nume eveniment</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=13</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=13</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:4:"text";s:12:"instructions";s:67:"Pentru ce fel de eveniment este ghidul (ex: cutremur, viscol, etc.)";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:11:"placeholder";s:8:"Cutremur";s:7:"prepend";s:0:"";s:6:"append";s:0:"";s:9:"maxlength";i:128;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[nume_eveniment]]></excerpt:encoded>
+		<wp:post_id>13</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74df2bbb136]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Pregătire înaintea evenimentului</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=14</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=14</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:127:"Care sunt pașii ce trebuie urmați înaintea evenimentului? Recomandăm folosirea opțiunii de listă pentru a enumera pașii.";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:4:"tabs";s:6:"visual";s:7:"toolbar";s:5:"basic";s:12:"media_upload";i:0;s:5:"delay";i:0;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[inaintea_evenimentului]]></excerpt:encoded>
+		<wp:post_id>14</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e05cbb137]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Ce trebuie făcut în timpul evenimentului</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=15</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=15</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:109:"Cum reacționăm în timpul evenimentului? Recomandăm folosirea opțiunii de listă pentru a enumera pașii.";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:4:"tabs";s:6:"visual";s:7:"toolbar";s:5:"basic";s:12:"media_upload";i:0;s:5:"delay";i:0;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[in_timpul_evenimentului]]></excerpt:encoded>
+		<wp:post_id>15</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74effb6532d]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Pași de urmat după eveniment</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=16</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=16</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:135:"Care sunt pașii ce trebuie urmați după ce a avut loc evenimentul? Recomandăm folosirea opțiunii de listă pentru a enumera pașii.";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:4:"tabs";s:6:"visual";s:7:"toolbar";s:5:"basic";s:12:"media_upload";i:0;s:5:"delay";i:0;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[dupa_eveniment]]></excerpt:encoded>
+		<wp:post_id>16</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e15fbb138]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Informații adiționale</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=17</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=17</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:7:"wysiwyg";s:12:"instructions";s:52:"Orice alte infomații ajutătoare sub formă de text";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"default_value";s:0:"";s:4:"tabs";s:6:"visual";s:7:"toolbar";s:5:"basic";s:12:"media_upload";i:0;s:5:"delay";i:0;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[informații_adiționale]]></excerpt:encoded>
+		<wp:post_id>17</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e1c3bb139]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Video ajutător</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=18</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=18</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:7:{s:4:"type";s:6:"oembed";s:12:"instructions";s:165:"Dacă doriți să includeți tutoriale video, puteți face asta aici. E suficient să introduceți un link de YouTube sau Vimeo către video-ul care trebuie afișat.";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:5:"width";s:0:"";s:6:"height";s:0:"";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[video_ajutator]]></excerpt:encoded>
+		<wp:post_id>18</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e1f4bb13a]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Galerie foto</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=19</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=19</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:15:{s:4:"type";s:5:"image";s:12:"instructions";s:101:"Dacă doriți să includeți informații sub formă de imagini, puteți selecta aici o serie de poze.";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:5:"array";s:12:"preview_size";s:6:"medium";s:7:"library";s:3:"all";s:9:"min_width";i:640;s:10:"min_height";i:480;s:8:"min_size";s:0:"";s:9:"max_width";i:3000;s:10:"max_height";i:3000;s:8:"max_size";i:10;s:10:"mime_types";s:23:".jpg, .png, .jpeg, .gif";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[galerie_foto]]></excerpt:encoded>
+		<wp:post_id>19</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e2a0bb13b]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Ghid PDF</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=20</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=20</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:10:{s:4:"type";s:4:"file";s:12:"instructions";s:46:"Ghidul complet în format PDF, pentru download";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:5:"array";s:7:"library";s:3:"all";s:8:"min_size";s:0:"";s:8:"max_size";i:30;s:10:"mime_types";s:4:".pdf";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[ghid_pdf]]></excerpt:encoded>
+		<wp:post_id>20</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e323bb13c]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>7</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Pictogramă eveniment</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=21</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=21</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:15:{s:4:"type";s:5:"image";s:12:"instructions";s:127:"Fiecare eveniment trebuie să fie reprezentat de către o pictogramă. Alegeți pictograma specifică acestui tip de eveniment.";s:8:"required";i:1;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:13:"return_format";s:5:"array";s:12:"preview_size";s:9:"thumbnail";s:7:"library";s:3:"all";s:9:"min_width";s:0:"";s:10:"min_height";s:0:"";s:8:"min_size";s:0:"";s:9:"max_width";s:0:"";s:10:"max_height";s:0:"";s:8:"max_size";s:0:"";s:10:"mime_types";s:29:".jpg, .jpeg, .png, .svg, .gif";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[pictograma_eveniment]]></excerpt:encoded>
+		<wp:post_id>21</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e375bb13d]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>8</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Ghiduri similare</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=22</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field&#038;p=22</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:11:{s:4:"type";s:11:"post_object";s:12:"instructions";s:105:"Dacă doriți, puteți alege ce alte ghiduri să fie afișate mai proeminent împreună cu ghidul acesta.";s:8:"required";i:0;s:17:"conditional_logic";i:0;s:7:"wrapper";a:3:{s:5:"width";s:0:"";s:5:"class";s:0:"";s:2:"id";s:0:"";}s:9:"post_type";a:1:{i:0;s:4:"ghid";}s:8:"taxonomy";a:0:{}s:10:"allow_null";i:1;s:8:"multiple";i:1;s:13:"return_format";s:6:"object";s:2:"ui";i:1;}]]></content:encoded>
+		<excerpt:encoded><![CDATA[ghiduri_similare]]></excerpt:encoded>
+		<wp:post_id>22</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[field_5a74e66f94d75]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>12</wp:post_parent>
+		<wp:menu_order>9</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
 	</item>
 	<item>
 		<title>Nume eveniment</title>
@@ -109,13 +435,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74df2bbb136]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74df2bbb136__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74df2bbb136]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Pregătire înaintea evenimentului</title>
@@ -131,13 +469,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e05cbb137]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e05cbb137__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e05cbb137]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Pași de urmat după eveniment</title>
@@ -153,13 +503,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e15fbb138]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e15fbb138__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>3</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e15fbb138]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Informații adiționale</title>
@@ -175,13 +537,107 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e1c3bb139]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e1c3bb139__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>4</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e1c3bb139]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Campanie</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=5</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=5</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:8:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:8:"campanie";}}}s:8:"position";s:15:"acf_after_title";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";a:5:{i:0;s:11:"the_content";i:1;s:7:"excerpt";i:2;s:14:"featured_image";i:3;s:10:"categories";i:4;s:4:"tags";}s:11:"description";s:0:"";s:5:"local";s:3:"php";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[campanie]]></excerpt:encoded>
+		<wp:post_id>5</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[group_5a74e9538dcca]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field-group]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Ghid</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=12</link>
+		<pubDate>Sat, 03 Feb 2018 04:53:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=12</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:8:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"ghid";}}}s:8:"position";s:15:"acf_after_title";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";a:4:{i:0;s:11:"the_content";i:1;s:14:"featured_image";i:2;s:10:"categories";i:3;s:4:"tags";}s:11:"description";s:0:"";s:5:"local";s:3:"php";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[ghid]]></excerpt:encoded>
+		<wp:post_id>12</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:53:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:53:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[group_5a74df208d183]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field-group]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title>Ghid</title>
+		<link>https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=41</link>
+		<pubDate>Fri, 02 Feb 2018 22:20:12 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=acf-field-group&#038;p=41</guid>
+		<description></description>
+		<content:encoded><![CDATA[a:7:{s:8:"location";a:1:{i:0;a:1:{i:0;a:3:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"ghid";}}}s:8:"position";s:15:"acf_after_title";s:5:"style";s:7:"default";s:15:"label_placement";s:3:"top";s:21:"instruction_placement";s:5:"label";s:14:"hide_on_screen";a:4:{i:0;s:11:"the_content";i:1;s:14:"featured_image";i:2;s:10:"categories";i:3;s:4:"tags";}s:11:"description";s:0:"";}]]></content:encoded>
+		<excerpt:encoded><![CDATA[ghid]]></excerpt:encoded>
+		<wp:post_id>41</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-02 22:20:12]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[group_5a74df208d183-2__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[acf-field-group]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[group_5a74df208d183-2]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Video ajutător</title>
@@ -197,13 +653,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e1f4bb13a]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e1f4bb13a__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>5</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e1f4bb13a]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Galerie foto</title>
@@ -219,13 +687,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e2a0bb13b]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e2a0bb13b__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>6</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e2a0bb13b]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Ghid PDF</title>
@@ -241,13 +721,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e323bb13c]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e323bb13c__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>7</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e323bb13c]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Pictogramă eveniment</title>
@@ -263,13 +755,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:20:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e375bb13d]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e375bb13d__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>8</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e375bb13d]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Ghiduri similare</title>
@@ -285,13 +789,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:31:36]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e66f94d75]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e66f94d75__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>9</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e66f94d75]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Campanie</title>
@@ -307,8 +823,8 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:51:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[group_5a74e9538dcca]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[group_5a74e9538dcca-2__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field-group]]></wp:post_type>
@@ -317,6 +833,18 @@
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[group_5a74e9538dcca-2]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -333,13 +861,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:51:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e95ae8870]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e95ae8870__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>57</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e95ae8870]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Conținut</title>
@@ -355,13 +895,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:51:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e97ce8871]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e97ce8871__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>57</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e97ce8871]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Extras</title>
@@ -377,13 +929,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:51:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74e99ee8872]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74e99ee8872__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>57</wp:post_parent>
 		<wp:menu_order>2</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e99ee8872]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Imagine</title>
@@ -399,13 +963,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:51:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74ea28e8873]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74ea28e8873__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>57</wp:post_parent>
 		<wp:menu_order>3</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74ea28e8873]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Materiale de informare</title>
@@ -421,13 +997,25 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:51:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74ea8ee8874]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74ea8ee8874__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>57</wp:post_parent>
 		<wp:menu_order>4</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74ea8ee8874]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
 		<title>Ghiduri sugerate</title>
@@ -443,74 +1031,24 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 22:51:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74eaf6e8875]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74eaf6e8875__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>57</wp:post_parent>
 		<wp:menu_order>5</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-	</item>
-	<item>
-		<title>CUM NE PREGATIM INAINTE DE CUTREMUR</title>
-		<link>https://dev.fiipregatit.ro/ghid/cutremur/cum-ne-pregatim-inainte-de-cutremur/</link>
-		<pubDate>Fri, 02 Feb 2018 23:04:28 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>70</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 23:04:28]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 23:04:28]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[cum-ne-pregatim-inainte-de-cutremur]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>69</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR.png]]></wp:attachment_url>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR.png]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:2550;s:6:"height";i:2842;s:4:"file";s:47:"2018/02/CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR.png";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:47:"CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:47:"CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR-269x300.png";s:5:"width";i:269;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:47:"CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR-768x856.png";s:5:"width";i:768;s:6:"height";i:856;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:48:"CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR-919x1024.png";s:5:"width";i:919;s:6:"height";i:1024;s:9:"mime-type";s:9:"image/png";}s:30:"twentyseventeen-featured-image";a:4:{s:4:"file";s:49:"CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR-2000x1200.png";s:5:"width";i:2000;s:6:"height";i:1200;s:9:"mime-type";s:9:"image/png";}s:32:"twentyseventeen-thumbnail-avatar";a:4:{s:4:"file";s:47:"CUM-NE-PREGATIM-INAINTE-DE-CUTREMUR-100x100.png";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>CUM NE PREGATIM DE CUTREMUR</title>
-		<link>https://dev.fiipregatit.ro/ghid/cutremur/cum-ne-pregatim-de-cutremur/</link>
-		<pubDate>Fri, 02 Feb 2018 23:04:34 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/CUM-NE-PREGATIM-DE-CUTREMUR.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>71</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 23:04:34]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 23:04:34]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[cum-ne-pregatim-de-cutremur]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>69</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/CUM-NE-PREGATIM-DE-CUTREMUR.png]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/CUM-NE-PREGATIM-DE-CUTREMUR.png]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:2550;s:6:"height";i:2842;s:4:"file";s:39:"2018/02/CUM-NE-PREGATIM-DE-CUTREMUR.png";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:39:"CUM-NE-PREGATIM-DE-CUTREMUR-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:39:"CUM-NE-PREGATIM-DE-CUTREMUR-269x300.png";s:5:"width";i:269;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:39:"CUM-NE-PREGATIM-DE-CUTREMUR-768x856.png";s:5:"width";i:768;s:6:"height";i:856;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:40:"CUM-NE-PREGATIM-DE-CUTREMUR-919x1024.png";s:5:"width";i:919;s:6:"height";i:1024;s:9:"mime-type";s:9:"image/png";}s:30:"twentyseventeen-featured-image";a:4:{s:4:"file";s:41:"CUM-NE-PREGATIM-DE-CUTREMUR-2000x1200.png";s:5:"width";i:2000;s:6:"height";i:1200;s:9:"mime-type";s:9:"image/png";}s:32:"twentyseventeen-thumbnail-avatar";a:4:{s:4:"file";s:39:"CUM-NE-PREGATIM-DE-CUTREMUR-100x100.png";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74eaf6e8875]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -527,46 +1065,24 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 23:11:59]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[field_5a74effb6532d]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[field_5a74effb6532d__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>41</wp:post_parent>
 		<wp:menu_order>2</wp:menu_order>
 		<wp:post_type><![CDATA[acf-field]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-	</item>
-	<item>
-		<title>Google.ro</title>
-		<link>https://dev.fiipregatit.ro/link_util/google-ro/</link>
-		<pubDate>Fri, 08 Sep 2017 19:31:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?post_type=link_util&#038;p=7</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>10</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-08 19:31:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-08 19:31:03]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[google-ro]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[link_util]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[link_util_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://google.com]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634056]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_link_util_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_59b2ef965f529]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74effb6532d]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -578,7 +1094,7 @@
 		<description></description>
 		<content:encoded><![CDATA[O campanie]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>13</wp:post_id>
+		<wp:post_id>78</wp:post_id>
 		<wp:post_date><![CDATA[2017-09-24 19:23:00]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2017-09-24 19:23:00]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -612,54 +1128,24 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Campanii</title>
-		<link>https://dev.fiipregatit.ro/campanii/</link>
-		<pubDate>Thu, 28 Sep 2017 19:43:45 +0000</pubDate>
+		<title>Viscol</title>
+		<link>https://dev.fiipregatit.ro/ghid/viscol/</link>
+		<pubDate>Sat, 03 Feb 2018 00:49:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?page_id=20</guid>
-		<description></description>
-		<content:encoded><![CDATA[Pagina in care aratam campaniile.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>20</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-28 19:43:45]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-28 19:43:45]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[campanii]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[templates/listing-campanii.php]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Ghiduri</title>
-		<link>https://dev.fiipregatit.ro/ghiduri/</link>
-		<pubDate>Thu, 28 Sep 2017 19:44:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?page_id=22</guid>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=ghid&#038;p=81</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>22</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-28 19:44:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-28 19:44:03]]></wp:post_date_gmt>
+		<wp:post_id>81</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 00:49:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 00:49:05]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[ghiduri]]></wp:post_name>
+		<wp:post_name><![CDATA[viscol]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_type><![CDATA[ghid]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
@@ -667,8 +1153,155 @@
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[templates/listing-ghiduri.php]]></wp:meta_value>
+			<wp:meta_key><![CDATA[nume_eveniment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Viscol]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_nume_eveniment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74df2bbb136]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[inaintea_evenimentului]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<ul>
+ 	<li>Lorem</li>
+ 	<li>Ipsum</li>
+</ul>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_inaintea_evenimentului]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e05cbb137]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[in_timpul_evenimentului]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<ul>
+ 	<li>Lorem</li>
+ 	<li>Ipsum</li>
+</ul>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_in_timpul_evenimentului]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74effb6532d]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[dupa_eveniment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<ul>
+ 	<li>Lorem</li>
+ 	<li>Ipsum</li>
+</ul>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_dupa_eveniment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e15fbb138]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[informații_adiționale]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_informații_adiționale]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e1c3bb139]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[video_ajutator]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_video_ajutator]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e1f4bb13a]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[galerie_foto]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_galerie_foto]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e2a0bb13b]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[ghid_pdf]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_ghid_pdf]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e323bb13c]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[pictograma_eveniment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[100]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_pictograma_eveniment]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e375bb13d]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[ghiduri_similare]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_ghiduri_similare]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_5a74e66f94d75]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>prim_ajutor</title>
+		<link>https://dev.fiipregatit.ro/ghid/prim-ajutor/prim_ajutor/</link>
+		<pubDate>Sat, 03 Feb 2018 05:53:22 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/prim_ajutor-1.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>99</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 05:53:22]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 05:53:22]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[prim_ajutor]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>83</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/prim_ajutor-1.png]]></wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2018/02/prim_ajutor-1.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:349;s:6:"height";i:248;s:4:"file";s:25:"2018/02/prim_ajutor-1.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"prim_ajutor-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:25:"prim_ajutor-1-300x213.png";s:5:"width";i:300;s:6:"height";i:213;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>viscol</title>
+		<link>https://dev.fiipregatit.ro/ghid/viscol/viscol-2/</link>
+		<pubDate>Sat, 03 Feb 2018 05:54:13 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/viscol-1.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>100</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 05:54:13]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 05:54:13]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[viscol-2]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>81</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/viscol-1.png]]></wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2018/02/viscol-1.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:136;s:6:"height";i:138;s:4:"file";s:20:"2018/02/viscol-1.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -764,8 +1397,80 @@
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Homepage</title>
+		<link>https://dev.fiipregatit.ro/homepage__trashed/</link>
+		<pubDate>Sat, 25 Nov 2017 00:13:51 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">//localhost:3000/?page_id=36</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>36</wp:post_id>
+		<wp:post_date><![CDATA[2017-11-25 00:13:51]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-11-25 00:13:51]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[homepage__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1511569971]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[homepage]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Homepage</title>
+		<link>https://dev.fiipregatit.ro/homepage/</link>
+		<pubDate>Sat, 25 Nov 2017 00:35:33 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">//localhost:3000/?page_id=38</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>38</wp:post_id>
+		<wp:post_date><![CDATA[2017-11-25 00:35:33]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-11-25 00:35:33]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[homepage]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[home.php]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Cutremur</title>
-		<link>https://dev.fiipregatit.ro/ghid/cutremur/</link>
+		<link>https://dev.fiipregatit.ro/ghid/cutremur__trashed/</link>
 		<pubDate>Fri, 02 Feb 2018 23:07:59 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=ghid&#038;p=69</guid>
@@ -777,8 +1482,8 @@
 		<wp:post_date_gmt><![CDATA[2018-02-02 23:07:59]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[cutremur]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[cutremur__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[ghid]]></wp:post_type>
@@ -964,143 +1669,69 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 			<wp:meta_key><![CDATA[_dupa_eveniment]]></wp:meta_key>
 			<wp:meta_value><![CDATA[field_5a74e15fbb138]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>KITUL DE SUPRAVIETUIRE-01</title>
-		<link>https://dev.fiipregatit.ro/ghid/cutremur/kitul-de-supravietuire-01/</link>
-		<pubDate>Fri, 02 Feb 2018 23:04:40 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/KITUL-DE-SUPRAVIETUIRE-01.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>72</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 23:04:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 23:04:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[kitul-de-supravietuire-01]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>69</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/KITUL-DE-SUPRAVIETUIRE-01.png]]></wp:attachment_url>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/KITUL-DE-SUPRAVIETUIRE-01.png]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:2550;s:6:"height";i:2842;s:4:"file";s:37:"2018/02/KITUL-DE-SUPRAVIETUIRE-01.png";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:37:"KITUL-DE-SUPRAVIETUIRE-01-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:37:"KITUL-DE-SUPRAVIETUIRE-01-269x300.png";s:5:"width";i:269;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:37:"KITUL-DE-SUPRAVIETUIRE-01-768x856.png";s:5:"width";i:768;s:6:"height";i:856;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:38:"KITUL-DE-SUPRAVIETUIRE-01-919x1024.png";s:5:"width";i:919;s:6:"height";i:1024;s:9:"mime-type";s:9:"image/png";}s:30:"twentyseventeen-featured-image";a:4:{s:4:"file";s:39:"KITUL-DE-SUPRAVIETUIRE-01-2000x1200.png";s:5:"width";i:2000;s:6:"height";i:1200;s:9:"mime-type";s:9:"image/png";}s:32:"twentyseventeen-thumbnail-avatar";a:4:{s:4:"file";s:37:"KITUL-DE-SUPRAVIETUIRE-01-100x100.png";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517637151]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[cutremur]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Lista de verificare locuinta-01</title>
-		<link>https://dev.fiipregatit.ro/ghid/cutremur/lista-de-verificare-locuinta-01/</link>
-		<pubDate>Fri, 02 Feb 2018 23:04:46 +0000</pubDate>
+		<title>Google.ro</title>
+		<link>https://dev.fiipregatit.ro/link_util/google-ro/</link>
+		<pubDate>Fri, 08 Sep 2017 19:31:03 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/Lista-de-verificare-locuinta-01.png</guid>
+		<guid isPermaLink="false">//localhost:3000/?post_type=link_util&#038;p=7</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>73</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 23:04:46]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 23:04:46]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:post_id>77</wp:post_id>
+		<wp:post_date><![CDATA[2017-09-08 19:31:03]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-09-08 19:31:03]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[lista-de-verificare-locuinta-01]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>69</wp:post_parent>
+		<wp:post_name><![CDATA[google-ro]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/Lista-de-verificare-locuinta-01.png]]></wp:attachment_url>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/Lista-de-verificare-locuinta-01.png]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:2550;s:6:"height";i:2842;s:4:"file";s:43:"2018/02/Lista-de-verificare-locuinta-01.png";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:43:"Lista-de-verificare-locuinta-01-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:43:"Lista-de-verificare-locuinta-01-269x300.png";s:5:"width";i:269;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:43:"Lista-de-verificare-locuinta-01-768x856.png";s:5:"width";i:768;s:6:"height";i:856;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:44:"Lista-de-verificare-locuinta-01-919x1024.png";s:5:"width";i:919;s:6:"height";i:1024;s:9:"mime-type";s:9:"image/png";}s:30:"twentyseventeen-featured-image";a:4:{s:4:"file";s:45:"Lista-de-verificare-locuinta-01-2000x1200.png";s:5:"width";i:2000;s:6:"height";i:1200;s:9:"mime-type";s:9:"image/png";}s:32:"twentyseventeen-thumbnail-avatar";a:4:{s:4:"file";s:43:"Lista-de-verificare-locuinta-01-100x100.png";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>ghid_cutremur</title>
-		<link>https://dev.fiipregatit.ro/ghid/cutremur/ghid_cutremur/</link>
-		<pubDate>Fri, 02 Feb 2018 23:05:22 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/ghid_cutremur.pdf</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>74</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 23:05:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 23:05:22]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[ghid_cutremur]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>69</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/ghid_cutremur.pdf]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/ghid_cutremur.pdf]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>picto_cutremur</title>
-		<link>https://dev.fiipregatit.ro/ghid/cutremur/picto_cutremur/</link>
-		<pubDate>Fri, 02 Feb 2018 23:07:46 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/picto_cutremur.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>75</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 23:07:46]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 23:07:46]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[picto_cutremur]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>69</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/picto_cutremur.png]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/picto_cutremur.png]]></wp:meta_value>
+			<wp:meta_key><![CDATA[link_util_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[http://google.com]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:166;s:6:"height";i:150;s:4:"file";s:26:"2018/02/picto_cutremur.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:26:"picto_cutremur-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:32:"twentyseventeen-thumbnail-avatar";a:4:{s:4:"file";s:26:"picto_cutremur-100x100.png";s:5:"width";i:100;s:6:"height";i:100;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_link_util_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_59b2ef965f529]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
 		<title>Incendiu</title>
-		<link>https://dev.fiipregatit.ro/ghid/incendiu/</link>
+		<link>https://dev.fiipregatit.ro/ghid/incendiu__trashed/</link>
 		<pubDate>Sat, 03 Feb 2018 00:38:52 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=ghid&#038;p=77</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>77</wp:post_id>
+		<wp:post_id>79</wp:post_id>
 		<wp:post_date><![CDATA[2018-02-03 00:38:52]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-02-03 00:38:52]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[incendiu]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[incendiu__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[ghid]]></wp:post_type>
@@ -1199,54 +1830,35 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 			<wp:meta_key><![CDATA[_ghiduri_similare]]></wp:meta_key>
 			<wp:meta_value><![CDATA[field_5a74e66f94d75]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>incendiu</title>
-		<link>https://dev.fiipregatit.ro/ghid/incendiu/incendiu/</link>
-		<pubDate>Sat, 03 Feb 2018 00:38:25 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/incendiu.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>78</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-03 00:38:25]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-03 00:38:25]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[incendiu]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>77</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/incendiu.png]]></wp:attachment_url>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/incendiu.png]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:135;s:6:"height";i:169;s:4:"file";s:20:"2018/02/incendiu.png";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:20:"incendiu-135x150.png";s:5:"width";i:135;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517637151]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[incendiu]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
 		<title>Inundație</title>
-		<link>https://dev.fiipregatit.ro/ghid/inundatie/</link>
+		<link>https://dev.fiipregatit.ro/ghid/inundatie__trashed/</link>
 		<pubDate>Sat, 03 Feb 2018 00:47:53 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=ghid&#038;p=79</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>79</wp:post_id>
+		<wp:post_id>80</wp:post_id>
 		<wp:post_date><![CDATA[2018-02-03 00:47:53]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-02-03 00:47:53]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[inundatie]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[inundatie__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[ghid]]></wp:post_type>
@@ -1345,182 +1957,17 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 			<wp:meta_key><![CDATA[_ghiduri_similare]]></wp:meta_key>
 			<wp:meta_value><![CDATA[field_5a74e66f94d75]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>inundatie</title>
-		<link>https://dev.fiipregatit.ro/ghid/inundatie/inundatie/</link>
-		<pubDate>Sat, 03 Feb 2018 00:47:40 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/inundatie.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>80</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-03 00:47:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-03 00:47:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[inundatie]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>79</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/inundatie.png]]></wp:attachment_url>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/inundatie.png]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:197;s:6:"height";i:166;s:4:"file";s:21:"2018/02/inundatie.png";s:5:"sizes";a:1:{s:9:"thumbnail";a:4:{s:4:"file";s:21:"inundatie-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Viscol</title>
-		<link>https://dev.fiipregatit.ro/ghid/viscol/</link>
-		<pubDate>Sat, 03 Feb 2018 00:49:05 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=ghid&#038;p=81</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>81</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-03 00:49:05]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-03 00:49:05]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[viscol]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[ghid]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517637151]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[nume_eveniment]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Viscol]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_nume_eveniment]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74df2bbb136]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[inaintea_evenimentului]]></wp:meta_key>
-			<wp:meta_value><![CDATA[<ul>
- 	<li>Lorem</li>
- 	<li>Ipsum</li>
-</ul>]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_inaintea_evenimentului]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e05cbb137]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[in_timpul_evenimentului]]></wp:meta_key>
-			<wp:meta_value><![CDATA[<ul>
- 	<li>Lorem</li>
- 	<li>Ipsum</li>
-</ul>]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_in_timpul_evenimentului]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74effb6532d]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[dupa_eveniment]]></wp:meta_key>
-			<wp:meta_value><![CDATA[<ul>
- 	<li>Lorem</li>
- 	<li>Ipsum</li>
-</ul>]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_dupa_eveniment]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e15fbb138]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[informații_adiționale]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_informații_adiționale]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e1c3bb139]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[video_ajutator]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_video_ajutator]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e1f4bb13a]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[galerie_foto]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_galerie_foto]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e2a0bb13b]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[ghid_pdf]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_ghid_pdf]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e323bb13c]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[pictograma_eveniment]]></wp:meta_key>
-			<wp:meta_value><![CDATA[82]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_pictograma_eveniment]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e375bb13d]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[ghiduri_similare]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_ghiduri_similare]]></wp:meta_key>
-			<wp:meta_value><![CDATA[field_5a74e66f94d75]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>viscol</title>
-		<link>https://dev.fiipregatit.ro/ghid/viscol/viscol-2/</link>
-		<pubDate>Sat, 03 Feb 2018 00:48:52 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/viscol.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>82</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-03 00:48:52]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-03 00:48:52]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[viscol-2]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>81</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/viscol.png]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/viscol.png]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:136;s:6:"height";i:138;s:4:"file";s:18:"2018/02/viscol.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[inundatie]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1623,7 +2070,7 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[pictograma_eveniment]]></wp:meta_key>
-			<wp:meta_value><![CDATA[84]]></wp:meta_value>
+			<wp:meta_value><![CDATA[99]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_pictograma_eveniment]]></wp:meta_key>
@@ -1637,92 +2084,6 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 			<wp:meta_key><![CDATA[_ghiduri_similare]]></wp:meta_key>
 			<wp:meta_value><![CDATA[field_5a74e66f94d75]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>prim_ajutor</title>
-		<link>https://dev.fiipregatit.ro/ghid/prim-ajutor/prim_ajutor/</link>
-		<pubDate>Sat, 03 Feb 2018 00:50:06 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/app/uploads/2018/02/prim_ajutor.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>84</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-03 00:50:06]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-03 00:50:06]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[prim_ajutor]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>83</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://dev.fiipregatit.ro/app/uploads/2018/02/prim_ajutor.png]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/02/prim_ajutor.png]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:349;s:6:"height";i:248;s:4:"file";s:23:"2018/02/prim_ajutor.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:23:"prim_ajutor-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:23:"prim_ajutor-300x213.png";s:5:"width";i:300;s:6:"height";i:213;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Hello world!</title>
-		<link>https://dev.fiipregatit.ro/hello-world__trashed/</link>
-		<pubDate>Fri, 02 Feb 2018 21:42:12 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=1</guid>
-		<description></description>
-		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 21:42:12]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 21:42:12]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[hello-world__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517611981]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:1;s:1:"1";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>1</wp:comment_id>
-			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
-			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2018-02-02 21:42:12]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2018-02-02 21:42:12]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Hi, this is a comment.
-To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
-Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
 	</item>
 	<item>
 		<title>Sample Page</title>
@@ -1741,7 +2102,7 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 
 As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2</wp:post_id>
+		<wp:post_id>85</wp:post_id>
 		<wp:post_date><![CDATA[2018-02-02 21:42:12]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-02-02 21:42:12]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1771,61 +2132,6 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Hello world!</title>
-		<link>https://dev.fiipregatit.ro/hello-world-2__trashed/</link>
-		<pubDate>Fri, 02 Feb 2018 21:12:30 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=1</guid>
-		<description></description>
-		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>5</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-02 21:12:30]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-02 21:12:30]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[hello-world-2__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517611981]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world-2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:2;s:1:"1";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>2</wp:comment_id>
-			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
-			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2018-02-02 21:12:30]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2018-02-02 21:12:30]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Hi, this is a comment.
-To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
-Commenter avatars come from <a href="https://gravatar.com" rel="nofollow">Gravatar</a>.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
-	</item>
-	<item>
 		<title>Sample Page</title>
 		<link>https://dev.fiipregatit.ro/sample-page__trashed-2/</link>
 		<pubDate>Fri, 02 Feb 2018 21:12:30 +0000</pubDate>
@@ -1842,7 +2148,7 @@ Commenter avatars come from <a href="https://gravatar.com" rel="nofollow">Gravat
 
 As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>6</wp:post_id>
+		<wp:post_id>87</wp:post_id>
 		<wp:post_date><![CDATA[2018-02-02 21:12:30]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-02-02 21:12:30]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1888,7 +2194,7 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 
 As a new WordPress user, you should go to <a href="//localhost:3000/wp/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>8</wp:post_id>
+		<wp:post_id>88</wp:post_id>
 		<wp:post_date><![CDATA[2017-11-24 22:29:15]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2017-11-24 22:29:15]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1918,62 +2224,20 @@ As a new WordPress user, you should go to <a href="//localhost:3000/wp/wp-admin/
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Homepage</title>
-		<link>https://dev.fiipregatit.ro/homepage__trashed/</link>
-		<pubDate>Sat, 25 Nov 2017 00:13:51 +0000</pubDate>
+		<title>Campanii</title>
+		<link>https://dev.fiipregatit.ro/campanii/</link>
+		<pubDate>Thu, 28 Sep 2017 19:43:45 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?page_id=36</guid>
+		<guid isPermaLink="false">//localhost:3000/?page_id=20</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[Pagina in care aratam campaniile.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>36</wp:post_id>
-		<wp:post_date><![CDATA[2017-11-25 00:13:51]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-11-25 00:13:51]]></wp:post_date_gmt>
+		<wp:post_id>89</wp:post_id>
+		<wp:post_date><![CDATA[2017-09-28 19:43:45]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-09-28 19:43:45]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[homepage__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1511569971]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[homepage]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Homepage</title>
-		<link>https://dev.fiipregatit.ro/homepage/</link>
-		<pubDate>Sat, 25 Nov 2017 00:35:33 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?page_id=38</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>38</wp:post_id>
-		<wp:post_date><![CDATA[2017-11-25 00:35:33]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-11-25 00:35:33]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[homepage]]></wp:post_name>
+		<wp:post_name><![CDATA[campanii]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
@@ -1986,7 +2250,397 @@ As a new WordPress user, you should go to <a href="//localhost:3000/wp/wp-admin/
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[home.php]]></wp:meta_value>
+			<wp:meta_value><![CDATA[templates/listing-campanii.php]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Ghiduri</title>
+		<link>https://dev.fiipregatit.ro/ghiduri/</link>
+		<pubDate>Thu, 28 Sep 2017 19:44:03 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">//localhost:3000/?page_id=22</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>90</wp:post_id>
+		<wp:post_date><![CDATA[2017-09-28 19:44:03]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-09-28 19:44:03]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[ghiduri]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[templates/listing-ghiduri.php]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/93/</link>
+		<pubDate>Sat, 03 Feb 2018 05:19:21 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/93/</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>93</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 05:19:21]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 05:19:21]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[93]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[29]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/94/</link>
+		<pubDate>Sat, 03 Feb 2018 05:19:21 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/94/</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>94</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 05:19:21]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 05:19:21]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[94]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[26]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/95/</link>
+		<pubDate>Sat, 03 Feb 2018 05:19:22 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/95/</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>95</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 05:19:22]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 05:19:22]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[95]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[24]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/96/</link>
+		<pubDate>Sat, 03 Feb 2018 05:19:22 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/96/</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>96</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 05:19:22]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 05:19:22]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[96]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/97/</link>
+		<pubDate>Sat, 03 Feb 2018 05:19:22 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/97/</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>97</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 05:19:22]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 05:19:22]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[97]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[89]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Hello world!</title>
+		<link>https://dev.fiipregatit.ro/hello-world/</link>
+		<pubDate>Sat, 03 Feb 2018 04:32:10 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=1</guid>
+		<description></description>
+		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:32:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:32:10]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[hello-world]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+		<wp:comment>
+			<wp:comment_id>1</wp:comment_id>
+			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
+			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2018-02-03 04:32:10]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2018-02-03 04:32:10]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi, this is a comment.
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+	</item>
+	<item>
+		<title>Sample Page</title>
+		<link>https://dev.fiipregatit.ro/sample-page__trashed-4/</link>
+		<pubDate>Sat, 03 Feb 2018 04:32:10 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?page_id=2</guid>
+		<description></description>
+		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
+
+<blockquote>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</blockquote>
+
+...or something like this:
+
+<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
+
+As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>2</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-03 04:32:10]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-03 04:32:10]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[sample-page__trashed-4]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517634079]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[sample-page]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2028,7 +2682,7 @@ As a new WordPress user, you should go to <a href="//localhost:3000/wp/wp-admin/
 			<wp:meta_value><![CDATA[a:1:{i:3;s:1:"1";}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:comment>
-			<wp:comment_id>3</wp:comment_id>
+			<wp:comment_id>4</wp:comment_id>
 			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
 			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
 			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
@@ -2088,13 +2742,123 @@ Commenter avatars come from <a href="https://gravatar.com" rel="nofollow">Gravat
 			<wp:meta_value><![CDATA[a:1:{i:4;s:1:"1";}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:comment>
-			<wp:comment_id>4</wp:comment_id>
+			<wp:comment_id>5</wp:comment_id>
 			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
 			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
 			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
 			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
 			<wp:comment_date><![CDATA[2017-08-21 20:37:02]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2017-08-21 20:37:02]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi, this is a comment.
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+Commenter avatars come from <a href="https://gravatar.com" rel="nofollow">Gravatar</a>.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+	</item>
+	<item>
+		<title>Hello world!</title>
+		<link>https://dev.fiipregatit.ro/hello-world__trashed/</link>
+		<pubDate>Fri, 02 Feb 2018 21:42:12 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=1</guid>
+		<description></description>
+		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>84</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-02 21:42:12]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-02 21:42:12]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[hello-world__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517611981]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:1;s:1:"1";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>2</wp:comment_id>
+			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
+			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2018-02-02 21:42:12]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2018-02-02 21:42:12]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi, this is a comment.
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+Commenter avatars come from <a href="https://gravatar.com" rel="nofollow">Gravatar</a>.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+	</item>
+	<item>
+		<title>Hello world!</title>
+		<link>https://dev.fiipregatit.ro/hello-world-2__trashed/</link>
+		<pubDate>Fri, 02 Feb 2018 21:12:30 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=1</guid>
+		<description></description>
+		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>86</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-02 21:12:30]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-02 21:12:30]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[hello-world-2__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517611981]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world-2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:2;s:1:"1";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>3</wp:comment_id>
+			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
+			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2018-02-02 21:12:30]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2018-02-02 21:12:30]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
 Commenter avatars come from <a href="https://gravatar.com" rel="nofollow">Gravatar</a>.]]></wp:comment_content>

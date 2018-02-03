@@ -29,9 +29,9 @@
   </button>
 
   <?php
-    if (has_nav_menu('primary_navigation')) {
+    if (has_nav_menu('main_navigation')) {
       wp_nav_menu([
-        'theme_location' => 'primary_navigation',
+        'theme_location' => 'main_navigation',
         'menu_class' => 'navbar-nav',
         'container_class' => 'collapse navbar-collapse justify-content-end',
         'container_id' => 'navbarContent'

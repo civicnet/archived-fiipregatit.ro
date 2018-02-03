@@ -5,60 +5,75 @@ Platforma națională de informare pentru Situații de Urgență
 This application uses Wordpress as a CMS.
 
 Project was set up using Trellis: https://roots.io
-Documentation of Trellis is pretty straight-forward. If you have questions contact the developers.
+Documentation of Trellis is pretty straight-forward. If you have questions open an issue and label it `question` please.
 
 
 ## Getting started
-### Notes: ### 
+### Notes: ###
 
 - This guide assumes you are using a unix-like based OS and you install the project in a folder called `fiipregatit.ro`
 - Some parts described below can be automated via Vagrant provisioning (post-up)
-- **Some things are subject to change as the project progresses, so some things described below will be deemed irrelevant or useless. Please make sure to update this file to keep it up to date!** 
+- The development environment is configured to show notices. WordPress core being what it is, you might see some E_NOTICE messages pop up in the admin panel - this is expected *sigh*
+- **Some things are subject to change as the project progresses, if you spot any inconsistencies please either open an issue labeled `question`, either send a pull request**
 
 ### Prerequisites: ###
 - virtualbox (or another vagrant provider): https://www.vagrantup.com/docs/providers/
 - Ansible 2.3.0: http://docs.ansible.com/ansible/latest/intro_installation.html
 
-1. Start vagrant from the `fiipregatit.ro/trellis/` folder
-
+### Setup for backend dev ###
 ```
-vagrant up
+$> git clone https://github.com/civictechro/fiipregatit.ro
+$> cd fiipregatit.ro/trellis/group_vars/development/
+$> cp vault.yml.dist vault.yml
+$> vim vault.yml // feel free to change the default admin password
+$> cd ../../../../ // go back to the trellis directory
+$> vagrant up
 ```
 
-Now you should be able to access the dev environment in the browser at `http://dev.fiipregatit.ro`
+Now you should be able to access the dev environment in the browser at `http://dev.fiipregatit.ro`. You'll be welcomed by a default Wordpress installation, so we need to config the environment.
 
-2. Now we need to enable our theme:
-- Login in WP-ADMIN @ `http://dev.fiipregatit.ro/admin`; You can find the credentials in 
-`fiipregatit.ro/trellis/group_vars/development/vault.yml`
-- Go to `appearance->themes` and enable **Sage Starter Theme**
+### Configuration ###
 
-3. We also need to enable some plugins. In WP-ADMIN navigate to **Plugins** screen and enable `Advanced Custom Fields` and `Simple Custom Post Order`
+Open `http://dev.fiipregatit.ro/admin`. Use the admin password you just set in `vault.yml` to login, with the username `admin`.
 
-4. Now we need to import some test data. 
-- In WP-ADMIN navigate to `Tools->Import`. Scroll all the way down and install `Wordpress` importer. 
-- After is done click on `Run Importer`
-- On the next screen you'll have to import and XML. Now, you have 2 options:
-  - `fiipregatit.ro/site/config/misc/advanced-custom-field-export.xml` includes all the custom fields. **They are mandatory for the website to run properly!**
-  - `fiipregatit.ro/site/config/misc/fiipregatitro.wordpress.YYYY-MM-DD.xml` includes all the custom fields from the file above plus some dummy data for posts, pages, etc. It's not much but it's something. These files are versioned so you should probably use the latest one. You decide.
+Once logged in, it's time to config a few things in the admin panel:
 
-5. Current state of theme is very raw. This means no navigation. Check in WP-ADMIN permalinks of various pages/posts.
-6. For Frontend development:
-- you can add the markup in the template files in `fiipregatit.ro/site/web/app/themes/sage/templates`
-- for CSS/JS stuff you need change assets in `fiipregatit.ro/site/web/app/themes/sage/assests/` and use `gulp`.
-- to watch for style changes during development go to the theme folder in CLI `fiipregatit.ro/site/web/app/themes/sage/`
- and run `gulp watch`. Please read official doc page for more info: https://roots.io/sage/docs/theme-development-and-building/
- 
- 7. The rest is pretty much Wordpress ~~shit~~ stuff. Have fun!
+- Go to `Appearance->Themes` and enable **fiipregătit.ro**, our custom theme
+- Navigate to `Plugins->Installed Plugins` and enable `Advanced Custom Fields`
+- Now that we have custom fields enabled, we need to import our data structures. Go to `Custom Fields->Tools`, and upload `fiipregatit.ro/site/config/misc/acf-export-yyyy-mm-dd.json` using the `Import Field Groups` panel.
+- The navigation is not enabled by default. To add the main navigation go to `Appearance->Customize->Menus->Main Navigation` and create the menu. Make sure you check the `Main Navigation` menu location here. Publish when you're done.
+- Lastly, it's time to import some scaffolding data. Navigate to `Tools->Import` and select `Run Importer` for the WordPress option (last one). Now import  `fiipregatit.ro/site/config/misc/fiipregtitro.wordpress.yyyy-mm-dd.xml`
 
-#### *A note on credentials
-Please note {development,production,staging}/vault.yml are added to gitignore.
-To add your credentials simply copy the vault.yml.dist to vault.yml and change your credentials accordingly.
+### Known issues ###
+- The `Export/Import` flow for the data scaffolding is less than ideal since it doesn't take into account the media library so the guides and campaigns are broken and will not display properly. See #46
+- The import flow will throw a lot of E_NOTICEs *sigh*
+- Some of the steps described here could probably be automated: #48
+
+
+## Setup for frontend dev ##
+### Prerequisites ###
+
+You will need `Node.js` >= 4.5.0 and the latest version of `npm`. Additionally, you will need `gulp` and `bower`.
+
+### Install ###
+```
+$> cd fiipregatit.ro/site/web/app/themes/sage
+$> npm install
+$> bower install
+$> gulp watch // to compile assets and live reload on changes
+```
+
+- To edit templates: `fiipregatit.ro/site/web/app/themes/sage/templates`
+- To edit CSS/JS: `fiipregatit.ro/site/web/app/themes/sage/assests/`
+- Documentation: https://roots.io/sage/docs/theme-development-and-building/
+
+## A note on credentials ##
+Please note `{development,production,staging}/vault.yml` are added to `.gitignore`.
+
+To add your credentials simply copy the `vault.yml.dist` to `vault.yml` and change your credentials accordingly.
 
 **Please change the vault.yml.dist files if you make changes to vault configurations.**
 
-# Theme
-For now the project only uses a starter theme included in Trellis: Sage.
-This will be used as a starting point to develop the frontend.
-After you install the project make sure to follow instructions from the link below (since the built assets are 
-not in the repo):
-https://roots.io/sage/docs/theme-development-and-building/
+## More documentation ##
+Frontend work: https://roots.io/sage/docs/theme-development-and-building/
+Backend work: https://roots.io/trellis/docs/local-development-setup/

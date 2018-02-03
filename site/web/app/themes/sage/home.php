@@ -146,33 +146,46 @@
     </div>
   </div>
 
-  <div class="container-fluid campanii-section">
+  <div class="container-fluid" id="campaign-section">
     <div class="container">
       <h2>Campanii</h2>
-<?php
-  $campanii = \RepoManager::getCampaniiRepository()
-    ->getList(App::HOMEPAGE_CAMPANII_COUNT);
-?>
       <div class="row">
 <?php
-  $count_campanii = 0;
-  foreach ($campanii as $campanie) {
-    $count_campanii++;
+  $campaigns = \RepoManager::getCampaignRepository()
+    ->getList(App::HOMEPAGE_CAMPAIGNS_COUNT);
+  $count_campaigns = 0;
+  foreach ($campaigns as $campaign) {
+    $count_campaigns++;
 ?>
-    <div class="col campanie-box">
-      <div class="campanie-content">
+    <div class="col campaign-box col ghid-box col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <div class="campaign-content">
         <h3>
-          <?=$campanie->getTitle();?>
+          <?=$campaign->getTitle();?>
         </h3>
-        <button type="button" class="btn btn-outline-secondary rounded-0">
+        <div class="campaign-date">
+          <i class="far fa-calendar"></i>
+          <?=$campaign->getDate()->format('d.m.Y');?>
+        </div>
+        <img
+          src="<?=$campaign->getImage()->getUrl(); ?>"
+          class="d-block mx-auto mt-3 mb-3 border border-dark"
+          width="225"
+        />
+        <div class="campaign-extras">
+            <?=$campaign->getExtras();?>
+        </div>
+        <a
+          href="<?=$campaign->getPermalink();?>"
+          rel="button"
+          class="btn btn-outline-secondary rounded-0">
           Citeste
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </button>
+        </a>
       </div>
     </div>
 <?php
-    if ($count_campanii === 4) {
-      $count_campanii = 0;
+    if ($count_campaigns === 4) {
+      $count_campaign = 0;
 ?>
       </div><div class="row">
 <?php

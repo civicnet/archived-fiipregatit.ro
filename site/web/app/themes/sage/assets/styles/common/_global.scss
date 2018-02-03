@@ -108,11 +108,10 @@ h2:after {
   background: #fff;
   padding: 20px;
   text-align: center;
-  //max-width: 190px;
 }
 
 .ghiduri-section .ghid-row {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .ghiduri-section .ghid-content .btn {
@@ -125,6 +124,53 @@ h2:after {
 
 .ghiduri-section .ghid-content .btn:hover {
   background: #fff;
+}
+
+#campaign-section {
+    margin-top: 100px;
+}
+
+#campaign-section .campaign-content img {
+  width: 100%;
+}
+
+#campaign-section .campaign-row {
+  margin-bottom: 20px;
+}
+
+#campaign-section .campaign-content .btn {
+  font-size: 12px;
+  color: #993333;
+  border: 1px solid #999;
+  background: #ebebeb;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 16px;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+}
+
+#campaign-section .campaign-content .btn:hover {
+  background: #fff;
+}
+
+#campaign-section .campaign-content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#campaign-section .campaign-content .campaign-extras {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+#campaign-section .campaign-content .campaign-date {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
 }
 
 .all-button {

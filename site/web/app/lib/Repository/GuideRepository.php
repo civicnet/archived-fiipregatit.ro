@@ -1,16 +1,16 @@
 <?php
 namespace Repository;
 
-use Entity\Ghid;
+use Entity\Guide;
 
-final class GhiduriRepository extends AbstractRepository {
-  protected $customPostType = \App::POST_TYPE_GHID;
+final class GuideRepository extends AbstractRepository {
+  protected static $customPostType = \App::POST_TYPE_GUIDE;
 
-  protected function getEntity(
+  protected static function getEntity(
     \WP_Post $post,
     bool $includeRelated = false
-  ): Ghid {
-    $ghid = (new Ghid($post->ID))
+  ): Guide {
+    $ghid = (new Guide($post->ID))
       ->setTitle($post->post_title)
       ->setNume(get_field('nume_eveniment'))
       ->setInainteaEvenimentului(get_field('inaintea_evenimentului'))
@@ -18,23 +18,23 @@ final class GhiduriRepository extends AbstractRepository {
       ->setDupaEveniment(get_field('dupa_eveniment'))
       ->setInformatiiAditionale(get_field('informatii_aditionale'))
       ->setVideoAjutator(get_field('video_ajutator'))
-      ->setGalerieFoto($this->falseyToNull(
+      ->setGalerieFoto(self::falseyToNull(
         get_field('galerie_foto')
       ))
-      ->setGhidPDF($this->falseyToNull(
+      ->setGuidePDF(self::falseyToNull(
         get_field('ghid_pdf')
       ))
       ->setPictograma(get_field('pictograma_eveniment'))
       ->setPermalink(get_the_permalink());
 
     if ($includeRelated) {
-        $ghid->setGhiduriSimilare($this->getGhiduriSimilare());
+        $ghid->setSimilarGuides(self::getSimilarGuides());
     }
 
     return $ghid;
   }
 
-  private function falseyToNull($value) {
+  private static function falseyToNull($value) {
     if ($value === false) {
       return null;
     }
@@ -42,7 +42,7 @@ final class GhiduriRepository extends AbstractRepository {
     return $value;
   }
 
-  private function getGhiduriSimilare(): array {
+  private static function getSimilarGuides(): array {
     $relatedPosts = get_field('ghiduri_similare');
     if (!$relatedPosts) {
       return [];
@@ -50,7 +50,7 @@ final class GhiduriRepository extends AbstractRepository {
 
     $ghiduriSimilare = [];
     foreach ($relatedPosts as $relatedPost) {
-      $ghiduriSimilare[] = $this->getEntity($relatedPost, false);
+      $ghiduriSimilare[] = self::getEntity($relatedPost, false);
     }
 
     return $ghiduriSimilare;

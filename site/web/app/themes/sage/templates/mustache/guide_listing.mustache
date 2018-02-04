@@ -1,0 +1,33 @@
+<div class="container-fluid" id="ghiduri-section">
+  <div class="container">
+    <h2>Ghiduri educative</h2>
+    <div class="row ghid-row">
+      {{# guides }}
+        <div class="col ghid-box col-lg-3 col-md-3 col-sm-3 col-xs-6">
+          <div class="ghid-content">
+            <div
+              style="background-image: url({{ icon }})"
+              class="guide-icon">
+            </div>
+            <h3>
+              {{ title }}
+            </h3>
+            <a
+              class="outline-button btn btn-outline-secondary rounded-0"
+              role="button"
+              href="{{ permalink }}">
+              Vezi Ghid
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      {{/ guides }}
+    </div>
+    <div class="text-center">
+      <a href="#" rel="button" class="btn btn-secondary all-button">
+        Vezi toate ghidurile
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>

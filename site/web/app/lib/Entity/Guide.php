@@ -4,16 +4,16 @@ namespace Entity;
 
 use Field\File;
 
-final class Ghid extends Entity {
+final class Guide extends Entity {
   private $title;
   private $nume;
   private $inainteaEvenimentului;
   private $inTimpulEvenimentului;
   private $dupaEveniment;
   private $informatiiAditionale;
-  private $ghiduriSimilare;
+  private $similarGuides;
   private $permalink;
-  private $ghidPDF;
+  private $GuidePDF;
   private $galerieFoto;
   private $pictograma;
 
@@ -21,7 +21,7 @@ final class Ghid extends Entity {
     return $this->title;
   }
 
-  public function setTitle(string $title): Ghid {
+  public function setTitle(string $title): Guide {
     $this->title = $title;
     return $this;
   }
@@ -30,7 +30,7 @@ final class Ghid extends Entity {
     return $this->nume;
   }
 
-  public function setNume(string $nume): Ghid {
+  public function setNume(string $nume): Guide {
     $this->nume = $nume;
     return $this;
   }
@@ -41,7 +41,7 @@ final class Ghid extends Entity {
 
   public function setInainteaEvenimentului(
     string $inainteaEvenimentului
-  ): Ghid {
+  ): Guide {
     $this->inainteaEvenimentului = $inainteaEvenimentului;
     return $this;
   }
@@ -52,7 +52,7 @@ final class Ghid extends Entity {
 
   public function setInTimpulEvenimentului(
     string $inTimpulEvenimentului
-  ): Ghid {
+  ): Guide {
     $this->inTimpulEvenimentului = $inTimpulEvenimentului;
     return $this;
   }
@@ -61,7 +61,7 @@ final class Ghid extends Entity {
     return $this->dupaEveniment;
   }
 
-  public function setDupaEveniment(string $dupaEveniment): Ghid {
+  public function setDupaEveniment(string $dupaEveniment): Guide {
     $this->_dupaEveniment = $dupaEveniment;
     return $this;
   }
@@ -72,7 +72,7 @@ final class Ghid extends Entity {
 
   public function setInformatiiAditionale(
     ?string $informatiiAditionale
-  ): Ghid {
+  ): Guide {
     $this->informatiiAditionale = $informatiiAditionale;
     return $this;
   }
@@ -81,21 +81,21 @@ final class Ghid extends Entity {
     return $this->videoAjutator;
   }
 
-  public function setVideoAjutator(?string $videoAjutator): Ghid {
+  public function setVideoAjutator(?string $videoAjutator): Guide {
     $this->videoAjutator = $videoAjutator;
     return $this;
   }
 
-  public function getGhidPDF(): ?array {
-    return $this->ghidPDF;
+  public function getGuidePDF(): ?array {
+    return $this->GuidePDF;
   }
 
-  public function setGhidPDF(?array $ghidPDF): Ghid {
-    if ($ghidPDF === null) {
+  public function setGuidePDF(?array $GuidePDF): Guide {
+    if ($GuidePDF === null) {
       return $this;
     }
 
-    $this->ghidPDF = new File($ghidPDF);
+    $this->GuidePDF = new File($GuidePDF);
     return $this;
   }
 
@@ -103,7 +103,7 @@ final class Ghid extends Entity {
     return $this->galerieFoto;
   }
 
-  public function setGalerieFoto(?array $galerieFoto): Ghid {
+  public function setGalerieFoto(?array $galerieFoto): Guide {
     if ($galerieFoto === null) {
       return $this;
     }
@@ -116,17 +116,17 @@ final class Ghid extends Entity {
     return $this->pictograma;
   }
 
-  public function setPictograma(array $pictograma): Ghid {
+  public function setPictograma(array $pictograma): Guide {
     $this->pictograma = new File($pictograma);
     return $this;
   }
 
-  public function getGhiduriSimilare(): ?array {
-    return $this->setGhiduriSimilare;
+  public function getSimilarGuides(): ?array {
+    return $this->similarGuides;
   }
 
-  public function setGhiduriSimilare(?array $ghiduriSimilare): Ghid {
-    $this->setGhiduriSimilare = $ghiduriSimilare;
+  public function setSimilarGuides(?array $similarGuides): Guide {
+    $this->similarGuides = $similarGuides;
     return $this;
   }
 
@@ -134,7 +134,7 @@ final class Ghid extends Entity {
     return $this->permalink;
   }
 
-  public function setPermalink(string $permalink): Ghid {
+  public function setPermalink(string $permalink): Guide {
     $this->permalink = $permalink;
     return $this;
   }

@@ -3,8 +3,7 @@
 namespace Entity;
 
 
-class LinkUtil extends Entity
-{
+class Link extends Entity {
     /**
      * @var
      */

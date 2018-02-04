@@ -1,0 +1,115 @@
+footer {
+  background: #333;
+  margin-top: 150px;
+  color: #bbb;
+  font-size: 14px;
+}
+
+footer a {
+  color: #bbb;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .content-info {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+footer .content-info .col {
+    flex-basis: unset;
+    margin-bottom: 30px;
+}
+
+footer .content-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .content-info ul li {
+  margin-bottom: 5px;
+}
+
+footer .content-info .header {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+footer .content-info .social-media li {
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+footer .content-info .social-media li svg {
+  margin-right: 10px;
+}
+
+footer .bottom {
+  padding: 20px;
+  background: #4c4c4c;
+  border-top: 1px solid #666;
+  position: relative;
+}
+
+footer .bottom::before {
+  content: ' ';
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .bottom ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .bottom ul li {
+  display: inline-block;
+}
+
+footer .bottom img {
+  height: 80px;
+}
+
+footer .bottom ul li.gov {
+    position: relative;
+    padding-right: 15px;
+}
+
+footer .bottom ul li.dsu {
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+footer .bottom ul li.gov::after {
+  content: " ";
+  border-right: 1px solid #666;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+
+footer .bottom .copyright h4 {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer .bottom .copyright a {
+  font-weight: bold;
+}
+
+footer .bottom .copyright {
+  font-size: 12px;
+  margin: 0 auto;
+  width: 325px;
+}

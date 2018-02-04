@@ -1,8 +1,27 @@
-html {
+html, body {
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
   counter-reset: element;
 }
+/*
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
 
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
 }
@@ -14,15 +33,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron-fluid {
   width: 100%;
+  height: 480px;
   background: url('../images/header.jpg');
   background-size: cover;
   margin-bottom: 0;
   color: #fff;
   text-align: center;
+  position: relative;
+  padding: 0;
 }
 
 .jumbotron-fluid::before {
-	content:"";
+	content:" ";
 	display: block;
 	height: 100%;
 	position: absolute;
@@ -30,6 +52,11 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	width: 100%;
 	background-color: rgba(0, 0, 0, .7);
+}
+
+.jumbotron-fluid .container {
+  position: relative;
+  margin-top: 135px;
 }
 
 .jumbotron-fluid h1 {
@@ -52,10 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron-fluid .input-group {
-  margin-top: 30px;
   border: 12px solid rgba(255, 255, 255, 0.4);
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 35px;
 }
 
 .jumbotron-fluid input {
@@ -63,27 +90,14 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #999;
   font-style: italic;
   background: #ffffcc;
-  color: #333;
+  color: #666;
 }
 
 .jumbotron-fluid button {
   border-radius: 0;
   border: 1px solid #999;
   background: #ffcc00;
-}
-
-.ghiduri-section,
-.plan-personal-section,
-.campanii-section,
-.app-section {
-  padding-top: 60px;
-}
-
-.ghiduri-section h3 {
-  text-transform: uppercase;
-  font-family: 'Roboto', serif;
-  font-weight: bold;
-  margin: 10px auto;
+  color: #000;
 }
 
 h2 {
@@ -99,59 +113,116 @@ h2:after {
   border-bottom: 5px solid #993333;
   width: 100px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 15px;
 }
 
-.ghiduri-section .ghid-content {
-  border: 1px solid #ccc;
-  background: #fff;
-  padding: 20px;
-  text-align: center;
+#ghiduri-section,
+#plan-personal-section,
+#campanii-section,
+#app-section {
+  padding-top: 150px;
 }
 
-.ghiduri-section .ghid-row {
-  margin-bottom: 20px;
-}
-
-.ghiduri-section .ghid-content .btn {
+.all-button {
+  margin: 60px auto;
+  text-transform: uppercase;
+  color: #fff;
+  background: #993333;
   font-size: 12px;
+  font-weight: bold;
+  border-width: 0;
+  border-radius: 3px;
+  height: 35px;
+  line-height: 37px;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.all-button:hover {
+  background: #DC3545;
+}
+
+.all-button svg {
+  margin-left: 7px;
+}
+
+.outline-button {
+  font-size: 14px;
   color: #993333;
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   background: #ebebeb;
   cursor: pointer;
+  height: 35px;
+  margin-top: 15px;
 }
 
-.ghiduri-section .ghid-content .btn:hover {
+.outline-button:hover {
+  background: #933;
+  color: #fff;
+  border-color: #933;
+}
+
+#ghiduri-section h3 {
+  text-transform: uppercase;
+  font-family: 'Roboto', serif;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+#ghiduri-section .guide-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  margin: 0 auto;
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+  background-color: #fff;
+}
+
+#ghiduri-section .ghid-content {
+  border: 1px solid #ccc;
   background: #fff;
+  text-align: center;
+  height: 220px;
+}
+
+#ghiduri-section .ghid-content:hover {
+  background: #FFE9EB;
+  border-color: #933;
+}
+
+#ghiduri-section .ghid-row {
+  margin-bottom: 20px;
 }
 
 #campaign-section {
     margin-top: 100px;
 }
 
-#campaign-section .campaign-content img {
+#campaign-section .campaign-photo {
   width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-color: #333;
 }
 
-#campaign-section .campaign-row {
-  margin-bottom: 20px;
+#campaign-section .campaign-box {
+    margin-bottom: 35px;
+    flex-basis: unset;
 }
 
-#campaign-section .campaign-content .btn {
-  font-size: 12px;
-  color: #993333;
-  border: 1px solid #999;
-  background: #ebebeb;
-  cursor: pointer;
-  margin-left: 0;
-  margin-top: 16px;
-  display: inline-block;
-  font-family: 'Roboto', sans-serif;
-}
-
-#campaign-section .campaign-content .btn:hover {
-  background: #fff;
+#campaign-section .campaign-content {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #campaign-section .campaign-content h3 {
@@ -173,70 +244,95 @@ h2:after {
   text-align: left;
 }
 
-.all-button {
-  margin: 60px auto;
-  text-transform: uppercase;
-  color: #fff;
-  background: #993333;
-  font-size: 12px;
-}
-
-.summary-section {
+#summary-section {
   padding: 40px 0;
   background: #465d86;
   color: #fff;
+  background-image: url(../images/blue_band.png);
+  height: 270px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.summary-section .col {
+#summary-section .col {
   text-align: center;
 }
 
-.summary-section .col i {
-  font-size: 48px;
-}
-
-.summary-section .count span {
+#summary-section .count span {
   display: block;
   font-weight: bold;
   font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: -10px;
 }
 
-.plan-personal-section {
+#plan-personal-section {
   background: #fff;
 }
 
-.plan-personal-section .headline {
+#plan-personal-section .headline {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-.plan-personal-section .big-red {
+#plan-personal-section .big-red {
   color: #993333;
 }
 
-.plan-personal-section div:nth-of-type(3) {
+#plan-personal-section div:nth-of-type(3) {
   margin-top: 10px;
 }
 
-.plan-personal-section .element::before {
+#plan-personal-section .element::before {
   counter-increment: element;
   content: counter(element) '. ';
   font-size: 18px;
   font-weight: bold;
 }
 
-.app-section {
+#plan-personal-section .img-container {
+  text-align: center;
+}
+
+#plan-personal-section img {
+    margin: 0 auto;
+    max-height: 230px;
+}
+
+#app-section {
   background: #fff;
 }
 
-.app-section h2 {
+#app-section h2 {
   font-weight: normal;
   text-align: left;
   text-transform: none;
+  margin-bottom: 20px;
 }
 
-.app-section h2::after {
+#app-section h2::after {
   margin-left: 0;
   margin-top: 20px;
+}
+
+#app-section .subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#app-section .app-intro .row {
+  padding-left: 15px;
+}
+
+#app-section .app-intro img {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+#app-section .app-intro .col {
+  max-width: 210px;
+  padding: 0px;
+  padding-right: 15px;
 }

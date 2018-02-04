@@ -8,5 +8,5 @@ final class App
 
     const HOMEPAGE_GHID_COUNT = 10;
     const HOMEPAGE_CAMPAIGNS_COUNT = 5;
-    const LINKURI_UTILE_COUNT = 100;
+    const LINKURI_UTILE_COUNT = 7;
 }

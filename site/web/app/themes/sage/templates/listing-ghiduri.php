@@ -1,13 +1,31 @@
-<?php /* Template Name: listing-ghiduri */ ?>
-
-<?php while (have_posts()) : the_post(); ?>
-  <h1><?php the_title()?></h1>
-  <p>
-    <?php the_content()?>
-  </p>
-<?php endwhile; ?>
-
 <?php
+/* Template Name: listing-ghiduri */
 
-$ghiduri = \RepoManager::getGhidurEducativeRepository()->getList(App::HOMEPAGE_GHID_COUNT);
-var_dump($ghiduri);
+use Roots\Sage\Assets;
+
+$guides = \RepoManager::getGuideRepository()->getList();
+
+$guideProps = array();
+foreach ($guides as $guide) {
+  $guideProps[] = array(
+    'icon' => $guide->getPictograma()->getUrl(),
+    'title' => $guide->getTitle(),
+    'permalink' => $guide->getPermalink()
+  );
+}
+
+TemplateEngine::get()->render(
+  'guide_listing',
+  array(
+    'guides' => $guideProps
+  )
+);
+
+TemplateEngine::get()->render(
+  'app_promo',
+  array(
+    'mobile_app_dsu' => Assets\asset_path('images/app_mobil_dsu.jpg'),
+    'ios_badge' => Assets\asset_path('images/ios-badge.svg'),
+    'playstore_badge' => Assets\asset_path('images/playstore-badge.svg'),
+  )
+);

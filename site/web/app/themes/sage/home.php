@@ -33,54 +33,26 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="ghiduri-section">
-    <div class="container">
-      <h2>Ghiduri educative</h2>
-      <div class="row ghid-row">
 <?php
-  $ghiduri = \RepoManager::getGhiduriRepository()
-    ->getList(App::HOMEPAGE_GHID_COUNT);
+  $guides = \RepoManager::getGuideRepository()
+    ->getList(App::HOMEPAGE_GUIDE_COUNT);
 
-  $count_guides = 0;
-  foreach ($ghiduri as $ghid) {
-    $count_guides++;
-?>
-    <div class="col ghid-box col-lg-3 col-md-3 col-sm-3 col-xs-6">
-      <div class="ghid-content">
-        <div
-          style="background-image: url(<?=$ghid->getPictograma()->getUrl(); ?>)"
-          class="guide-icon">
-        </div>
-        <h3>
-          <?=$ghid->getTitle();?>
-        </h3>
-        <a
-          class="outline-button btn btn-outline-secondary rounded-0"
-          role="button"
-          href="<?=$ghid->getPermalink(); ?>">
-          Vezi Ghid
-          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-<?php
-    if ($count_guides === 4) {
-      $count_guides = 0;
-?>
-      </div><div class="row">
-<?php
-     }
+  $guideProps = array(); 
+  foreach ($guides as $guide) {
+    $guideProps[] = array(
+      'icon' => $guide->getPictograma()->getUrl(),
+      'title' => $guide->getTitle(),
+      'permalink' => $guide->getPermalink()
+    );
   }
+
+  TemplateEngine::get()->render(
+    'guide_listing',
+    array(
+      'guides' => $guideProps
+    )
+  );
 ?>
-      </div>
-      <div class="text-center">
-        <a href="#" rel="button" class="btn btn-secondary all-button">
-          Vezi toate ghidurile
-          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <div class="container-fluid" id="summary-section">
     <div class="container">
@@ -202,39 +174,15 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="app-section">
-    <div class="container">
-      <div class="row">
-        <div class="col d-none d-sm-block ">
-          <img
-            src="<?=Assets\asset_path('images/app_mobil_dsu.jpg');?>"
-            class="img-fluid">
-        </div>
-        <div class="col">
-          <h2>
-            Află primul despre alerte din trafic, avertizări meteo
-            sau calamități naturale
-          </h2>
-          <div class="app-intro">
-            <div class="subtitle">
-              Descarcă <strong>gratuit</strong> aplicația DSU!
-            </div>
-            <div class="row">
-              <div class="col">
-                <img src="<?=Assets\asset_path('images/ios-badge.svg');?>" />
-              </div>
-              <div class="col">
-                <img
-                  class="play-store"
-                  src="<?=Assets\asset_path('images/playstore-badge.svg');?>" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 <?php
+  TemplateEngine::get()->render(
+    'app_promo',
+    array(
+      'mobile_app_dsu' => Assets\asset_path('images/app_mobil_dsu.jpg'),
+      'ios_badge' => Assets\asset_path('images/ios-badge.svg'),
+      'playstore_badge' => Assets\asset_path('images/playstore-badge.svg'),
+    )
+  );
+
   the_posts_navigation();
 ?>

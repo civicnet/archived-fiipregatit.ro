@@ -92,7 +92,7 @@ class Fiipregatit_Content
             )
         );
 
-        register_post_type( App::POST_TYPE_GHID,
+        register_post_type( App::POST_TYPE_GUIDE,
             array (
                 'labels' => array (
                     'name' => __( 'Ghiduri' ),
@@ -105,7 +105,7 @@ class Fiipregatit_Content
             )
         );
 
-        register_post_type( App::POST_TYPE_LINK_UTIL,
+        register_post_type( App::POST_TYPE_LINK,
             array (
                 'labels' => array (
                     'name' => __( 'Linkuri utile' ),

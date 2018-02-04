@@ -2,23 +2,25 @@
 	use Roots\Sage\Assets;
 ?>
 
-<nav class="navbar navbar-toggleable-md navbar-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
     <img
       src="<?=Assets\asset_path('images/logo.png');?>"
-      height="60"
-      class="d-inline-block align-top"
-      alt="">
-    <div>
-      <strong>fiipregătit</strong>.ro
-      <span class="subtitle">
+      height="70"
+      class="d-inline-block"
+      alt="Logo DSU" />
+    <div class="brand-container">
+      <div class="brand-text">
+				<strong>fiipregătit</strong>.ro
+			</div>
+      <div class="subtitle">
         Departamentul pentru Situații de Urgență
-      </span>
+      </div>
     </div>
   </a>
 
   <button
-		class="navbar-toggler navbar-toggler-right"
+		class="navbar-toggler"
 		type="button"
 		data-toggle="collapse"
 		data-target="#navbarContent"
@@ -28,14 +30,31 @@
     	<span class="navbar-toggler-icon"></span>
   </button>
 
-  <?php
-    if (has_nav_menu('main_navigation')) {
-      wp_nav_menu([
-        'theme_location' => 'main_navigation',
-        'menu_class' => 'navbar-nav',
-        'container_class' => 'collapse navbar-collapse justify-content-end',
-        'container_id' => 'navbarContent'
-      ]);
-    }
-  ?>
+	<div id="navbarContent" class="collapse navbar-collapse">
+		<ul class="social-menu">
+			<li class="first">
+				<a href="#">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fab fa-youtube-square"></i>
+				</a>
+			</li>
+		</ul>
+	  <?php
+	    if (has_nav_menu('main_navigation')) {
+	      wp_nav_menu([
+	        'theme_location' => 'main_navigation',
+	        'menu_class' => 'navbar-nav ml-auto w-100 justify-content-end',
+	      ]);
+	    }
+	  ?>
+	</div>
 </nav>

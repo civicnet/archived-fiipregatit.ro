@@ -15,8 +15,10 @@ class LinkuriUtileRepository extends AbstractRepository
      * @param bool $includeRelated
      * @return LinkUtil
      */
-    protected function _getEntity(\WP_Post $post, $includeRelated = false)
-    {
+    protected function getEntity(
+      \WP_Post $post,
+      bool $includeRelated = false
+    ) {
         $linkUtil = new LinkUtil($post->ID);
 
         $linkUtil

@@ -47,7 +47,8 @@
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/advanced-custom-fields": "5.6.7",
-    "wpackagist-plugin/simple-custom-post-order": "2.3.2"
+    "wpackagist-plugin/simple-custom-post-order": "2.3.2",
+    "wpackagist-plugin/simple-page-ordering": "2.2.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

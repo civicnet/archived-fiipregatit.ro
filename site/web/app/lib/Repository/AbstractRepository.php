@@ -3,59 +3,53 @@ namespace Repository;
 
 use Entity\Entity;
 
-/**
- * Class AbstractRepository
- * Common functionality of a repository
- * @package Repository
- */
-abstract class AbstractRepository
-{
-    /**
-     * @var string The customer post type that the repo should opperate with
-     */
-    protected $customPostType;
+abstract class AbstractRepository {
+    protected static $customPostType;
+    private static $instance;
 
-    /**
-     * @param int $count
-     * @param array $extraArgs
-     * @return Entity[]
-     */
-    public function getList($count = -1, $extraArgs = [])
-    {
-        $args = array(
-            'post_type' => $this->customPostType,
-            'post_status' => 'publish',
-            'posts_per_page' => $count,
-            'ignore_sticky_posts' => 1
-        );
+    private function __construct() {}
 
-        if (!empty($extraArgs)) {
-            $args = array_merge($args, $extraArgs);
-        }
+    public static function get(): AbstractRepository {
+      if (self::$instance) {
+        return self::$instance;
+      }
 
-        $my_query = new \WP_Query($args);
-        if (!$my_query->have_posts()) {
-            return [];
-        }
-
-        $entities = [];
-        while ($my_query->have_posts()) {
-            $my_query->the_post();
-            $post = get_post(get_the_ID());
-            $entities[get_the_ID()] = $this->getEntity($post, true);
-        }
-        wp_reset_query();  // Restore global post data stomped by the_post().
-
-        return $entities;
+      return new static();
     }
 
-    /**
-     * @param \WP_Post $post
-     * @return Entity
-     */
-    public function getByPost(\WP_Post $post)
-    {
-        if ($post->post_type !== $this->customPostType) {
+    public static function getList(
+      int $count = -1,
+      $extraArgs = []
+    ): array {
+      $args = array(
+          'post_type' => static::$customPostType,
+          'post_status' => 'publish',
+          'posts_per_page' => $count,
+          'ignore_sticky_posts' => 1
+      );
+
+      if (!empty($extraArgs)) {
+          $args = array_merge($args, $extraArgs);
+      }
+
+      $my_query = new \WP_Query($args);
+      if (!$my_query->have_posts()) {
+          return [];
+      }
+
+      $entities = [];
+      while ($my_query->have_posts()) {
+          $my_query->the_post();
+          $post = get_post(get_the_ID());
+          $entities[get_the_ID()] = static::getEntity($post, true);
+      }
+      wp_reset_query();  // Restore global post data stomped by the_post().
+
+      return $entities;
+    }
+
+    public static function getByPost(\WP_Post $post): Entity {
+        if ($post->post_type !== static::$customPostType) {
             throw new \RuntimeException(
                 sprintf(
                     'You are trying to load an entity from the wrong repo. "%s" type in "%s" repo',
@@ -65,13 +59,11 @@ abstract class AbstractRepository
             );
         }
 
-        return $this->getEntity($post);
+        return self::getEntity($post);
     }
 
-    /**
-     * @param \WP_Post $post
-     * @param bool $includeRelated
-     * @return mixed
-     */
-    abstract protected function getEntity(\WP_Post $post, bool $includeRelated = false);
+    abstract protected static function getEntity(
+      \WP_Post $post,
+      bool $includeRelated = false
+    )/*: Entity*/;
 }

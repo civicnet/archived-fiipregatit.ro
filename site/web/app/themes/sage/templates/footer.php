@@ -36,8 +36,8 @@
         </div>
         <ul>
         <?php
-          $links = \RepoManager::getLinkuriUtileRepository()
-            ->getList(App::LINKURI_UTILE_COUNT);
+          $links = \RepoManager::getLinkRepository()
+            ->getList(App::LINK_COUNT);
           foreach($links as $link) {
         ?>
           <li>

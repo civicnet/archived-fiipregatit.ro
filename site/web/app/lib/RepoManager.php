@@ -1,45 +1,38 @@
 <?php
-use Repository\GhiduriRepository;
+use Repository\GuideRepository;
 use Repository\CampaignRepository;
-use Repository\LinkuriUtileRepository;
+use Repository\LinkRepository;
 
-class RepoManager
-{
-    /**
-     * Repositories 'cache'
-     * @var array
-     */
-    static private $repositories = [];
+final class RepoManager {
+    private function __construct() {}
 
-    /**
-     * @return GhiduriRepository
-     */
-    public static function getGhiduriRepository()
-    {
-        if (empty(self::$repositories[App::POST_TYPE_GHID])) {
-            self::$repositories[App::POST_TYPE_GHID] = new GhiduriRepository();
-        }
-
-        return self::$repositories[App::POST_TYPE_GHID];
+    public static function getGuideRepository(): GuideRepository {
+        return self::getRepository(App::POST_TYPE_GUIDE);
     }
 
     public static function getCampaignRepository(): CampaignRepository {
-        if (empty(self::$repositories[App::POST_TYPE_CAMPAIGN])) {
-            self::$repositories[App::POST_TYPE_CAMPAIGN] = new CampaignRepository();
-        }
-
-        return self::$repositories[App::POST_TYPE_CAMPAIGN];
+        return self::getRepository(App::POST_TYPE_CAMPAIGN);
     }
 
-    /**
-     * @return LinkuriUtileRepository
-     */
-    public static function getLinkuriUtileRepository()
-    {
-        if (empty(self::$repositories[App::POST_TYPE_LINK_UTIL])) {
-            self::$repositories[App::POST_TYPE_LINK_UTIL] = new LinkuriUtileRepository();
-        }
+    public static function getLinkRepository(): LinkRepository {
+        return self::getRepository(App::POST_TYPE_LINK);
+    }
 
-        return self::$repositories[App::POST_TYPE_LINK_UTIL];
+    private static function getRepository(
+      string $repositoryKey
+    )/*: AbstractRepository*/ {
+      switch ($repositoryKey) {
+        case App::POST_TYPE_LINK:
+          return LinkRepository::get();
+        case App::POST_TYPE_GUIDE:
+          return GuideRepository::get();
+        case App::POST_TYPE_CAMPAIGN:
+          return CampaignRepository::get();
+      }
+
+      throw new Exception(sprintf(
+        'Invalid repository type `%s`',
+        $repositoryKey
+      ));
     }
 }

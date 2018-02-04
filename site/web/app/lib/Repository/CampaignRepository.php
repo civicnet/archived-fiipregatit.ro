@@ -4,9 +4,9 @@ namespace Repository;
 use Entity\Campaign;
 
 final class CampaignRepository extends AbstractRepository {
-  protected $customPostType = \App::POST_TYPE_CAMPAIGN;
+  protected static $customPostType = \App::POST_TYPE_CAMPAIGN;
 
-  protected function getEntity(
+  protected static function getEntity(
     \WP_Post $post,
     bool $includeRelated = false
   ): Campaign {

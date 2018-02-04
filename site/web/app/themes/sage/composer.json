@@ -24,7 +24,8 @@
     "forum": "https://discourse.roots.io/"
   },
   "require": {
-    "php": ">=5.4.0",
-    "composer/installers": "~1.0"
+    "php": ">=7.0.0",
+    "composer/installers": "~1.0",
+    "mustache/mustache": "2.12.0"
   }
 }

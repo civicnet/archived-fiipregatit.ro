@@ -19,7 +19,7 @@
       'href' => $g->getPermalink()
     );
   }
-
+ 
   TemplateEngine::get()->render(
     'guide',
     array(

@@ -1,8 +1,9 @@
 # fiipregătit.ro
 Platforma națională de informare pentru Situații de Urgență
-Scop: ghiduri + plan personal refritor la ce sa faci intr-o situatie de urgenta (cutremur, incendiu, furtuna, etc.)
-Tip proiect: site
-Beneficiar: DSU (Departamentul pentru Situatii de Urgenta - M.A.I.); IGSU
+
+- **Scop**: ghiduri + plan personal referitor la ce să faci într-o situație de urgență (cutremur, incendiu, furtună, etc.)
+- **Tip proiect**: site
+- **Beneficiar**: DSU (Departamentul pentru Situații de Urgență - M.A.I.); IGSU
 
 # Installation notes
 This application uses Wordpress as a CMS.

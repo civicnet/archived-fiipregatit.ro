@@ -10,7 +10,8 @@ foreach ($guides as $guide) {
   $guideProps[] = array(
     'icon' => $guide->getPictograma()->getUrl(),
     'title' => $guide->getTitle(),
-    'permalink' => $guide->getPermalink()
+    'permalink' => $guide->getPermalink(),
+    'see_more' => false
   );
 }
 

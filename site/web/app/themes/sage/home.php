@@ -37,7 +37,7 @@
   $guides = \RepoManager::getGuideRepository()
     ->getList(App::HOMEPAGE_GUIDE_COUNT);
 
-  $guideProps = array(); 
+  $guideProps = array();
   foreach ($guides as $guide) {
     $guideProps[] = array(
       'icon' => $guide->getPictograma()->getUrl(),
@@ -49,7 +49,8 @@
   TemplateEngine::get()->render(
     'guide_listing',
     array(
-      'guides' => $guideProps
+      'guides' => $guideProps,
+      'see_more' => true
     )
   );
 ?>
@@ -118,63 +119,28 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="campaign-section">
-    <div class="container">
-      <h2>Campanii</h2>
-      <div class="row">
 <?php
-  $campaigns = \RepoManager::getCampaignRepository()
-    ->getList(App::HOMEPAGE_CAMPAIGNS_COUNT);
-  $count_campaigns = 0;
+  $campaigns = \RepoManager::getCampaignRepository()->getList();
+
+  $campaignProps = array();
   foreach ($campaigns as $campaign) {
-    $count_campaigns++;
-?>
-    <div class="col campaign-box col-lg-4 col-md-6 col-sm-12 col-xs-12">
-      <div class="campaign-content">
-        <h3>
-          <?=$campaign->getTitle();?>
-        </h3>
-        <div class="campaign-date">
-          <i class="far fa-calendar"></i>
-          <?=$campaign->getDate()->format('d.m.Y');?>
-        </div>
-        <div
-          class="d-block mx-auto mt-3 mb-3 border campaign-photo"
-          style="background-image: url(<?=$campaign->getImage()->getUrl(); ?>)">
-        </div>
-        <div class="campaign-extras">
-            <?=$campaign->getExtras();?>
-        </div>
-        <a
-          href="<?=$campaign->getPermalink();?>"
-          role="button"
-          class="outline-button btn btn-outline-secondary rounded-0">
-          Citește
-          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-<?php
-    if ($count_campaigns === 4) {
-      $count_campaign = 0;
-?>
-      </div><div class="row">
-<?php
-     }
+    $campaignProps[] = array(
+      'image' => $campaign->getImage()->getUrl(),
+      'title' => $campaign->getTitle(),
+      'permalink' => $campaign->getPermalink(),
+      'extras' => $campaign->getExtras(),
+      'date' => $campaign->getDate()->format('d.m.Y'),
+      'see_more' => false
+    );
   }
-?>
-      </div>
 
-      <div class="text-center">
-        <button type="button" class="btn btn-secondary all-button">
-          Vezi toate campaniile
-          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
-  </div>
+  TemplateEngine::get()->render(
+    'campaign_listing',
+    array(
+      'campaigns' => $campaignProps
+    )
+  );
 
-<?php
   TemplateEngine::get()->render(
     'app_promo',
     array(
@@ -183,6 +149,4 @@
       'playstore_badge' => Assets\asset_path('images/playstore-badge.svg'),
     )
   );
-
-  the_posts_navigation();
 ?>

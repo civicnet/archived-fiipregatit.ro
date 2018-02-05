@@ -44,6 +44,9 @@ Once logged in, it's time to config a few things in the admin panel:
 - The navigation is not enabled by default. To add the main navigation go to `Appearance->Customize->Menus->Main Navigation` and create the menu. Make sure you check the `Main Navigation` menu location here. Publish when you're done.
 - Lastly, it's time to import some scaffolding data. Navigate to `Tools->Import` and select `Run Importer` for the WordPress option (last one). Now import  `fiipregatit.ro/site/config/misc/fiipregtitro.wordpress.yyyy-mm-dd.xml`
 
+#### A note on imports ####
+Unless you're debugging - always import the most recent timestamps.
+
 ### Known issues ###
 - The `Export/Import` flow for the data scaffolding is less than ideal since it doesn't take into account the media library so the guides and campaigns are broken and will not display properly. See #46
 - The import flow will throw a lot of E_NOTICEs *sigh*

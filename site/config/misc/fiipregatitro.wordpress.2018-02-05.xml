@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.2" created="2018-02-05 07:06" -->
+<!-- generator="WordPress/4.9.2" created="2018-02-05 07:57" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>fiipregatit.ro</title>
 	<link>https://dev.fiipregatit.ro</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Mon, 05 Feb 2018 07:06:50 +0000</pubDate>
+	<pubDate>Mon, 05 Feb 2018 07:57:52 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://dev.fiipregatit.ro</wp:base_site_url>
@@ -1223,38 +1223,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Contact</title>
-		<link>https://dev.fiipregatit.ro/contact/</link>
-		<pubDate>Thu, 28 Sep 2017 19:44:18 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?page_id=24</guid>
-		<description></description>
-		<content:encoded><![CDATA[Contact page.
-
-&nbsp;]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>24</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-28 19:44:18]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-28 19:44:18]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[contact]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>6</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Cutremur</title>
 		<link>https://dev.fiipregatit.ro/ghid/cutremur__trashed/</link>
 		<pubDate>Fri, 02 Feb 2018 23:07:59 +0000</pubDate>
@@ -1470,7 +1438,7 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 	</item>
 	<item>
 		<title>Google.ro</title>
-		<link>https://dev.fiipregatit.ro/link_util/google-ro/</link>
+		<link>https://dev.fiipregatit.ro/link_util/google-ro__trashed/</link>
 		<pubDate>Fri, 08 Sep 2017 19:31:03 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">//localhost:3000/?post_type=link_util&#038;p=7</guid>
@@ -1482,8 +1450,8 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 		<wp:post_date_gmt><![CDATA[2017-09-08 19:31:03]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[google-ro]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[google-ro__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[link_util]]></wp:post_type>
@@ -1500,6 +1468,18 @@ adăpostiţi. Pe pantele instabile, sunt posibile căderi de pietre sau de copac
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_link_util_target]]></wp:meta_key>
 			<wp:meta_value><![CDATA[field_59b2ef965f529]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517816184]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[google-ro]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2060,66 +2040,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla viverra nec erat 
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Campanii</title>
-		<link>https://dev.fiipregatit.ro/campanii/</link>
-		<pubDate>Thu, 28 Sep 2017 19:43:45 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?page_id=20</guid>
-		<description></description>
-		<content:encoded><![CDATA[Pagina in care aratam campaniile.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>89</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-28 19:43:45]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-28 19:43:45]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[campanii]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>4</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[templates/listing-campanii.php]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Ghiduri</title>
-		<link>https://dev.fiipregatit.ro/ghiduri/</link>
-		<pubDate>Thu, 28 Sep 2017 19:44:03 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/?page_id=22</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>90</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-28 19:44:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-28 19:44:03]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[ghiduri]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[templates/listing-ghiduri.php]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>“Împreună salvăm vieți” – O campanie Safety Broker &amp; Fundația pentru S.M.U.R.D.</title>
 		<link>https://dev.fiipregatit.ro/campanie/impreuna-salvam-vieti/</link>
 		<pubDate>Sat, 03 Feb 2018 07:05:44 +0000</pubDate>
@@ -2487,171 +2407,6 @@ Detalii despre calendarul caravanei și formularul de înscriere pentru particip
 		<wp:post_name><![CDATA[113]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[29]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
-		<link>https://dev.fiipregatit.ro/114/</link>
-		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=114</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>114</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[114]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[26]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
-		<link>https://dev.fiipregatit.ro/115/</link>
-		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=115</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>115</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[115]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>3</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[24]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
-		<link>https://dev.fiipregatit.ro/116/</link>
-		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=116</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>116</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[116]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>4</wp:menu_order>
 		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
@@ -2667,62 +2422,7 @@ Detalii despre calendarul caravanei și formularul de înscriere pentru particip
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[90]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
-		<link>https://dev.fiipregatit.ro/117/</link>
-		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=117</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>117</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[117]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>5</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[89]]></wp:meta_value>
+			<wp:meta_value><![CDATA[29]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
@@ -2871,6 +2571,316 @@ Detalii despre calendarul caravanei și formularul de înscriere pentru particip
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Președinția României</title>
+		<link>https://dev.fiipregatit.ro/link_util/presedintia-romaniei/</link>
+		<pubDate>Mon, 05 Feb 2018 07:38:08 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=link_util&#038;p=127</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.presidency.ro/]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>127</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-05 07:38:08]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-05 07:38:08]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[presedintia-romaniei]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_f68e317eb260d04766ae855026330086]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_16e9d08aa5f9f66274edb0b99614fadc]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_2a448289009aa56e16a3753eecff630e]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_7a44f5f53b121f3116350af2571a9a1d]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Guvernul României</title>
+		<link>https://dev.fiipregatit.ro/link_util/guvernul-romaniei/</link>
+		<pubDate>Mon, 05 Feb 2018 07:39:44 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=link_util&#038;p=128</guid>
+		<description></description>
+		<content:encoded><![CDATA[https://guv.ro]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>128</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-05 07:39:44]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-05 07:39:44]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[guvernul-romaniei]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_37b217cf971e8e3d81972ee0cffbcf98]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_14c5ceead27d35b8693c0bc96064e4e8]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Ministerul Afacerilor de Interne</title>
+		<link>https://dev.fiipregatit.ro/link_util/ministerul-afacerilor-de-interne/</link>
+		<pubDate>Mon, 05 Feb 2018 07:40:35 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=link_util&#038;p=129</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.mai.gov.ro/]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>129</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-05 07:40:35]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-05 07:40:35]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[ministerul-afacerilor-de-interne]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_2b346369cdfe80ef8bae2c56dbd7a1ee]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_9be044bd67e6abbaf406d53c4ae89ed2]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_be4508f98acb5e64c23ad07195adf23a]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_884ab66a29073a77673cb4bb8ccd8835]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Ministerul Sănătății</title>
+		<link>https://dev.fiipregatit.ro/link_util/ministerul-sanatatii/</link>
+		<pubDate>Mon, 05 Feb 2018 07:41:20 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=link_util&#038;p=130</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.ms.ro/]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>130</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-05 07:41:20]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-05 07:41:20]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[ministerul-sanatatii]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_6fb742c5e4815b9a910d7878bb930c67]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_1d31dfb4ec12e38848ead51d3b79ae19]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<blockquote class="wp-embedded-content" data-secret="VaDrUFsFy5"><a href="http://www.ms.ro/">Acasă</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://www.ms.ro/embed/#?secret=VaDrUFsFy5" data-secret="VaDrUFsFy5" width="558" height="314" title="&#8222;Acasă&#8221; &#8212; Ministerul Sănătății" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_time_1d31dfb4ec12e38848ead51d3b79ae19]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517816471]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_acb7797cde4c5c5cf9ba0990c68956d6]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<blockquote class="wp-embedded-content" data-secret="Lq7og9qdc6"><a href="http://www.ms.ro/">Acasă</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://www.ms.ro/embed/#?secret=Lq7og9qdc6" data-secret="Lq7og9qdc6" width="500" height="282" title="&#8222;Acasă&#8221; &#8212; Ministerul Sănătății" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_time_acb7797cde4c5c5cf9ba0990c68956d6]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517816493]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_24e727ff1c128859a70a68ebbe32aa0e]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<blockquote class="wp-embedded-content" data-secret="6YfU6w1vAg"><a href="http://www.ms.ro/">Acasă</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://www.ms.ro/embed/#?secret=6YfU6w1vAg" data-secret="6YfU6w1vAg" width="549" height="309" title="&#8222;Acasă&#8221; &#8212; Ministerul Sănătății" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_time_24e727ff1c128859a70a68ebbe32aa0e]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517816493]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Inspectoratul General Situații de Urgență</title>
+		<link>https://dev.fiipregatit.ro/link_util/inspectoratul-general-pentru-situatii-de-urgenta/</link>
+		<pubDate>Mon, 05 Feb 2018 07:42:15 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=link_util&#038;p=131</guid>
+		<description></description>
+		<content:encoded><![CDATA[https://www.igsu.ro/]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>131</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-05 07:42:15]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-05 07:42:15]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[inspectoratul-general-pentru-situatii-de-urgenta]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_96bc9fc7db445465434cf1354fdd021e]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_5c8d2ef8e71b0fb5f96ca9602c30e23e]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_cc2fd09b67b2f067bd8a663b173a8f66]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_3c42b2db55dbe01159853083171ee470]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Inspectoratul General de Aviație</title>
+		<link>https://dev.fiipregatit.ro/link_util/inspectoratul-general-de-aviatie/</link>
+		<pubDate>Mon, 05 Feb 2018 07:43:13 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=link_util&#038;p=132</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.aviatie.mai.gov.ro/]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>132</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-05 07:43:13]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-05 07:43:13]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[inspectoratul-general-de-aviatie]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_8e904e8b182741d36e0ada10643cc628]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_7513c031a45605742f2e0c5e76dc0d4b]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_4f747e99e682d773d6826979363cab44]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_8758c172cebb22c453af548ba49ddf4c]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Formare în Medicina de Urgență</title>
+		<link>https://dev.fiipregatit.ro/link_util/formare-in-medicina-de-urgenta/</link>
+		<pubDate>Mon, 05 Feb 2018 07:45:01 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?post_type=link_util&#038;p=133</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://medicinadeurgenta.ro/atestat-de-studii-complementare/]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>133</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-05 07:45:01]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-05 07:45:01]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[formare-in-medicina-de-urgenta]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[link_util]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_4bc6dfb4f440f6cac0072a46d9c07c6b]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_46f689baf20d2de302a9c629df2dd05e]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<blockquote class="wp-embedded-content" data-secret="3gFueMRzUo"><a href="http://medicinadeurgenta.ro/atestat-de-studii-complementare/">Educatie in medicina de urgenta</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://medicinadeurgenta.ro/atestat-de-studii-complementare/embed/#?secret=3gFueMRzUo" data-secret="3gFueMRzUo" width="558" height="314" title="&#8220;Educatie in medicina de urgenta&#8221; &#8212; " frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_time_46f689baf20d2de302a9c629df2dd05e]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517816693]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_2e11a1d8b0577c377e5b1fb08a1ff174]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<blockquote class="wp-embedded-content" data-secret="cQa3TOnrjd"><a href="http://medicinadeurgenta.ro/atestat-de-studii-complementare/">Educatie in medicina de urgenta</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://medicinadeurgenta.ro/atestat-de-studii-complementare/embed/#?secret=cQa3TOnrjd" data-secret="cQa3TOnrjd" width="500" height="282" title="&#8220;Educatie in medicina de urgenta&#8221; &#8212; " frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_time_2e11a1d8b0577c377e5b1fb08a1ff174]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517816714]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_6a5dc94a4becf979b3bab20af6a4679a]]></wp:meta_key>
+			<wp:meta_value><![CDATA[<blockquote class="wp-embedded-content" data-secret="sWdVuXoZLJ"><a href="http://medicinadeurgenta.ro/atestat-de-studii-complementare/">Educatie in medicina de urgenta</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="http://medicinadeurgenta.ro/atestat-de-studii-complementare/embed/#?secret=sWdVuXoZLJ" data-secret="sWdVuXoZLJ" width="549" height="309" title="&#8220;Educatie in medicina de urgenta&#8221; &#8212; " frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_time_6a5dc94a4becf979b3bab20af6a4679a]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517816714]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Hello world!</title>
 		<link>https://dev.fiipregatit.ro/hello-world/</link>
 		<pubDate>Sun, 04 Feb 2018 21:30:48 +0000</pubDate>
@@ -2956,6 +2966,38 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Contact</title>
+		<link>https://dev.fiipregatit.ro/contact/</link>
+		<pubDate>Thu, 28 Sep 2017 19:44:18 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">//localhost:3000/?page_id=24</guid>
+		<description></description>
+		<content:encoded><![CDATA[Contact page.
+
+&nbsp;]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>24</wp:post_id>
+		<wp:post_date><![CDATA[2017-09-28 19:44:18]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-09-28 19:44:18]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Plan personal</title>
 		<link>https://dev.fiipregatit.ro/plan-personal/</link>
 		<pubDate>Fri, 24 Nov 2017 23:25:38 +0000</pubDate>
@@ -3016,8 +3058,8 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Homepage</title>
-		<link>https://dev.fiipregatit.ro/homepage/</link>
+		<title>Acasă</title>
+		<link>https://dev.fiipregatit.ro/homepage__trashed/</link>
 		<pubDate>Sat, 25 Nov 2017 00:35:33 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">//localhost:3000/?page_id=38</guid>
@@ -3029,8 +3071,8 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 		<wp:post_date_gmt><![CDATA[2017-11-25 00:35:33]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[homepage]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[homepage__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
@@ -3042,7 +3084,19 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[home.php]]></wp:meta_value>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1517817035]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[homepage]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -3363,6 +3417,66 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Campanii</title>
+		<link>https://dev.fiipregatit.ro/campanii/</link>
+		<pubDate>Thu, 28 Sep 2017 19:43:45 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">//localhost:3000/?page_id=20</guid>
+		<description></description>
+		<content:encoded><![CDATA[Pagina in care aratam campaniile.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>89</wp:post_id>
+		<wp:post_date><![CDATA[2017-09-28 19:43:45]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-09-28 19:43:45]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[campanii]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[templates/listing-campanii.php]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Ghiduri</title>
+		<link>https://dev.fiipregatit.ro/ghiduri/</link>
+		<pubDate>Thu, 28 Sep 2017 19:44:03 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">//localhost:3000/?page_id=22</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>90</wp:post_id>
+		<wp:post_date><![CDATA[2017-09-28 19:44:03]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2017-09-28 19:44:03]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[ghiduri]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[templates/listing-ghiduri.php]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Hello world!</title>
 		<link>https://dev.fiipregatit.ro/hello-world-2/</link>
 		<pubDate>Sat, 03 Feb 2018 04:32:10 +0000</pubDate>
@@ -3445,6 +3559,226 @@ As a new WordPress user, you should go to <a href="https://dev.fiipregatit.ro/wp
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
 			<wp:meta_value><![CDATA[sample-page]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/114/</link>
+		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=114</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>114</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[114]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[26]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/115/</link>
+		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=115</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>115</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[115]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[24]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/116/</link>
+		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=116</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>116</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[116]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[90]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>https://dev.fiipregatit.ro/117/</link>
+		<pubDate>Sun, 04 Feb 2018 21:48:38 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://dev.fiipregatit.ro/?p=117</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>117</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-04 21:48:38]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-04 21:48:38]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[117]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-navigation"><![CDATA[Main Navigation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[89]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>

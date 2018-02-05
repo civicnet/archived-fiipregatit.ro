@@ -62,6 +62,14 @@ abstract class AbstractRepository {
         return static::getEntity($post);
     }
 
+    protected static function falseyToNull($value) {
+      if ($value === false) {
+        return null;
+      }
+
+      return $value;
+    }
+
     abstract protected static function getEntity(
       \WP_Post $post,
       bool $includeRelated = false

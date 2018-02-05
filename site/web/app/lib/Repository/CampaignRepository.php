@@ -17,6 +17,8 @@ final class CampaignRepository extends AbstractRepository {
       ->setPermalink(get_the_permalink())
       ->setImage(get_field('imagine'))
       ->setExtras(get_field('extras'))
-      ->setAttachments(get_field('materiale_de_informare'));
+      ->setAttachments(static::falseyToNull(
+        get_field('materiale_de_informare')
+      ));
   }
 }

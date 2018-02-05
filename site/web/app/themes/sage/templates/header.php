@@ -33,17 +33,17 @@
 	<div id="navbarContent" class="collapse navbar-collapse">
 		<ul class="social-menu">
 			<li class="first">
-				<a href="#">
+				<a href="https://www.facebook.com/departamenturgente">
 					<i class="fab fa-facebook-square"></i>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://twitter.com/dsuromania">
 					<i class="fab fa-twitter-square"></i>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="https://www.youtube.com/channel/UC5qTBf9rEFj2UdxNEQOzlxA">
 					<i class="fab fa-youtube-square"></i>
 				</a>
 			</li>

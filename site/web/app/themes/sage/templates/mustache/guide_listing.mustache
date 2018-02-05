@@ -1,9 +1,17 @@
-<div class="container-fluid" id="ghiduri-section">
+<div
+  class="container-fluid"
+  id="ghiduri-section"
+  style="{{# bg }} background: {{ . }} {{/ bg }}">
   <div class="container">
-    <h2>Ghiduri educative</h2>
-    <div class="row ghid-row">
+    <h2>
+      {{ title }}
+      {{^ title }}
+        Ghiduri educative
+      {{/ title }}
+    </h2>
+    <div class="row ghid-row justify-content-center">
       {{# guides }}
-        <div class="col ghid-box col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="col ghid-box col-lg-3 col-md-6 col-sm-6 col-xs-12">
           <div class="ghid-content">
             <div
               style="background-image: url({{ icon }})"

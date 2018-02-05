@@ -95,8 +95,37 @@ final class Guide extends Entity {
       return $this;
     }
 
-    $this->guidePDF = new File($guidePDF);
+    $this->guidePDF = $guidePDF;//new File($guidePDF);
     return $this;
+  }
+
+  public function getPDFGuidePageCount(): ?int {
+    $arrContextOptions = array();
+
+    /**
+      * No valid SSL cert during development, skip verification.
+      */
+    if (WP_DEBUG) {
+      $arrContextOptions = array(
+        'ssl' => array(
+          'verify_peer' => false,
+          'verify_peer_name' => false,
+        ),
+      );
+    }
+
+    $pdftext = file_get_contents(
+      $this->guidePDF['url'],
+      $use_include_path = false,
+      stream_context_create($arrContextOptions)
+    );
+
+    preg_match_all("/\/Count\s+(\d+)/", $pdftext, $matches);
+    if (!$matches) {
+      return null;
+    }
+
+    return intval($matches[1][0]);
   }
 
   public function getGalerieFoto(): ?array {
@@ -108,7 +137,7 @@ final class Guide extends Entity {
       return $this;
     }
 
-    $this->galerieFoto = new File($galerieFoto);
+    $this->galerieFoto = $galerieFoto;//new File($galerieFoto);
     return $this;
   }
 

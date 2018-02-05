@@ -1,8 +1,26 @@
 <div class="container-fluid" id="guide-content">
+  <div class="dropdown show small-menu">
+    <a
+      class="btn btn-secondary dropdown-toggle d-lg-none"
+      href="#"
+      role="button"
+      id="dropdownMenuLink"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false">
+      Vezi Alte Ghiduri
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      {{# sidebar_links }}
+        <a class="dropdown-item" href="{{ href }}">{{ text }}</a>
+      {{/ sidebar_links }}
+    </div>
+  </div>
   <div class="container">
     <h2>Ghid {{ title }}</h2>
     <div class="row ghid-row">
-      <div class="col col-md-9 col-sm-12">
+      <div class="col col-lg-9 col-md-12">
         <div id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
@@ -97,12 +115,57 @@
               data-parent="#accordion">
               <div class="card-body">
                 {{{ extra_info }}}
+
+                {{# video }}
+                <div class="extra-video">
+                  {{{ video }}}
+                </div>
+                {{/ video}}
+
+                <div
+                  id="carouselControls"
+                  class="carousel slide"
+                  data-ride="carousel"
+                  data-interval="false">
+                  <ol class="carousel-indicators">
+                    {{# photo_gallery }}
+                      <li
+                        data-target="#carouselIndicators"
+                        data-slide-to="{{ idx }}"
+                        class="{{# first }} active {{/ first }}">
+                      </li>
+                    {{/ photo_gallery }}
+                  </ol>
+                  <div class="carousel-inner">
+                    {{# photo_gallery }}
+                      <div class="carousel-item {{# first }} active {{/ first }}">
+                        <img class="d-block w-100" src="{{ photo.url }}">
+                      </div>
+                    {{/ photo_gallery }}
+                  </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselControls"
+                    role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Înapoi</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselControls"
+                    role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Înainte</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col col-md-3 col-sm-12 guide-sidebar">
+      <div class="col col-lg-3 col-md-12 guide-sidebar d-none d-lg-block">
         <h3>Alte Ghiduri</h3>
         <ul>
           {{# sidebar_links }}
@@ -117,10 +180,10 @@
       </div>
     </div>
     <div class="download-guide">
-      <a href="#">
+      <a href="{{ pdf_guide.url }}" target="_blank">
         <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
         <strong>Descarcă ghidul</strong>
-        (PDF, 2 pagini)
+        (PDF, {{ pdf_page_count }} pagini)
       </a>
     </div>
   </div>

@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+.jumbotron-fluid.small-jumbotron {
+    height: 200px;
+}
+
 .jumbotron-fluid::before {
 	content:" ";
 	display: block;
@@ -57,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron-fluid .container {
   position: relative;
   margin-top: 135px;
+}
+
+.jumbotron-fluid.small-jumbotron .container {
+  margin-top: 70px;
 }
 
 .jumbotron-fluid h1 {
@@ -335,4 +343,169 @@ h2:after {
   max-width: 210px;
   padding: 0px;
   padding-right: 15px;
+}
+
+#guide-content {
+    margin-top: 80px;
+}
+
+#guide-content #accordion ul {
+  list-style: none;
+  counter-reset: section;
+  position: relative;
+  padding-left: 40px;
+}
+
+#guide-content #accordion ul li {
+  padding-bottom: 40px;
+}
+
+#guide-content #accordion ul li::before {
+  width: 25px;
+  left: 0;
+  position: absolute;
+  counter-increment: section;
+  content: counter(section);
+  border-radius: 50%;
+  background: #d03233;
+  color: #fff;
+  font-weight: 700;
+  height: 25px;
+  text-align: center;
+  border: 2px solid #fff;
+  z-index: 2;
+}
+
+#guide-content #accordion ul li::after {
+  content: '';
+  position: absolute;
+  border-left: 1px solid ;
+  left:12.5px;
+  bottom:0;
+  top: 5px;
+  height: 98%;
+}
+
+#guide-content #accordion ul li:last-child::after {
+  content: none;
+}
+
+#guide-content #accordion ul li:last-child {
+  padding-bottom:0
+}
+
+#guide-content #accordion .card-header {
+    padding: 0;
+}
+
+#guide-content #accordion .card-header button {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: initial;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  color: #d03233;
+  padding: .75rem 1.25rem;
+  text-transform: lowercase;
+  text-decoration: none;
+  transition: .7s transform fade-in;
+  background: none;
+  border-bottom: none;
+
+}
+
+#guide-content #accordion .card-header button::first-letter {
+  text-transform: uppercase;
+}
+
+#guide-content #accordion .card-header button:hover {
+  text-decoration: none;
+}
+
+#guide-content #accordion .card-header svg {
+  transition: .3s transform ease-in-out;
+  float: right;
+}
+
+#guide-content #accordion .card-header .collapsed svg {
+  transform: rotate(90deg);
+}
+
+#guide-content #accordion .card-header button.collapsed {
+  background: rgba(0,0,0,.03);
+  color: #333;
+}
+
+#guide-content #accordion .card-header {
+  background: none;
+  border-bottom: none;
+}
+
+#guide-content #accordion .card {
+  border: 1px solid #999;
+  border-radius: 0;
+}
+
+#guide-content .guide-sidebar {
+  padding-left: 50px;
+}
+
+#guide-content h3 {
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #999;
+  display: inline-block;
+}
+
+#guide-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#guide-content ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#guide-content ul li a {
+  color: #333;
+  font-size: 16px;
+}
+
+#guide-content ul li a:hover {
+  color: #d03233;
+  text-decoration: none;
+}
+
+#guide-content ul li a svg {
+  margin-right: 5px;
+}
+
+#guide-content h2 {
+  margin-bottom: 30px;
+}
+
+#guide-content .download-guide {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  padding-left: 35px;
+}
+
+#guide-content .download-guide svg {
+  color: #d03233;
+  margin-right: 15px;
+}
+
+#guide-content .download-guide a {
+  color: #333;
+  text-transform: uppercase;
+}
+
+#guide-content .download-guide a:hover {
+  color: #d03233;
+  text-decoration: none;
 }

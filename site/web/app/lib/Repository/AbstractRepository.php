@@ -59,7 +59,7 @@ abstract class AbstractRepository {
             );
         }
 
-        return self::getEntity($post);
+        return static::getEntity($post);
     }
 
     abstract protected static function getEntity(

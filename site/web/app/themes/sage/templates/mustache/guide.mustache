@@ -1,0 +1,127 @@
+<div class="container-fluid" id="guide-content">
+  <div class="container">
+    <h2>Ghid {{ title }}</h2>
+    <div class="row ghid-row">
+      <div class="col col-md-9 col-sm-12">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Înainte de {{ title }}
+                  <i class="fa fa-chevron-down pull-right"></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion">
+              <div class="card-body">
+                {{{ before_content }}}
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link
+                  collapsed" data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  În timpul {{ title }}
+                  <i class="fa fa-chevron-down pull-right"></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion">
+              <div class="card-body">
+                {{{ during_content }}}
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree">
+                  După {{ title }}
+                  <i class="fa fa-chevron-down pull-right"></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion">
+              <div class="card-body">
+                {{{ after_content }}}
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour">
+                  Info ajutător (foto / video)
+                  <i class="fa fa-chevron-down pull-right"></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordion">
+              <div class="card-body">
+                {{{ extra_info }}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-3 col-sm-12 guide-sidebar">
+        <h3>Alte Ghiduri</h3>
+        <ul>
+          {{# sidebar_links }}
+            <li>
+              <a href="{{ href }}">
+                <i class="fas fa-chevron-right"></i>
+                {{ text }}
+              </a>
+            </li>
+          {{/ sidebar_links }}
+        </ul>
+      </div>
+    </div>
+    <div class="download-guide">
+      <a href="#">
+        <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
+        <strong>Descarcă ghidul</strong>
+        (PDF, 2 pagini)
+      </a>
+    </div>
+  </div>
+</div>

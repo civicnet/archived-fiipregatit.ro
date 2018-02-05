@@ -15,7 +15,8 @@ final class CampaignRepository extends AbstractRepository {
       ->setContent(get_field('continut'))
       ->setDate(new \DateTime($post->post_date))
       ->setPermalink(get_the_permalink())
+      ->setImage(get_field('imagine'))
       ->setExtras(get_field('extras'))
-      ->setImage(get_field('imagine'));
+      ->setAttachments(get_field('materiale_de_informare'));
   }
 }

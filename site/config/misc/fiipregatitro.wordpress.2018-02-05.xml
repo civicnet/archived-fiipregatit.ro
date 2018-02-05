@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.2" created="2018-02-05 05:41" -->
+<!-- generator="WordPress/4.9.2" created="2018-02-05 07:06" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>fiipregatit.ro</title>
 	<link>https://dev.fiipregatit.ro</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Mon, 05 Feb 2018 05:41:48 +0000</pubDate>
+	<pubDate>Mon, 05 Feb 2018 07:06:50 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://dev.fiipregatit.ro</wp:base_site_url>
@@ -2236,11 +2236,11 @@ Plata sumelor acumulate în urma acestei campanii se va face trimestrial, în ca
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[continut]]></wp:meta_key>
-			<wp:meta_value><![CDATA[Pentru astfel de momente, în fiecare an, Caravana SMURD „Fii pregătit” organizează cursuri de instruire pentru acordarea primului ajutor în situații de urgență în toată țara. Cursurile oferite în fiecare localitate vor include prezentarea principalelor dezastre naturale care pot afecta România – cutremure, inundații, alunecări de teren, incendii etc. – şi modul în care populaţia se poate pregăti pentru a le face față.
+			<wp:meta_value><![CDATA[Pentru astfel de momente, în fiecare an, <strong>Caravana SMURD „Fii pregătit”</strong> organizează cursuri de instruire pentru acordarea primului ajutor în situații de urgență în toată țara. Cursurile oferite în fiecare localitate vor include prezentarea principalelor dezastre naturale care pot afecta România – cutremure, inundații, alunecări de teren, incendii etc. – şi modul în care populaţia se poate pregăti pentru a le face față.
 
 Participanții pot urmări filme realizate de Departamentul pentru Situații de Urgență şi Inspectoratul General pentru Situații de Urgență, iar cursul conţine si o parte practică interactivă, ȋn care vor fi prezentate măsurile de prim-ajutor de către un paramedic SMURD, precum și demonstrații de stingere a incendiilor.
 
-Până în octombrie 2017, Caravana “Fii pregătit!” a parcurs peste 18.000 de kilometri, a ajuns în 37 de localităţi și peste 9.400 de persoane au fost instruite de personalul IGSU.
+Până în octombrie 2017, <strong>Caravana “Fii pregătit!”</strong> a parcurs peste 18.000 de kilometri, a ajuns în 37 de localităţi și peste 9.400 de persoane <a href="http://civictech.ro">au fost instruite de personalul IGSU</a>.
 
 Caravana constă ȋn deplasarea unui centru de formare mobil în care se vor organiza cursuri de instruire a populației pentru acordarea de prim ajutor în situații de urgență. Centrul mobil este construit special pe structura unui tir, are o sală de școlarizare cu o capacitate de 40 de persoane și este dotat cu toate echipamentele medicale şi de prim ajutor, dispozitive portabile, inclusiv simulatoare, ce permit instruirea eficientă a cursanţilor în cele mai noi tehnici de acordare a primului ajutor.
 
@@ -2270,7 +2270,7 @@ Detalii despre calendarul caravanei și formularul de înscriere pentru particip
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[materiale_de_informare]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[125]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_materiale_de_informare]]></wp:meta_key>

@@ -39,7 +39,7 @@ class Campaign extends Entity {
     return $this;
   }
 
-  public function getAttachments(): array{
+  public function getAttachments(): ?array{
     return $this->attachments;
   }
 
@@ -48,12 +48,12 @@ class Campaign extends Entity {
     return $this;
   }
 
-  public function getImage(): File {
+  public function getImage(): ?array {
     return $this->image;
   }
 
-  public function setImage(array $image): Campaign {
-    $this->image = new File($image);
+  public function setImage(?array $image): Campaign {
+    $this->image = $image; //new File($image);
     return $this;
   }
 

@@ -1,0 +1,36 @@
+<div class="container-fluid" id="campaign-content">
+  <div class="container">
+    <h2>{{ title }}</h2>
+    <div class="row campaign-row">
+      <div class="col campaign-image-container col-md-6 col-sm-12">
+        <img src="{{ image.url }}" class="campaign-image" />
+      </div>
+      <div class="col col-md-6 col-sm-12">
+        {{& content }}
+        {{# has_attachments }}
+          <p>
+            <a
+              class="btn campaign-info"
+              data-toggle="collapse"
+              href="#collapseCampaignInfo"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseCampaignInfo">
+              Vezi materiale de informare / Promo
+              <i class="fa fa-chevron-down pull-right"></i>
+            </a>
+          </p>
+          <div class="collapse" id="collapseCampaignInfo">
+            <div class="card card-body">
+              <ul>
+                {{# attachments }}
+                  <li><a href="{{ attachment.url }}">{{ attachment.title }}</a></li>
+                {{/ attachments }}
+              </ul>
+            </div>
+          </div>
+        {{/ has_attachments }}
+      </div>
+    </div>
+  </div>
+</div>

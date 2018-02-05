@@ -43,7 +43,7 @@ class Campaign extends Entity {
     return $this->attachments;
   }
 
-  public function setAttachments(array $attachments): Campaign {
+  public function setAttachments(?array $attachments): Campaign {
     $this->attachments = $attachments;
     return $this;
   }

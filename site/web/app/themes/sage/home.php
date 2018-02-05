@@ -104,7 +104,7 @@
   $campaignProps = array();
   foreach ($campaigns as $campaign) {
     $campaignProps[] = array(
-      'image' => $campaign->getImage()->getUrl(),
+      'image' => $campaign->getImage(),
       'title' => $campaign->getTitle(),
       'permalink' => $campaign->getPermalink(),
       'extras' => $campaign->getExtras(),

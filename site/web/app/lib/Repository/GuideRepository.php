@@ -18,10 +18,10 @@ final class GuideRepository extends AbstractRepository {
       ->setDupaEveniment(get_field('dupa_eveniment'))
       ->setInformatiiAditionale(get_field('informatii_aditionale'))
       ->setVideoAjutator(get_field('video_ajutator'))
-      ->setGalerieFoto(self::falseyToNull(
+      ->setGalerieFoto(static::falseyToNull(
         get_field('galerie_foto')
       ))
-      ->setGuidePDF(self::falseyToNull(
+      ->setGuidePDF(static::falseyToNull(
         get_field('ghid_pdf')
       ))
       ->setPictograma(get_field('pictograma_eveniment'))
@@ -32,14 +32,6 @@ final class GuideRepository extends AbstractRepository {
     }
 
     return $ghid;
-  }
-
-  private static function falseyToNull($value) {
-    if ($value === false) {
-      return null;
-    }
-
-    return $value;
   }
 
   private static function getSimilarGuides(): array {

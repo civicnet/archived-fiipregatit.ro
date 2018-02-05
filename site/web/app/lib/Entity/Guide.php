@@ -13,7 +13,7 @@ final class Guide extends Entity {
   private $informatiiAditionale;
   private $similarGuides;
   private $permalink;
-  private $GuidePDF;
+  private $guidePDF;
   private $galerieFoto;
   private $pictograma;
 
@@ -62,7 +62,7 @@ final class Guide extends Entity {
   }
 
   public function setDupaEveniment(string $dupaEveniment): Guide {
-    $this->_dupaEveniment = $dupaEveniment;
+    $this->dupaEveniment = $dupaEveniment;
     return $this;
   }
 
@@ -87,15 +87,15 @@ final class Guide extends Entity {
   }
 
   public function getGuidePDF(): ?array {
-    return $this->GuidePDF;
+    return $this->guidePDF;
   }
 
-  public function setGuidePDF(?array $GuidePDF): Guide {
-    if ($GuidePDF === null) {
+  public function setGuidePDF(?array $guidePDF): Guide {
+    if ($guidePDF === null) {
       return $this;
     }
 
-    $this->GuidePDF = new File($GuidePDF);
+    $this->guidePDF = new File($guidePDF);
     return $this;
   }
 

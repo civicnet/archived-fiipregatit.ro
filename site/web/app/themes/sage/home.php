@@ -5,35 +5,14 @@
 
   use Roots\Sage\Assets;
   get_template_part('templates/page', 'header');
-?>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1>Fii pregătit</h1>
-          <h3>pentru</h3>
-          <h1 class="subtitle">situații de urgență</h1>
-          <div class="align-self-center">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Scrie aici, de ex: furtună"
-                aria-label="Scrie aici, de ex: furtună">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  TemplateEngine::get()->render(
+    'jumbotron',
+    array(
+      'show_header' => true
+    )
+  );
 
-<?php
   $guides = \RepoManager::getGuideRepository()
     ->getList(App::HOMEPAGE_GUIDE_COUNT);
 

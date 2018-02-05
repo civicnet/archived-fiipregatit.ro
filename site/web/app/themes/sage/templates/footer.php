@@ -11,20 +11,21 @@
     <div class="row">
       <div class="col page-list col-lg-2 col-md-2 col-sm-12 col-xs-12">
         <ul>
+          <li>
+            <a href="/" class="header">
+              Acasă
+            </a>
+          </li>
         <?php
           $pages = get_pages();
-          $is_first = true;
           foreach ($pages as $page) {
         ?>
           <li>
-            <a href="<?=$post->guid;?>" <?=$is_first ? 'class="header"' : ''?>>
+            <a href="<?=$page->guid;?>">
               <?=$page->post_title;?>
             </a>
           </li>
         <?php
-            if ($is_first) {
-              $is_first = false;
-            }
           }
         ?>
         </ul>
@@ -56,13 +57,16 @@
           Contact
         </div>
         <div>
-          Adresă: Piața Revoluției, nr.1 A, sector 1,<br/>
-          București<br/>
-          Telefon <strong>021.312.25.47</strong><br/>
-          Centrala 021.303.70.80<br/><br/>
+          Adresă:
+          <a href="https://maps.google.com?q=Piața+Revoluției+nr.1+A+sector+1+București">
+            Piața Revoluției, nr.1 A, sector 1,<br/>
+            București
+          </a><br/>
+          Telefon <strong><a href="tel:021.312.25.47">021.312.25.47</a></strong><br/>
+          Centrala <a href="tel:021.303.70.80">021.303.70.80</a><br/><br/>
 
           Fax: 021.313.71.55/021.264.86.46<br/>
-          E-mail: <strong>dsu@mai.gov.ro</strong><br/>
+          E-mail: <strong><a href="mailto:dsu@mai.gov.ro">dsu@mai.gov.ro</a></strong><br/>
         </div>
       </div>
 
@@ -72,16 +76,22 @@
         </div>
         <ul>
           <li>
-            <i class="fab fa-facebook-square" data-fa-transform="grow-10"></i>
-            Facebook
+            <a href="https://www.facebook.com/departamenturgente">
+              <i class="fab fa-facebook-square" data-fa-transform="grow-10"></i>
+              Facebook
+            </a>
           </li>
           <li>
-            <i class="fab fa-twitter-square" data-fa-transform="grow-10"></i>
-            Twitter
+            <a href="https://twitter.com/dsuromania">
+              <i class="fab fa-twitter-square" data-fa-transform="grow-10"></i>
+              Twitter
+            </a>
           </li>
           <li>
-            <i class="fab fa-youtube-square" data-fa-transform="grow-10"></i>
-            YouTube
+            <a href="https://www.youtube.com/channel/UC5qTBf9rEFj2UdxNEQOzlxA">
+              <i class="fab fa-youtube-square" data-fa-transform="grow-10"></i>
+              YouTube
+            </a>
           </li>
         </ul>
       </div>
@@ -93,10 +103,14 @@
       <div class="col col-md-3 col-sm-12 col-xs-12">
         <ul>
           <li class="gov">
-            <img src="<?=Assets\asset_path('images/logo_guvern.png');?>" />
+            <a href="http://www.guv.ro/">
+              <img src="<?=Assets\asset_path('images/logo_guvern.png');?>" />
+            </a>
           </li>
           <li class="dsu">
-            <img src="<?=Assets\asset_path('images/logo.png');?>" />
+            <a href="http://www.dsu.mai.gov.ro/">
+              <img src="<?=Assets\asset_path('images/logo.png');?>" />
+            </a>
           </li>
         </ul>
       </div>
@@ -104,7 +118,7 @@
         <div class="copyright">
           <h4>Departamentul pentru Situații de Urgență</h4>
           <div class="sub">
-            Realizat cu sprijinul <a href="https://civictech.ro">CivicTech</a>. Toate drepturile rezervate.<br/>
+            Realizat cu sprijinul <a href="https://civictech.ro">CivicTech România</a>. Toate drepturile rezervate.<br/>
             Copyright @  2017. Toate drepturile rezervate.
           </div>
         </div>

@@ -1,0 +1,27 @@
+sudo: false
+language: php
+php:
+  - '5.6'
+  - '5.5'
+  - '5.4'
+
+env:
+  global:
+    - THEME_DIR=./web/app/themes/sage/
+
+  before_install:
+    - pyrus install pear/PHP_CodeSniffer
+    - phpenv rehash
+    - npm install -g gulp bower
+    - bundle install
+
+  install: 
+      - composer install --no-dev --no-scripts --quiet --optimize-autoloader
+      - cd $THEME_DIR
+      - npm install --devDependencies --silent --no-spin
+      - bower install
+      - gulp --production
+
+  script:
+    - cd $TRAVIS_BUILD_DIR
+    - phpcs --standard=ruleset.xml --extensions=php --ignore=web/wp/,web/app/plugins/,vendor/ -n -s .

@@ -1,7 +1,13 @@
 .idea
 /trellis/group_vars/*/vault.yml
 
-# pesky MacOS files
-.DS_Store
 # vim coders unite
 .swp
+
+# operating system files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

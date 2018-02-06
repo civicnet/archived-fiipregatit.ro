@@ -20,11 +20,8 @@
       'title' => $campaign->getTitle(),
       'image' => $campaign->getImage(),
       'content' => $campaign->getContent(),
-      'has_attachments' => true, //(bool) $campaign->getAttachments(),
+      'has_attachments' => (bool) $campaign->getAttachments(),
       'attachments' => array(
-        array(
-          'attachment' => $campaign->getAttachments(),
-        ),
         array(
           'attachment' => $campaign->getAttachments(),
         )

@@ -1,4 +1,5 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/civictechro/fiipregatit.ro/badge.svg?targetFile=site/web/app/themes/sage/package.json)](https://snyk.io/test/github/civictechro/fiipregatit.ro) [![Status CivicTech](https://img.shields.io/badge/status-65%25-green.svg)](https://civictech.ro/proiecte/fiipregatit-ro-platoforma-de-informare-pentru-situatii-de-urgenta) [![GitHub (pre-)release](https://img.shields.io/github/release/civictechro/fiipregatit.ro/all.svg)](https://github.com/civictechro/fiipregatit.ro) [![GitHub issues](https://img.shields.io/github/issues/civictechro/fiipregatit.ro.svg)](https://github.com/civictechro/fiipregatit.ro/issues)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 # fiipregătit.ro
 Platforma națională de informare pentru Situații de Urgență

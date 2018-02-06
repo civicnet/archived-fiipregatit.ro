@@ -3,7 +3,7 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  fiipregatit.ro:
+  staging.fiipregatit.ro:
     site_hosts:
       - canonical: staging.fiipregatit.ro
         # redirects:
@@ -15,7 +15,7 @@ wordpress_sites:
     multisite:
       enabled: false
     ssl:
-      enabled: false
+      enabled: true
       provider: letsencrypt
     cache:
       enabled: false

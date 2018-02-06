@@ -1,15 +1,15 @@
 sudo: false
 language: php
 php:
-- '5.6'
-- '5.5'
-- '5.4'
+  - 7.1
+  - 7.0
 
 env:
   global:
     - THEME_DIR=./site/web/app/themes/sage/
 
 before_install:
+  - phpenv config-rm xdebug.ini
   - pear install pear/PHP_CodeSniffer
   - phpenv rehash
   - npm install -g gulp bower

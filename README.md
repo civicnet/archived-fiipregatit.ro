@@ -7,6 +7,8 @@ Platforma națională de informare pentru Situații de Urgență
 - **Tip proiect**: site
 - **Beneficiar**: DSU (Departamentul pentru Situații de Urgență - M.A.I.); IGSU
 
+Mai multe informații pe [pagina de proiect fiipregatit.ro](https://civictech.ro/proiecte/fiipregatit-ro-platoforma-de-informare-pentru-situatii-de-urgenta)
+
 # Installation notes
 This application uses Wordpress as a CMS.
 

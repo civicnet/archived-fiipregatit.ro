@@ -15,8 +15,8 @@ before_install:
   - npm install -g gulp bower
 
 install: 
-  - composer install --no-dev --no-scripts --quiet --optimize-autoloader
   - cd $THEME_DIR
+  - composer install --no-dev --no-scripts --quiet --optimize-autoloader
   - npm install --devDependencies --silent --no-spin
   - bower install
   - gulp --production

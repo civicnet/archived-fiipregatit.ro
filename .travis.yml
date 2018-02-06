@@ -10,7 +10,7 @@ env:
     - THEME_DIR=./site/web/app/themes/sage/
 
 before_install:
-  - pyrus install pear/PHP_CodeSniffer
+  - pear install pear/PHP_CodeSniffer
   - phpenv rehash
   - npm install -g gulp bower
 

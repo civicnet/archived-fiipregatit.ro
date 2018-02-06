@@ -20,3 +20,7 @@
 - name: mailhog
   src: geerlingguy.mailhog
   version: 2.1.0
+
+- name: bedrock-site-protect
+  src: louim.bedrock-site-protect
+  version: 1.2.0

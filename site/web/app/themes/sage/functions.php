@@ -69,9 +69,10 @@ if (!current_user_can('manage_options')) {
  * Scoate meniurile din sidebar pentru toată lumea în afară de admini
  */
 function remove_menus() {
-  if (!current_user_can('manage_options')) {
+  if (!is_admin()) {
     remove_menu_page('tools.php'); // Tools
     remove_menu_page('edit.php'); // Posts
+    remove_menu_page('edit_comments.php'); // Comments
     remove_menu_page('edit.php?post_type=page'); // Pages
     remove_menu_page('themes.php'); // Themes
   }
@@ -103,11 +104,12 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png);
-		height:80px;
-		width:100%;
-		background-size: contain;
-		background-repeat: no-repeat;
+          background-image:
+            url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png);
+          height:80px;
+          width:100%;
+          background-size: contain;
+          background-repeat: no-repeat;
         	padding-bottom: 30px;
         }
     </style>

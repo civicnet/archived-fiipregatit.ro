@@ -34,5 +34,11 @@
     ) {
       echo ($this->mustacheEngine->loadTemplate($template_name))->render($data);
     }
+
+    public function getPartial(
+      string $partial_name
+    ) {
+      return $this->mustacheEngine->loadPartial($partial_name);
+    }
   }
 ?>

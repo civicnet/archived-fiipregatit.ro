@@ -94,75 +94,77 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour">
-                  Info ajutător (foto / video)
-                  <i class="fa fa-chevron-down pull-right"></i>
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseFour"
-              class="collapse"
-              aria-labelledby="headingFour"
-              data-parent="#accordion">
-              <div class="card-body">
-                {{{ extra_info }}}
+          {{# has_extra_info }}
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Info ajutător (foto / video)
+                    <i class="fa fa-chevron-down pull-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion">
+                <div class="card-body">
+                  {{{ extra_info }}}
 
-                {{# video }}
-                <div class="extra-video">
-                  {{{ video }}}
-                </div>
-                {{/ video}}
-
-                <div
-                  id="carouselControls"
-                  class="carousel slide"
-                  data-ride="carousel"
-                  data-interval="false">
-                  <ol class="carousel-indicators">
-                    {{# photo_gallery }}
-                      <li
-                        data-target="#carouselIndicators"
-                        data-slide-to="{{ idx }}"
-                        class="{{# first }} active {{/ first }}">
-                      </li>
-                    {{/ photo_gallery }}
-                  </ol>
-                  <div class="carousel-inner">
-                    {{# photo_gallery }}
-                      <div class="carousel-item {{# first }} active {{/ first }}">
-                        <img class="d-block w-100" src="{{ photo.url }}">
-                      </div>
-                    {{/ photo_gallery }}
+                  {{# video }}
+                  <div class="extra-video">
+                    {{{ video }}}
                   </div>
-                  <a
-                    class="carousel-control-prev"
-                    href="#carouselControls"
-                    role="button"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Înapoi</span>
-                  </a>
-                  <a
-                    class="carousel-control-next"
-                    href="#carouselControls"
-                    role="button"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Înainte</span>
-                  </a>
+                  {{/ video}}
+
+                  <div
+                    id="carouselControls"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="false">
+                    <ol class="carousel-indicators">
+                      {{# photo_gallery }}
+                        <li
+                          data-target="#carouselIndicators"
+                          data-slide-to="{{ idx }}"
+                          class="{{# first }} active {{/ first }}">
+                        </li>
+                      {{/ photo_gallery }}
+                    </ol>
+                    <div class="carousel-inner">
+                      {{# photo_gallery }}
+                        <div class="carousel-item {{# first }} active {{/ first }}">
+                          <img class="d-block w-100" src="{{ photo.url }}">
+                        </div>
+                      {{/ photo_gallery }}
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselControls"
+                      role="button"
+                      data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Înapoi</span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselControls"
+                      role="button"
+                      data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Înainte</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          {{/ has_extra_info }}
         </div>
       </div>
       <div class="col col-lg-3 col-md-12 guide-sidebar d-none d-lg-block">

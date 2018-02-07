@@ -32,32 +32,30 @@
       'see_more' => true
     )
   );
-?>
 
-  <div class="container-fluid" id="summary-section">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <i class="far fa-file-alt" data-fa-transform="grow-25"></i>
-          <div class="count">
-            <span>76</span> ghiduri educative
-          </div>
-        </div>
-        <div class="col">
-          <i class="fa fa-camera" data-fa-transform="grow-25"></i>
-          <div class="count">
-            <span>384</span> imagini si ilustrații
-          </div>
-        </div>
-        <div class="col">
-          <i class="fa fa-film" data-fa-transform="grow-25"></i>
-          <div class="count">
-            <span>25</span> video instrucțiuni
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  $allGuides = \RepoManager::getGuideRepository()->getList();
+
+  $imageCount = 0;
+  $videoCount = 0;
+  foreach ($allGuides as $guide) {
+    if ($guide->getVideoAjutator()) {
+      $videoCount++;
+    }
+
+    if ($guide->getGalerieFoto()) {
+      $imageCount++;
+    }
+  }
+
+  TemplateEngine::get()->render(
+    'homepage_counter',
+    array(
+      'guide_count' => count($allGuides),
+      'image_count' => $imageCount,
+      'video_count' => $videoCount,
+    )
+  );
+?>
 
   <div class="container-fluid" id="plan-personal-section">
     <div class="container">

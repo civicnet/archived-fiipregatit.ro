@@ -34,9 +34,9 @@ Documentation of Trellis is pretty straight-forward. If you have questions open 
 ```
 $> git clone https://github.com/civictechro/fiipregatit.ro
 $> cd fiipregatit.ro/trellis/group_vars/development/
-$> cp vault.yml.dist vault.yml
-$> vim vault.yml // feel free to change the default admin password
-$> cd ../../../../ // go back to the trellis directory
+$> cp sample.vault.yml vault.yml
+$> vim vault.yml # feel free to change the default admin password
+$> cd ../../../../ # go back to the trellis directory
 $> vagrant up
 ```
 
@@ -83,9 +83,9 @@ $> gulp watch // to compile assets and live reload on changes
 ## A note on credentials ##
 Please note `{development,production,staging}/vault.yml` are added to `.gitignore`.
 
-To add your credentials simply copy the `vault.yml.dist` to `vault.yml` and change your credentials accordingly.
+To add your credentials simply copy the `sample.vault.yml` to `vault.yml` and change your credentials accordingly.
 
-**Please change the vault.yml.dist files if you make changes to vault configurations.**
+**Please change the sample.vault.yml files if you make changes to vault configurations.**
 
 ## More documentation ##
 Frontend work: https://roots.io/sage/docs/theme-development-and-building/

@@ -146,6 +146,7 @@ h2:after {
   padding: 0;
   padding-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .all-button:hover {
@@ -611,4 +612,27 @@ h2:after {
 #campaign-content .campaign-row p {
   padding-bottom: 0px;
   padding-top: 0px;
+}
+
+#contact-section #map {
+  width: 100%;
+  height: 400px;
+}
+
+#contact-section .contact-info {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+#contact-section .contact-info-text a {
+  color: #333;
+  font-weight: bold;
+}
+
+#contact-section .contact-info-text a:hover {
+  text-decoration: none;
+}
+
+#contact-section .all-button {
+  margin-top: 20px;
 }

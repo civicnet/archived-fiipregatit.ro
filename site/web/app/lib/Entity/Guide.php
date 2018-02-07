@@ -100,6 +100,10 @@ final class Guide extends Entity {
   }
 
   public function getPDFGuidePageCount(): ?int {
+    if (!$this->guidePDF || !$this->guidePDF['url']) {
+      return null;
+    }
+    
     $arrContextOptions = array();
 
     /**

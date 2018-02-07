@@ -181,12 +181,14 @@
         </ul>
       </div>
     </div>
-    <div class="download-guide">
-      <a href="{{ pdf_guide.url }}" target="_blank">
-        <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
-        <strong>Descarcă ghidul</strong>
-        (PDF, {{ pdf_page_count }} pagini)
-      </a>
-    </div>
+    {{# pdf_page_count }}
+      <div class="download-guide">
+        <a href="{{ pdf_guide.url }}" target="_blank">
+          <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
+          <strong>Descarcă ghidul</strong>
+          (PDF, {{ pdf_page_count }} pagini)
+        </a>
+      </div>
+    {{/ pdf_page_count }}
   </div>
 </div>

@@ -19,7 +19,7 @@
       'href' => $g->getPermalink()
     );
   }
- 
+
   TemplateEngine::get()->render(
     'guide',
     array(
@@ -39,6 +39,11 @@
           'photo' => $guide->getGalerieFoto(),
           'idx' => 0
         )
+      ),
+      'has_extra_info' => (
+        $guide->getInformatiiAditionale()
+        && $guide->getVideoAjutator()
+        && $guide->getGalerieFoto()
       ),
       'pdf_guide' => $guide->getGuidePDF(),
       'pdf_page_count' => $guide->getPDFGuidePageCount(),

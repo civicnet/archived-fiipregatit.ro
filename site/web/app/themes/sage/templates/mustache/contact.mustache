@@ -1,0 +1,105 @@
+<div class="container-fluid" id="contact-section">
+  <div class="container contact-info">
+    <h2>
+      VREI SĂ NE TRANSMIȚI UN MESAJ?
+    </h2>
+    <div class="row">
+      <div class="col contact-info-text col-6">
+        <div>
+          Adresă:
+          <a href="https://maps.google.com?q=Piața+Revoluției+nr.1+A+sector+1+București">
+            Piața Revoluției, nr.1 A, sector 1, București
+          </a><br/>
+          Telefon <strong><a href="tel:021.312.25.47">021.312.25.47</a></strong><br/>
+          Centrala <a href="tel:021.303.70.80">021.303.70.80</a><br/><br/>
+
+          Fax: 021.313.71.55/021.264.86.46<br/>
+          E-mail: <strong><a href="mailto:dsu@mai.gov.ro">dsu@mai.gov.ro</a></strong><br/>
+        </div>
+      </div>
+      <div class="col col-6">
+        <form role="form">
+  				<div class="form-group">
+  				  <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Nume și Prenume"
+              required>
+  				</div>
+  				<div class="form-group">
+  					<input
+              type="text"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required>
+  				</div>
+  				<div class="form-group">
+  					<input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="subject"
+              placeholder="Subiect"
+              required>
+  				</div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              type="textarea"
+              id="message"
+              placeholder="Mesaj"
+              maxlength="512"
+              rows="7"></textarea>
+          </div>
+          <div class="g-recaptcha" data-sitekey="{{ recaptcha_api_key }}"></div>
+          <button
+            type="button"
+            id="submit"
+            name="submit"
+            class="btn btn-primary all-button">
+            Trimite
+            <i class="far fa-check-circle"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <h2>
+    Unde ne găsești
+  </h2>
+  <div class="row">
+    <div id="map"></div>
+  </div>
+</div>
+
+
+<script>
+  function initMap() {
+    var marker_location = { lat: 44.4386238, lng: 26.0985546 };
+    // Styles a map in night mode.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: marker_location,
+      zoom: 17,
+      styles: {{& style }}
+    });
+
+    var marker = new google.maps.Marker({
+      position: marker_location,
+      map: map
+    });
+  }
+</script>
+<script
+  src="https://www.google.com/recaptcha/api.js"
+  async
+  defer>
+</script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key={{ maps_api_key }}&callback=initMap"
+  async
+  defer>
+</script>

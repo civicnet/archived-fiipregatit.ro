@@ -1,0 +1,71 @@
+<div class="container-fluid" id="despre-content">
+  <div class="dropdown show small-menu">
+    <a
+      class="btn btn-secondary dropdown-toggle d-lg-none"
+      href="#"
+      role="button"
+      id="dropdownMenuLink"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false">
+      Alege Secțiune
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="tablist">
+        {{# sections }}
+          <a
+            class="nav-link {{ is_active }} dropdown-item"
+            id="{{ slug }}-tab-upper"
+            data-toggle="pill"
+            href="#{{ slug }}"
+            role="tab"
+            aria-controls="{{ slug }}"
+            aria-selected="true">
+            {{ name }}
+          </a>
+        {{/ sections }}
+    </div>
+  </div>
+  <div class="container">
+    <h2>Fii pregătit</h2>
+    <div class="row despre-row">
+      <div class="col col-lg-9 col-md-12">
+        <div class="tab-content" id="custom-menu-content">
+          {{# sections }}
+            <div
+              class="tab-pane fade show {{ is_active }}"
+              id="{{ slug }}"
+              role="tabpanel"
+              aria-labelledby="{{ slug }}-tab">
+              {{& content }}
+            </div>
+          {{/ sections }}
+        </div>
+      </div>
+      <div class="col col-lg-3 col-md-12 guide-sidebar d-none d-lg-block">
+        <h3>
+          Află mai multe
+        </h3>
+        <div
+          class="nav flex-column nav-pills"
+          id="custom-menu-tab"
+          role="tablist"
+          aria-orientation="vertical">
+            {{# sections }}
+              <a
+                class="nav-link {{ is_active }}"
+                id="{{ slug }}-tab"
+                data-toggle="pill"
+                href="#{{ slug }}"
+                role="tab"
+                aria-controls="{{ slug }}"
+                aria-selected="true">
+                <i class="fas fa-chevron-right"></i>
+                {{ name }}
+              </a>
+            {{/ sections }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

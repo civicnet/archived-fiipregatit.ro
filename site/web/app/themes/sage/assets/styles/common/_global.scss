@@ -636,3 +636,61 @@ h2:after {
 #contact-section .all-button {
   margin-top: 20px;
 }
+
+#despre-content {
+    margin-top: 80px;
+}
+
+#despre-content .small-menu {
+  text-align: center;
+  top: -40px;
+  font-family: Merriweather, serif;
+}
+
+#despre-content .small-menu .btn {
+  background: none;
+  border: 1px solid #999;
+  border-radius: 0;
+  color: #999;
+}
+
+#despre-content .small-menu .dropdown-item {
+  text-transform: capitalize;
+}
+
+#despre-content h3 {
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #999;
+  display: inline-block;
+}
+
+#despre-content .nav-link {
+  color: #333;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 0;
+  padding-bottom: 3px;
+}
+
+#despre-content .nav-link:hover,
+#despre-content .nav-link.active {
+  background: none;
+  color: #d03233;
+}
+
+#despre-content ul li a svg {
+  margin-right: 5px;
+}
+
+#despre-content #custom-menu-content {
+  padding-right: 30px;
+}
+
+#despre-content .despre-row {
+  margin-bottom: 80px;
+}

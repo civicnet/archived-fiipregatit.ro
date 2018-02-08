@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d72909341b3bbffe20affc6b55760351",
+    "content-hash": "70285ff448a5eed8b523d5f030035e50",
     "packages": [
         {
             "name": "composer/installers",
@@ -411,6 +411,26 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
+            "name": "wpackagist-plugin/navz-photo-gallery",
+            "version": "1.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/navz-photo-gallery/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/navz-photo-gallery.zip?timestamp=1495856420",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/navz-photo-gallery/"
+        },
+        {
             "name": "wpackagist-plugin/simple-custom-post-order",
             "version": "2.3.2",
             "source": {
@@ -449,26 +469,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simple-page-ordering/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-importer",
-            "version": "0.6.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
-                "reference": "tags/0.6.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-importer/"
         }
     ],
     "packages-dev": [

@@ -21,7 +21,10 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/TemplateEngine.php'
+  'lib/TemplateEngine.php',
+  'lib/Algolia/IndexCustomFields.php',
+  'lib/Algolia/GuideIndexCustomFields.php',
+  'lib/Algolia/CampaignIndexCustomFields.php',
 ];
 
 foreach ($sage_includes as $file) {
@@ -125,3 +128,11 @@ function my_login_logo_url_title() {
   return 'fiipregătit.ro';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+//\IndexCustomFields::get(array(), get_post(72))->index();
+$algoliaCallback = function(array $attributes, WP_Post $post) {
+  return IndexCustomFields::get($attributes, $post)->index();
+};
+
+add_filter( 'algolia_post_shared_attributes', $algoliaCallback, 10, 2 );
+add_filter( 'algolia_searchable_post_shared_attributes', $algoliaCallback, 10, 2 );

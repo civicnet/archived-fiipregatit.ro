@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "70285ff448a5eed8b523d5f030035e50",
+    "content-hash": "7537293b15b20f29d2f6776f2a55c48b",
     "packages": [
         {
             "name": "composer/installers",
@@ -411,16 +411,16 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
-            "name": "wpackagist-plugin/navz-photo-gallery",
-            "version": "1.6.1",
+            "name": "wpackagist-plugin/search-by-algolia-instant-relevant-results",
+            "version": "2.9.3",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/navz-photo-gallery/",
-                "reference": "trunk"
+                "url": "https://plugins.svn.wordpress.org/search-by-algolia-instant-relevant-results/",
+                "reference": "tags/2.9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/navz-photo-gallery.zip?timestamp=1495856420",
+                "url": "https://downloads.wordpress.org/plugin/search-by-algolia-instant-relevant-results.2.9.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -428,7 +428,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/navz-photo-gallery/"
+            "homepage": "https://wordpress.org/plugins/search-by-algolia-instant-relevant-results/"
         },
         {
             "name": "wpackagist-plugin/simple-custom-post-order",

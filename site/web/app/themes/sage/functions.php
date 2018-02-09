@@ -105,11 +105,14 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 /**
  * Modifică pagina de login cu link și logo-ul DSU
  */
-function my_login_logo() { ?>
+use Roots\Sage\Assets;
+function my_login_logo() {
+  $asset_path = Assets\asset_path('images/Logo_DSU.svg');
+  ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
           background-image:
-            url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png);
+            url(<?=$asset_path?>);
           height:80px;
           width:100%;
           background-size: contain;
@@ -131,7 +134,7 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 /**
- *  Algolia index 
+ *  Algolia index
  */
 $algoliaCallback = function(array $attributes, WP_Post $post) {
   return IndexCustomFields::get($attributes, $post)->index();

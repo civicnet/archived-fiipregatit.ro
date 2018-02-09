@@ -104,12 +104,12 @@
         <ul>
           <li class="gov">
             <a href="http://www.guv.ro/">
-              <img src="<?=Assets\asset_path('images/logo_guvern.png');?>" />
+              <img src="<?=Assets\asset_path('images/Logo_GuvernRO.svg');?>" />
             </a>
           </li>
           <li class="dsu">
             <a href="http://www.dsu.mai.gov.ro/">
-              <img src="<?=Assets\asset_path('images/logo.png');?>" />
+              <img src="<?=Assets\asset_path('images/Logo_DSU.svg');?>" />
             </a>
           </li>
         </ul>

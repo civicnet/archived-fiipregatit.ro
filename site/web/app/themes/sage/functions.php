@@ -25,6 +25,7 @@ $sage_includes = [
   'lib/Algolia/IndexCustomFields.php',
   'lib/Algolia/GuideIndexCustomFields.php',
   'lib/Algolia/CampaignIndexCustomFields.php',
+  'lib/Algolia/NoOpIndexCustomFields.php',
 ];
 
 foreach ($sage_includes as $file) {
@@ -129,7 +130,9 @@ function my_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
-//\IndexCustomFields::get(array(), get_post(72))->index();
+/**
+ *  Algolia index 
+ */
 $algoliaCallback = function(array $attributes, WP_Post $post) {
   return IndexCustomFields::get($attributes, $post)->index();
 };

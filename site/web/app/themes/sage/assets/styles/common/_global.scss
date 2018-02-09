@@ -672,3 +672,55 @@ h2:after {
 #despre-content .despre-row {
   margin-bottom: 80px;
 }
+
+/* Search */
+.suggestion-link .suggestion-post-thumbnail {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#algolia-hits .ais-hits--thumbnail {
+  width: 128px;
+  height: 128px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#algolia-hits h4 a {
+  color: #333;
+  display: inline-block;
+}
+
+#algolia-hits h4 a::after {
+    content: " ";
+    display: block;
+    border-bottom: 5px solid #933;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#algolia-search-box {
+  border: 12px solid hsla(0,0%,100%,.4);
+}
+
+#algolia-search-box .ais-search-box--input {
+  border: 1px solid #999;
+  background: #ffc;
+  padding-left: 55px;
+}
+
+#algolia-search-box .search-icon {
+  fill: #333;
+  margin-left: 15px;
+}
+
+#algolia-search-box .ais-search-box--powered-by {
+  top: 70px;
+}
+
+#algolia-search-box .ais-stats {
+  top: 70px;
+}

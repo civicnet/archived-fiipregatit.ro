@@ -99,29 +99,27 @@ final class Guide extends Entity {
     return $this;
   }
 
-  public function getPDFGuidePageCount(): ?int {
+  public function getPDFGuideSize(): ?string {
     if (!$this->guidePDF || !$this->guidePDF['url']) {
       return null;
     }
-    
+
     $arrContextOptions = array();
 
     /**
       * No valid SSL cert during development, skip verification.
       */
     if (WP_DEBUG) {
-      $arrContextOptions = array(
-        'ssl' => array(
-          'verify_peer' => false,
-          'verify_peer_name' => false,
-        ),
+      $sslContextOptions = array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
       );
     }
 
     $pdftext = file_get_contents(
       $this->guidePDF['url'],
       $use_include_path = false,
-      stream_context_create($arrContextOptions)
+      stream_context_create(array('ssl' => $sslContextOptions))
     );
 
     preg_match_all("/\/Count\s+(\d+)/", $pdftext, $matches);
@@ -129,7 +127,42 @@ final class Guide extends Entity {
       return null;
     }
 
-    return intval($matches[1][0]);
+    $count = intval($matches[1][0]);
+    if ($count) {
+      return $count . ' pagini';
+    }
+
+    stream_context_set_default(
+      array_merge(
+        array(
+          'http' => array(
+            'method' => 'HEAD'
+          ),
+          'ssl' => $sslContextOptions
+        )
+      )
+    );
+
+    $headers = get_headers($this->guidePDF['url'], $format = 1);
+    if (isset($headers['Content-Length'])) {
+      return $this->formatBytes(
+        $headers['Content-Length']
+      );
+    }
+
+    return null;
+  }
+
+  private function formatBytes(int $bytes, int $precision = 2): string {
+    $units = array('B', 'KB', 'MB', 'GB', 'TB');
+
+    $bytes = max($bytes, 0);
+    $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+    $pow = min($pow, count($units) - 1);
+
+    $bytes /= (1 << (10 * $pow));
+
+    return round($bytes, $precision) . ' ' . $units[$pow];
   }
 
   public function getGalerieFoto(): ?array {

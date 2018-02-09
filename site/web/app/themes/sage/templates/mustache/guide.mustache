@@ -181,14 +181,16 @@
         </ul>
       </div>
     </div>
-    {{# pdf_page_count }}
+    {{# pdf_guide.url }}
       <div class="download-guide">
-        <a href="{{ pdf_guide.url }}" target="_blank">
+        <a href="{{ . }}" target="_blank">
           <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
           <strong>Descarcă ghidul</strong>
-          (PDF, {{ pdf_page_count }} pagini)
+          {{# pdf_size }}
+            (PDF, {{ . }})
+          {{/ pdf_size }}
         </a>
       </div>
-    {{/ pdf_page_count }}
+    {{/ pdf_guide.url }}
   </div>
 </div>

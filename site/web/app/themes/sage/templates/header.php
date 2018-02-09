@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
     <img
-      src="<?=Assets\asset_path('images/logo.png');?>"
+      src="<?=Assets\asset_path('images/Logo_DSU.svg');?>"
       height="70"
       class="d-inline-block"
       alt="Logo DSU" />

@@ -1,8 +1,8 @@
 <?php
 
   final class GuideIndexCustomFields extends IndexCustomFields {
-    public function index(): array {
-      $newAttributes = array(
+    protected function getCustomAttributes(): array {
+      return array(
         'nume' => $this->entity->getNume(),
         'inaintea_evenimentului' => strip_tags(
           $this->entity->getInainteaEvenimentului()
@@ -17,8 +17,9 @@
           $this->entity->getInformatiiAditionale()
         ),
         'image' => $this->entity->getPictograma()->getUrl(),
+        'preview_text' => strip_tags(
+          $this->entity->getInainteaEvenimentului()
+        ),
       );
-
-      return array_merge($this->attributes, $newAttributes);
     }
   }

@@ -58,9 +58,9 @@ Once logged in, it's time to config a few things in the admin panel:
 Unless you're debugging - always import the most recent timestamps.
 
 ### Known issues ###
-- The `Export/Import` flow for the data scaffolding is less than ideal since it doesn't take into account the media library so the guides and campaigns are broken and will not display properly. See #46
+- The `Export/Import` flow for the data scaffolding is less than ideal since it doesn't take into account the media library so the guides and campaigns are broken and will not display properly. See issue #46
 - The import flow will throw a lot of E_NOTICEs *sigh*
-- Some of the steps described here could probably be automated: #48
+- Some of the steps described here could probably be automated: issue #48
 
 
 ## Setup for frontend dev ##
@@ -86,6 +86,24 @@ Please note `{development,production,staging}/vault.yml` are added to `.gitignor
 To add your credentials simply copy the `sample.vault.yml` to `vault.yml` and change your credentials accordingly.
 
 **Please change the sample.vault.yml files if you make changes to vault configurations.**
+
+## Working on search? ##
+We use [Algolia](https://www.algolia.com) for search. If you're not actively working
+on search, there's no need for you to read further. If you are:
+
+- You need to create an account on Algolia. They offer a free plan, that should be
+more than enough for development purposes.
+- Activate the Algolia plugin in the admin panel.
+- Once activated:
+  - Go to `Algolia->Settings`: Add the API keys from your [Algolia app dashboard](https://www.algolia.com/manage/applications).
+  - Go to `Algolia->Autocomplete`:  Check `Enable autocomplete`, then check `Ghiduri` and `Campanii` and hit `Save changes`. Make sure you re-index both `Ghiduri` and `Campanii`.
+  - Go to `Algolia->Search Page`: Check `Use Algolia with Instantsearch.js`. `Save changes` and hit `Re-index search page records`.
+
+Now that you're set, here's the code:
+- `sage/algolia/` contains the templates for the autocomplete dropdown (`autocomplete.php`) and the search results page (`instantsearch.php`)
+- `sage/lib/Algolia/` contains the code used for indexing our custom post types
+
+There are also settings in the Algolia dashboard that you can set, but they are mostly for determining which results are more relevant. You will probably have to go to each index, the `display` tab, and add `preview_text` to the `Attributes to snippet` property. This is the text we display below each search result.
 
 ## More documentation ##
 Frontend work: https://roots.io/sage/docs/theme-development-and-building/

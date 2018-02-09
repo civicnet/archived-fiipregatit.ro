@@ -1,19 +1,23 @@
 <script type="text/html" id="tmpl-autocomplete-header">
   <div class="autocomplete-header">
-	<div class="autocomplete-header-title">{{{ data.label }}}</div>
-	<div class="clear"></div>
+  	<div class="autocomplete-header-title">{{{ data.label }}}</div>
+  	<div class="clear"></div>
   </div>
 </script>
 
 <script type="text/html" id="tmpl-autocomplete-post-suggestion">
   <a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.post_title }}">
-	<# if ( data.images.thumbnail ) { #>
-	  <img class="suggestion-post-thumbnail" src="{{ data.images.thumbnail.url }}" alt="{{ data.post_title }}">
+	  <# if ( data.image ) { #>
+      <div
+        class="suggestion-post-thumbnail"
+        style="background-image: url({{ data.image }})"
+        title="{{ data.post_title }}">
+      </div>
 	  <# } #>
 		<div class="suggestion-post-attributes">
 		  <span class="suggestion-post-title">{{{ data._highlightResult.post_title.value }}}</span>
-		  <# if ( data._snippetResult['content'] ) { #>
-			<span class="suggestion-post-content">{{{ data._snippetResult['content'].value }}}</span>
+		  <# if ( data._snippetResult['preview_text'] ) { #>
+			     <span class="suggestion-post-content">{{{ data._snippetResult['preview_text'].value }}}</span>
 			<# } #>
 		</div>
   </a>
@@ -76,7 +80,7 @@
 
 <script type="text/html" id="tmpl-autocomplete-empty">
   <div class="autocomplete-empty">
-	  <?php esc_html_e( 'No results matched your query ', 'algolia' ); ?>
+	  <?php esc_html_e( 'Nu am găsit niciun rezultat pentru: ', 'algolia' ); ?>
 	<span class="empty-query">"{{ data.query }}"</span>
   </div>
 </script>
@@ -109,7 +113,7 @@
 			for (var key in hit._highlightResult) {
 			  /* We do not deal with arrays. */
 			  if (typeof hit._highlightResult[key].value !== 'string') {
-				continue;
+				  continue;
 			  }
 			  hit._highlightResult[key].value = _.escape(hit._highlightResult[key].value);
 			  hit._highlightResult[key].value = hit._highlightResult[key].value.replace(/__ais-highlight__/g, '<em>').replace(/__\/ais-highlight__/g, '</em>');
@@ -118,7 +122,7 @@
 			for (var key in hit._snippetResult) {
 			  /* We do not deal with arrays. */
 			  if (typeof hit._snippetResult[key].value !== 'string') {
-				continue;
+				  continue;
 			  }
 
 			  hit._snippetResult[key].value = _.escape(hit._snippetResult[key].value);
@@ -128,8 +132,7 @@
 			return suggestion_template(hit);
 		  }
 		}
-	  });
-
+	 });
 	});
 
 	/* Setup dropdown menus */
@@ -147,14 +150,14 @@
 	  };
 
 	  if (algolia.powered_by_enabled) {
-		config.templates.footer = wp.template('autocomplete-footer');
+		  config.templates.footer = wp.template('autocomplete-footer');
 	  }
 
 	  /* Instantiate autocomplete.js */
 	  var autocomplete = algoliaAutocomplete($searchInput[0], config, sources)
 	  .on('autocomplete:selected', function (e, suggestion) {
 		/* Redirect the user when we detect a suggestion selection. */
-		window.location.href = suggestion.permalink;
+		  window.location.href = suggestion.permalink;
 	  });
 
 	  /* Force the dropdown to be re-drawn on scroll to handle fixed containers. */

@@ -47,7 +47,7 @@
         && $guide->getGalerieFoto()
       ),
       'pdf_guide' => $guide->getGuidePDF(),
-      'pdf_page_count' => $guide->getPDFGuidePageCount(),
+      'pdf_size' => $guide->getPDFGuideSize(),
       'sidebar_links' => $sidebarLinks,
     )
   );

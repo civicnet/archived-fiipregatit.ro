@@ -26,22 +26,26 @@ final class GuideRepository extends AbstractRepository {
       ))
       ->setPictograma(get_field('pictograma_eveniment', $post->ID))
       ->setPermalink(get_the_permalink($post->ID));
+
     if ($includeRelated) {
-        $ghid->setSimilarGuides(self::getSimilarGuides());
+      $similar = self::getSimilarGuides($post);
+      $ghid->setSimilarGuides($similar);
     }
 
     return $ghid;
   }
 
-  private static function getSimilarGuides(): array {
-    $relatedPosts = get_field('ghiduri_similare');
+  private static function getSimilarGuides(
+    \WP_Post $post
+  ): array {
+    $relatedPosts = get_field('ghiduri_similare', $post->ID);
     if (!$relatedPosts) {
       return [];
     }
 
     $ghiduriSimilare = [];
     foreach ($relatedPosts as $relatedPost) {
-      $ghiduriSimilare[] = self::getEntity($relatedPost, false);
+      $ghiduriSimilare[] = self::getEntity($relatedPost);
     }
 
     return $ghiduriSimilare;

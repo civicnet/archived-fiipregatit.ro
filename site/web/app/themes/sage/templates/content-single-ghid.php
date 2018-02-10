@@ -10,7 +10,10 @@
     )
   );
 
-  $guide = \RepoManager::getGuideRepository()->getByPost($wp_query->post);
+  $guide = \RepoManager::getGuideRepository()->getByPost(
+    $wp_query->post,
+    $include_similar = true
+  );
 
   $allGuides = \RepoManager::getGuideRepository()->getList();
   $sidebarLinks = array();
@@ -52,8 +55,9 @@
     )
   );
 
-  $recommendedGuides = array_slice($allGuides, 0, 2);
+  $recommendedGuides = $guide->getSimilarGuides();
   $guideProps = array();
+
   foreach ($recommendedGuides as $guide) {
     $guideProps[] = array(
       'icon' => $guide->getPictograma()->getUrl(),

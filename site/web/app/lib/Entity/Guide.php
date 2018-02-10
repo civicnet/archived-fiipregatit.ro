@@ -191,8 +191,8 @@ final class Guide extends Entity {
     return $this->similarGuides;
   }
 
-  public function setSimilarGuides(?array $similarGuides): Guide {
-    $this->similarGuides = $similarGuides;
+  public function setSimilarGuides(array $similar_guides): Guide {
+    $this->similarGuides = $similar_guides;
     return $this;
   }
 

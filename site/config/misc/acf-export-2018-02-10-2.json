@@ -1,0 +1,559 @@
+[
+    {
+        "key": "group_5a74e9538dcca",
+        "title": "Campanie",
+        "fields": [
+            {
+                "key": "field_5a74e97ce8871",
+                "label": "Conținut",
+                "name": "continut",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5a74e99ee8872",
+                "label": "Extras",
+                "name": "extras",
+                "type": "textarea",
+                "instructions": "Acest extras de text va apărea pe homepage, dar și în rezultatele motoarelor de căutare.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 256,
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_5a74ea28e8873",
+                "label": "Imagine",
+                "name": "imagine",
+                "type": "image",
+                "instructions": "Această imagine va fi afișată atât pe homepage, împreună cu extrasul, cât și pe pagina de campanie.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "large",
+                "library": "all",
+                "min_width": 640,
+                "min_height": 480,
+                "min_size": ".1",
+                "max_width": "",
+                "max_height": "",
+                "max_size": 5,
+                "mime_types": ".jpg, .png, .jpeg, .gif"
+            },
+            {
+                "key": "field_5a74eaf6e8875",
+                "label": "Ghiduri sugerate",
+                "name": "ghiduri_sugerate",
+                "type": "post_object",
+                "instructions": "Dacă doriți să promovați anumite ghiduri care au legătură cu această campanie, le puteți selecta aici (doar primele patru sugestii vor fi incluse)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "ghid"
+                ],
+                "taxonomy": [],
+                "allow_null": 0,
+                "multiple": 1,
+                "return_format": "object",
+                "ui": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "campanie"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "featured_image",
+            "categories",
+            "tags"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5a74df208d183",
+        "title": "Ghid",
+        "fields": [
+            {
+                "key": "field_5a74df2bbb136",
+                "label": "Nume eveniment",
+                "name": "nume_eveniment",
+                "type": "text",
+                "instructions": "Pentru ce fel de eveniment este ghidul (ex: cutremur, viscol, etc.)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Cutremur",
+                "prepend": "",
+                "append": "",
+                "maxlength": 128
+            },
+            {
+                "key": "field_5a74e05cbb137",
+                "label": "Pregătire înaintea evenimentului",
+                "name": "inaintea_evenimentului",
+                "type": "wysiwyg",
+                "instructions": "Care sunt pașii ce trebuie urmați înaintea evenimentului? Recomandăm folosirea opțiunii de listă pentru a enumera pașii.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a74effb6532d",
+                "label": "Ce trebuie făcut în timpul evenimentului",
+                "name": "in_timpul_evenimentului",
+                "type": "wysiwyg",
+                "instructions": "Cum reacționăm în timpul evenimentului? Recomandăm folosirea opțiunii de listă pentru a enumera pașii.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a74e15fbb138",
+                "label": "Pași de urmat după eveniment",
+                "name": "dupa_eveniment",
+                "type": "wysiwyg",
+                "instructions": "Care sunt pașii ce trebuie urmați după ce a avut loc evenimentul? Recomandăm folosirea opțiunii de listă pentru a enumera pașii.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a74e1c3bb139",
+                "label": "Informații adiționale",
+                "name": "informatii_aditionale",
+                "type": "wysiwyg",
+                "instructions": "Orice alte infomații ajutătoare sub formă de text",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a74e1f4bb13a",
+                "label": "Video ajutător",
+                "name": "video_ajutator",
+                "type": "oembed",
+                "instructions": "Dacă doriți să includeți tutoriale video, puteți face asta aici. E suficient să introduceți un link de YouTube sau Vimeo către video-ul care trebuie afișat.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "width": "",
+                "height": ""
+            },
+            {
+                "key": "field_5a74e323bb13c",
+                "label": "Ghid PDF",
+                "name": "ghid_pdf",
+                "type": "file",
+                "instructions": "Ghidul complet în format PDF, pentru download",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_size": "",
+                "max_size": 30,
+                "mime_types": ".pdf"
+            },
+            {
+                "key": "field_5a74e375bb13d",
+                "label": "Pictogramă eveniment",
+                "name": "pictograma_eveniment",
+                "type": "image",
+                "instructions": "Fiecare eveniment trebuie să fie reprezentat de către o pictogramă. Alegeți pictograma specifică acestui tip de eveniment.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ".jpg, .jpeg, .png, .svg, .gif"
+            },
+            {
+                "key": "field_5a74e66f94d75",
+                "label": "Ghiduri similare",
+                "name": "ghiduri_similare",
+                "type": "post_object",
+                "instructions": "Dacă doriți, puteți alege ce alte ghiduri să fie afișate mai proeminent împreună cu ghidul acesta.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "ghid"
+                ],
+                "taxonomy": [],
+                "allow_null": 1,
+                "multiple": 1,
+                "return_format": "object",
+                "ui": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "ghid"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "featured_image",
+            "categories",
+            "tags"
+        ],
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5a7d920f836c1",
+        "title": "Plan Personal",
+        "fields": [
+            {
+                "key": "field_5a7d92626cdba",
+                "label": "Apă",
+                "name": "apa",
+                "type": "wysiwyg",
+                "instructions": "Detalii despre cantitatea de apă necesară, ș.a.m.d.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d929b6cdbb",
+                "label": "Alimente",
+                "name": "alimente",
+                "type": "wysiwyg",
+                "instructions": "Detalii despre alimentele necesare supraviețuirii",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d92b86cdbc",
+                "label": "Îmbrăcăminte și încălțăminte",
+                "name": "imbracaminte_si_incaltaminte",
+                "type": "wysiwyg",
+                "instructions": "Detalii despre ce articole de îmbrăcăminte sunt necesare supraviețuirii",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d92fb6cdbd",
+                "label": "Un sac de dormit",
+                "name": "sac_de_dormit",
+                "type": "wysiwyg",
+                "instructions": "Detalii despre importanța sacului de dormit în condiții de supraviețuire",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d93266cdbe",
+                "label": "O trusă de prim ajutor",
+                "name": "trusa_prim_ajutor",
+                "type": "wysiwyg",
+                "instructions": "Ce ar trebui să conțină trusa de prim ajutor?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d93496cdbf",
+                "label": "Aparate utile",
+                "name": "aparate_utile",
+                "type": "wysiwyg",
+                "instructions": "Ce alte aparate sunt utile supraviețuirii (lanternă, telefon, etc.)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d936d6cdc0",
+                "label": "Articole de igienă",
+                "name": "articole_de_igiena",
+                "type": "wysiwyg",
+                "instructions": "Importanța articolelor de igienă pentru supraviețuire. Ce articole de igienă sunt necesare?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d93986cdc1",
+                "label": "Acte personale",
+                "name": "acte_personale",
+                "type": "wysiwyg",
+                "instructions": "Ce acte personale sunt necesare\/utile supraviețuirii?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d93c96cdc2",
+                "label": "Descriere rucsac de supraviețuire",
+                "name": "descriere_rucsac_supravietuire",
+                "type": "wysiwyg",
+                "instructions": "Ce este rucsacul de supraviețuire?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "full",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d93f56cdc3",
+                "label": "Descriere tabel informații utile",
+                "name": "descriere_tabel_informatii_utile",
+                "type": "wysiwyg",
+                "instructions": "Ce informații utile sunt cuprinse în acest tabel?",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_5a7d94316cdc4",
+                "label": "Tabel PDF",
+                "name": "tabel_pdf",
+                "type": "file",
+                "instructions": "Tabelul cu informații utile în format PDF",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_size": "",
+                "max_size": 20,
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "39"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "featured_image",
+            "categories",
+            "tags"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]

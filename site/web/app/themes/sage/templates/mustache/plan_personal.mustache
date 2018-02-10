@@ -1,0 +1,68 @@
+<div class="container-fluid" id="plan-personal-content">
+  <div class="container">
+    <h2>Plan Personal</h2>
+    <div class="row plan-personal-row">
+      <div class="col plan-personal-image-container col-md-6 col-sm-12">
+        <img src="{{ rucsac_image }}" class="plan-personal-image" />
+      </div>
+      <div class="col col-md-6 col-sm-12">
+        <h3>Rucsac Supraviețuire</h3>
+        <p>
+          {{& descriere_rucsac }}
+        </p>
+        <div id="accordion">
+          {{# rucsac_items}}
+            <div class="card">
+              <div class="card-header" id="heading{{ index }}">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link {{# collapsed }} collapsed {{/ collapsed }}"
+                    data-toggle="collapse"
+                    data-target="#collapse{{ index }}"
+                    aria-expanded="true"
+                    aria-controls="collapse{{ index }}">
+                    {{ title }}
+                    <i class="fa fa-chevron-down pull-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapse{{ index }}"
+                class="collapse {{^ collapsed }} show {{/collapsed }}"
+                aria-labelledby="heading{{ index }}"
+                data-parent="#accordion">
+                <div class="card-body">
+                  {{& content }}
+                </div>
+              </div>
+            </div>
+          {{/ rucsac_items }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row plan-personal-row">
+      <div class="col col-md-6 col-sm-12">
+        <h3>Tabel cu Info Utile </h3>
+        <p>
+          {{& descriere_tabel }}
+        </p>
+
+        {{# tabel_pdf.url }}
+          <div class="download-tabel">
+            <a href="{{ . }}" target="_blank">
+              <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
+              <strong>Descarcă tabelul</strong>
+              {{# pdf_size }}
+                (PDF, {{ . }})
+              {{/ pdf_size }}
+            </a>
+          </div>
+        {{/ tabel_pdf.url }}
+      </div>
+      <div class="col plan-personal-image-container col-md-6 col-sm-12">
+        <img src="{{ tabel_image }}" class="plan-personal-image" />
+      </div>
+    </div>
+  </div>
+</div>

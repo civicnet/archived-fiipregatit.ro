@@ -5,15 +5,12 @@ use Entity\Entity;
 
 abstract class AbstractRepository {
     protected static $customPostType;
-    private static $instance;
-
     private function __construct() {}
 
     public static function get(): AbstractRepository {
-      if (self::$instance) {
-        return self::$instance;
-      }
-
+      /**
+       * FIXME: Implement proper caching
+       */
       return new static();
     }
 
@@ -22,10 +19,10 @@ abstract class AbstractRepository {
       $extraArgs = []
     ): array {
       $args = array(
-          'post_type' => static::$customPostType,
-          'post_status' => 'publish',
-          'posts_per_page' => $count,
-          'ignore_sticky_posts' => 1
+        'post_type' => static::$customPostType,
+        'post_status' => 'publish',
+        'posts_per_page' => $count,
+        'ignore_sticky_posts' => 1
       );
 
       if (!empty($extraArgs)) {
@@ -49,17 +46,17 @@ abstract class AbstractRepository {
     }
 
     public static function getByPost(\WP_Post $post): Entity {
-        if ($post->post_type !== static::$customPostType) {
-            throw new \RuntimeException(
-                sprintf(
-                    'You are trying to load an entity from the wrong repo. "%s" type in "%s" repo',
-                    $post->post_type,
-                    $this->customPostType
-                )
-            );
-        }
+      if ($post->post_type !== static::$customPostType) {
+        throw new \RuntimeException(
+          sprintf(
+            'You are trying to load an entity from the wrong repo. "%s" type in "%s" repo',
+            $post->post_type,
+            $this->customPostType
+          )
+        );
+      }
 
-        return static::getEntity($post);
+      return static::getEntity($post);
     }
 
     protected static function falseyToNull($value) {

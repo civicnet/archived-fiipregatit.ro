@@ -10,4 +10,6 @@ final class App {
   const HOMEPAGE_GUIDE_COUNT = 12;
   const HOMEPAGE_CAMPAIGNS_COUNT = 3;
   const LINK_COUNT = 7;
+
+  const PAGE_PERSONAL_PLAN = 'plan-personal';
 }

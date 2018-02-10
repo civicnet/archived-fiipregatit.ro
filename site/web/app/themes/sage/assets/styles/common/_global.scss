@@ -25,7 +25,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
 }
- 
+
 .main {
   background: #e4e4e4;
   padding: 0 !important;
@@ -723,4 +723,91 @@ h2:after {
 
 #algolia-search-box .ais-stats {
   top: 70px;
+}
+
+#plan-personal-content {
+  padding-top: 100px;
+  background: #fff;
+  padding-bottom: 100px;
+  counter-reset: plan-section;
+}
+
+#plan-personal-content h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+#plan-personal-content .plan-personal-image {
+  max-width: 100%;
+}
+
+#plan-personal-content .plan-personal-image-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#plan-personal-content .card {
+  border: none;
+  background: none;
+}
+
+#plan-personal-content .card-header {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+#plan-personal-content .card-body {
+  padding-left: 0;
+}
+
+#plan-personal-content .card-header button {
+  padding-left: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #993333;
+}
+
+#plan-personal-content .card-header button:before {
+  counter-increment: plan-section;
+  content: counter(plan-section) ". ";
+}
+
+
+#plan-personal-content #accordion .card-header svg {
+  transition: .3s transform ease-in-out;
+  float: right;
+  margin-left: 10px;
+}
+
+#plan-personal-content #accordion .card-header .collapsed svg {
+  transform: rotate(90deg);
+}
+
+#plan-personal-content .plan-personal-row {
+  margin-top: 120px;
+}
+
+#plan-personal-content .download-tabel {
+  margin-top: 50px;
+  padding-top: 35px;
+  border-top: 1px dotted #333;
+}
+
+#plan-personal-content .download-tabel svg {
+  color: #d03233;
+  margin-right: 15px;
+}
+
+#plan-personal-content .download-tabel a {
+  color: #333;
+  text-transform: uppercase;
+}
+
+#plan-personal-content .download-tabel a:hover {
+  color: #d03233;
+  text-decoration: none;
 }

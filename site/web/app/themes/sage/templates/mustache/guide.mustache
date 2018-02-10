@@ -139,8 +139,9 @@
                     </ol>
                     <div class="carousel-inner">
                       {{# photo_gallery }}
-                        <div class="carousel-item {{# first }} active {{/ first }}">
-                          <img class="d-block w-100" src="{{ photo.url }}">
+                        <div
+                          class="carousel-item {{# first }} active {{/ first }}"
+                          style="background-image: url({{ photo }})">
                         </div>
                       {{/ photo_gallery }}
                     </div>

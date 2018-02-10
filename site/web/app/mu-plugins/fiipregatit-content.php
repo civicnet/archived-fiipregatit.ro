@@ -66,6 +66,7 @@ class Fiipregatit_Content
         $this->plugin_url    = plugins_url( '/', __FILE__ );
         $this->plugin_path   = plugin_dir_path( __FILE__ );
         $this->_registerCustomPostTypes();
+        $this->_registerCustomMetaBox();
     }
 
     /**
@@ -118,5 +119,36 @@ class Fiipregatit_Content
         );
 
         add_theme_support( 'post-thumbnails' );
+    }
+
+    private function _registerCustomMetaBox() {
+      $custom_boxes_init = function() {
+      	$prefix = '_fiipregatit_';
+
+        // Custom Guides meta box
+        $cmb = new_cmb2_box(array(
+        	'id'            => 'galerie_foto_ghiduri',
+        	'title'         => __( 'Galerie Foto', 'cmb2' ),
+        	'object_types'  => array(App::POST_TYPE_GUIDE),
+        	'context'       => 'side',
+        	'show_names'    => true
+        ));
+
+        $cmb->add_field( array(
+        	'name' => '',
+        	'desc' => 'Alege imaginile pe care dorești să le afișezi pentru ghidul acesta',
+        	'id'   => App::GUIDE_METABOX_GALLERY,
+        	'type' => 'file_list',
+        	'query_args' => array('type' => 'image'),
+        	'text' => array(
+        		'add_upload_files_text' => 'Adaugă imagini',
+        		'remove_image_text' => 'Șterge imagine',
+        		'file_text' => 'Imagine:',
+        		'file_download_text' => 'Downloadează',
+        		'remove_text' => 'Șterge',
+        	),
+        ));
+      };
+      add_action( 'cmb2_admin_init', $custom_boxes_init);
     }
 }

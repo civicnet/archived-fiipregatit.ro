@@ -11,6 +11,7 @@ class Campaign extends Entity {
   private $permalink;
   private $extras;
   private $attachments;
+  private $similarGuides;
 
   public function getTitle(): string {
     return $this->title;
@@ -53,7 +54,7 @@ class Campaign extends Entity {
   }
 
   public function setImage(?array $image): Campaign {
-    $this->image = $image; //new File($image);
+    $this->image = $image;
     return $this;
   }
 
@@ -74,4 +75,14 @@ class Campaign extends Entity {
     $this->permalink = $permalink;
     return $this;
   }
+
+  public function getSimilarGuides(): ?array {
+    return $this->similarGuides;
+  }
+
+  public function setSimilarGuides(array $similar_guides): Campaign {
+    $this->similarGuides = $similar_guides;
+    return $this;
+  }
+
 }

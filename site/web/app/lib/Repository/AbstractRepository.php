@@ -45,18 +45,21 @@ abstract class AbstractRepository {
       return $entities;
     }
 
-    public static function getByPost(\WP_Post $post): Entity {
+    public static function getByPost(
+      \WP_Post $post,
+      bool $includeRelated = false
+    ): Entity {
       if ($post->post_type !== static::$customPostType) {
         throw new \RuntimeException(
           sprintf(
             'You are trying to load an entity from the wrong repo. "%s" type in "%s" repo',
             $post->post_type,
-            $this->customPostType
+            static::$customPostType
           )
         );
       }
 
-      return static::getEntity($post);
+      return static::getEntity($post, $includeRelated);
     }
 
     protected static function falseyToNull($value) {

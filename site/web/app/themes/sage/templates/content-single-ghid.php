@@ -77,6 +77,7 @@
       'guides' => $guideProps,
       'title' => 'Alte situații',
       'bg' => '#fff',
+      'center' => true
     )
   );
 ?>

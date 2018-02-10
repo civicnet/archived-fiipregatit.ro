@@ -15,6 +15,14 @@
   $campaign = \RepoManager::getCampaignRepository()
     ->getByPost($wp_query->post);
 
+  $attachments = array();
+  foreach ($campaign->getAttachments() as $attachment) {
+    $attachments[] = array(
+      'url' => $attachment,
+      'name' => basename($attachment),
+    );
+  }
+
   TemplateEngine::get()->render(
     'campaign',
     array(
@@ -22,11 +30,7 @@
       'image' => $campaign->getImage(),
       'content' => $campaign->getContent(),
       'has_attachments' => (bool) $campaign->getAttachments(),
-      'attachments' => array(
-        array(
-          'attachment' => $campaign->getAttachments(),
-        )
-      )
+      'attachments' => $attachments,
     )
   );
 

@@ -11,5 +11,7 @@ final class App {
   const HOMEPAGE_CAMPAIGNS_COUNT = 3;
   const LINK_COUNT = 7;
 
+  const GUIDE_METABOX_GALLERY = 'fii_pregatit_galerie';
+
   const PAGE_PERSONAL_PLAN = 'plan-personal';
 }

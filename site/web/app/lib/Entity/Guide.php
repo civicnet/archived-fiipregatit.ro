@@ -165,16 +165,12 @@ final class Guide extends Entity {
     return round($bytes, $precision) . ' ' . $units[$pow];
   }
 
-  public function getGalerieFoto(): ?array {
+  public function getGalerieFoto(): array {
     return $this->galerieFoto;
   }
 
-  public function setGalerieFoto(?array $galerieFoto): Guide {
-    if ($galerieFoto === null) {
-      return $this;
-    }
-
-    $this->galerieFoto = $galerieFoto;//new File($galerieFoto);
+  public function setGalerieFoto(array $galerieFoto): Guide {
+    $this->galerieFoto = $galerieFoto;
     return $this;
   }
 

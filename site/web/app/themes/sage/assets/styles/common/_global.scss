@@ -452,6 +452,14 @@ h2:after {
   border-radius: 0;
 }
 
+#guide-content #accordion .carousel-item {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 375px;
+}
+
 #guide-content .guide-sidebar {
   padding-left: 50px;
 }

@@ -24,6 +24,22 @@
     );
   }
 
+  $gallery = array();
+  $is_first = true;
+  $count = 0;
+  foreach ($guide->getGalerieFoto() as $photo) {
+      $gallery[] = array(
+        'photo' => $photo,
+        'idx' => $count,
+        'first' => $is_first,
+      );
+
+      if ($is_first) {
+        $is_first = false;
+      }
+      $count++;
+  }
+
   TemplateEngine::get()->render(
     'guide',
     array(
@@ -33,21 +49,11 @@
       'after_content' => $guide->getDupaEveniment(),
       'extra_info' => $guide->getInformatiiAditionale(),
       'video' => $guide->getVideoAjutator(),
-      'photo_gallery' => array(
-        array(
-          'photo' => $guide->getGalerieFoto(),
-          'idx' => 0,
-          'first' => true
-        ),
-        array(
-          'photo' => $guide->getGalerieFoto(),
-          'idx' => 0
-        )
-      ),
+      'photo_gallery' => $gallery,
       'has_extra_info' => (
         $guide->getInformatiiAditionale()
-        && $guide->getVideoAjutator()
-        && $guide->getGalerieFoto()
+        || $guide->getVideoAjutator()
+        || $gallery
       ),
       'pdf_guide' => $guide->getGuidePDF(),
       'pdf_size' => $guide->getPDFGuideSize(),

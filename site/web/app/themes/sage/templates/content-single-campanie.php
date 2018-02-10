@@ -13,7 +13,7 @@
   );
 
   $campaign = \RepoManager::getCampaignRepository()
-    ->getByPost($wp_query->post);
+    ->getByPost($wp_query->post, true);
 
   $attachments = array();
   foreach ($campaign->getAttachments() as $attachment) {
@@ -34,9 +34,12 @@
     )
   );
 
+  $guides = $campaign->getSimilarGuides();
 
-  $guides = \RepoManager::getGuideRepository()
-    ->getList(4);
+  if (!$guides) {
+    $guides = \RepoManager::getGuideRepository()
+      ->getList(4);
+  }
 
   $guideProps = array();
   foreach ($guides as $guide) {
@@ -51,7 +54,8 @@
     'guide_listing',
     array(
       'guides' => $guideProps,
-      'see_more' => true
+      'see_more' => true,
+      'center' => true,
     )
   );
 

@@ -28,16 +28,20 @@
   $is_first = true;
   $count = 0;
   foreach ($guide->getGalerieFoto() as $photo) {
-      $gallery[] = array(
-        'photo' => $photo,
-        'idx' => $count,
-        'first' => $is_first,
-      );
+    if (!$photo) {
+      continue;
+    }
 
-      if ($is_first) {
-        $is_first = false;
-      }
-      $count++;
+    $gallery[] = array(
+      'photo' => $photo,
+      'idx' => $count,
+      'first' => $is_first,
+    );
+
+    if ($is_first) {
+      $is_first = false;
+    }
+    $count++;
   }
 
   TemplateEngine::get()->render(

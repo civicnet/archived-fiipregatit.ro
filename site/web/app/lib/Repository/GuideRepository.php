@@ -18,9 +18,9 @@ final class GuideRepository extends AbstractRepository {
       ->setDupaEveniment(get_field('dupa_eveniment', $post->ID))
       ->setInformatiiAditionale(get_field('informatii_aditionale', $post->ID))
       ->setVideoAjutator(get_field('video_ajutator', $post->ID))
-      ->setGalerieFoto(static::falseyToNull(
-        get_field('galerie_foto', $post->ID)
-      ))
+      ->setGalerieFoto(
+        (array) get_post_meta($post->ID, \App::GUIDE_METABOX_GALLERY, 1)
+      )
       ->setGuidePDF(static::falseyToNull(
         get_field('ghid_pdf', $post->ID)
       ))

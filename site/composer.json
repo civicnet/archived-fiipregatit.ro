@@ -49,7 +49,8 @@
     "wpackagist-plugin/advanced-custom-fields": "5.6.7",
     "wpackagist-plugin/simple-custom-post-order": "2.3.2",
     "wpackagist-plugin/simple-page-ordering": "2.2.4",
-    "wpackagist-plugin/search-by-algolia-instant-relevant-results": "2.9.3"
+    "wpackagist-plugin/search-by-algolia-instant-relevant-results": "2.9.3",
+    "wpackagist-plugin/cmb2": "2.3.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

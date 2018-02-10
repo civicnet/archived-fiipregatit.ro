@@ -44,7 +44,7 @@
     }
 
     if ($guide->getGalerieFoto()) {
-      $imageCount++;
+      $imageCount += count($guide->getGalerieFoto());
     }
   }
 

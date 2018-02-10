@@ -17,8 +17,8 @@ final class CampaignRepository extends AbstractRepository {
       ->setPermalink(get_the_permalink($post->ID))
       ->setImage(get_field('imagine', $post->ID))
       ->setExtras(get_field('extras', $post->ID))
-      ->setAttachments(static::falseyToNull(
-        get_field('materiale_de_informare', $post->ID)
+      ->setAttachments(array_filter(
+        (array) get_post_meta($post->ID, \App::CAMPAIGN_METABOX_ATTACHMENTS, true)
       ));
   }
 }

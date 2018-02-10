@@ -123,10 +123,8 @@ class Fiipregatit_Content
 
     private function _registerCustomMetaBox() {
       $custom_boxes_init = function() {
-      	$prefix = '_fiipregatit_';
-
         // Custom Guides meta box
-        $cmb = new_cmb2_box(array(
+        $cmb_guide = new_cmb2_box(array(
         	'id'            => 'galerie_foto_ghiduri',
         	'title'         => __( 'Galerie Foto', 'cmb2' ),
         	'object_types'  => array(App::POST_TYPE_GUIDE),
@@ -134,7 +132,7 @@ class Fiipregatit_Content
         	'show_names'    => true
         ));
 
-        $cmb->add_field( array(
+        $cmb_guide->add_field( array(
         	'name' => '',
         	'desc' => 'Alege imaginile pe care dorești să le afișezi pentru ghidul acesta',
         	'id'   => App::GUIDE_METABOX_GALLERY,
@@ -144,6 +142,29 @@ class Fiipregatit_Content
         		'add_upload_files_text' => 'Adaugă imagini',
         		'remove_image_text' => 'Șterge imagine',
         		'file_text' => 'Imagine:',
+        		'file_download_text' => 'Downloadează',
+        		'remove_text' => 'Șterge',
+        	),
+        ));
+
+        // Custom Campaign meta box
+        $cmb_campaign = new_cmb2_box(array(
+        	'id'            => 'attachments_campaign',
+        	'title'         => __( 'Materiale de Informare', 'cmb2' ),
+        	'object_types'  => array(App::POST_TYPE_CAMPAIGN),
+        	'context'       => 'side',
+        	'show_names'    => true
+        ));
+
+        $cmb_campaign->add_field( array(
+        	'name' => '',
+        	'desc' => 'Alege materialele de informare / promo, pentru campania aceasta',
+        	'id'   => App::CAMPAIGN_METABOX_ATTACHMENTS,
+        	'type' => 'file_list',
+        	'text' => array(
+        		'add_upload_files_text' => 'Adaugă materiale',
+        		'remove_image_text' => 'Șterge material',
+        		'file_text' => 'Material:',
         		'file_download_text' => 'Downloadează',
         		'remove_text' => 'Șterge',
         	),

@@ -56,6 +56,10 @@
   );
 
   $recommendedGuides = $guide->getSimilarGuides();
+  if (!$recommendedGuides) {
+    $recommendedGuides = array_slice($allGuides, 0, 2);
+  }
+
   $guideProps = array();
 
   foreach ($recommendedGuides as $guide) {

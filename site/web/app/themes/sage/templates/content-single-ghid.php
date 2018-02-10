@@ -28,10 +28,6 @@
   $is_first = true;
   $count = 0;
   foreach ($guide->getGalerieFoto() as $photo) {
-    if (!$photo) {
-      continue;
-    }
-
     $gallery[] = array(
       'photo' => $photo,
       'idx' => $count,

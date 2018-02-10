@@ -355,15 +355,17 @@ h2:after {
   list-style: none;
   counter-reset: section;
   position: relative;
-  padding-left: 40px;
 }
 
 #guide-content #accordion ul li {
-  padding-bottom: 40px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  position: relative;
 }
 
 #guide-content #accordion ul li::before {
-  width: 25px;
+  line-height: 24px;
+  width: 27px;
   left: 0;
   position: absolute;
   counter-increment: section;
@@ -372,7 +374,7 @@ h2:after {
   background: #d03233;
   color: #fff;
   font-weight: 700;
-  height: 25px;
+  height: 27px;
   text-align: center;
   border: 2px solid #fff;
   z-index: 2;
@@ -381,11 +383,11 @@ h2:after {
 #guide-content #accordion ul li::after {
   content: '';
   position: absolute;
-  border-left: 1px solid ;
-  left:12.5px;
-  bottom:0;
-  top: 5px;
-  height: 98%;
+  border-left: 1px solid;
+  left: 13.5px;
+  bottom: 0;
+  top: 20px;
+  height: 100%;
 }
 
 #guide-content #accordion ul li:last-child::after {

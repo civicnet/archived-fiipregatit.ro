@@ -109,7 +109,9 @@ There are also settings in the Algolia dashboard that you can set, but they are 
 ```
 Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime (57)
 ```
-Solution: https://github.com/jakearchibald/wittr/issues/20#issuecomment-342469349
+Fix: 
+- If using node v8.0, bump it down (v6.0 should be fine) - https://github.com/jakearchibald/wittr/issues/20#issuecomment-342469349
+- `npm rebuild node-sass` if the above fails - https://github.com/sass/node-sass/issues/1764\
 
 ## More documentation ##
 Frontend work: https://roots.io/sage/docs/theme-development-and-building/

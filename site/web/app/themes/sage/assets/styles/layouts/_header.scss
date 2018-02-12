@@ -19,11 +19,11 @@
   .navbar-brand {
     min-width: 450px;
   }
-} 
+}
 
 @include media-breakpoint-down(sm) {
   .navbar-brand {
-    max-width: 275px;
+    max-width: 260px;
   }
 }
 

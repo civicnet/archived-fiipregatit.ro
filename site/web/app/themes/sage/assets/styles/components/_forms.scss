@@ -10,22 +10,30 @@
   background: #ffcc00;
   color: #000;
   display: flex;
+  width: 44px;
+  cursor: pointer;
+}
+
+.search-form .search-submit svg {
+  width: 0 auto;
 }
 
 .search-form .search-field {
-  padding: 5px;
+  padding: 15px;
   border-radius: 0;
   border: 1px solid #999;
   font-style: italic;
   background: #ffffcc;
   color: #666;
   width: 100%;
+  height: 44px;
+  font-size: 16px;
 }
 
 .search-form {
   display: flex;
   border: 6px solid rgba(255, 255, 255, 0.4);
-  max-width: 500px;
+  max-width: 575px;
   margin: 0 auto;
   margin-top: 35px;
 }

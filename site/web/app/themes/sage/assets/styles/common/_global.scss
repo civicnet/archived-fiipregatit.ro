@@ -250,10 +250,14 @@ h2:after {
   text-align: center;
 }
 
+#summary-section .count {
+  font-size: 16px;
+}
+
 #summary-section .count span {
   display: block;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
   margin-top: 15px;
   margin-bottom: -10px;
 }

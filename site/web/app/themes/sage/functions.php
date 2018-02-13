@@ -22,6 +22,7 @@ $sage_includes = [
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
   'lib/TemplateEngine.php',
+  'lib/DashboardGuides.php',
   'lib/Algolia/IndexCustomFields.php',
   'lib/Algolia/GuideIndexCustomFields.php',
   'lib/Algolia/CampaignIndexCustomFields.php',
@@ -64,10 +65,18 @@ function remove_dashboard_widgets() {
   unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_drafts']);
   unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
   unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']);
 }
-if (!current_user_can('manage_options')) {
-  add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
-}
+
+add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
+
+$dashboardCallback = function() {
+  return DashboardGuides::get()->render();
+};
+
+add_action('wp_dashboard_setup', $dashboardCallback);
 
 /**
  * Scoate meniurile din sidebar pentru toată lumea în afară de admini

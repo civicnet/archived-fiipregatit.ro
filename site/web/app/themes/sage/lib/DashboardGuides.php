@@ -23,6 +23,14 @@
     public function render(): void {
       $handler = opendir($this->guidePath);
 
+      $custom_css = $this->customCSS();
+      add_action(
+        'admin_head',
+        function() use ($custom_css) {
+          echo $custom_css;
+        }
+      );
+
       while (($file = readdir($handler)) !== false) {
         $file_path = $this->guidePath . $file;
         if (!is_file($file_path)) {
@@ -35,9 +43,11 @@
         }
 
         $contents = file_get_contents($this->guidePath . $file);
-        $output = $this->purifier->purify(
-          $this->parser->text($contents)
-        );
+        $output = '<div class="dash-guides">' .
+          $this->purifier->purify(
+            $this->parser->text($contents)
+          )
+        . '</div>';
 
         wp_add_dashboard_widget(
           'help_widget_'.$path_parts['filename'],
@@ -47,5 +57,14 @@
           }
         );
       }
+    }
+
+    private function customCSS(): string {
+      return
+        '<style>
+          .dash-guides img {
+            max-width: 100%;
+          }
+        </style>';
     }
   }

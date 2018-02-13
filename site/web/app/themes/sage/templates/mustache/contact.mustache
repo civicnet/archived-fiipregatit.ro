@@ -18,53 +18,7 @@
         </div>
       </div>
       <div class="col col-md-6 col-sm-12">
-        <form role="form">
-  				<div class="form-group">
-  				  <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="name"
-              placeholder="Nume și Prenume"
-              required>
-  				</div>
-  				<div class="form-group">
-  					<input
-              type="text"
-              class="form-control"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required>
-  				</div>
-  				<div class="form-group">
-  					<input
-              type="text"
-              class="form-control"
-              id="subject"
-              name="subject"
-              placeholder="Subiect"
-              required>
-  				</div>
-          <div class="form-group">
-            <textarea
-              class="form-control"
-              type="textarea"
-              id="message"
-              placeholder="Mesaj"
-              maxlength="512"
-              rows="7"></textarea>
-          </div>
-          <div class="g-recaptcha" data-sitekey="{{ recaptcha_api_key }}"></div>
-          <button
-            type="button"
-            id="submit"
-            name="submit"
-            class="btn btn-primary all-button">
-            Trimite
-            <i class="far fa-check-circle"></i>
-          </button>
-        </form>
+        {{{ contact_form }}}
       </div>
     </div>
   </div>

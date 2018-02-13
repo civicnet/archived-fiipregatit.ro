@@ -800,10 +800,11 @@ h2:after {
   transition: .3s transform ease-in-out;
   float: right;
   margin-left: 10px;
+  transform: rotate(180deg);
 }
 
 #plan-personal-content #accordion .card-header .collapsed svg {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 #plan-personal-content .plan-personal-row {

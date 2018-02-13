@@ -1,0 +1,1 @@
+## Editează conținut pagini statice

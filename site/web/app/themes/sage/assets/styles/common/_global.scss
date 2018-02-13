@@ -565,10 +565,11 @@ h2:after {
   float: right;
   color: #333;
   margin-left: 10px;
+  transform: rotate(180deg);
 }
 
 #campaign-content .campaign-info.collapsed svg {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 #campaign-content .campaign-info {

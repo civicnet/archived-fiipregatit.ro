@@ -1,6 +1,6 @@
 ![Adăugare ghid](https://fiipregatit.ro/app/uploads/2018/02/Ghiduri-‹-fiipregătit-ro-—-WordPress.png)
 
-Selectați din sidebar-ul din partea stângă opțiunea `Ghiduri`, apoi `Add new`. 
+Selectați din sidebar-ul din partea stângă opțiunea `Ghiduri`, apoi `Add new`.
 
 În pagina de adăugare ghid nou, avem o listă de opțiuni pe care le putem completa. Cele marcate cu asterisc sunt obligatorii:
 
@@ -14,7 +14,7 @@ Este important ca acesta să fie strict numele evenimentului (ex: cutremur, vije
 
 ## Pregătire înainte, după și în timpul evenimentului
 
-Cele trei câmpuri pentru detalierea pașilor ce trebuie făcuți înainte, după și în timpul evenimentului oferă opțiunea de formatare a textului prin toolbar-ul de deasupra câmpului: 
+Cele trei câmpuri pentru detalierea pașilor ce trebuie făcuți înainte, după și în timpul evenimentului oferă opțiunea de formatare a textului prin toolbar-ul de deasupra câmpului:
 
 ![Toolbar](https://fiipregatit.ro/app/uploads/2018/02/toolbar.png)
 
@@ -24,7 +24,7 @@ Dintre opțiunile prezentate în toolbar, cea mai proeminentă este cea de list�
 
 ## Informații adiționale
 
-Dacă se dorește adăugarea de conținut text despre tipul de eveniment introdus, dar fără legătură cu recomandările legate de acesta, se poate folosi câmpul "Informații adiționale". 
+Dacă se dorește adăugarea de conținut text despre tipul de eveniment introdus, dar fără legătură cu recomandările legate de acesta, se poate folosi câmpul "Informații adiționale".
 
 ## Video ajutător
 

@@ -27,6 +27,16 @@
   }
 }
 
+@include media-breakpoint-down(md) {
+  .menu-item {
+    margin-bottom: 5px;
+  }
+
+  .menu-item:first-child {
+    margin-top: 15px;
+  }
+}
+
 .navbar-brand div.brand-container {
   margin-left: 15px;
   display: inline-block;
@@ -70,10 +80,14 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 .navbar .menu-item a {
   color: #f9aaaa;
   padding-bottom: 10px;
-  margin-right: 15px;
+  margin-right: 25px;
   text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
+}
+
+.navbar .menu-item:last-child a {
+  margin-right: 15px;
 }
 
 .navbar-collapse ul li a:hover,

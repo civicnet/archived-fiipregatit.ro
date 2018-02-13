@@ -98,7 +98,9 @@
   </div>
 
 <?php
-  $campaigns = \RepoManager::getCampaignRepository()->getList();
+  $campaigns = \RepoManager::getCampaignRepository()->getList(
+    App::HOMEPAGE_CAMPAIGNS_COUNT
+  );
 
   $campaignProps = array();
   foreach ($campaigns as $campaign) {
@@ -108,14 +110,14 @@
       'permalink' => $campaign->getPermalink(),
       'extras' => $campaign->getExtras(),
       'date' => $campaign->getDate()->format('d.m.Y'),
-      'see_more' => false
     );
   }
 
   TemplateEngine::get()->render(
     'campaign_listing',
     array(
-      'campaigns' => $campaignProps
+      'campaigns' => $campaignProps,
+      'see_more' => true
     )
   );
 

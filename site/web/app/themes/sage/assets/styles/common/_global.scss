@@ -435,10 +435,11 @@ h2:after {
 #guide-content #accordion .card-header svg {
   transition: .3s transform ease-in-out;
   float: right;
+  transform: rotate(180deg);
 }
 
 #guide-content #accordion .card-header .collapsed svg {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 #guide-content #accordion .card-header button.collapsed {
@@ -721,7 +722,7 @@ h2:after {
 }
 
 #algolia-search-box {
-  border: 6px solid hsla(0,0%,100%,.4);
+  border: 12px solid hsla(0,0%,100%,.4);
 }
 
 #algolia-search-box .ais-search-box--input {

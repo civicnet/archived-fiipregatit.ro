@@ -13,6 +13,7 @@ final class PersonalPlan extends Entity {
   private $aparateUtile;
   private $articoleDeIgiena;
   private $actePersonale;
+  private $articoleCopii;
   private $descriereRucsac;
   private $descriereTabel;
   private $tabelPDF;
@@ -79,6 +80,15 @@ final class PersonalPlan extends Entity {
 
   public function setArticoleDeIgiena(string $articoleDeIgiena): PersonalPlan {
     $this->articoleDeIgiena = $articoleDeIgiena;
+    return $this;
+  }
+
+  public function getArticoleCopii(): string{
+    return $this->articoleCopii;
+  }
+
+  public function setArticoleCopii(string $articoleCopii): PersonalPlan {
+    $this->articoleCopii = $articoleCopii;
     return $this;
   }
 

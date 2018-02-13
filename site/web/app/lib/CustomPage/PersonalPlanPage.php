@@ -34,6 +34,9 @@
         ->setDescriereTabel(
           get_field('descriere_tabel_informatii_utile', $this->wpObject->ID)
         )
+        ->setArticoleCopii(
+          get_field('articole_copii', $this->wpObject->ID)
+        )
         ->setTabelPDF(
           get_field('tabel_pdf', $this->wpObject->ID)
         );

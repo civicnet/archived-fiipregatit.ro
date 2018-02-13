@@ -61,12 +61,18 @@ TemplateEngine::get()->render(
       ),
       array(
         'index' => 7,
+        'title' => 'Articole pentru copii',
+        'content' => $plan->getArticoleCopii(),
+        'collapsed' => true,
+      ),
+      array(
+        'index' => 8,
         'title' => 'Articole de igienă',
         'content' => $plan->getArticoleDeIgiena(),
         'collapsed' => true,
       ),
       array(
-        'index' => 8,
+        'index' => 9,
         'title' => 'Acte personale',
         'content' => $plan->getActePersonale(),
         'collapsed' => true,

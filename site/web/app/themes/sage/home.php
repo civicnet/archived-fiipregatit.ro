@@ -61,7 +61,7 @@
   <div class="container-fluid" id="plan-personal-section">
     <div class="container">
       <h2>Plan personal</h2>
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col d-none d-sm-block img-container">
           <img
             src="<?=Assets\asset_path('images/plan_personal_homepage.jpg');?>"

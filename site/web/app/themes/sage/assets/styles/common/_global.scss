@@ -3,25 +3,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   counter-reset: element;
 }
-/*
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
-*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
 }
@@ -841,4 +823,71 @@ h2:after {
 #plan-personal-content .download-tabel a:hover {
   color: #d03233;
   text-decoration: none;
+}
+@include media-breakpoint-up(sm) {
+  body,html {
+    font-size: 1.2rem;
+  }
+}
+@include media-breakpoint-down(sm) {
+  body,html {
+    font-size: 1rem;
+  }
+  .outline-button{
+    font-size: 1.1rem;
+    padding:10px 30px;
+    height: 100%;
+    width: 100%;
+  }
+
+  #campaign-section .campaign-content h3{
+    font-size: 1.3rem;
+  }
+  #guide-content .small-menu .btn{
+    width:100%;
+    padding: 1rem 2rem;
+  }
+  #guide-content .small-menu .dropdown-item{
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .dropdown-menu{
+    width:100%;
+  }
+  .dropdown-item.active, .dropdown-item:active{
+    background-color: #d03233;
+    color: #fff
+  }
+  .dropdown-toggle:after{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+}
+@include media-breakpoint-up(md) {
+  body,html {
+    font-size: 1rem!important;
+  }
+ 
+}
+@include media-breakpoint-down(md) {
+  #campaign-section .campaign-content .campaign-extras {
+    font-size: 1rem;
+  }
+
+  .outline-button{
+    font-size: 1.1rem;
+    padding:10px 30px;
+    height: 100%;
+    width: 100%;
+  }
+  .ghid-btn{
+    height: unset;
+    width: unset; 
+  }
+}
+@include media-breakpoint-up(lg) {
+  body,html{
+    font-size: 1.2rem;
+  }
 }

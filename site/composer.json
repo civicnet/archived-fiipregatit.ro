@@ -58,7 +58,15 @@
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin",
+        "wpackagist-plugin/advanced-custom-fields",
+        "wpackagist-plugin/simple-custom-post-order",
+        "wpackagist-plugin/simple-page-ordering",
+        "wpackagist-plugin/search-by-algolia-instant-relevant-results",
+        "wpackagist-plugin/cmb2",
+        "wpackagist-plugin/pirate-forms"
+      ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },

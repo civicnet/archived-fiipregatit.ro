@@ -313,7 +313,17 @@ h2:after {
   padding: 0px;
   padding-right: 15px;
 }
+.social-icon{
+  width: 1.2rem;
+  fill: #F9AAA7;
+  transition: fill 0.3s ease;
+}
+.social-menu a:hover .social-icon{
+  color: #fff;
+  fill: #ffffff;
+  animation-fill-mode: forwards;
 
+}
 #guide-content {
     margin-top: 80px;
     margin-bottom: 100px;
@@ -839,6 +849,18 @@ h2:after {
     height: 100%;
     width: 100%;
   }
+  .all-button {
+    margin: 20px auto 40px auto;
+    font-size: .9rem;
+    height: unset;
+    border-radius: unset;
+    line-height: 37px;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+  
 
   #campaign-section .campaign-content h3{
     font-size: 1.3rem;
@@ -864,6 +886,7 @@ h2:after {
     top: 25px;
   }
 }
+
 @include media-breakpoint-up(md) {
   body,html {
     font-size: 1rem!important;
@@ -871,6 +894,15 @@ h2:after {
  
 }
 @include media-breakpoint-down(md) {
+  #ghiduri-section,
+#plan-personal-section,
+#campanii-section,
+#app-section {
+  padding-top: 4rem;
+}
+#ghiduri-section{
+  padding-bottom: 1rem;
+}
   #campaign-section .campaign-content .campaign-extras {
     font-size: 1rem;
   }

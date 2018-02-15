@@ -14,7 +14,7 @@
 				<strong>fiipregătit</strong>.ro
 			</div>
       <div class="subtitle">
-        Departamentul pentru Situații de Urgență
+        Platforma Națională de Informare
       </div>
     </div>
   </a>
@@ -31,7 +31,7 @@
   </button>
 
 	<div id="navbarContent" class="collapse navbar-collapse">
-		<ul class="social-menu d-none d-lg-block"> 
+		<ul class="social-menu d-none d-lg-block">
 			<li class="first">
 				<a href="https://www.facebook.com/departamenturgente">
 					<i class="fab fa-facebook-square"></i>

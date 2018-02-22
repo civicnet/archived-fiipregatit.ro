@@ -111,13 +111,19 @@
   );
 
   $campaignProps = array();
+  $index = 1;
+  $is_hidden = false;
   foreach ($campaigns as $campaign) {
+    if ($index === App::HOMEPAGE_CAMPAIGNS_COUNT) {
+      $is_hidden = true;
+    }
     $campaignProps[] = array(
       'image' => $campaign->getImage(),
       'title' => $campaign->getTitle(),
       'permalink' => $campaign->getPermalink(),
       'extras' => $campaign->getExtras(),
       'date' => $campaign->getDate()->format('d.m.Y'),
+      'is_hidden' => $is_hidden,
     );
   }
 

@@ -8,7 +8,7 @@ final class App {
   const POST_TYPE_LINK = 'link_util';
 
   const HOMEPAGE_GUIDE_COUNT = 4;
-  const HOMEPAGE_CAMPAIGNS_COUNT = 3;
+  const HOMEPAGE_CAMPAIGNS_COUNT = 4;
   const LINK_COUNT = 7;
 
   const GUIDE_METABOX_GALLERY = 'fii_pregatit_galerie';

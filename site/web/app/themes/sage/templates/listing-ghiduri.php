@@ -20,14 +20,22 @@ foreach ($guides as $guide) {
     'icon' => $guide->getPictograma()->getUrl(),
     'title' => $guide->getTitle(),
     'permalink' => $guide->getPermalink(),
-    'see_more' => false
+    'see_more' => false,
   );
 }
 
+$first_aid = CustomPageManager::getFirstAidPage()->getPage();
 TemplateEngine::get()->render(
   'guide_listing',
   array(
-    'guides' => $guideProps
+    'guides' => $guideProps,
+    'extra_box' => array(
+      'title' => 'Prim Ajutor',
+      'icon' => $first_aid->getPictograma()->getUrl(),
+      'permalink' => $first_aid->getPermalink(),
+      'button_label' => 'Vezi Ghid',
+      'class' => 'prim-ajutor'
+    )
   )
 );
 

@@ -69,7 +69,8 @@ footer .bottom ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
+  padding: 0;
 }
 
 footer .bottom ul li {
@@ -80,14 +81,14 @@ footer .bottom img {
   height: 80px;
 }
 
-footer .bottom ul li.gov {
-    position: relative;
+footer .bottom ul li.sq-logo {
     padding-right: 15px;
+    width: 100px;
 }
 
-footer .bottom ul li.dsu {
-    padding-left: 15px;
-    padding-right: 25px;
+footer .bottom ul li.sq-logo img {
+  margin: 0 auto;
+  display: block;
 }
 
 footer .bottom ul li.gov::after {
@@ -110,7 +111,47 @@ footer .bottom .copyright a {
 }
 
 footer .bottom .copyright {
-  font-size: 12px;
+  font-size: 11px;
   margin: 0 auto;
-  width: 325px;
+}
+
+footer .civictech img {
+  width: 150px;
+  height: 45px;
+  display: block;
+}
+
+footer .logos-row .contribute svg {
+  margin-right: 5px;
+}
+
+@include media-breakpoint-up(lg) {
+  footer .logos-row .logo-box .copyright {
+    max-width: 200px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  footer .logos-row .civictech img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+  }
+
+  footer .logos-row .contribute {
+    text-align: center;
+    display: block;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  footer .logos-row .civictech img {
+    margin: unset;
+    display: unset;
+  }
+
+  footer .logos-row .contribute {
+    text-align: unset;
+    display: unset;
+  }
 }

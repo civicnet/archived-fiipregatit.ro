@@ -33,7 +33,7 @@
         ));
       }
 
-      static::$instance = new static($query->get_queried_object());
+      static::$instance = new static($page);
       return static::$instance;
     }
 

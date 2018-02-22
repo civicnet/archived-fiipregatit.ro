@@ -16,4 +16,5 @@ final class App {
   const CAMPAIGN_METABOX_VIDEO_GROUP = 'fii_pregatit_video_list';
 
   const PAGE_PERSONAL_PLAN = 'plan-personal';
+  const PAGE_FIRST_AID = 'prim-ajutor';
 }

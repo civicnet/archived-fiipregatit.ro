@@ -26,11 +26,19 @@
     );
   }
 
+  $first_aid = CustomPageManager::getFirstAidPage()->getPage();
   TemplateEngine::get()->render(
     'guide_listing',
     array(
       'guides' => $guideProps,
-      'see_more' => true
+      'see_more' => true,
+      'extra_box' => array(
+        'title' => 'Prim Ajutor',
+        'icon' => $first_aid->getPictograma()->getUrl(),
+        'permalink' => $first_aid->getPermalink(),
+        'button_label' => 'Vezi Ghid',
+        'class' => 'prim-ajutor'
+      )
     )
   );
 

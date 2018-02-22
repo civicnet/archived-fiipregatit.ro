@@ -172,7 +172,7 @@ h2:after {
 #ghiduri-section .prim-ajutor .ghid-content {
   background: #FFE9EB;
   border-color: #933;
-} 
+}
 
 #ghiduri-section .ghid-row {
   margin-bottom: 20px;
@@ -198,6 +198,15 @@ h2:after {
 #campaign-section .campaign-content {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+#campaign-section .campaign-content a.title {
+  color: unset;
+}
+
+#campaign-section .campaign-content a.title:hover {
+  text-decoration: unset;
+  color: unset;
 }
 
 #campaign-section .campaign-content h3 {

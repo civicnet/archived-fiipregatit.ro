@@ -39,7 +39,7 @@ button.navbar-toggler:focus {
 }
 
 button.navbar-toggler .navbar-toggler-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-collapse {
@@ -117,47 +117,51 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   border: none;
 }
 
-
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
   .navbar-brand {
     min-width: 450px;
   }
-  
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(lg) {
   .navbar-brand {
-    max-width: 260px;
+    max-width: 350px;
   }
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-brand {
+    max-width: 350px;
+  }
+
   .navbar .menu-item a {
     font-size: 1.5rem!important;
   }
 
-}
-
-@include media-breakpoint-down(md) {
-  // .menu-item {
-  //   margin-bottom: 5px;
-  // }
-  .navbar{
+  .navbar {
     align-items: flex-start;
   }
+
   .navbar-toggler {
     margin-top: 25px;
     margin-right: 5px;
   }
+
   .navbar .menu-item a {
     font-size: 1.2rem;
     display: block;
     text-align: center;
     margin:0px;
   }
+
   .navbar .menu-item:last-child a {
     margin-right: 0px;
   }
+
   .menu-item:first-child {
     margin-top: 15px;
   }
+
   .navbar-collapse.show ul li a:hover,
   .navbar-collapse.collapsing ul li a:hover,
   .navbar-collapse.show ul li.current_page_item a,
@@ -165,19 +169,25 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     padding-bottom: 10px;
   }
 }
-@include media-breakpoint-up(lg) { 
-  
-  .navbar-collapse.collapsing .social-menu, .navbar-collapse.show .social-menu{
-  list-style-type: none;
-  position: absolute;
-  top: -35px;
-  right: 15px;
-  margin-top: 0px;
-}
-.navbar-collapse.show {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
+
+@include media-breakpoint-down(xs) { 
+  .navbar-brand {
+    max-width: 220px;
+  }
 }
 
+@include media-breakpoint-up(lg) {
+  .navbar-collapse.collapsing .social-menu,
+  .navbar-collapse.show .social-menu {
+    list-style-type: none;
+    position: absolute;
+    top: -35px;
+    right: 15px;
+    margin-top: 0px;
+  }
+  .navbar-collapse.show {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}

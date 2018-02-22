@@ -25,6 +25,10 @@
   );
 
   foreach ($allGuides as $g) {
+    if ($g->getID() === $guide->getID()) {
+        continue;
+    }
+
     $sidebarLinks[] =  array(
       'text' => $g->getNume(),
       'href' => $g->getPermalink()

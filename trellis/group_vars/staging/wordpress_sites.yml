@@ -3,9 +3,25 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  staging.fiipregatit.ro:
+#  fiipregatit.civictech.ro:
+#    site_hosts:
+#      - canonical: fiipregatit.civictech.ro
+#        # redirects:
+#        #   - otherdomain.com
+#    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+#    repo: git@github.com:civictechro/fiipregatit.ro.git
+#    repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
+#    branch: master
+#    multisite:
+#      enabled: false
+#    ssl:
+#      enabled: true
+#      provider: letsencrypt
+#    cache:
+#      enabled: true
+  fiipregatit.claudiuceia.ro:
     site_hosts:
-      - canonical: staging.fiipregatit.ro
+      - canonical: fiipregatit.claudiuceia.ro
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
@@ -18,4 +34,4 @@ wordpress_sites:
       enabled: true
       provider: letsencrypt
     cache:
-      enabled: false
+      enabled: true

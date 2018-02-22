@@ -9,8 +9,9 @@
       'algolia_search' => get_search_form($echo = false)
     )
   );
-?>
 
-<div class="alert alert-warning">
-  <?php _e('Ne cerem scuze, dar pagina pe care ați încercat să o accesați nu este disponibilă.', 'sage'); ?>
-</div>
+  TemplateEngine::get()->render(
+    '404',
+    array()
+  );
+?>

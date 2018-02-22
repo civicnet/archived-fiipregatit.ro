@@ -28,6 +28,7 @@ TemplateEngine::get()->render(
         'index' => 1,
         'title' => 'Apă',
         'content' => $plan->getApa(),
+        'collapsed' => true,
       ),
       array(
         'index' => 2,

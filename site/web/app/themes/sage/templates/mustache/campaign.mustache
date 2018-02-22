@@ -30,7 +30,6 @@
                     <i class="fas {{ icon_class }}"></i>
                     <a
                       target="_blank"
-                      title="{{ mimetype }}"
                       href="{{ url }}"
                       {{# has_lightbox }}
                         data-toggle="lightbox"
@@ -40,6 +39,18 @@
                     </a>
                   </li>
                 {{/ attachments }}
+                {{# videos }}
+                  <li>
+                    <i class="fab fa-youtube"></i>
+                    <a
+                      target="_blank"
+                      href="{{ url }}"
+                      data-toggle="lightbox"
+                      data-gallery="campaign-gallery">
+                      {{ title }}
+                    </a>
+                  </li>
+                {{/ videos }}
               </ul>
             </div>
           </div>

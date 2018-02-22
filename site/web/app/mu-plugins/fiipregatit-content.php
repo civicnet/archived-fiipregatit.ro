@@ -152,11 +152,11 @@ class Fiipregatit_Content
         	'id'            => 'attachments_campaign',
         	'title'         => __( 'Materiale de Informare', 'cmb2' ),
         	'object_types'  => array(App::POST_TYPE_CAMPAIGN),
-        	'context'       => 'side',
+        	//'context'       => 'side',
         	'show_names'    => true
         ));
 
-        $cmb_campaign->add_field( array(
+        $cmb_campaign->add_field(array(
         	'name' => '',
         	'desc' => 'Alege materialele de informare / promo, pentru campania aceasta',
         	'id'   => App::CAMPAIGN_METABOX_ATTACHMENTS,
@@ -169,6 +169,39 @@ class Fiipregatit_Content
         		'remove_text' => 'Șterge',
         	),
         ));
+
+        $campaign_video_group_id = $cmb_campaign->add_field( array(
+        	'id' => App::CAMPAIGN_METABOX_VIDEO_GROUP,
+        	'type' => 'group',
+        	'description' => __( 'Listă materiale video (YouTube/Vimeo/etc.)', 'cmb2' ),
+        	'options'     => array(
+        		'group_title'   => __( 'Video {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+        		'add_button'    => __( 'Adaugă video', 'cmb2' ),
+        		'remove_button' => __( 'Șterge video', 'cmb2' ),
+        		'sortable'      => false, // beta
+        		//'closed'     => true, // true to have the groups closed by default
+        	),
+        ));
+
+        $cmb_campaign->add_group_field(
+          $campaign_video_group_id,
+          array(
+          	'name' => 'Titlu video',
+          	'id'   => 'title',
+          	'type' => 'text',
+          	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+          )
+        );
+
+        $cmb_campaign->add_group_field(
+          $campaign_video_group_id,
+          array(
+          	'name' => 'URL video',
+          	'id'   => 'video_oembed',
+          	'type' => 'oembed',
+          	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+          )
+        );
       };
       add_action( 'cmb2_admin_init', $custom_boxes_init);
     }

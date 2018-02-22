@@ -51,7 +51,7 @@
         $has_lightbox = true;
       } else if ($mimetype === 'application/pdf') {
         $icon_class = 'fa-file-pdf';
-      } 
+      }
     }
 
     $attachments[] = array(
@@ -64,14 +64,24 @@
     );
   }
 
+  $videos = array();
+  foreach ($campaign->getVideos() as $video) {
+      $videos[] = array(
+        'url' => $video['video_oembed'],
+        'title' => $video['title'],
+        'embed_code' => wp_oembed_get($video['title']),
+      );
+  }
+
   TemplateEngine::get()->render(
     'campaign',
     array(
       'title' => $campaign->getTitle(),
       'image' => $campaign->getImage(),
       'content' => $campaign->getContent(),
-      'has_attachments' => (bool) $campaign->getAttachments(),
+      'has_attachments' => (bool) $campaign->getAttachments() || (bool) $campaign->getVideos(),
       'attachments' => $attachments,
+      'videos' => $videos,
     )
   );
 

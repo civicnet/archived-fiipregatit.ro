@@ -98,32 +98,46 @@
     </div>
   </div>
   <div class="bottom container-fluid">
-    <div class="row">
-      <div class="col col-lg-2 col-md-2 d-none d-sm-block "></div>
-      <div class="col col-md-3 col-sm-12 col-xs-12">
+    <div class="row align-middle logos-row justify-content-center">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 logo-box">
         <ul>
-          <li class="gov">
-            <a href="http://www.guv.ro/">
-              <img src="<?=Assets\asset_path('images/Logo_GuvernRO.svg');?>" />
-            </a>
-          </li>
-          <li class="dsu">
-            <a href="http://www.dsu.mai.gov.ro/">
+          <li class="sq-logo">
+            <a href="http://www.dsu.mai.gov.ro/" target="_blank">
               <img src="<?=Assets\asset_path('images/Logo_DSU.svg');?>" />
             </a>
           </li>
+          <li>
+            <div class="copyright">
+              <h4>Departamentul pentru Situații de Urgență</h4>
+              <div class="sub">
+                Toate drepturile rezervate &copy; 2018
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="col col-lg-3 col-md-5 col-sm-12 col-xs-12">
-        <div class="copyright">
-          <h4>Departamentul pentru Situații de Urgență</h4>
-          <div class="sub">
-            Realizat cu sprijinul <a href="https://civictech.ro">CivicTech România</a>. Toate drepturile rezervate.<br/>
-            Copyright @  2017. Toate drepturile rezervate.
-          </div>
-        </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 logo-box">
+        <ul>
+          <li class="sq-logo">
+            <a href="https://www.igsu.ro/" target="_blank">
+              <img src="<?=Assets\asset_path('images/Stema_IGSU_color.png');?>" />
+            </a>
+          </li>
+          <li>
+            <div class="copyright">
+              <h4>Inspectoratul General pentru Situații de Urgență</h4>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="col col-lg-2 col-md-2 d-none d-sm-block "></div>
+      <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 logo-box">
+        <a href="https://civictech.ro/" class="civictech" target="_blank">
+          <img src="<?=Assets\asset_path('images/civictech_logo.svg');?>" />
+        </a>
+        <a class="contribute" href="https://github.com/civictechro/fiipregatit.ro" target="_blank">
+          <i class="fab fa-github"></i> Contribuie și tu!
+        </a>
+      </div>
   </div>
 </footer>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />

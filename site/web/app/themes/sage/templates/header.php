@@ -13,8 +13,8 @@
       <div class="brand-text">
 				<strong>fiipregătit</strong>.ro
 			</div>
-      <div class="subtitle">
-        Platforma Națională de Informare
+      <div class="subtitle d-none d-sm-block">
+        Platforma Națională de Pregătire pentru Situații de Urgență
       </div>
     </div>
   </a>

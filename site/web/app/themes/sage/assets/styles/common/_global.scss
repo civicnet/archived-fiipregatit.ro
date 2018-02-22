@@ -904,10 +904,20 @@ h2:after {
 @include media-breakpoint-up(lg) {
   body,html{
     font-size: 1.2rem;
-  } 
+  }
 }
 
 h4.modal-title {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+}
+
+#fourohfour-section {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+#fourohfour-section .masked-anchor {
+  font-weight: bold;
+  color: unset;
 }

@@ -12,6 +12,7 @@ class Campaign extends Entity {
   private $extras;
   private $attachments;
   private $similarGuides;
+  private $videos;
 
   public function getTitle(): string {
     return $this->title;
@@ -46,6 +47,15 @@ class Campaign extends Entity {
 
   public function setAttachments(?array $attachments): Campaign {
     $this->attachments = $attachments;
+    return $this;
+  }
+
+  public function getVideos(): ?array{
+    return $this->videos;
+  }
+
+  public function setVideos(?array $videos): Campaign {
+    $this->videos = $videos;
     return $this;
   }
 

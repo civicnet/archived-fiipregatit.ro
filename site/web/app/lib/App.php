@@ -13,6 +13,7 @@ final class App {
 
   const GUIDE_METABOX_GALLERY = 'fii_pregatit_galerie';
   const CAMPAIGN_METABOX_ATTACHMENTS = 'fii_pregatit_atasamente';
+  const CAMPAIGN_METABOX_VIDEO_GROUP = 'fii_pregatit_video_list';
 
   const PAGE_PERSONAL_PLAN = 'plan-personal';
 }

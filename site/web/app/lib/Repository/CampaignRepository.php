@@ -19,7 +19,10 @@
         ->setExtras(get_field('extras', $post->ID))
         ->setAttachments(array_filter(
           (array) get_post_meta($post->ID, \App::CAMPAIGN_METABOX_ATTACHMENTS, true)
-      ));
+        ))
+        ->setVideos(array_filter(
+          (array) get_post_meta($post->ID, \App::CAMPAIGN_METABOX_VIDEO_GROUP, true)
+        ));
 
       if ($includeRelated) {
         $similar = self::getSimilarGuides($post);

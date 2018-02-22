@@ -584,6 +584,11 @@ h2:after {
   padding-left: 0;
 }
 
+#campaign-content #collapseCampaignInfo svg {
+  margin-right: 10px;
+  color: #007bff;
+}
+
 #campaign-content .campaign-row p {
   padding-bottom: 0px;
   padding-top: 0px;
@@ -868,7 +873,7 @@ h2:after {
   body,html {
     font-size: 1rem!important;
   }
- 
+
 }
 @include media-breakpoint-down(md) {
   #campaign-section .campaign-content .campaign-extras {
@@ -883,7 +888,7 @@ h2:after {
   }
   .ghid-btn{
     height: unset;
-    width: unset; 
+    width: unset;
   }
 }
 @include media-breakpoint-up(lg) {

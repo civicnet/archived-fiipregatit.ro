@@ -126,3 +126,11 @@
       <div class="col col-lg-2 col-md-2 d-none d-sm-block "></div>
   </div>
 </footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>
+  jQuery(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      jQuery(this).ekkoLightbox();
+  });
+</script>

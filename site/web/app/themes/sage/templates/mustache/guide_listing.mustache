@@ -10,6 +10,26 @@
       {{/ title }}
     </h2>
     <div class="row ghid-row {{# center }} justify-content-center {{/ center }}">
+      {{# extra_box }}
+        <div class="ghid-box col-lg-3 col-sm-6 col-xs-12 {{ class }}">
+          <div class="ghid-content">
+            <div
+              style="background-image: url({{ icon }})"
+              class="guide-icon">
+            </div>
+            <h3>
+              {{ title }}
+            </h3>
+            <a
+              class="outline-button btn btn-outline-secondary rounded-0 ghid-btn"
+              role="button"
+              href="{{ permalink }}">
+              {{ button_label }}
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      {{/ extra_box }}
       {{# guides }}
         <div class="ghid-box col-lg-3 col-sm-6 col-xs-12">
           <div class="ghid-content">

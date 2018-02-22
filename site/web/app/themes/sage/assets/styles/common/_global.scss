@@ -168,10 +168,11 @@ h2:after {
   margin-bottom: 20px;
 }
 
-#ghiduri-section .ghid-content:hover {
+#ghiduri-section .ghid-content:hover,
+#ghiduri-section .prim-ajutor .ghid-content {
   background: #FFE9EB;
   border-color: #933;
-}
+} 
 
 #ghiduri-section .ghid-row {
   margin-bottom: 20px;

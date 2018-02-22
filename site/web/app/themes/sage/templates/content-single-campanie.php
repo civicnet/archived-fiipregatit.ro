@@ -16,10 +16,51 @@
     ->getByPost($wp_query->post, true);
 
   $attachments = array();
+  $sslContextOptions = array();
+
+  if (WP_DEBUG) {
+    $sslContextOptions = array(
+      'verify_peer' => false,
+      'verify_peer_name' => false,
+    );
+  }
+
   foreach ($campaign->getAttachments() as $attachment) {
+    stream_context_set_default(
+      array_merge(
+        array(
+          'http' => array(
+            'method' => 'HEAD'
+          ),
+          'ssl' => $sslContextOptions
+        )
+      )
+    );
+
+    $headers = get_headers($attachment, $format = 1);
+    $mimetype = null;
+    $icon_class = 'fa-file';
+    $has_lightbox = false;
+
+    if (isset($headers['Content-Type'])) {
+      $mimetype = $headers['Content-Type'];
+      $icon_type = explode('/', $mimetype);
+
+      if ($icon_type[0] === 'image') {
+        $icon_class = 'fa-image';
+        $has_lightbox = true;
+      } else if ($mimetype === 'application/pdf') {
+        $icon_class = 'fa-file-pdf';
+      } 
+    }
+
     $attachments[] = array(
       'url' => $attachment,
       'name' => basename($attachment),
+      'mime' => $mimetype,
+      'icon_class' => $icon_class,
+      'has_lightbox' => $has_lightbox,
+      'mimetype' => $mimetype,
     );
   }
 

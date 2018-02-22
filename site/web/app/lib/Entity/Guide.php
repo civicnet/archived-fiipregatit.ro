@@ -104,7 +104,7 @@ final class Guide extends Entity {
       return null;
     }
 
-    $arrContextOptions = array();
+    $sslContextOptions = array();
 
     /**
       * No valid SSL cert during development, skip verification.

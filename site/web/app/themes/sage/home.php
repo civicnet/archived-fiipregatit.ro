@@ -89,10 +89,10 @@
       </div>
 
       <div class="text-center">
-        <button type="button" class="btn btn-secondary all-button">
+        <a rel="button" class="btn btn-secondary all-button" href="/plan-personal">
           Vezi detaliile planului
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </button>
+        </a>
       </div>
     </div>
   </div>

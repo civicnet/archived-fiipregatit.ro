@@ -7,7 +7,7 @@ final class App {
   const POST_TYPE_CAMPAIGN = 'campanie';
   const POST_TYPE_LINK = 'link_util';
 
-  const HOMEPAGE_GUIDE_COUNT = 4;
+  const HOMEPAGE_GUIDE_COUNT = 7;
   const HOMEPAGE_CAMPAIGNS_COUNT = 3;
   const LINK_COUNT = 7;
 

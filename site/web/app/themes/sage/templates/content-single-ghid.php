@@ -17,6 +17,13 @@
 
   $allGuides = \RepoManager::getGuideRepository()->getList();
   $sidebarLinks = array();
+
+  $first_aid = CustomPageManager::getFirstAidPage()->getPage();
+  $sidebarLinks[] = array(
+      'text' => 'Prim Ajutor',
+      'href' => $first_aid->getPermalink(),
+  );
+
   foreach ($allGuides as $g) {
     $sidebarLinks[] =  array(
       'text' => $g->getNume(),

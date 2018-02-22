@@ -145,6 +145,13 @@
 <script>
   jQuery(document).on('click', '[data-toggle="lightbox"]', function(event) {
       event.preventDefault();
-      jQuery(this).ekkoLightbox();
+      jQuery(this).ekkoLightbox({
+        alwaysShowClose: true,
+        strings: {
+          close: 'Închide',
+          fail: 'Momentan nu putem afișa conținutul, vă rugăm încercați mai târziu',
+          type: 'Nu am putut detecta tipul conținutului'
+        }
+      });
   });
 </script>

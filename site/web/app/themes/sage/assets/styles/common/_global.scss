@@ -904,5 +904,10 @@ h2:after {
 @include media-breakpoint-up(lg) {
   body,html{
     font-size: 1.2rem;
-  }
+  } 
+}
+
+h4.modal-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }

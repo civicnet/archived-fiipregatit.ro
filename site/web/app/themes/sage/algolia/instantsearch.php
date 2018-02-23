@@ -20,6 +20,15 @@
 	</div>
 </div>
 
+<script type="text/html" id="tmpl-instantsearch-blank">
+  <?php
+    TemplateEngine::get()->render(
+      '404',
+      array()
+    );
+  ?>
+</script>
+
 <script type="text/html" id="tmpl-instantsearch-hit">
 		<# if ( data.image ) { #>
 			<a href="{{ data.permalink }}" title="{{ data.post_title }}">
@@ -101,7 +110,7 @@
 					container: '#algolia-hits',
 					hitsPerPage: 10,
 					templates: {
-						empty: 'Nu am găsit rezultate pentru "<strong>{{query}}</strong>".',
+						empty: wp.template('instantsearch-blank'), //'Nu am găsit rezultate pentru "<strong>{{query}}</strong>".',
 						item: wp.template('instantsearch-hit')
 					},
 					transformData: {

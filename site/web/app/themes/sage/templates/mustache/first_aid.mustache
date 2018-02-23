@@ -21,13 +21,13 @@
     <h2>Prim Ajutor</h2>
     <div class="row ghid-row">
       <div class="col col-lg-9 col-md-12">
-        <div id="accordion">
+        <div id="accordion" class="first-aid">
           {{# first_aid_items }}
             <div class="card">
               <div class="card-header" id="heading-{{ index }}">
                 <h5 class="mb-0">
                   <button
-                    class="btn btn-link collapsed"
+                    class="btn btn-link collapsed expander-button"
                     data-toggle="collapse"
                     data-target="#collapse-{{ index }}"
                     aria-expanded="true"
@@ -75,3 +75,37 @@
     {{/ pdf_guide.url }}
   </div>
 </div>
+
+<style>
+  #guide-content .first-aid iframe {
+    width: 100%;
+  }
+</style>
+
+<script>
+  function adjustIframes() {
+    jQuery('#guide-content .first-aid iframe').each(function() {
+      var $this = jQuery(this);
+      var proportion = $this.data('proportion');
+      var w = $this.attr('width');
+      var actual_w = $this.width();
+
+      if (!proportion) {
+        proportion = $this.attr('height') / w;
+        $this.data( 'proportion', proportion);
+      }
+
+      if (actual_w !== w) {
+        var new_height = Math.round(actual_w * proportion) + 'px';
+        $this.css( 'height', new_height);
+      }
+    });
+  }
+
+  jQuery('.expander-button').click(() => {
+    setTimeout(adjustIframes, 500);
+  });
+
+  jQuery( document ).ready(adjustIframes);
+  jQuery(window).on('resize load', adjustIframes);
+</script>

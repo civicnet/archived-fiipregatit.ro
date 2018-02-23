@@ -4,9 +4,9 @@
     protected function getCustomAttributes(): array {
       return array(
         'nume' => $this->entity->getNume(),
-        'inaintea_evenimentului' => strip_tags(
+        /*'inaintea_evenimentului' => strip_tags(
           $this->entity->getInainteaEvenimentului()
-        ),
+        ),*/
         'dupa_eveniment' => strip_tags(
           $this->entity->getDupaEveniment()
         ),

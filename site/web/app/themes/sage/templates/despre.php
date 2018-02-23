@@ -17,23 +17,23 @@ TemplateEngine::get()->render(
   array(
     'sections' => array(
       array(
-        'name' => 'Fii Pregătit',
+        'name' => 'Despre',
         'slug' => 'custom-menu-fii-pregatit',
         'is_active' => 'active',
         'content' => TemplateEngine::get()->getPartial('despre_fii_pregatit'),
       ),
       array(
-        'name' => 'Întrebări Frecvente',
+        'name' => 'Context',
         'slug' => 'custom-menu-faq',
         'content' => TemplateEngine::get()->getPartial('faq'),
       ),
       array(
-        'name' => 'Social Media',
+        'name' => 'Parteneri',
         'slug' => 'custom-menu-media',
         'content' => TemplateEngine::get()->getPartial('social_media'),
       ),
       array(
-        'name' => 'Presă',
+        'name' => 'Echipa',
         'slug' => 'custom-menu-press',
         'content' => TemplateEngine::get()->getPartial('press'),
       )

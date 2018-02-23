@@ -21,7 +21,6 @@ foreach ($campaigns as $campaign) {
     'title' => $campaign->getTitle(),
     'permalink' => $campaign->getPermalink(),
     'extras' => $campaign->getExtras(),
-    'date' => $campaign->getDate()->format('d.m.Y'),
     'see_more' => false
   );
 }

@@ -13,6 +13,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  max-width: 350px;
 }
 
 .navbar-brand div.brand-container {
@@ -22,7 +23,7 @@
 
 .navbar-brand div.subtitle {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   white-space: normal;
@@ -117,23 +118,7 @@ button.navbar-toggler .navbar-toggler-icon {
   border: none;
 }
 
-@include media-breakpoint-up(md) {
-  .navbar-brand {
-    min-width: 450px;
-  }
-}
-
-@include media-breakpoint-down(lg) {
-  .navbar-brand {
-    max-width: 350px;
-  }
-}
-
 @include media-breakpoint-down(md) {
-  .navbar-brand {
-    max-width: 350px;
-  }
-
   .navbar .menu-item a {
     font-size: 1.5rem!important;
   }
@@ -170,9 +155,16 @@ button.navbar-toggler .navbar-toggler-icon {
   }
 }
 
-@include media-breakpoint-down(xs) { 
+@include media-breakpoint-down(xs) {
   .navbar-brand {
     max-width: 220px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .navbar-brand {
+    font-size: 18px;
   }
 }
 

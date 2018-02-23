@@ -22,12 +22,17 @@
   padding: 15px;
   border-radius: 0;
   border: 1px solid #999;
-  font-style: italic;
+  font-style: normal;
   background: #ffffcc;
-  color: #666;
+  color: #000;
   width: 100%;
   height: 44px;
   font-size: 16px;
+}
+
+.search-form .search-field::placeholder {
+  font-style: italic;
+  color: #666;
 }
 
 .search-form {

@@ -345,6 +345,21 @@ h2:after {
   text-transform: capitalize;
 }
 
+#guide-content #accordion .card-header .btn-link {
+  white-space: normal;
+  padding-right: 45px;
+  position: relative;
+}
+
+#guide-content #accordion .card-header .btn-link svg {
+  height: 18px;
+  right: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 #guide-content #accordion ul {
   list-style: none;
   counter-reset: section;

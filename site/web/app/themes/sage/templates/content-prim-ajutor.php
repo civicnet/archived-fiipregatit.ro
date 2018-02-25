@@ -102,6 +102,8 @@ foreach ($guides as $guide) {
     'color' => $guide->getCuloareGhid(),
     'id' => 'icon-' . preg_replace("/[^a-zA-Z0-9]+/", '', $guide->getTitle()),
     'is_svg' => $guide->getPictograma()->getMimeType() === 'image/svg+xml',
+    'count_videos' => $guide->getVideoAjutator() ? 1 : 0,
+    'count_photo' => count($guide->getGalerieFoto()),
   );
 }
 

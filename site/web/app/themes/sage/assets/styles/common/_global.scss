@@ -151,7 +151,7 @@ h2:after {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 1px solid #999;
+  border: 2px solid #999;
   margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,23 +173,83 @@ h2:after {
   text-align: center;
   height: 220px;
   margin-bottom: 20px;
-}
-
-#ghiduri-section .ghid-content:hover,
-#ghiduri-section .prim-ajutor .ghid-content {
-  background: #FF6766;
-  border-color: #933;
-  cursor: pointer;
+  position: relative;
 }
 
 #ghiduri-section .ghid-content:hover h3,
-#ghiduri-section .prim-ajutor .ghid-content h3 {
+#ghiduri-section .prim-ajutor .ghid-content h3,
+#ghiduri-section .prim-ajutor:hover .ghid-content h3 {
   color: #fff;
+  transition: all .15s ease-in-out;
+}
+
+#ghiduri-section a.ghid-content {
   text-decoration: none;
+  transition: all .15s ease-in-out;
+  padding: 0;
+  display: block;
+}
+
+#ghiduri-section .prim-ajutor .ghid-content {
+  background: #FF6766;
+  border-color: #933;
+}
+
+#ghiduri-section a.ghid-content:hover {
+  box-shadow: 5px 5px 2px #ccc;
+  background: #FF6766;
+  border-color: #933;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+#ghiduri-section a.ghid-content:hover .outline-button,
+#ghiduri-section .prim-ajutor .outline-button {
+  border: 1px solid #fff;
+  color: #933;
+}
+
+#ghiduri-section a.ghid-content:hover .guide-icon,
+#ghiduri-section .prim-ajutor .guide-icon {
+  border: none;
+}
+
+#ghiduri-section a.ghid-content:hover .guide-count,
+#ghiduri-section .prim-ajutor .guide-count {
+  color: #fff;
+}
+
+#ghiduri-section .guide-count {
+  position: absolute;
+  font-size: 12px;
+  color: #999;
+}
+
+#ghiduri-section .guide-count svg {
+  margin-right: 3px;
+}
+
+#ghiduri-section .count-foto {
+  right: 10px;
+  top: 5px;
+}
+
+#ghiduri-section .count-videos {
+  left: 10px;
+  top: 5px;
 }
 
 #ghiduri-section .ghid-row {
   margin-bottom: 20px;
+}
+
+#ghiduri-section .outline-button {
+  user-select: none;
+  display: inline-block;
+  padding: .5rem .75rem;
+  line-height: 1.25;
+  background: #fff;
+  border: 1px solid #ccc;
 }
 
 #campaign-section {

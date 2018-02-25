@@ -12,7 +12,7 @@
     <div class="row ghid-row {{# center }} justify-content-center {{/ center }}">
       {{# extra_box }}
         <div class="ghid-box col-lg-3 col-sm-6 col-xs-12 {{ class }}">
-          <div class="ghid-content">
+          <div class="ghid-content" data-href="{{ permalink }}">
             <div
               class="guide-icon"
               {{^ is_svg }} style="background-image: url({{ icon }})" {{/ is_svg }}>
@@ -36,7 +36,7 @@
       {{/ extra_box }}
       {{# guides }}
         <div class="ghid-box col-lg-3 col-sm-6 col-xs-12">
-          <div class="ghid-content">
+          <div class="ghid-content" data-href="{{ permalink }}">
             <div
               class="guide-icon"
               {{^ is_svg }} style="background-image: url({{ icon }})" {{/ is_svg }}>
@@ -108,6 +108,10 @@
     guides.map(guide => {
       var svg = jQuery('#' + guide.id).getSVG();
       svg.find('path').attr('fill', guide.color);
+    });
+
+    jQuery('.ghid-content').click(function() {
+      window.location = jQuery(this).data('href');
     });
   }
 </script>

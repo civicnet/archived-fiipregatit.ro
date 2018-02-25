@@ -39,7 +39,6 @@ TemplateEngine::get()->render(
       'icon' => $first_aid->getPictograma()->getUrl(),
       'permalink' => $first_aid->getPermalink(),
       'button_label' => 'Vezi Ghid',
-      'class' => 'prim-ajutor',
       'id' => 'icon-prim-ajutor',
       'is_svg' => $first_aid->getPictograma()->getMimeType() === 'image/svg+xml',
       'color' => $first_aid->getCuloarePictograma(),

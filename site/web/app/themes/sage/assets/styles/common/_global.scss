@@ -970,12 +970,14 @@ h2:after {
     top: 25px;
   }
 }
+
 @include media-breakpoint-up(md) {
   body,html {
     font-size: 1rem!important;
   }
 
 }
+
 @include media-breakpoint-down(md) {
   #campaign-section .campaign-content .campaign-extras {
     font-size: 1rem;
@@ -992,6 +994,7 @@ h2:after {
     width: unset;
   }
 }
+
 @include media-breakpoint-up(lg) {
   body,html{
     font-size: 1.2rem;

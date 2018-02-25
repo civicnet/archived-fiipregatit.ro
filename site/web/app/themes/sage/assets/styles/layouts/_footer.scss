@@ -142,8 +142,12 @@ footer .logos-row .contribute svg {
     text-align: center;
     display: block;
   }
+
+  footer .logos-row {
+    padding-bottom: 12px;
+  }
 }
- 
+
 @include media-breakpoint-down(sm) {
   footer .logos-row .civictech img {
     margin: unset;
@@ -152,6 +156,5 @@ footer .logos-row .contribute svg {
 
   footer .logos-row .contribute {
     text-align: unset;
-    display: unset;
   }
 }

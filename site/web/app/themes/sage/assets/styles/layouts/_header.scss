@@ -77,6 +77,12 @@ button.navbar-toggler .navbar-toggler-icon {
   border-bottom: 5px solid #fff;
 }
 
+.navbar-collapse ul li.homepage_item a:hover {
+  color: #fff;
+  padding-bottom: 18px;
+  border-bottom: 0;
+}
+
 .navbar-collapse.show ul li a:hover,
 .navbar-collapse.collapsing ul li a:hover,
 .navbar-collapse.show ul li.current_page_item a,

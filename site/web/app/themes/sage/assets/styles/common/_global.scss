@@ -169,8 +169,13 @@ h2:after {
 
 #ghiduri-section .ghid-content:hover,
 #ghiduri-section .prim-ajutor .ghid-content {
-  background: #FFE9EB;
+  background: #FF6766;
   border-color: #933;
+}
+
+#ghiduri-section .ghid-content:hover h3,
+#ghiduri-section .prim-ajutor .ghid-content h3 {
+  color: #fff;
 }
 
 #ghiduri-section .ghid-row {

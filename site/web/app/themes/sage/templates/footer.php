@@ -21,7 +21,7 @@
             foreach ($pages as $page) {
           ?>
             <li>
-              <a href="<?=$page->guid;?>">
+              <a href="<?=$page->guid;?>" class="mobile-block-link">
                 <?=$page->post_title;?>
               </a>
             </li>
@@ -42,7 +42,7 @@
           foreach($links as $link) {
         ?>
           <li>
-            <a href="<?=$link->getTarget();?>">
+            <a href="<?=$link->getTarget();?>" class="mobile-block-link">
               <?=$link->getTitle();?>
             </a>
           </li>
@@ -74,7 +74,7 @@
         <div class="header">
           Social Media
         </div>
-        <ul>
+        <ul class="social-media-mobile-block">
           <li>
             <a href="https://www.facebook.com/departamenturgente">
               <i class="fab fa-facebook-square" data-fa-transform="grow-10"></i>

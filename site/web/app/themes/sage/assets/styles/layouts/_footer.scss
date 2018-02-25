@@ -158,3 +158,25 @@ footer .logos-row .contribute svg {
     text-align: unset;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  footer .content-info {
+    text-align: center;
+  }
+
+  footer .content-info a.header {
+    margin-bottom: 0;
+  }
+
+  footer .content-info .mobile-block-link {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+  }
+
+  footer .content-info .social-media-mobile-block {
+    text-align: left;
+    width: 110px;
+    margin: 0 auto;
+  }
+}

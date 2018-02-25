@@ -673,8 +673,10 @@ h2:after {
   color: #999;
 }
 
-#despre-content .small-menu .dropdown-item {
+#despre-content .small-menu .nav-link {
   text-transform: capitalize;
+  background-color: transparent;
+  padding-left: 15px;
 }
 
 #despre-content h3 {

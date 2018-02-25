@@ -12,30 +12,32 @@ TemplateEngine::get()->render(
   )
 );
 
+$about = CustomPageManager::getAboutPage()->getPage();
+
 TemplateEngine::get()->render(
   'despre',
   array(
     'sections' => array(
       array(
         'name' => 'Despre',
-        'slug' => 'custom-menu-fii-pregatit',
+        'slug' => 'custom-menu-despre',
         'is_active' => 'active',
-        'content' => TemplateEngine::get()->getPartial('despre_fii_pregatit'),
+        'content' => $about->getDespre(),
       ),
       array(
         'name' => 'Context',
-        'slug' => 'custom-menu-faq',
-        'content' => TemplateEngine::get()->getPartial('faq'),
+        'slug' => 'custom-menu-context',
+        'content' => $about->getContext(),
       ),
       array(
         'name' => 'Parteneri',
-        'slug' => 'custom-menu-media',
-        'content' => TemplateEngine::get()->getPartial('social_media'),
+        'slug' => 'custom-menu-parteneri',
+        'content' => $about->getParteneri(),
       ),
       array(
         'name' => 'Echipa',
-        'slug' => 'custom-menu-press',
-        'content' => TemplateEngine::get()->getPartial('press'),
+        'slug' => 'custom-menu-echipa',
+        'content' => $about->getEchipa(),
       )
     ),
   )

@@ -79,11 +79,13 @@
   <div class="container-fluid" id="plan-personal-section">
     <div class="container">
       <h2>Trusă supraviețuire</h2>
-      <div class="row align-items-center">
+      <div class="row align-items-center trusa-row">
         <div class="col d-none d-sm-block img-container">
-          <img
-            src="<?=Assets\asset_path('images/fiipregatit_planpersonal_colaj_v1.png');?>"
-            class="img-fluid">
+          <a href="/plan-personal">
+            <img
+              src="<?=Assets\asset_path('images/fiipregatit_planpersonal_colaj_v1.png');?>"
+              class="img-fluid" />
+          </a>
         </div>
         <div class="col">
           <div class="headline">

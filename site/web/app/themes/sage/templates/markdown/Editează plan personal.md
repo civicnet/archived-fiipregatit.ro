@@ -1,1 +1,1 @@
-## Editează plan personal
+## Editează trusă supraviețuire

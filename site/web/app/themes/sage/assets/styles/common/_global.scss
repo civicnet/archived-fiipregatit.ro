@@ -87,9 +87,17 @@ h2:after {
 
 #ghiduri-section,
 #plan-personal-section,
-#campanii-section,
+#campaign-section,
 #app-section {
   padding-top: 150px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#summary-section .container,
+#campaign-section .container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .all-button {
@@ -257,10 +265,6 @@ h2:after {
   border: 1px solid #ccc;
 }
 
-#campaign-section {
-    margin-top: 100px;
-}
-
 #campaign-section .campaign-photo {
   width: 100%;
   height: 180px;
@@ -410,11 +414,15 @@ h2:after {
 #guide-content {
     margin-top: 80px;
     margin-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #guide-content .small-menu {
   text-align: center;
   top: -40px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-family: Merriweather, serif;
 }
 
@@ -637,6 +645,12 @@ h2:after {
   padding-top: 100px;
   background: #fff;
   padding-bottom: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#campaign-content .campaign-row p {
+  word-wrap: break-word;
 }
 
 #campaign-content .campaign-image {
@@ -857,6 +871,8 @@ h2:after {
   background: #fff;
   padding-bottom: 100px;
   counter-reset: plan-section;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #plan-personal-content h3 {

@@ -16,18 +16,18 @@
               Acasă
             </a>
           </li>
-        <?php
-          $pages = get_pages();
-          foreach ($pages as $page) {
-        ?>
-          <li>
-            <a href="<?=$page->guid;?>">
-              <?=$page->post_title;?>
-            </a>
-          </li>
-        <?php
-          }
-        ?>
+          <?php
+            $pages = get_pages();
+            foreach ($pages as $page) {
+          ?>
+            <li>
+              <a href="<?=$page->guid;?>">
+                <?=$page->post_title;?>
+              </a>
+            </li>
+          <?php
+            }
+          ?>
         </ul>
       </div>
 

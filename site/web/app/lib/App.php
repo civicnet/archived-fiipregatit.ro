@@ -6,7 +6,7 @@ final class App {
   const POST_TYPE_GUIDE = 'ghid';
   const POST_TYPE_CAMPAIGN = 'campanie';
   const POST_TYPE_LINK = 'link_util';
-  
+
   const HOMEPAGE_CAMPAIGNS_COUNT = 4;
   const HOMEPAGE_GUIDE_COUNT = 7;
 
@@ -18,4 +18,5 @@ final class App {
 
   const PAGE_PERSONAL_PLAN = 'plan-personal';
   const PAGE_FIRST_AID = 'prim-ajutor';
+  const PAGE_ABOUT = 'despre';
 }

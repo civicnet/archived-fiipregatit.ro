@@ -428,9 +428,9 @@ h2:after {
 
 #guide-content .small-menu .btn {
   background: none;
-  border: 1px solid #999;
+  border: 1px solid #933;
   border-radius: 0;
-  color: #999;
+  color: #933;
 }
 
 #guide-content .small-menu .dropdown-item {
@@ -955,6 +955,7 @@ h2:after {
   color: #d03233;
   text-decoration: none;
 }
+
 @include media-breakpoint-up(sm) {
   body,html {
     font-size: 1.2rem;
@@ -964,6 +965,7 @@ h2:after {
   body,html {
     font-size: 1rem;
   }
+
   .outline-button{
     font-size: 1.1rem;
     padding:10px 30px;
@@ -971,28 +973,34 @@ h2:after {
     width: 100%;
   }
 
-  #campaign-section .campaign-content h3{
+  #campaign-section .campaign-content h3 {
     font-size: 1.3rem;
   }
-  #guide-content .small-menu .btn{
+
+  #guide-content .small-menu .btn {
     width:100%;
     padding: 1rem 2rem;
   }
+
   #guide-content .small-menu .dropdown-item{
     font-size: 1.2rem;
     padding: 1rem;
   }
+
   .dropdown-menu{
     width:100%;
   }
+
   .dropdown-item.active, .dropdown-item:active{
     background-color: #d03233;
     color: #fff
   }
+
   .dropdown-toggle:after{
     position: absolute;
     right: 20px;
     top: 25px;
+    color: #933;
   }
 }
 

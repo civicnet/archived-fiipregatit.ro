@@ -22,7 +22,10 @@
     $guideProps[] = array(
       'icon' => $guide->getPictograma()->getUrl(),
       'title' => $guide->getTitle(),
-      'permalink' => $guide->getPermalink()
+      'permalink' => $guide->getPermalink(),
+      'color' => $guide->getCuloareGhid(),
+      'id' => 'icon-' . preg_replace("/[^a-zA-Z0-9]+/", '', $guide->getTitle()),
+      'is_svg' => $guide->getPictograma()->getMimeType() === 'image/svg+xml',
     );
   }
 
@@ -37,7 +40,10 @@
         'icon' => $first_aid->getPictograma()->getUrl(),
         'permalink' => $first_aid->getPermalink(),
         'button_label' => 'Vezi Ghid',
-        'class' => 'prim-ajutor'
+        'class' => 'prim-ajutor',
+        'id' => 'icon-prim-ajutor',
+        'is_svg' => $first_aid->getPictograma()->getMimeType() === 'image/svg+xml',
+        'color' => $first_aid->getCuloarePictograma(),
       )
     )
   );

@@ -25,6 +25,7 @@ final class GuideRepository extends AbstractRepository {
         get_field('ghid_pdf', $post->ID)
       ))
       ->setPictograma(get_field('pictograma_eveniment', $post->ID))
+      ->setCuloareGhid(get_field('culoare_ghid', $post->ID))
       ->setPermalink(get_the_permalink($post->ID));
 
     if ($includeRelated) {

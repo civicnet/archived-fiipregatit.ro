@@ -16,6 +16,7 @@ final class Guide extends Entity {
   private $guidePDF;
   private $galerieFoto;
   private $pictograma;
+  private $culoareGhid;
 
   public function getTitle(): string {
     return $this->title;
@@ -198,6 +199,15 @@ final class Guide extends Entity {
 
   public function setPermalink(string $permalink): Guide {
     $this->permalink = $permalink;
+    return $this;
+  }
+
+  public function getCuloareGhid(): ?string {
+    return $this->culoareGhid;
+  }
+
+  public function setCuloareGhid(?string $culoareGhid): Guide {
+    $this->culoareGhid = $culoareGhid;
     return $this;
   }
 }

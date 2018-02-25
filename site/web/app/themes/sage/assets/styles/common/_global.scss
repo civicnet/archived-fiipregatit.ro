@@ -157,6 +157,14 @@ h2:after {
   background-repeat: no-repeat;
   margin-top: 25px;
   background-color: #fff;
+  position: relative;
+}
+
+#ghiduri-section .guide-icon object {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
 }
 
 #ghiduri-section .ghid-content {

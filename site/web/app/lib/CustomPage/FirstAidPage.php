@@ -37,6 +37,7 @@
         ))
         ->setGhidPDF(get_field('ghid_pdf', $this->wpObject->ID))
         ->setPictograma(get_field('pictograma', $this->wpObject->ID))
+        ->setCuloarePictograma(get_field('culoare_pictograma', $this->wpObject->ID))
         ->setPermalink(get_page_link($this->wpObject->ID));
     }
   }

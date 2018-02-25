@@ -14,8 +14,12 @@
         <div class="ghid-box col-lg-3 col-sm-6 col-xs-12 {{ class }}">
           <div class="ghid-content">
             <div
-              style="background-image: url({{ icon }})"
-              class="guide-icon">
+              class="guide-icon"
+              {{^ is_svg }} style="background-image: url({{ icon }})" {{/ is_svg }}>
+              {{# is_svg }}
+                <object id="{{ id }}" type="image/svg+xml" data="{{ icon }}">
+                </object>
+              {{/ is_svg }}
             </div>
             <h3>
               {{ title }}
@@ -34,8 +38,12 @@
         <div class="ghid-box col-lg-3 col-sm-6 col-xs-12">
           <div class="ghid-content">
             <div
-              style="background-image: url({{ icon }})"
-              class="guide-icon">
+              class="guide-icon"
+              {{^ is_svg }} style="background-image: url({{ icon }})" {{/ is_svg }}>
+              {{# is_svg }}
+                <object id="{{ id }}" type="image/svg+xml" data="{{ icon }}">
+                </object>
+              {{/ is_svg }}
             </div>
             <h3>
               {{ title }}
@@ -61,3 +69,45 @@
     {{/ see_more }}
   </div>
 </div>
+
+<script>
+  window.onload = function(){
+    (function ($) {
+    	$.fn.getSVG = function (selector) {
+    		var svgDoc = this[0].contentDocument;
+    		return $(svgDoc);
+    	};
+    	$.fn.setSVGStyle = function (style) {
+    		var svgDoc = this[0].contentDocument;
+    		var styleElement = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
+    		styleElement.textContent = style;
+    		svgDoc.getElementsByTagName("svg")[0].appendChild(styleElement);
+    		return;
+    	};
+    	$.fn.setSVGStyleLink = function (link) {
+    		var svgDoc = this[0].contentDocument;
+    		var linkElm = svgDoc.createElementNS("http://www.w3.org/1999/xhtml", "link");
+    		linkElm.setAttribute("href", link);
+    		linkElm.setAttribute("type", "text/css");
+    		linkElm.setAttribute("rel", "stylesheet");
+    		svgDoc.getElementsByTagName("svg")[0].appendChild(linkElm);
+    		return;
+    	};
+    }(jQuery));
+
+    var guides = [];
+    {{# guides }}
+      {{# is_svg }}
+        guides.push({
+          'id': '{{ id }}',
+          'color': '{{ color }}'
+        });
+      {{/ is_svg }}
+    {{/ guides }}
+
+    guides.map(guide => {
+      var svg = jQuery('#' + guide.id).getSVG();
+      svg.find('path').attr('fill', guide.color);
+    });
+  }
+</script>

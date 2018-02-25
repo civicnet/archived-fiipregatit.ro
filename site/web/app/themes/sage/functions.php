@@ -151,3 +151,10 @@ $algoliaCallback = function(array $attributes, WP_Post $post) {
 
 add_filter( 'algolia_post_shared_attributes', $algoliaCallback, 10, 2 );
 add_filter( 'algolia_searchable_post_shared_attributes', $algoliaCallback, 10, 2 );
+
+function enable_extended_upload ($mime_types =array() ) {
+  $mime_types['svg']  = 'image/svg+xml';
+  return $mime_types;
+
+}
+add_filter('upload_mimes', 'enable_extended_upload');

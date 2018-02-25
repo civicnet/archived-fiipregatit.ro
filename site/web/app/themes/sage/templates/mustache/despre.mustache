@@ -12,31 +12,37 @@
     </a>
 
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="tablist">
-        {{# sections }}
-          <a
-            class="nav-link {{ is_active }} dropdown-item"
-            id="{{ slug }}-tab-upper"
-            data-toggle="pill"
-            href="#{{ slug }}"
-            role="tab"
-            aria-controls="{{ slug }}"
-            aria-selected="true">
-            {{ name }}
-          </a>
-        {{/ sections }}
+      <div
+        class="nav flex-column nav-pills"
+        id="custom-menu-tab-mobile"
+        role="tablist"
+        aria-orientation="vertical">
+          {{# sections }}
+            <a
+              class="nav-link {{ is_active }}"
+              id="{{ slug }}-tab-mobile"
+              data-toggle="pill"
+              href="#{{ slug }}"
+              role="tab"
+              aria-controls="{{ slug }}"
+              aria-selected="true">
+              {{ name }}
+            </a>
+          {{/ sections }}
+      </div>
     </div>
   </div>
   <div class="container">
-    <h2>Despre</h2>
     <div class="row despre-row">
       <div class="col col-lg-9 col-md-12">
         <div class="tab-content" id="custom-menu-content">
           {{# sections }}
             <div
-              class="tab-pane fade show {{ is_active }}"
+              class="tab-pane fade {{# is_active }}show{{/ is_active }} {{ is_active }}"
               id="{{ slug }}"
               role="tabpanel"
               aria-labelledby="{{ slug }}-tab">
+              <h2>{{ name }}</h2>
               {{& content }}
             </div>
           {{/ sections }}

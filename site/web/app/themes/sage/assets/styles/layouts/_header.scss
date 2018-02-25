@@ -122,6 +122,11 @@ button.navbar-toggler .navbar-toggler-icon {
 @include media-breakpoint-down(md) {
   .navbar .menu-item a {
     font-size: 1.5rem!important;
+    color: #f9aaaa;
+    letter-spacing: unset;
+    display: block;
+    text-align: center;
+    margin:0px;
   }
 
   .navbar {
@@ -131,13 +136,6 @@ button.navbar-toggler .navbar-toggler-icon {
   .navbar-toggler {
     margin-top: 25px;
     margin-right: 5px;
-  }
-
-  .navbar .menu-item a {
-    font-size: 1.2rem;
-    display: block;
-    text-align: center;
-    margin:0px;
   }
 
   .navbar .menu-item:last-child a {

@@ -158,3 +158,16 @@ function enable_extended_upload ($mime_types =array() ) {
 
 }
 add_filter('upload_mimes', 'enable_extended_upload');
+
+function homepage_link_custom_menu_filter($items, $args) {
+    if ($args->theme_location === 'main_navigation') {
+        $home = '<li class="menu-item homepage_item">
+          <a href="' . esc_url(get_home_url('/')) . '" title="'.esc_attr(get_bloginfo('name', 'display')).'">
+            <i class="fas fa-home"></i>
+          </a></li>';
+        $items = $home . $items;
+    }
+
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'homepage_link_custom_menu_filter', 10, 2);

@@ -5,6 +5,7 @@
   <div class="container">
     <h2>
       {{ title }}
+
       {{^ title }}
         Ghiduri
       {{/ title }}
@@ -12,7 +13,17 @@
     <div class="row ghid-row {{# center }} justify-content-center {{/ center }}">
       {{# extra_box }}
         <div class="ghid-box col-lg-3 col-sm-6 col-xs-12 {{ class }}">
-          <div class="ghid-content" data-href="{{ permalink }}">
+          <a class="ghid-content" href={{ permalink }}>
+            {{# count_videos }}
+              <div class="guide-count count-videos">
+                <i class="fab fa-youtube"></i> {{ count_videos }} video
+              </div>
+            {{/ count_videos }}
+            {{# count_photo }}
+              <div class="guide-count count-foto">
+                <i class="far fa-image"></i> {{ count_photo }} foto
+              </div>
+            {{/ count_photo }}
             <div
               class="guide-icon"
               {{^ is_svg }} style="background-image: url({{ icon }})" {{/ is_svg }}>
@@ -24,19 +35,26 @@
             <h3>
               {{ title }}
             </h3>
-            <a
-              class="outline-button btn btn-outline-secondary rounded-0 ghid-btn"
-              role="button"
-              href="{{ permalink }}">
+            <span class="outline-button">
               {{ button_label }}
               <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </a>
-          </div>
+            </span>
+          </a>
         </div>
       {{/ extra_box }}
       {{# guides }}
         <div class="ghid-box col-lg-3 col-sm-6 col-xs-12">
-          <div class="ghid-content" data-href="{{ permalink }}">
+          <a class="ghid-content" href={{ permalink }}>
+            {{# count_videos }}
+              <div class="guide-count count-videos">
+                <i class="fab fa-youtube"></i> {{ count_videos }} video
+              </div>
+            {{/ count_videos }}
+            {{# count_photo }}
+              <div class="guide-count count-foto">
+                <i class="far fa-image"></i> {{ count_photo }} foto
+              </div>
+            {{/ count_photo }}
             <div
               class="guide-icon"
               {{^ is_svg }} style="background-image: url({{ icon }})" {{/ is_svg }}>
@@ -48,14 +66,11 @@
             <h3>
               {{ title }}
             </h3>
-            <a
-              class="outline-button btn btn-outline-secondary rounded-0 ghid-btn"
-              role="button"
-              href="{{ permalink }}">
+            <span class="outline-button">
               Vezi Ghid
               <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </a>
-          </div>
+            </span>
+          </a>
         </div>
       {{/ guides }}
     </div>

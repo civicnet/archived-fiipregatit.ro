@@ -52,7 +52,8 @@
     "wpackagist-plugin/search-by-algolia-instant-relevant-results": "2.9.3",
     "wpackagist-plugin/cmb2": "2.3.0",
     "wpackagist-plugin/pirate-forms": "2.3.4",
-    "wpackagist-plugin/wp-accessibility": "1.6.1"
+    "wpackagist-plugin/wp-accessibility": "1.6.1",
+    "wpackagist-plugin/wordpress-importer": "0.6.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
@@ -66,7 +67,8 @@
         "wpackagist-plugin/simple-page-ordering",
         "wpackagist-plugin/search-by-algolia-instant-relevant-results",
         "wpackagist-plugin/cmb2",
-        "wpackagist-plugin/pirate-forms"
+        "wpackagist-plugin/pirate-forms",
+        "wpackagist-plugin/wordpress-importer"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]

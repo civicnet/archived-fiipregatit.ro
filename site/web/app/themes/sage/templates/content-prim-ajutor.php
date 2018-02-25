@@ -98,7 +98,10 @@ foreach ($guides as $guide) {
   $guideProps[] = array(
     'icon' => $guide->getPictograma()->getUrl(),
     'title' => $guide->getTitle(),
-    'permalink' => $guide->getPermalink()
+    'permalink' => $guide->getPermalink(),
+    'color' => $guide->getCuloareGhid(),
+    'id' => 'icon-' . preg_replace("/[^a-zA-Z0-9]+/", '', $guide->getTitle()),
+    'is_svg' => $guide->getPictograma()->getMimeType() === 'image/svg+xml',
   );
 }
 

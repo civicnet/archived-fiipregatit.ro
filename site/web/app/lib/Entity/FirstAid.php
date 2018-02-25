@@ -150,4 +150,12 @@ final class FirstAid extends Entity {
     return $this;
   }
 
+  public function getCuloarePictograma(): ?string{
+    return $this->culoarePictograma;
+  }
+
+  public function setCuloarePictograma(?string $culoarePictograma): FirstAid {
+    $this->culoarePictograma = $culoarePictograma;
+    return $this;
+  }
 }

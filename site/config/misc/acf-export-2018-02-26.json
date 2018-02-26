@@ -930,6 +930,25 @@
                     "id": ""
                 },
                 "default_value": "#000000"
+            },
+            {
+                "key": "field_5a940919c4dbb",
+                "label": "Apel 112",
+                "name": "apel_112",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
             }
         ],
         "location": [

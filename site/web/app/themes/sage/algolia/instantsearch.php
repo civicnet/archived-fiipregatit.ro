@@ -12,14 +12,16 @@
 ?>
 
 <div class="container" id="search-page-section">
-	<div id="ais-wrapper">
-		<main id="ais-main">
-      <div id="algolia-stats"></div>
-			<div id="algolia-hits">
-      </div>
-			<div id="algolia-pagination"></div>
-		</main>
-	</div>
+  <div class="row justify-content-center">
+  	<div id="ais-wrapper" class="col-lg-8 col-sm-12">
+  		<main id="ais-main">
+        <div id="algolia-stats"></div>
+  			<div id="algolia-hits">
+        </div>
+  			<div id="algolia-pagination"></div>
+  		</main>
+  	</div>
+  </div>
 </div>
 
 <script type="text/html" id="tmpl-instantsearch-blank">

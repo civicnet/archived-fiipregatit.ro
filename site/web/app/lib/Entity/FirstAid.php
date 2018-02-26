@@ -6,6 +6,7 @@ use Field\File;
 
 final class FirstAid extends Entity {
   private $arsuraCopii;
+  private $apel112;
   private $intoxicatieAlcoolica;
   private $muscaturiAnimal;
   private $obstructieCaiAeriene;
@@ -26,6 +27,16 @@ final class FirstAid extends Entity {
     $this->arsuraCopii = $arsuraCopii;
     return $this;
   }
+
+  public function getApel112(): string {
+    return $this->apel112;
+  }
+
+  public function setApel112(string $apel112): FirstAid {
+    $this->apel112 = $apel112;
+    return $this;
+  }
+
 
   public function getIntoxicatieAlcoolica(): string {
     return $this->intoxicatieAlcoolica;

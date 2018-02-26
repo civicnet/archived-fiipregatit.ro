@@ -35,6 +35,10 @@
           'traumatismul_cranio_cerebral_la_copii',
           $this->wpObject->ID
         ))
+        ->setApel112(get_field(
+          'apel_112',
+          $this->wpObject->ID
+        ))
         ->setGhidPDF(get_field('ghid_pdf', $this->wpObject->ID))
         ->setPictograma(get_field('pictograma', $this->wpObject->ID))
         ->setCuloarePictograma(get_field('culoare_pictograma', $this->wpObject->ID))

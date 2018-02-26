@@ -1,6 +1,12 @@
 <script type="text/html" id="tmpl-autocomplete-header">
   <div class="autocomplete-header">
-  	<div class="autocomplete-header-title">{{{ data.label }}}</div>
+  	<div class="autocomplete-header-title">
+      <# if ( data.label !== 'Pages' ) { #>
+        {{{ data.label }}}
+      <# } else { #>
+        Pagini
+      <# } #>
+    </div>
   	<div class="clear"></div>
   </div>
 </script>
@@ -50,7 +56,7 @@
   <div class="autocomplete-footer">
 	<div class="autocomplete-footer-branding">
 	  <a href="#" class="algolia-powered-by-link" title="Algolia">
-		<svg width="130" viewBox="0 0 130 18" xmlns="http://www.w3.org/2000/svg">
+		<svg style="filter: grayscale(100%);" width="130" viewBox="0 0 130 18" xmlns="http://www.w3.org/2000/svg">
 		  <title>Search by Algolia</title>
 		  <defs>
 			<linearGradient x1="-36.868%" y1="134.936%" x2="129.432%" y2="-27.7%" id="a">
@@ -110,7 +116,6 @@
   			});
 		  },
 		  suggestion: function (hit) {
-        console.log(hit);
   			for (var key in hit._highlightResult) {
   			  /* We do not deal with arrays. */
   			  if (typeof hit._highlightResult[key].value !== 'string') {

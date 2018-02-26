@@ -14,3 +14,14 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function ($) {
+    $('#search .search-field').focus(function() {
+    	var ele = $(this);
+      $('html, body').animate({
+          scrollTop: ele.offset().top - 80
+      }, 500);
+    });
+  }(jQuery))
+</script>

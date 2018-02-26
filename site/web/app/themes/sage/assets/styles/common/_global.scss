@@ -822,11 +822,6 @@ h2:after {
   background-position: center;
 }
 
-#algolia-hits h4 a {
-  color: #333;
-  display: inline-block;
-}
-
 #algolia-search-box {
   border: 12px solid hsla(0,0%,100%,.4);
 }
@@ -1210,12 +1205,12 @@ h4.modal-title {
 
 #algolia-hits h4 a {
   color: #333;
-  display: inline-block;
   font-size: 20px;
 }
 
 #algolia-hits h4 a:hover {
   text-decoration: none;
+  color: #933;
 }
 
 #algolia-hits h4 .content-label {
@@ -1243,8 +1238,8 @@ h4.modal-title {
 }
 
 #algolia-search-box .search-icon {
-  fill: #333;
   margin-left: 15px;
+  fill: #666;
 }
 
 #algolia-search-box .ais-search-box--powered-by {
@@ -1294,7 +1289,7 @@ h4.modal-title {
 
 #algolia-search-box .algolia-powered-by-link.search-page {
   position: absolute;
-  bottom: -105px;
+  bottom: -115px;
   right: 0;
 }
 

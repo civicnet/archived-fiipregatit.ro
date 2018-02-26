@@ -69,7 +69,7 @@
   TemplateEngine::get()->render(
     'homepage_counter',
     array(
-      'guide_count' => count($allGuides),
+      'guide_count' => count($allGuides) + 1, // include first aid
       'image_count' => $imageCount,
       'video_count' => $videoCount,
     )

@@ -1085,6 +1085,49 @@ h4.modal-title {
   padding-bottom: 60px;
 }
 
+#photo-gallery-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 700;
+}
+
+#photo-gallery-section .photo-gallery-box {
+  margin-bottom: 45px;
+}
+
+#photo-gallery-section .photo-gallery-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#photo-gallery-section .photo-carousel {
+  position: relative;
+  margin: 20px auto;
+  border: 1px solid #999;
+}
+
+#photo-gallery-section .outline-button {
+  background: #fff;
+}
+
+#photo-gallery-section .outline-button:hover {
+  background: #933;
+}
+
+#photo-gallery-section {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+#photo-gallery-section .carousel-item {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 290px;
+}
+
 #summary-section a {
   color: #fff;
 }

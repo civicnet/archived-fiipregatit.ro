@@ -1,0 +1,69 @@
+<div
+  class="container-fluid"
+  id="photo-gallery-section"
+  style="{{# bg }} background: {{ . }} {{/ bg }}">
+  <div class="container">
+    <h2>
+      Galerie Foto
+    </h2>
+    <div class="row photo-gallery-row">
+      {{# photos }}
+        <div class="photo-gallery-box col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="photo-gallery-content">
+            <h3>
+              {{ title }}
+            </h3>
+            <div class="photo-carousel">
+              <div
+                id="controls-{{ id }}"
+                class="carousel slide"
+                data-ride="carousel"
+                data-interval="false">
+                <ol class="carousel-indicators">
+                  {{# gallery }}
+                    <li
+                      data-target="#indicators-{{ id }}"
+                      data-slide-to="{{ idx }}"
+                      class="{{# first }} active {{/ first }}">
+                    </li>
+                  {{/ gallery }}
+                </ol>
+                <div class="carousel-inner">
+                  {{# gallery }}
+                    <div
+                      class="carousel-item {{# first }} active {{/ first }}"
+                      style="background-image: url({{ photo }})">
+                    </div>
+                  {{/ gallery }}
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#controls-{{ id }}"
+                role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Înapoi</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#controls-{{ id }}"
+                role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Înainte</span>
+              </a>
+            </div>
+            <a
+              href="{{ permalink }}"
+              role="button"
+              class="outline-button btn btn-outline-secondary rounded-0 campaign-button">
+              Vezi Ghid {{ title }}
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      {{/ photos }}
+    </div>
+  </div>
+</div>

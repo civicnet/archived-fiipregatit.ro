@@ -30,10 +30,17 @@
                 </ol>
                 <div class="carousel-inner">
                   {{# gallery }}
-                    <div
-                      class="carousel-item {{# first }} active {{/ first }}"
-                      style="background-image: url({{ photo }})">
-                    </div>
+                      <div
+                        class="carousel-item {{# first }} active {{/ first }}"
+                        style="background-image: url({{ photo }})">
+                        <a
+                          href="{{ photo }}"
+                          data-toggle="lightbox"
+                          data-gallery="{{ id }}"
+                          data-title="Ghid {{ title }}"
+                          class="lightbox">
+                        </a>
+                      </div>
                   {{/ gallery }}
                 </div>
               </div>

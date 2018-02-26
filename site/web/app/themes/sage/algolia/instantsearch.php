@@ -14,12 +14,22 @@
 <div class="container" id="search-page-section">
 	<div id="ais-wrapper">
 		<main id="ais-main">
-      <h2>Rezultate căutare</h2>
-			<div id="algolia-hits"></div>
+      <div id="algolia-stats"></div>
+			<div id="algolia-hits">
+      </div>
 			<div id="algolia-pagination"></div>
 		</main>
 	</div>
 </div>
+
+<script type="text/html" id="tmpl-instantsearch-blank">
+  <?php
+    TemplateEngine::get()->render(
+      '404',
+      array()
+    );
+  ?>
+</script>
 
 <script type="text/html" id="tmpl-instantsearch-hit">
 		<div class="ais-hits--content">
@@ -47,7 +57,7 @@
 		if(jQuery('#algolia-search-box').length > 0) {
 
 			if (algolia.indices.searchable_posts === undefined && jQuery('.admin-bar').length > 0) {
-				alert('It looks like you haven\'t indexed the searchable posts index. Please head to the Indexing page of the Algolia Search plugin and index it.');
+				console.warn('It looks like you haven\'t indexed the searchable posts index. Please head to the Indexing page of the Algolia Search plugin and index it.');
 			}
 
 			/* Instantiate instantsearch.js */
@@ -80,9 +90,14 @@
 			search.addWidget(
 				instantsearch.widgets.stats({
 					container: '#algolia-stats',
+          autoHideContainer: true,
 					templates: {
 						body: function(obj) {
-							return obj.nbHits + ' rezultate găsite în ' + obj.processingTimeMS + 'ms';
+              if (!obj.query) {
+                return '<h2>Nu ai căutat nimic încă</h2>';
+              }
+
+							return '<h2><em>' + obj.nbHits + '</em>' + ' rezultate pentru <em>"' + obj.query + '"</em></h2>';
 						}
 					}
 				})
@@ -94,7 +109,7 @@
 					container: '#algolia-hits',
 					hitsPerPage: 10,
 					templates: {
-						empty: /*wp.template('instantsearch-blank'),*/ 'Nu am găsit rezultate pentru "<strong>{{query}}</strong>".',
+						empty: wp.template('instantsearch-blank'), // 'Nu am găsit rezultate pentru "<strong>{{query}}</strong>".',
 						item: wp.template('instantsearch-hit')
 					},
 					transformData: {

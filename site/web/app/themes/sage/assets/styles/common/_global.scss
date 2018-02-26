@@ -1259,3 +1259,34 @@ h4.modal-title {
 #search-page-section {
   margin-top: 80px;
 }
+
+#algolia-stats .ais-stats {
+  position: relative;
+  top: 0;
+  font-size: unset;
+}
+
+#algolia-stats .ais-stats h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  text-transform: none;
+}
+
+#algolia-stats .ais-stats h2 em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+#algolia-search-box .algolia-powered-by-link.search-page {
+  position: absolute;
+  bottom: -105px;
+  right: 0;
+}
+
+#algolia-search-box .ais-search-box--powered-by {
+  display: none;
+}
+
+#search-page-section #fourohfour-section {
+  margin-top: 10px;
+}

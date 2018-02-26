@@ -18,7 +18,8 @@
   margin: 0 auto;
 }
 
-.search-form .search-field {
+.search-form .search-field,
+#algolia-search-box .ais-search-box--input {
   padding: 15px;
   border-radius: 0;
   border: 1px solid #999;
@@ -28,10 +29,17 @@
   width: 100%;
   height: 44px;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
 }
 
-.search-form .search-field::placeholder {
-  font-style: italic;
+#algolia-search-box .ais-search-box--input {
+  padding-right: 50px;
+}
+
+.search-form .search-field::placeholder,
+#algolia-search-box .ais-search-box--input::placeholder {
+  font-style: italic !important;
   color: #666;
 }
 
@@ -41,4 +49,17 @@
   max-width: 575px;
   margin: 0 auto;
   margin-top: 35px;
+}
+
+#algolia-search-box .search-icon {
+  top: 9px;
+  left: unset;
+  right: 14px;
+  width: 21px;
+}
+
+#algolia-search-box {
+  margin: 0 auto;
+  max-width: 575px;
+  border-width: 6px;
 }

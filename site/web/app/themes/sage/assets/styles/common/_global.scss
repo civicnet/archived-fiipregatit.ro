@@ -1137,3 +1137,46 @@ h4.modal-title {
 #summary-section a:hover {
   text-decoration: none;
 }
+
+.algolia-autocomplete .suggestion-post-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  padding-left: 10px;
+  font-weight: normal !important;
+}
+
+.algolia-autocomplete .suggestion-link {
+  padding: 10px !important;
+  height: 100%;
+}
+
+.algolia-autocomplete .suggestion-post-thumbnail {
+  background: #ccc;
+}
+
+.algolia-autocomplete .aa-suggestion {
+  padding: 0;
+}
+
+.algolia-autocomplete .autocomplete-header-title {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.algolia-autocomplete .aa-suggestion em {
+  background: rgba(120, 120, 120, .25);
+}
+
+.algolia-autocomplete .aa-suggestion.aa-cursor {
+  background: #e1e1e1;
+}
+
+.algolia-autocomplete .autocomplete-footer-branding svg {
+  filter: grayscale(100%);
+}
+
+.algolia-autocomplete .autocomplete-footer-branding .algolia-powered-by-link {
+  opacity: .5;
+}

@@ -1119,6 +1119,12 @@ h4.modal-title {
   height: 290px;
 }
 
+#photo-gallery-section .carousel-item a.lightbox {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 #summary-section a {
   color: #fff;
 }

@@ -36,33 +36,33 @@ final class Guide extends Entity {
     return $this;
   }
 
-  public function getInainteaEvenimentului(): string {
+  public function getInainteaEvenimentului(): ?string {
     return $this->inainteaEvenimentului;
   }
 
   public function setInainteaEvenimentului(
-    string $inainteaEvenimentului
+    ?string $inainteaEvenimentului
   ): Guide {
     $this->inainteaEvenimentului = $inainteaEvenimentului;
     return $this;
   }
 
-  public function getInTimpulEvenimentului(): string {
+  public function getInTimpulEvenimentului(): ?string {
     return $this->inTimpulEvenimentului;
   }
 
   public function setInTimpulEvenimentului(
-    string $inTimpulEvenimentului
+    ?string $inTimpulEvenimentului
   ): Guide {
     $this->inTimpulEvenimentului = $inTimpulEvenimentului;
     return $this;
   }
 
-  public function getDupaEveniment(): string {
+  public function getDupaEveniment(): ?string {
     return $this->dupaEveniment;
   }
 
-  public function setDupaEveniment(string $dupaEveniment): Guide {
+  public function setDupaEveniment(?string $dupaEveniment): Guide {
     $this->dupaEveniment = $dupaEveniment;
     return $this;
   }

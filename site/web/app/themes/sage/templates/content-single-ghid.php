@@ -56,8 +56,17 @@
     array(
       'title' => $guide->getNume(),
       'before_content' => $guide->getInainteaEvenimentului(),
+      'is_before_single' => $guide->getInainteaEvenimentului()
+        && !$guide->getInTimpulEvenimentului()
+        && !$guide->getDupaEveniment(),
       'during_content' => $guide->getInTimpulEvenimentului(),
+      'is_during_single' => $guide->getInTimpulEvenimentului()
+        && !$guide->getInainteaEvenimentului()
+        && !$guide->getDupaEveniment(),
       'after_content' => $guide->getDupaEveniment(),
+      'is_after_single' => $guide->getDupaEveniment()
+        && !$guide->getInainteaEvenimentului()
+        && !$guide->getInTimpulEvenimentului(),
       'extra_info' => $guide->getInformatiiAditionale(),
       'video' => $guide->getVideoAjutator(),
       'photo_gallery' => $gallery,

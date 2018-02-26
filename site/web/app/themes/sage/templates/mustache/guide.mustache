@@ -22,72 +22,78 @@
     <div class="row ghid-row">
       <div class="col col-lg-9 col-md-12">
         <div id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne">
-                  Înainte de eveniment
-                  <i class="fa fa-chevron-down pull-right"></i>
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseOne"
-              class="collapse">
-              <div class="card-body">
-                {{{ before_content }}}
+          {{# before_content }}
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link {{^ is_before_single }} collapsed {{/ is_before_single}}"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="{{# is_before_single }} true {{/ is_before_single}} {{^ is_before_single }} false {{/ is_before_single}}"
+                    aria-controls="collapseOne">
+                    Înainte de eveniment
+                    <i class="fa fa-chevron-down pull-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse {{# is_before_single }} show {{/ is_before_single}}">
+                <div class="card-body">
+                  {{{ before_content }}}
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo">
-                  În timpul evenimentului
-                  <i class="fa fa-chevron-down pull-right"></i>
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseTwo"
-              class="collapse">
-              <div class="card-body">
-                {{{ during_content }}}
+          {{/ before_content }}
+          {{# during_content }}
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link {{^ is_during_single }} collapsed {{/ is_during_single}}"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="{{# is_during_single }} true {{/ is_during_single}} {{^ is_during_single }} false {{/ is_during_single}}"
+                    aria-controls="collapseTwo">
+                    În timpul evenimentului
+                    <i class="fa fa-chevron-down pull-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse">
+                <div class="card-body" {{# is_during_single }} show {{/ is_during_single}}>
+                  {{{ during_content }}}
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree">
-                  După eveniment
-                  <i class="fa fa-chevron-down pull-right"></i>
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseThree"
-              class="collapse">
-              <div class="card-body">
-                {{{ after_content }}}
+          {{/ during_content }}
+          {{# after_content }}
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link {{^ is_after_single }} collapsed {{/ is_after_single}}"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="{{# is_after_single }} true {{/ is_after_single}} {{^ is_after_single }} false {{/ is_after_single}}"
+                    aria-controls="collapseThree">
+                    După eveniment
+                    <i class="fa fa-chevron-down pull-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse">
+                <div class="card-body" {{# is_after_single }} show {{/ is_after_single}}>
+                  {{{ after_content }}}
+                </div>
               </div>
             </div>
-          </div>
+          {{/ after_content }}
           {{# has_extra_info }}
             <div class="card">
               <div class="card-header" id="headingFour">

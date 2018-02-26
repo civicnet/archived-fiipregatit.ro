@@ -36,19 +36,19 @@ TemplateEngine::get()->render(
     'first_aid_items' => array(
       array(
         'index' => 1,
-        'title' => 'Arsura la copii',
-        'content' => $first_aid->getArsuraCopii(),
+        'title' => 'Apel 112',
+        'content' => $first_aid->getApel112(),
       ),
       array(
         'index' => 2,
-        'title' => 'Intoxicație alcoolică',
-        'content' => $first_aid->getIntoxicatieAlcoolica(),
+        'title' => 'Pierderea cunoștinței',
+        'content' => $first_aid->getPierdereCunostinta(),
         'collapsed' => true,
       ),
       array(
         'index' => 3,
-        'title' => 'Mușcăturile de animale',
-        'content' => $first_aid->getMuscaturiAnimal(),
+        'title' => 'Stopul cardio-respirator',
+        'content' => $first_aid->getStopCardioRespirator(),
         'collapsed' => true,
       ),
       array(
@@ -59,32 +59,37 @@ TemplateEngine::get()->render(
       ),
       array(
         'index' => 5,
-        'title' => 'Pierderea cunoștinței',
-        'content' => $first_aid->getPierdereCunostinta(),
-        'collapsed' => true,
+        'title' => 'Arsura la copii',
+        'content' => $first_aid->getArsuraCopii(),
       ),
       array(
         'index' => 6,
-        'title' => 'Reacția alergică',
-        'content' => $first_aid->getReactieAlergica(),
-        'collapsed' => true,
-      ),
-      array(
-        'index' => 7,
-        'title' => 'Stopul cardio-respirator',
-        'content' => $first_aid->getStopCardioRespirator(),
-        'collapsed' => true,
-      ),
-      array(
-        'index' => 8,
         'title' => 'Traumatismul cranio-cerebral la adulți',
         'content' => $first_aid->getTraumatismAdulti(),
         'collapsed' => true,
       ),
       array(
-        'index' => 9,
+        'index' => 7,
         'title' => 'Traumatismul cranio-cerebral la copii',
         'content' => $first_aid->getTraumatismCopii(),
+        'collapsed' => true,
+      ),
+      array(
+        'index' => 8,
+        'title' => 'Intoxicație alcoolică',
+        'content' => $first_aid->getIntoxicatieAlcoolica(),
+        'collapsed' => true,
+      ),
+      array(
+        'index' => 9,
+        'title' => 'Mușcături de animal',
+        'content' => $first_aid->getMuscaturiAnimal(),
+        'collapsed' => true,
+      ),
+      array(
+        'index' => 10,
+        'title' => 'Reacția alergică',
+        'content' => $first_aid->getReactieAlergica(),
         'collapsed' => true,
       ),
     )

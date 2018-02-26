@@ -410,7 +410,8 @@ h2:after {
     padding-right: 0px;
 }
 
-#guide-content .small-menu {
+#guide-content .small-menu,
+#despre-content .small-menu {
   text-align: center;
   top: -40px;
   margin-left: 15px;
@@ -418,14 +419,16 @@ h2:after {
   font-family: Merriweather, serif;
 }
 
-#guide-content .small-menu .btn {
+#guide-content .small-menu .btn,
+#despre-content .small-menu .btn {
   background: none;
   border: 1px solid #933;
   border-radius: 0;
   color: #933;
 }
 
-#guide-content .small-menu .dropdown-item {
+#guide-content .small-menu .dropdown-item,
+#despre-content .small-menu .dropdown-item {
   text-transform: capitalize;
 }
 
@@ -747,7 +750,7 @@ h2:after {
 }
 
 #despre-content {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 #despre-content .small-menu {
@@ -758,9 +761,7 @@ h2:after {
 
 #despre-content .small-menu .btn {
   background: none;
-  border: 1px solid #999;
   border-radius: 0;
-  color: #999;
 }
 
 #despre-content .small-menu .nav-link {
@@ -960,12 +961,14 @@ h2:after {
     font-size: 1.3rem;
   }
 
-  #guide-content .small-menu .btn {
+  #guide-content .small-menu .btn,
+  #despre-content .small-menu .btn {
     width:100%;
     padding: 1rem 2rem;
   }
 
-  #guide-content .small-menu .dropdown-item{
+  #guide-content .small-menu .dropdown-item,
+  #despre-content .small-menu .dropdown-item {
     font-size: 1.2rem;
     padding: 1rem;
   }

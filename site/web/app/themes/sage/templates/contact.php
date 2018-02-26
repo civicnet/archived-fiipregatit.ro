@@ -178,9 +178,8 @@ TemplateEngine::get()->render(
   'contact',
   array(
     'maps_api_key' => 'AIzaSyD9EqyM2PGMOg7caE5rJlN1xJ2tTQm7HjQ',
-    'recaptcha_api_key' => '6LfB7UQUAAAAAMIBIqEI1sEy5o3Igjn6i7fC22c1',
     'location' => 'Piața Revoluției, nr.1 A, sector 1, București',
     'style' => $custom_style,
-    'contact_form' => do_shortcode('[pirate_forms]'), 
+    'contact_form' => do_shortcode('[pirate_forms]'),
   )
 );

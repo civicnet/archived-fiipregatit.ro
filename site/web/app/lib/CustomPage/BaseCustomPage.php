@@ -5,7 +5,7 @@
   abstract class BaseCustomPage {
     const PAGE_NAME = null;
 
-    protected static $instance = null;
+    protected static $instance = array();
     protected $wpObject;
 
     final protected function __construct(
@@ -16,8 +16,8 @@
 
     final public static function get(
     ): BaseCustomPage {
-      if (static::$instance) {
-        return static::$instance;
+      if (isset(static::$instance[static::PAGE_NAME])) {
+        return static::$instance[static::PAGE_NAME];
       }
 
       $args = array(
@@ -33,8 +33,8 @@
         ));
       }
 
-      static::$instance = new static($page);
-      return static::$instance;
+      static::$instance[static::PAGE_NAME] = new static($page);
+      return static::$instance[static::PAGE_NAME];
     }
 
     abstract public function getPage()/*: Entity*/;

@@ -1,14 +1,17 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php
+  get_template_part('templates/page', 'header');
 
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
-  </div>
-  <?php get_search_form(); ?>
-<?php endif; ?>
+  TemplateEngine::get()->render(
+    'jumbotron',
+    array(
+      'show_header' => false,
+      'extra_class' => 'small-jumbotron',
+      'algolia_search' => get_search_form($echo = false)
+    )
+  );
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', 'search'); ?>
-<?php endwhile; ?>
-
-<?php the_posts_navigation(); ?>
+  TemplateEngine::get()->render(
+    '404',
+    array()
+  );
+?>

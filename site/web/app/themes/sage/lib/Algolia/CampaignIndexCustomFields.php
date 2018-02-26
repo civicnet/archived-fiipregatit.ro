@@ -2,14 +2,15 @@
   final class CampaignIndexCustomFields extends IndexCustomFields {
     protected function getCustomAttributes(): array {
       return array(
-        'custom_content' => strip_tags(
-          $this->entity->getContent()
-        ),
-        'extras' => $this->entity->getExtras(),
+        'title' => $this->entity->getTitle(),
         'image' => $this->entity->getImage()['url'],
-        'preview_text' => strip_tags(
-          $this->entity->getContent()
-        ),
+        'permalink' => $this->entity->getPermalink(),
+        'type' => 'Campanie',
+        'weight' => 1,
       );
+    }
+
+    public function getContent(): string {
+      return $this->entity->getContent();
     }
   }

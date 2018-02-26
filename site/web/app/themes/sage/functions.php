@@ -26,6 +26,9 @@ $sage_includes = [
   'lib/Algolia/IndexCustomFields.php',
   'lib/Algolia/GuideIndexCustomFields.php',
   'lib/Algolia/CampaignIndexCustomFields.php',
+  'lib/Algolia/AboutIndexCustomFields.php',
+  'lib/Algolia/FirstAidIndexCustomFields.php',
+  'lib/Algolia/PersonalPlanIndexCustomFields.php',
   'lib/Algolia/NoOpIndexCustomFields.php',
 ];
 
@@ -145,12 +148,61 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 /**
  *  Algolia index
  */
-$algoliaCallback = function(array $attributes, WP_Post $post) {
-  return IndexCustomFields::get($attributes, $post)->index();
+$algoliaAttributesCallback = function(array $attributes, WP_Post $post) {
+  return IndexCustomFields::get($post, $attributes)->index();
 };
 
-add_filter( 'algolia_post_shared_attributes', $algoliaCallback, 10, 2 );
-add_filter( 'algolia_searchable_post_shared_attributes', $algoliaCallback, 10, 2 );
+// https://www.algolia.com/doc/api-reference/settings-api-parameters/
+$algoliaSettingsCallback = function(array $settings) {
+  return array(
+    'attributesToIndex' => array(
+        'unordered(title)',
+        'unordered(content)',
+    ),
+    'searchableAttributes' => array(
+      'title',
+      'content',
+    ),
+    'attributesToRetrieve' => array(
+      'type',
+      'title',
+      'content',
+      'image',
+      'permalink',
+      'weight',
+    ),
+    'customRanking' => array(
+        'desc(weight)',
+        'desc(post_date)',
+    ),
+    'attributeForDistinct'  => 'post_id',
+    'distinct'              => true,
+    'attributesForFaceting' => array(),
+    'attributesToSnippet' => array(
+        'title:30',
+        'content:30',
+    ),
+    'snippetEllipsisText' => '…',
+  );
+};
+
+add_filter('algolia_post_shared_attributes', $algoliaAttributesCallback, 10, 2);
+add_filter('algolia_searchable_post_shared_attributes', $algoliaAttributesCallback, 10, 2);
+add_filter( 'algolia_posts_index_settings', $algoliaSettingsCallback);
+
+$testYo = function($foo) {
+  return IndexCustomFields::get($foo)->getContent();
+};
+
+add_filter(
+  'algolia_searchable_post_content',
+  $testYo
+);
+
+add_filter(
+  'algolia_post_content',
+  $testYo
+);
 
 function enable_extended_upload ($mime_types =array() ) {
   $mime_types['svg']  = 'image/svg+xml';

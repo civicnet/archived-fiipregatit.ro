@@ -37,21 +37,6 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "civictechro/algoliasearch-wordpress",
-        "version": "2.9.3",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://github.com/civictechro/algoliasearch-wordpress/archive/2.9.3-hotfix.zip"
-        },
-        "require" : {
-          "composer/installers": "~1.2.0"
-        }
-      }
     }
   ],
   "require": {
@@ -64,7 +49,7 @@
     "wpackagist-plugin/advanced-custom-fields": "5.6.7",
     "wpackagist-plugin/simple-custom-post-order": "2.3.2",
     "wpackagist-plugin/simple-page-ordering": "2.2.4",
-    "civictechro/algoliasearch-wordpress": "2.9.3",
+    "wpackagist-plugin/search-by-algolia-instant-relevant-results": "2.10.0",
     "wpackagist-plugin/cmb2": "2.3.0",
     "wpackagist-plugin/pirate-forms": "2.3.4",
     "wpackagist-plugin/wp-accessibility": "1.6.1",
@@ -80,7 +65,7 @@
         "wpackagist-plugin/advanced-custom-fields",
         "wpackagist-plugin/simple-custom-post-order",
         "wpackagist-plugin/simple-page-ordering",
-        "civictechro/algoliasearch-wordpress",
+        "wpackagist-plugin/search-by-algolia-instant-relevant-results",
         "wpackagist-plugin/cmb2",
         "wpackagist-plugin/pirate-forms",
         "wpackagist-plugin/wordpress-importer"

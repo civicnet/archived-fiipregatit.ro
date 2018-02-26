@@ -57,7 +57,6 @@
 <script type="text/javascript">
 	jQuery(function() {
 		if(jQuery('#algolia-search-box').length > 0) {
-
 			if (algolia.indices.searchable_posts === undefined && jQuery('.admin-bar').length > 0) {
 				console.warn('It looks like you haven\'t indexed the searchable posts index. Please head to the Indexing page of the Algolia Search plugin and index it.');
 			}
@@ -116,7 +115,6 @@
 					},
 					transformData: {
 					  item: function (hit) {
-              console.log(hit);
 							for(var key in hit._highlightResult) {
 							  // We do not deal with arrays.
 							  if(typeof hit._highlightResult[key].value !== 'string') {
@@ -143,15 +141,15 @@
 			);
 
 			/* Pagination widget */
-			search.addWidget(
+      // !FIXME
+			/*search.addWidget(
 				instantsearch.widgets.pagination({
 					container: '#algolia-pagination'
 				})
-			);
+			);*/
 
 			/* Start */
 			search.start();
-
 			jQuery('#algolia-search-box input').attr('type', 'search').select();
 		}
 	});

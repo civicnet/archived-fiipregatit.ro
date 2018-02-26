@@ -155,13 +155,9 @@ $algoliaAttributesCallback = function(array $attributes, WP_Post $post) {
 // https://www.algolia.com/doc/api-reference/settings-api-parameters/
 $algoliaSettingsCallback = function(array $settings) {
   return array(
-    'attributesToIndex' => array(
-        'unordered(title)',
-        'unordered(content)',
-    ),
     'searchableAttributes' => array(
-      'title',
-      'content',
+      'unordered(title)',
+      'unordered(content)',
     ),
     'attributesToRetrieve' => array(
       'type',

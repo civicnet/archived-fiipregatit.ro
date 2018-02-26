@@ -17,7 +17,7 @@ TemplateEngine::get()->render(
   'plan_personal',
   array(
     'rucsac_image' => Assets\asset_path('images/fiipregatit_planpersonal_colaj_v1.png'),
-    'tabel_image' => Assets\asset_path('images/plan_pers_ghid.png'),
+    'tabel_image' => Assets\asset_path('images/fiipregatit_tabel_trusasupravietuire.jpg'),
     'descriere_rucsac' => $plan->getDescriereRucsac(),
     'descriere_tabel' => $plan->getDescriereTabel(),
     'tabel_pdf' => array(

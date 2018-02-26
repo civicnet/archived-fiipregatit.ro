@@ -178,6 +178,8 @@ h2:after {
   transform: translate(-50%, -50%);
   position: absolute;
   left: 50%;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 #ghiduri-section .ghid-content {

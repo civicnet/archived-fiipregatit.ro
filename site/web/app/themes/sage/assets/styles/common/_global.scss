@@ -1038,3 +1038,57 @@ h4.modal-title {
   font-weight: bold;
   color: unset;
 }
+
+#video-gallery-section .extra-video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 0;
+	height: 0;
+  margin: 15px auto;
+  margin-bottom: 0;
+}
+
+#video-gallery-section .extra-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#video-gallery-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 700;
+}
+
+#video-gallery-section .video-gallery-box {
+  margin-bottom: 45px;
+}
+
+#video-gallery-section .video-gallery-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#video-gallery-section .outline-button {
+  background: #fff;
+}
+
+#video-gallery-section .outline-button:hover {
+  background: #933;
+}
+
+#video-gallery-section {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+#summary-section a {
+  color: #fff;
+}
+
+#summary-section a:hover {
+  text-decoration: none;
+}

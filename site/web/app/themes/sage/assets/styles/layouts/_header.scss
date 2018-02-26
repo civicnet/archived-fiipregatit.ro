@@ -3,7 +3,6 @@
   border-bottom: 1px solid #fff;
   position:relative;
   min-height: 100px;
-  //max-height: 100px;
 }
 
 .navbar-brand {
@@ -173,11 +172,13 @@ button.navbar-toggler .navbar-toggler-icon {
     margin-top: 15px;
   }
 
-  .navbar-collapse.show ul li a:hover,
-  .navbar-collapse.collapsing ul li a:hover,
-  .navbar-collapse.show ul li.current_page_item a,
-  .navbar-collapse.collapsing ul li.current_page_item a{
-    padding-bottom: 10px;
+  .navbar-collapse ul li a:after {
+    display: none;
+  }
+
+  .navbar-collapse ul li a:hover:after,
+  .navbar-collapse ul li.current_page_item a:after {
+    display: none;
   }
 }
 

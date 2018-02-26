@@ -56,11 +56,10 @@
         <div class="header">
           Contact
         </div>
-        <div>
+        <div class="footer-address">
           Adresă:
           <a href="https://maps.google.com?q=Piața+Revoluției+nr.1+A+sector+1+București">
-            Piața Revoluției, nr.1 A, sector 1,<br/>
-            București
+            Piața Revoluției, nr.1 A, sector 1, București
           </a><br/>
           Telefon <strong><a href="tel:021.312.25.47">021.312.25.47</a></strong><br/>
           Centrala <a href="tel:021.303.70.80">021.303.70.80</a><br/><br/>

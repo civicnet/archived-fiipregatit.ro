@@ -65,11 +65,11 @@ footer .bottom::before {
   top: 0;
   left: 0;
 }
+
 footer .bottom ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-  //justify-content: center;
   padding: 0;
 }
 
@@ -157,9 +157,7 @@ footer .logos-row .contribute svg {
   footer .logos-row .contribute {
     text-align: unset;
   }
-}
 
-@include media-breakpoint-down(sm) {
   footer .content-info {
     text-align: center;
   }
@@ -168,15 +166,26 @@ footer .logos-row .contribute svg {
     margin-bottom: 0;
   }
 
+  footer .content-info .header {
+    font-size: 1.1em;
+  }
+
   footer .content-info .mobile-block-link {
     display: inline-block;
     width: 100%;
     padding: 5px;
+    font-size: 1.1em;
   }
 
   footer .content-info .social-media-mobile-block {
     text-align: left;
     width: 110px;
     margin: 0 auto;
+    margin-top: 15px;
+    font-size: 1.1em;
+  }
+
+  footer .footer-address {
+    font-size: 1.1em;
   }
 }

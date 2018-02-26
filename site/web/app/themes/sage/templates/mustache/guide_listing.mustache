@@ -119,6 +119,14 @@
         });
       {{/ is_svg }}
     {{/ guides }}
+    {{# extra_box }}
+      {{# is_svg }}
+        guides.push({
+          'id': '{{ id }}',
+          'color': '{{ color }}'
+        })
+      {{/ is_svg }}
+    {{/ extra_box }}
 
     guides.map(guide => {
       var svg = jQuery('#' + guide.id).getSVG();

@@ -10,7 +10,7 @@
       aria-expanded="false">
       Vezi Alte Ghiduri
     </a>
-    
+
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
       {{# sidebar_links }}
         <a class="dropdown-item" href="{{ href }}">{{ text }}</a>
@@ -140,6 +140,13 @@
                         <div
                           class="carousel-item {{# first }} active {{/ first }}"
                           style="background-image: url({{ photo }})">
+                          <a
+                            href="{{ photo }}"
+                            data-toggle="lightbox"
+                            data-title="Ghid {{ title }}"
+                            data-gallery="guide-gallery"
+                            class="lightbox">
+                          </a>
                         </div>
                       {{/ photo_gallery }}
                     </div>

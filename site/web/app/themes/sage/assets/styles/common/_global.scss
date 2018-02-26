@@ -970,16 +970,11 @@ h2:after {
   #guide-content .small-menu .dropdown-item,
   #despre-content .small-menu .dropdown-item {
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 10px;
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     width:100%;
-  }
-
-  .dropdown-item.active, .dropdown-item:active{
-    background-color: #d03233;
-    color: #fff
   }
 
   .dropdown-toggle:after{

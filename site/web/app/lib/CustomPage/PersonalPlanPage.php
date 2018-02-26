@@ -8,7 +8,7 @@
 
     public function getPage(): PersonalPlan {
       return (new PersonalPlan($this->wpObject->ID))
-        ->setApa(get_field('apa'), $this->wpObject->ID)
+        ->setApa(get_field('apa', $this->wpObject->ID))
         ->setAlimente(get_field('alimente', $this->wpObject->ID))
         ->setImbracaminteSiIncaltaminte(
           get_field('imbracaminte_si_incaltaminte', $this->wpObject->ID)

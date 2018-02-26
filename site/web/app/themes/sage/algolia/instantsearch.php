@@ -11,45 +11,30 @@
   );
 ?>
 
-<div class="container">
+<div class="container" id="search-page-section">
 	<div id="ais-wrapper">
 		<main id="ais-main">
+      <h2>Rezultate căutare</h2>
 			<div id="algolia-hits"></div>
 			<div id="algolia-pagination"></div>
 		</main>
 	</div>
 </div>
 
-<script type="text/html" id="tmpl-instantsearch-blank">
-  <?php
-    TemplateEngine::get()->render(
-      '404',
-      array()
-    );
-  ?>
-</script>
-
 <script type="text/html" id="tmpl-instantsearch-hit">
-		<# if ( data.image ) { #>
-			<a href="{{ data.permalink }}" title="{{ data.post_title }}">
-				<div
-					class="ais-hits--thumbnail"
-					title="{{ data.post_title }}"
-					style="background-image: url({{ data.image }})">
-				</div>
-			</a>
-		<# } #>
-
 		<div class="ais-hits--content">
 			<h4 itemprop="name headline">
-				<a href="{{ data.permalink }}" title="{{ data.post_title }}" itemprop="url">
-					{{{ data._highlightResult.post_title.value }}}
+        <span class="content-label badge">
+          {{ data.type }}
+        </span>
+				<a href="{{ data.permalink }}" title="{{ data.title }}" itemprop="url">
+					{{{ data._highlightResult.title.value }}}
 				</a>
 			</h4>
 			<div class="excerpt">
 				<p>
-				<# if ( data._snippetResult['preview_text'] ) { #>
-				  <span class="suggestion-post-content">{{{ data._snippetResult['preview_text'].value }}}</span>
+				<# if (data._snippetResult['content']) { #>
+				  <span class="suggestion-post-content">{{{ data._snippetResult['content'].value }}}</span>
 				<# } #>
 				</p>
 			</div>
@@ -77,8 +62,7 @@
 				searchParameters: {
 					facetingAfterDistinct: true,
 					highlightPreTag: '__ais-highlight__',
-					highlightPostTag: '__/ais-highlight__',
-					filters: 'post_type:campanie OR post_type:ghid'
+					highlightPostTag: '__/ais-highlight__'
 				}
  			});
 
@@ -88,7 +72,7 @@
 					container: '#algolia-search-box',
 					placeholder: 'Scrie aici, de ex: furtună',
 					wrapInput: false,
-					poweredBy: algolia.powered_by_enabled
+					poweredBy: true
 				})
 			);
 
@@ -110,11 +94,12 @@
 					container: '#algolia-hits',
 					hitsPerPage: 10,
 					templates: {
-						empty: wp.template('instantsearch-blank'), //'Nu am găsit rezultate pentru "<strong>{{query}}</strong>".',
+						empty: /*wp.template('instantsearch-blank'),*/ 'Nu am găsit rezultate pentru "<strong>{{query}}</strong>".',
 						item: wp.template('instantsearch-hit')
 					},
 					transformData: {
 					  item: function (hit) {
+              console.log(hit);
 							for(var key in hit._highlightResult) {
 							  // We do not deal with arrays.
 							  if(typeof hit._highlightResult[key].value !== 'string') {

@@ -6,18 +6,18 @@
 </script>
 
 <script type="text/html" id="tmpl-autocomplete-post-suggestion">
-  <a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.post_title }}">
+  <a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.title }}">
 	  <# if ( data.image ) { #>
       <div
         class="suggestion-post-thumbnail"
         style="background-image: url({{ data.image }})"
-        title="{{ data.post_title }}">
+        title="{{ data.title }}">
       </div>
 	  <# } #>
 		<div class="suggestion-post-attributes">
-		  <span class="suggestion-post-title">{{{ data._highlightResult.post_title.value }}}</span>
-		  <# if ( data._snippetResult['preview_text'] ) { #>
-			     <span class="suggestion-post-content">{{{ data._snippetResult['preview_text'].value }}}</span>
+		  <span class="suggestion-post-title">{{{ data._highlightResult.title.value }}}</span>
+		  <# if ( data._snippetResult['content'] ) { #>
+			     <span class="suggestion-post-content">{{{ data._snippetResult['content'].value }}}</span>
 			<# } #>
 		</div>
   </a>
@@ -105,31 +105,32 @@
 		}),
 		templates: {
 		  header: function () {
-			return wp.template('autocomplete-header')({
-			  label: _.escape(config['label'])
-			});
+  			return wp.template('autocomplete-header')({
+  			  label: _.escape(config['label'])
+  			});
 		  },
 		  suggestion: function (hit) {
-			for (var key in hit._highlightResult) {
-			  /* We do not deal with arrays. */
-			  if (typeof hit._highlightResult[key].value !== 'string') {
-				  continue;
-			  }
-			  hit._highlightResult[key].value = _.escape(hit._highlightResult[key].value);
-			  hit._highlightResult[key].value = hit._highlightResult[key].value.replace(/__ais-highlight__/g, '<em>').replace(/__\/ais-highlight__/g, '</em>');
-			}
+        console.log(hit);
+  			for (var key in hit._highlightResult) {
+  			  /* We do not deal with arrays. */
+  			  if (typeof hit._highlightResult[key].value !== 'string') {
+  				  continue;
+  			  }
+  			  hit._highlightResult[key].value = _.escape(hit._highlightResult[key].value);
+  			  hit._highlightResult[key].value = hit._highlightResult[key].value.replace(/__ais-highlight__/g, '<em>').replace(/__\/ais-highlight__/g, '</em>');
+  			}
 
-			for (var key in hit._snippetResult) {
-			  /* We do not deal with arrays. */
-			  if (typeof hit._snippetResult[key].value !== 'string') {
-				  continue;
-			  }
+  			for (var key in hit._snippetResult) {
+  			  /* We do not deal with arrays. */
+  			  if (typeof hit._snippetResult[key].value !== 'string') {
+  				  continue;
+  			  }
 
-			  hit._snippetResult[key].value = _.escape(hit._snippetResult[key].value);
-			  hit._snippetResult[key].value = hit._snippetResult[key].value.replace(/__ais-highlight__/g, '<em>').replace(/__\/ais-highlight__/g, '</em>');
-			}
+  			  hit._snippetResult[key].value = _.escape(hit._snippetResult[key].value);
+  			  hit._snippetResult[key].value = hit._snippetResult[key].value.replace(/__ais-highlight__/g, '<em>').replace(/__\/ais-highlight__/g, '</em>');
+  			}
 
-			return suggestion_template(hit);
+  			return suggestion_template(hit);
 		  }
 		}
 	 });

@@ -15,8 +15,8 @@
     }
 
     final public static function get(
-      array $attributes,
-      WP_Post $post
+      WP_Post $post,
+      array $attributes = array()
     ): IndexCustomFields {
       switch ($post->post_type) {
         case App::POST_TYPE_GUIDE:
@@ -28,6 +28,27 @@
           return new CampaignIndexCustomFields(
             $attributes,
              \RepoManager::getCampaignRepository()::getByPost($post)
+          );
+      }
+
+      switch ($post->post_name) {
+        case App::PAGE_FIRST_AID:
+          //print_r('First Aid ' . $post->post_name . ' ' . $post->ID);
+          return new FirstAidIndexCustomFields(
+            $attributes,
+            \CustomPageManager::getFirstAidPage()->getPage()
+          );
+        case App::PAGE_PERSONAL_PLAN:
+          //print_r('Personal plan ' . $post->post_name . ' ' . $post->ID);
+          return new PersonalPlanIndexCustomFields(
+            $attributes,
+            \CustomPageManager::getPersonalPlanPage()->getPage()
+          );
+        case App::PAGE_ABOUT:
+          //print_r('About ' . $post->post_name . ' ' . $post->ID);
+          return new AboutIndexCustomFields(
+            $attributes,
+            \CustomPageManager::getAboutPage()->getPage()
           );
       }
 
@@ -47,4 +68,5 @@
     }
 
     abstract protected function getCustomAttributes(): array;
+    abstract public function getContent(): string;
   }

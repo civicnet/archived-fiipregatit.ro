@@ -8,15 +8,15 @@
       private function __construct() {}
 
       public static function getPersonalPlanPage(): PersonalPlanPage {
-          return self::getPage(App::PAGE_PERSONAL_PLAN);
+        return self::getPage(App::PAGE_PERSONAL_PLAN);
       }
 
       public static function getFirstAidPage(): FirstAidPage {
-          return self::getPage(App::PAGE_FIRST_AID);
+        return self::getPage(App::PAGE_FIRST_AID);
       }
 
       public static function getAboutPage(): AboutPage {
-          return self::getPage(App::PAGE_ABOUT);
+        return self::getPage(App::PAGE_ABOUT);
       }
 
 

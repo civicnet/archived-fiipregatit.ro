@@ -812,6 +812,10 @@ h2:after {
   background-position: center;
 }
 
+.suggestion-link .guide-suggestion-thumb {
+  background-size: 70%;
+}
+
 #algolia-hits .ais-hits--thumbnail {
   width: 128px;
   height: 128px;

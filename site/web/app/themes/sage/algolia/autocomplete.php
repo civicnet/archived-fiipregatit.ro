@@ -14,12 +14,20 @@
 <script type="text/html" id="tmpl-autocomplete-post-suggestion">
   <a class="suggestion-link" href="{{ data.permalink }}" title="{{ data.title }}">
 	  <# if (data.image) { #>
-      <div
-        class="suggestion-post-thumbnail"
-        style="background-image: url({{ data.image }})"
-        title="{{ data.title }}">
-      </div>
-	  <# } #>
+      <# if (data.type === 'Ghid') { #>
+        <div
+          class="suggestion-post-thumbnail guide-suggestion-thumb"
+          style="background-image: url({{ data.image }})"
+          title="{{ data.title }}">
+        </div>
+      <# } else { #>
+        <div
+          class="suggestion-post-thumbnail"
+          style="background-image: url({{ data.image }})"
+          title="{{ data.title }}">
+        </div>
+	     <# } #>
+    <# } #>
 		<div class="suggestion-post-attributes">
 		  <span class="suggestion-post-title">{{{ data._highlightResult.title.value }}}</span>
 		  <# if (data._snippetResult['content']) { #>
@@ -94,6 +102,7 @@
     			});
   		  },
   		  suggestion: function (hit) {
+          console.log(hit);
     			for (var key in hit._highlightResult) {
     			  /* We do not deal with arrays. */
     			  if (typeof hit._highlightResult[key].value !== 'string') {

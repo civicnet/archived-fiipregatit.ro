@@ -945,6 +945,7 @@ h2:after {
     font-size: 1.2rem;
   }
 }
+
 @include media-breakpoint-down(sm) {
   body,html {
     font-size: 1rem;
@@ -1136,6 +1137,29 @@ h4.modal-title {
 
 #summary-section a:hover {
   text-decoration: none;
+}
+
+@include media-breakpoint-down(sm) {
+  .algolia-autocomplete {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  .algolia-autocomplete .autocomplete-header .autocomplete-header-title {
+    padding-top: 16px !important;
+  }
+
+  .algolia-autocomplete .suggestion-link {
+    padding: 15px !important;
+  }
+
+  .algolia-autocomplete .suggestion-post-title {
+    font-size: 16px !important;
+  }
+
+  .algolia-autocomplete .suggestion-post-content {
+    font-size: 16px !important;
+  }
 }
 
 .algolia-autocomplete .suggestion-post-title {

@@ -421,6 +421,10 @@ h2:after {
   text-transform: capitalize;
 }
 
+#guide-content #accordion .collapse {
+  font-family: 'Roboto', sans-serif;
+}
+
 #guide-content #accordion .card-header .btn-link {
   white-space: normal;
   padding-right: 45px;

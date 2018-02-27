@@ -186,19 +186,12 @@ add_filter('algolia_post_shared_attributes', $algoliaAttributesCallback, 10, 2);
 add_filter('algolia_searchable_post_shared_attributes', $algoliaAttributesCallback, 10, 2);
 add_filter( 'algolia_posts_index_settings', $algoliaSettingsCallback);
 
-$testYo = function($foo) {
-  return IndexCustomFields::get($foo)->getContent();
+$algoliaContentCallback = function(string $post_content, WP_Post $post) {
+  return IndexCustomFields::get($post)->getContent();
 };
 
-add_filter(
-  'algolia_searchable_post_content',
-  $testYo
-);
-
-add_filter(
-  'algolia_post_content',
-  $testYo
-);
+add_filter('algolia_searchable_post_content', $algoliaContentCallback, 10, 2);
+add_filter('algolia_post_content', $algoliaContentCallback, 10, 2);
 
 function enable_extended_upload ($mime_types =array() ) {
   $mime_types['svg']  = 'image/svg+xml';

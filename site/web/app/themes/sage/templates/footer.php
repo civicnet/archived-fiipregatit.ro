@@ -99,35 +99,35 @@
   <div class="bottom container-fluid">
     <div class="row align-middle logos-row justify-content-center">
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 logo-box">
-        <ul>
-          <li class="sq-logo">
-            <a href="http://www.dsu.mai.gov.ro/" target="_blank">
+        <a href="http://www.dsu.mai.gov.ro/" target="_blank">
+          <ul>
+            <li class="sq-logo">
               <img src="<?=Assets\asset_path('images/Logo_DSU.svg');?>" />
-            </a>
-          </li>
-          <li>
-            <div class="copyright">
-              <h4>Departamentul pentru Situații de Urgență</h4>
-              <div class="sub">
-                Toate drepturile rezervate &copy; 2018
+            </li>
+            <li>
+              <div class="copyright">
+                <h4>Departamentul pentru Situații de Urgență</h4>
+                <div class="sub">
+                  Toate drepturile rezervate &copy; 2018
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </a>
       </div>
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 logo-box">
-        <ul>
-          <li class="sq-logo">
-            <a href="https://www.igsu.ro/" target="_blank">
+        <a href="https://www.igsu.ro/" target="_blank">
+          <ul>
+            <li class="sq-logo">
               <img src="<?=Assets\asset_path('images/Stema_IGSU_color.png');?>" />
-            </a>
-          </li>
-          <li>
-            <div class="copyright">
-              <h4>Inspectoratul General pentru Situații de Urgență</h4>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <div class="copyright">
+                <h4>Inspectoratul General pentru Situații de Urgență</h4>
+              </div>
+            </li>
+          </ul>
+        </a>
       </div>
       <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 logo-box">
         <a href="https://civictech.ro/" class="civictech" target="_blank">

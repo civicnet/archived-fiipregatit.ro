@@ -28,7 +28,9 @@
   <?php
     TemplateEngine::get()->render(
       '404',
-      array()
+      array(
+        'wide' => true,
+      )
     );
   ?>
 </script>

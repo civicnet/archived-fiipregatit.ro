@@ -114,6 +114,7 @@
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </a>
       </div>
+
     </div>
   </div>
 

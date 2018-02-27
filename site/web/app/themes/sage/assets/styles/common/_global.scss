@@ -94,19 +94,13 @@ h2:after {
   padding-right: 0px;
 }
 
-#summary-section .container,
-#campaign-section .container {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 .all-button {
   margin: 60px auto;
   margin-top: 20px;
   text-transform: uppercase;
   color: #fff;
   background: #993333;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   border-width: 0;
   border-radius: 3px;
@@ -268,11 +262,6 @@ h2:after {
 #campaign-section .campaign-box {
     margin-bottom: 80px;
     flex-basis: unset;
-}
-
-#campaign-section .campaign-content {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 #campaign-section .campaign-content a.title {
@@ -955,6 +944,10 @@ h2:after {
     font-size: 1.1rem;
     padding:10px 30px;
     height: 100%;
+    width: 100%;
+  }
+
+  .all-button {
     width: 100%;
   }
 

@@ -110,7 +110,7 @@
 
       <div class="text-center">
         <a rel="button" class="btn btn-secondary all-button" href="/plan-personal">
-          Vezi detaliile planului
+          Vezi detaliile trusei
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </a>
       </div>

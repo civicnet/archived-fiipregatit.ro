@@ -1139,6 +1139,10 @@ h4.modal-title {
   text-decoration: none;
 }
 
+#search-page-section {
+    margin-bottom: 80px;
+}
+
 @include media-breakpoint-down(sm) {
   .algolia-autocomplete {
     width: 100% !important;

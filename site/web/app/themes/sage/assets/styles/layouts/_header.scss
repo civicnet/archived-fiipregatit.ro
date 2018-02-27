@@ -145,6 +145,10 @@ button.navbar-toggler .navbar-toggler-icon {
   border: none;
 }
 
+.navbar .social-menu li a::after {
+  display: none;
+}
+
 @include media-breakpoint-down(md) {
   .navbar .menu-item a {
     font-size: 1.5rem!important;

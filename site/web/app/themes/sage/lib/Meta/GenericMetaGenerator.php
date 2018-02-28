@@ -6,6 +6,9 @@
     protected function getCustomTags(): array {
       return array(
         MetaCategories::OPEN_GRAPH => array(
+          OpenGraphMetaCategory::TYPE => array(
+            OpenGraphWebsiteAttributes::TYPE => OpenGraphWebsiteAttributes::TYPE_NAME,
+          ),
           OpenGraphMetaCategory::IMAGE => $this->getOGPImage(),
         ),
         MetaCategories::COMMON => array(

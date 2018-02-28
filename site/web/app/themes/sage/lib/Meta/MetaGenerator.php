@@ -86,6 +86,7 @@
         MetaCategories::OPEN_GRAPH => array(
           OpenGraphMetaCategory::LOCALE => 'ro_RO',
           OpenGraphMetaCategory::SITE_NAME => 'fiipregatit.ro',
+          OpenGraphMetaCategory::URL => 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']
         ),
         MetaCategories::META => array(
           MetaMetaCategory::RATING => 'safe for kids',

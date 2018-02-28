@@ -50,6 +50,7 @@ $sage_includes = [
 
   'lib/Meta/constants/OpenGraph/OpenGraphArticleAttributes.php',
   'lib/Meta/constants/OpenGraph/OpenGraphImageAttributes.php',
+  'lib/Meta/constants/OpenGraph/OpenGraphWebsiteAttributes.php',
   'lib/Meta/constants/OpenGraph/OpenGraphMetaCategory.php',
 
   'lib/Meta/constants/Meta/MetaMetaCategory.php',

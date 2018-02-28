@@ -21,7 +21,7 @@
             foreach ($pages as $page) {
           ?>
             <li>
-              <a href="<?=$page->guid;?>" class="mobile-block-link">
+              <a href="<?=get_permalink($page->ID);?>" class="mobile-block-link">
                 <?=$page->post_title;?>
               </a>
             </li>

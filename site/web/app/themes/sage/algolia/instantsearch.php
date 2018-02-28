@@ -38,12 +38,16 @@
 <script type="text/html" id="tmpl-instantsearch-hit">
 		<div class="ais-hits--content">
 			<h4 itemprop="name headline">
-        <span class="content-label badge">
+        <a
+          href="{{ data.permalink }}"
+          title="{{ data.title }}"
+          itemprop="url"
+          style="display:block; margin-bottom: 8px;">
+          {{{ data._highlightResult.title.value }}}
+        </a>
+        <div class="content-label badge">
           {{ data.type }}
-        </span>
-				<a href="{{ data.permalink }}" title="{{ data.title }}" itemprop="url">
-					{{{ data._highlightResult.title.value }}}
-				</a>
+        </div>
 			</h4>
 			<div class="excerpt">
 				<p>

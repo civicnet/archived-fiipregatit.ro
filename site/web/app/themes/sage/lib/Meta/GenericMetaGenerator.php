@@ -35,11 +35,13 @@
    }
 
    public function getCommonTitle(): ?string {
-     return the_title($before = '', $after = '', $echo = false);
+     return $this->post ?
+       the_title($before = '', $after = '', $echo = false)
+       : 'fiipregatit.ro - Platforma Națională de Pregătire pentru Situații de Urgență';
    }
 
     public function getCommonDescription(): ?string {
-      return 'Platforma Națională de Pregătire pentru Situații de Urgență';
+      return 'Platforma națională online de pregătire pentru situații de urgență fiipregatit.ro, locul de referință pentru educarea și informarea populației despre situații de urgență sau dezastru.';
     }
 
     public function getOGPImage(): array {

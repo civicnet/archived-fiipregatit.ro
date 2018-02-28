@@ -80,7 +80,8 @@
           <a href="/plan-personal">
             <img
               src="<?=Assets\asset_path('images/fiipregatit_planpersonal_colaj_v1.png');?>"
-              class="img-fluid" />
+              class="img-fluid"
+              alt="Trsuă de supraviețuire"/>
           </a>
         </div>
         <div class="col">

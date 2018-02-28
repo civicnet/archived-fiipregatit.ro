@@ -700,6 +700,16 @@ h2:after {
   padding-left: 0;
 }
 
+#campaign-content #collapseCampaignInfo ul li {
+  padding: 2px 0;
+}
+
+@include media-breakpoint-down(sm) {
+  #campaign-content #collapseCampaignInfo ul li {
+    padding: 7px 0;
+  }
+}
+
 #campaign-content #collapseCampaignInfo svg {
   margin-right: 10px;
   color: #007bff;

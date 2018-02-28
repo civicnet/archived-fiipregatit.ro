@@ -36,6 +36,11 @@ $sage_includes = [
   /* Meta generator */
   'lib/Meta/MetaGenerator.php',
   'lib/Meta/GuideMetaGenerator.php',
+  'lib/Meta/CampaignMetaGenerator.php',
+  'lib/Meta/FirstAidMetaGenerator.php',
+  'lib/Meta/PersonalPlanMetaGenerator.php',
+  '/lib/Meta/AboutMetaGenerator.php',
+  '/lib/Meta/GenericMetaGenerator.php',
 
   'lib/Meta/Decorators/BaseDecorator.php',
   'lib/Meta/Decorators/OpenGraphMetaDecorator.php',

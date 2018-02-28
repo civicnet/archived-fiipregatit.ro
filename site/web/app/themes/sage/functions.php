@@ -21,8 +21,10 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/TemplateEngine.php',
-  'lib/DashboardGuides.php',
+  'lib/TemplateEngine.php', // Template Engine (Mustache)
+  'lib/DashboardGuides.php', // Dashboard Manual
+
+  /* Algolia */
   'lib/Algolia/IndexCustomFields.php',
   'lib/Algolia/GuideIndexCustomFields.php',
   'lib/Algolia/CampaignIndexCustomFields.php',
@@ -30,6 +32,23 @@ $sage_includes = [
   'lib/Algolia/FirstAidIndexCustomFields.php',
   'lib/Algolia/PersonalPlanIndexCustomFields.php',
   'lib/Algolia/NoOpIndexCustomFields.php',
+
+  /* Meta generator */
+  'lib/Meta/MetaGenerator.php',
+  'lib/Meta/GuideMetaGenerator.php',
+
+  'lib/Meta/Decorators/BaseDecorator.php',
+  'lib/Meta/Decorators/OpenGraphMetaDecorator.php',
+
+  'lib/Meta/constants/MetaCategories.php',
+
+  'lib/Meta/constants/OpenGraph/OpenGraphArticleAttributes.php',
+  'lib/Meta/constants/OpenGraph/OpenGraphImageAttributes.php',
+  'lib/Meta/constants/OpenGraph/OpenGraphMetaCategory.php',
+
+  'lib/Meta/constants/Meta/MetaMetaCategory.php',
+
+  'lib/Meta/constants/Common/CommonMetaCategory.php',
 ];
 
 foreach ($sage_includes as $file) {

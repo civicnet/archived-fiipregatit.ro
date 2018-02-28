@@ -33,17 +33,17 @@
 	<div id="navbarContent" class="collapse navbar-collapse">
 		<ul class="social-menu d-none d-lg-block">
 			<li class="first">
-				<a href="https://www.facebook.com/departamenturgente">
+				<a href="https://www.facebook.com/departamenturgente" rel="nofollow" target="_blank">
 					<i class="fab fa-facebook-square"></i>
 				</a>
 			</li>
 			<li>
-				<a href="https://twitter.com/dsuromania">
+				<a href="https://twitter.com/dsuromania" rel="nofollow" target="_blank">
 					<i class="fab fa-twitter-square"></i>
 				</a>
 			</li>
 			<li>
-				<a href="https://www.youtube.com/channel/UC5qTBf9rEFj2UdxNEQOzlxA">
+				<a href="https://www.youtube.com/channel/UC5qTBf9rEFj2UdxNEQOzlxA" rel="nofollow" target="_blank">
 					<i class="fab fa-youtube-square"></i>
 				</a>
 			</li>

@@ -1148,10 +1148,14 @@ h4.modal-title {
 
 #summary-section a {
   color: #fff;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
 }
 
 #summary-section a:hover {
   text-decoration: none;
+  color: #ffcc00;
 }
 
 #search-page-section {

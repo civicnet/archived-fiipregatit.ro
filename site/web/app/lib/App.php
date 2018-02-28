@@ -21,4 +21,7 @@ final class App {
   const PAGE_PERSONAL_PLAN = 'plan-personal';
   const PAGE_FIRST_AID = 'prim-ajutor';
   const PAGE_ABOUT = 'despre';
+
+  const PAGE_GHIDURI = 'ghiduri';
+  const PAGE_CAMPANII = 'campanii';
 }

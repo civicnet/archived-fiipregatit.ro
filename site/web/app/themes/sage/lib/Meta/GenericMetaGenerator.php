@@ -48,7 +48,22 @@
     }
 
     public function getOGPImage(): array {
-      $image = $this->getFeaturedImage();
+      $image = null;
+
+      if ($this->post) {
+        switch($this->post->post_name) {
+          case App::PAGE_CAMPANII:
+            $image = Assets\asset_path('images/share_fb_campanii.jpg');
+            break;
+          case App::PAGE_GHIDURI:
+            $image = Assets\asset_path('images/share_fb_ghiduri.jpg');
+            break;
+        }
+      }
+
+      if (!$image) {
+        $image = $this->getFeaturedImage();
+      }
 
       if (!$image) {
         $image = Assets\asset_path('images/share_fb_default.jpg');

@@ -3,51 +3,25 @@
 namespace Entity;
 
 
-class Link extends Entity {
-    /**
-     * @var
-     */
-    private $_title;
-    /**
-     * @var
-     */
-    private $_target;
+final class Link extends Entity {
+  private $title;
+  private $target;
 
-    /**
-     * @return mixed
-     */
-    public function getTitle()
-    {
-        return $this->_title;
-    }
+  public function getTitle(): string {
+    return $this->title;
+  }
 
-    /**
-     * @param mixed $title
-     * @return $this
-     */
-    public function setTitle($title)
-    {
-        $this->_title = $title;
-        return $this;
-    }
+  public function setTitle(string $title): Link {
+    $this->title = $title;
+    return $this;
+  }
 
-    /**
-     * @return mixed
-     */
-    public function getTarget()
-    {
-        return $this->_target;
-    }
+  public function getTarget(): string {
+    return $this->target;
+  }
 
-    /**
-     * @param mixed $target
-     * @return $this
-     */
-    public function setTarget($target)
-    {
-        $this->_target = $target;
-        return $this;
-    }
-
-
+  public function setTarget(string $target): Link {
+    $this->target = $target;
+    return $this;
+  }
 }

@@ -10,13 +10,10 @@ final class LinkRepository extends AbstractRepository {
     \WP_Post $post,
     bool $includeRelated = false
   ): Link {
-    $linkUtil = new Link($post->ID);
-
-    $linkUtil
-        ->setTitle($post->post_title)
-        ->setTarget(get_field('link_util_target'))
-    ;
-
-    return $linkUtil;
+    $post_content = $post->post_content;
+    $post_content = apply_filters('the_content', $post_content);
+    return (new Link($post->ID))
+      ->setTitle($post->post_title)
+      ->setTarget(strip_tags($post_content));
   }
 }

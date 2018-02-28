@@ -12,6 +12,7 @@
     const SITE_NAME = 'og:site_name';
     const DESCRIPTION = 'og:description';
     const TITLE = 'og:title';
+    const URL = 'og:url';
 
     public static function getList(): array {
       return array(
@@ -21,6 +22,7 @@
         self::SITE_NAME,
         self::DESCRIPTION,
         self::TITLE,
+        self::URL
       );
     }
   }

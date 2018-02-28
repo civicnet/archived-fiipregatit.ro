@@ -102,7 +102,7 @@
         <a href="http://www.dsu.mai.gov.ro/" target="_blank">
           <ul>
             <li class="sq-logo">
-              <img src="<?=Assets\asset_path('images/Logo_DSU.svg');?>" />
+              <img src="<?=Assets\asset_path('images/Logo_DSU.svg');?>" alt="Logo DSU"/>
             </li>
             <li>
               <div class="copyright">
@@ -119,7 +119,7 @@
         <a href="https://www.igsu.ro/" target="_blank">
           <ul>
             <li class="sq-logo">
-              <img src="<?=Assets\asset_path('images/Stema_IGSU_color.png');?>" />
+              <img src="<?=Assets\asset_path('images/Stema_IGSU_color.png');?>" alt="Stema IGSU"/>
             </li>
             <li>
               <div class="copyright">
@@ -131,12 +131,13 @@
       </div>
       <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 logo-box">
         <a href="https://civictech.ro/" class="civictech" target="_blank">
-          <img src="<?=Assets\asset_path('images/civictech_logo.svg');?>" />
+          <img src="<?=Assets\asset_path('images/civictech_logo.svg');?>" alt="Logo CivicTech"/>
         </a>
         <a class="contribute" href="https://github.com/civictechro/fiipregatit.ro" target="_blank">
           <i class="fab fa-github"></i> Contribuie și tu!
         </a>
       </div>
+    </div>
   </div>
 </footer>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />

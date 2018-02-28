@@ -15,110 +15,65 @@ add_action(
     array ( Fiipregatit_Content::get_instance(), 'plugin_setup' )
 );
 
-class Fiipregatit_Content
-{
-    /**
-     * Plugin instance.
-     *
-     * @see get_instance()
-     * @type object
-     */
+class Fiipregatit_Content {
     protected static $instance = NULL;
-
-    /**
-     * URL to this plugin's directory.
-     *
-     * @type string
-     */
     public $plugin_url = '';
-
-    /**
-     * Path to this plugin's directory.
-     *
-     * @type string
-     */
     public $plugin_path = '';
 
-    /**
-     * Access this plugin’s working instance
-     *
-     * @wp-hook plugins_loaded
-     * @since   2012.09.13
-     * @return  object of this class
-     */
-    public static function get_instance()
-    {
+    public static function get_instance() {
         NULL === self::$instance and self::$instance = new self;
-
         return self::$instance;
     }
 
-    /**
-     * Used for regular plugin work.
-     *
-     * @wp-hook plugins_loaded
-     * @since   2012.09.10
-     * @return  void
-     */
-    public function plugin_setup()
-    {
-
+    public function plugin_setup() {
         $this->plugin_url    = plugins_url( '/', __FILE__ );
         $this->plugin_path   = plugin_dir_path( __FILE__ );
         $this->_registerCustomPostTypes();
         $this->_registerCustomMetaBox();
     }
 
-    /**
-     * Constructor. Intentionally left empty and public.
-     *
-     */
     public function __construct() {}
 
-    /**
-     * Register custom post types
-     */
-    private function _registerCustomPostTypes()
-    {
-        register_post_type( App::POST_TYPE_CAMPAIGN,
-            array (
-                'labels' => array (
-                    'name' => __( 'Campanii' ),
-                    'singular_name' => __( 'Campanie' )
-                ),
-                'supports' => array( 'title', 'editor', 'thumbnail' ),
-                'public' => true,
-                'has_archive' => false,
-                'menu_icon' => 'dashicons-megaphone'
-            )
-        );
+    private function _registerCustomPostTypes() {
+      register_post_type(App::POST_TYPE_CAMPAIGN,
+        array(
+          'labels' => array(
+            'name' => __('Campanii'),
+            'singular_name' => __('Campanie')
+          ),
+          'supports' => array('title', 'editor', 'thumbnail'),
+          'public' => true,
+          'has_archive' => false,
+          'menu_icon' => 'dashicons-megaphone'
+        )
+      );
 
-        register_post_type( App::POST_TYPE_GUIDE,
-            array (
-                'labels' => array (
-                    'name' => __( 'Ghiduri' ),
-                    'singular_name' => __( 'Ghid' )
-                ),
-                'supports' => array( 'title', 'editor', 'thumbnail' ),
-                'public' => true,
-                'has_archive' => false,
-                'menu_icon' => 'dashicons-clipboard'
-            )
-        );
+      register_post_type(App::POST_TYPE_GUIDE,
+        array(
+          'labels' => array(
+            'name' => __('Ghiduri'),
+            'singular_name' => __('Ghid')
+          ),
+          'supports' => array('title', 'editor', 'thumbnail'),
+          'public' => true,
+          'has_archive' => false,
+          'menu_icon' => 'dashicons-clipboard'
+        )
+      );
 
-        register_post_type( App::POST_TYPE_LINK,
-            array (
-                'labels' => array (
-                    'name' => __( 'Linkuri utile' ),
-                    'singular_name' => __( 'Link' )
-                ),
-                'public' => true,
-                'has_archive' => false,
-                'menu_icon' => 'dashicons-external'
-            )
-        );
+      register_post_type(App::POST_TYPE_LINK,
+        array(
+          'labels' => array(
+            'name' => __('Linkuri utile'),
+            'singular_name' => __('Link')
+          ),
+          'public' => true,
+          'has_archive' => false,
+          'menu_icon' => 'dashicons-external'
+        )
+      );
 
-        add_theme_support( 'post-thumbnails' );
+      add_theme_support( 'post-thumbnails' );
     }
 
     private function _registerCustomMetaBox() {
@@ -126,7 +81,7 @@ class Fiipregatit_Content
         // Custom Guides meta box
         $cmb_guide = new_cmb2_box(array(
         	'id'            => 'galerie_foto_ghiduri',
-        	'title'         => __( 'Galerie Foto', 'cmb2' ),
+        	'title'         => __('Galerie Foto', 'cmb2'),
         	'object_types'  => array(App::POST_TYPE_GUIDE),
         	'context'       => 'side',
         	'show_names'    => true
@@ -150,7 +105,7 @@ class Fiipregatit_Content
         // Custom Campaign meta box
         $cmb_campaign = new_cmb2_box(array(
         	'id'            => 'attachments_campaign',
-        	'title'         => __( 'Materiale de Informare', 'cmb2' ),
+        	'title'         => __('Materiale de Informare', 'cmb2'),
         	'object_types'  => array(App::POST_TYPE_CAMPAIGN),
         	//'context'       => 'side',
         	'show_names'    => true
@@ -173,11 +128,11 @@ class Fiipregatit_Content
         $campaign_video_group_id = $cmb_campaign->add_field( array(
         	'id' => App::CAMPAIGN_METABOX_VIDEO_GROUP,
         	'type' => 'group',
-        	'description' => __( 'Listă materiale video (YouTube/Vimeo/etc.)', 'cmb2' ),
+        	'description' => __('Listă materiale video (YouTube/Vimeo/etc.)', 'cmb2' ),
         	'options'     => array(
-        		'group_title'   => __( 'Video {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
-        		'add_button'    => __( 'Adaugă video', 'cmb2' ),
-        		'remove_button' => __( 'Șterge video', 'cmb2' ),
+        		'group_title'   => __('Video {#}', 'cmb2'), // since version 1.1.4, {#} gets replaced by row number
+        		'add_button'    => __('Adaugă video', 'cmb2'),
+        		'remove_button' => __('Șterge video', 'cmb2'),
         		'sortable'      => false, // beta
         		//'closed'     => true, // true to have the groups closed by default
         	),
@@ -202,7 +157,81 @@ class Fiipregatit_Content
           	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
           )
         );
+
+
+        // Custom Despre meta box
+        $cmb_parteneri = new_cmb2_box(array(
+        	'id' => 'parteneri_despre',
+        	'title' => __('Parteneri', 'cmb2'),
+        	'object_types' => array('page'),
+          'show_on' => array(
+            'key' => 'slug',
+            'value' => 'despre',
+          ),
+        	'context'       => 'advanced',
+        ));
+
+        $cmb_parteneri->add_field(array(
+          'name' => 'Descriere toți partenerii',
+          'id'   => App::ABOUT_PAGE_METABOX_PARTNER_DESC,
+          'type' => 'wysiwyg',
+          'options' => array(
+            'wpautop' => true,
+            'media_buttons' => false,
+            'teeny' => true,
+          )
+        ));
+
+        $parteneri_group_id = $cmb_parteneri->add_field(array(
+        	'id' => App::ABOUT_PAGE_METABOX_PARTNERS,
+        	'type' => 'group',
+        	'description' => __('Secțiune parteneri', 'cmb2' ),
+        	'options'     => array(
+        		'group_title'   => __('Partener {#}', 'cmb2'),
+        		'add_button'    => __('Adaugă partener', 'cmb2'),
+        		'remove_button' => __('Șterge partener', 'cmb2'),
+        		'sortable'      => false,
+        	),
+        ));
+
+        $cmb_parteneri->add_group_field(
+          $parteneri_group_id,
+          array(
+          	'name' => 'Logo partener',
+          	'id'   => 'logo_partener',
+          	'type' => 'file',
+            'options' => array(
+              'url' => false,
+            ),
+            'text' => array(
+              'add_upload_file_text' => 'Adaugă logo',
+            ),
+            'query_args' => array(
+              'type' => array(
+                'image/gif',
+                'image/jpeg',
+                'image/png',
+              ),
+            ),
+            'preview_size' => 'medium'
+          )
+        );
+
+        $cmb_parteneri->add_group_field(
+          $parteneri_group_id,
+          array(
+          	'name' => 'Descriere partener',
+          	'id'   => 'descriere_partener',
+          	'type' => 'wysiwyg',
+            'options' => array(
+              'wpautop' => true,
+              'media_buttons' => false,
+              'teeny' => true,
+            )
+          )
+        );
       };
+
       add_action( 'cmb2_admin_init', $custom_boxes_init);
     }
 }

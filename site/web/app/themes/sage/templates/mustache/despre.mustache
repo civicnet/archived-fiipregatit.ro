@@ -10,7 +10,7 @@
       aria-expanded="false">
       Alege Secțiune
     </a>
-    
+
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" role="tablist">
       <div
         class="nav flex-column nav-pills"
@@ -43,7 +43,24 @@
               role="tabpanel"
               aria-labelledby="{{ slug }}-tab">
               <h2>{{ name }}</h2>
-              {{& content }}
+              {{# is_partner_page }}
+                <div class="row descriere-toti-partenerii">
+                  {{ descriere_parteneri }}
+                </div>
+                {{# parteneri }}
+                  <div class="row despre-row-partener">
+                    <div class="col-lg-4 col-sm-12">
+                      <img src="{{ logo_partener }}" class="despre-logo-partener" />
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                      {{ descriere_partener }}
+                    </div>
+                  </div>
+                {{/ parteneri }}
+              {{/ is_partner_page }}
+              {{^ is_partner_page }}
+                {{& content}}
+              {{/ is_partner_page }}
             </div>
           {{/ sections }}
         </div>

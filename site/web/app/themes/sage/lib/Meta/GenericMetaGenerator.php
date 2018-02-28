@@ -31,6 +31,9 @@
      return array(
        MetaMetaCategory::TITLE => CommonMetaCategory::TITLE,
        MetaMetaCategory::DESCRIPTION => CommonMetaCategory::DESCRIPTION,
+       MetaMetaCategory::GOOGLE_VERIFICATION => CommonMetaCategory::GOOGLE_VERIFICATION,
+       MetaMetaCategory::COPYRIGHT => CommonMetaCategory::COPYRIGHT,
+       MetaMetaCategory::AUTHOR => CommonMetaCategory::AUTHOR,
      );
    }
 

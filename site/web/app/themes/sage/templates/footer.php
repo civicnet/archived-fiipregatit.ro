@@ -42,7 +42,7 @@
           foreach($links as $link) {
         ?>
           <li>
-            <a href="<?=$link->getTarget();?>" class="mobile-block-link">
+            <a href="<?=$link->getTarget();?>" class="mobile-block-link"  rel="nofollow">
               <?=$link->getTitle();?>
             </a>
           </li>
@@ -58,7 +58,7 @@
         </div>
         <div class="footer-address">
           Adresă:
-          <a href="https://maps.google.com?q=Piața+Revoluției+nr.1+A+sector+1+București">
+          <a href="https://maps.google.com?q=Piața+Revoluției+nr.1+A+sector+1+București"  rel="nofollow">
             Piața Revoluției, nr.1 A, sector 1, București
           </a><br/>
           Telefon <strong><a href="tel:021.312.25.47">021.312.25.47</a></strong><br/>
@@ -75,19 +75,19 @@
         </div>
         <ul class="social-media-mobile-block">
           <li>
-            <a href="https://www.facebook.com/departamenturgente">
+            <a href="https://www.facebook.com/departamenturgente"  rel="nofollow">
               <i class="fab fa-facebook-square" data-fa-transform="grow-10"></i>
               Facebook
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/dsuromania">
+            <a href="https://twitter.com/dsuromania"  rel="nofollow">
               <i class="fab fa-twitter-square" data-fa-transform="grow-10"></i>
               Twitter
             </a>
           </li>
           <li>
-            <a href="https://www.youtube.com/channel/UC5qTBf9rEFj2UdxNEQOzlxA">
+            <a href="https://www.youtube.com/channel/UC5qTBf9rEFj2UdxNEQOzlxA"  rel="nofollow">
               <i class="fab fa-youtube-square" data-fa-transform="grow-10"></i>
               YouTube
             </a>
@@ -133,7 +133,7 @@
         <a href="https://civictech.ro/" class="civictech" target="_blank">
           <img src="<?=Assets\asset_path('images/civictech_logo.svg');?>" alt="Logo CivicTech"/>
         </a>
-        <a class="contribute" href="https://github.com/civictechro/fiipregatit.ro" target="_blank">
+        <a class="contribute" href="https://github.com/civictechro/fiipregatit.ro" target="_blank"  rel="nofollow">
           <i class="fab fa-github"></i> Contribuie și tu!
         </a>
       </div>

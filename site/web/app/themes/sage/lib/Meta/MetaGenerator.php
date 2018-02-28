@@ -7,7 +7,7 @@
     protected $post;
 
     final protected function __construct(
-      WP_Post $post,
+      ?WP_Post $post,
       /*?Entity*/ $entity = null
     ) {
       $this->entity = $entity;
@@ -15,8 +15,12 @@
     }
 
     final public static function get(
-      WP_Post $post
+      ?WP_Post $post
     ): MetaGenerator {
+      if (!$post) { 
+        return new GenericMetaGenerator($post);
+      }
+
       switch ($post->post_type) {
         case App::POST_TYPE_GUIDE:
           return new GuideMetaGenerator(

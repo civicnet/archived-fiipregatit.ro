@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <?php
-    if (is_singular()) {
+    if (is_singular() || is_home()) {
       $generator = MetaGenerator::get(get_post());
       $og_decorator = new OpenGraphMetaDecorator($generator);
       $all_partials = $og_decorator->getAllTagPairs();
@@ -16,7 +16,7 @@
         'og_tags',
         array('tags' => $all_partials)
       );
-    }
+    } 
   ?>
 
   <link rel="icon" type="image/png" href="<?= Assets\asset_path('images/fiipregatit_favicon_32x32.png') ?>" />

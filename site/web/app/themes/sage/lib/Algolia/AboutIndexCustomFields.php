@@ -13,9 +13,14 @@
     }
 
     public function getContent(): string {
+      $partner_content = $this->entity->getDescriereParteneri();
+      foreach ($this->entity->getParteneri() as $partner) {
+        $partner_content .= ' ' . $partner['descriere_partener'];
+      }
+
       return $this->entity->getDespre() . ' '
       . $this->entity->getContext() . ' '
-      . $this->entity->getParteneri() . ' '
+      . $partner_content . ' '
       . $this->entity->getEchipa();
     }
   }

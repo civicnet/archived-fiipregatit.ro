@@ -9,7 +9,7 @@
   <?php
     if (is_singular() || is_home() || is_404() || is_search()) {
       $post = get_post();
-      if (is_search()) {
+      if (is_search() || is_home()) {
         $post = null;
       }
 

@@ -32,7 +32,9 @@ TemplateEngine::get()->render(
       array(
         'name' => 'Parteneri',
         'slug' => 'custom-menu-parteneri',
-        'content' => $about->getParteneri(),
+        'parteneri' => $about->getParteneri(),
+        'descriere_parteneri' => $about->getDescriereParteneri(),
+        'is_partner_page' => true,
       ),
       array(
         'name' => 'Echipa',

@@ -15,6 +15,8 @@ final class App {
   const GUIDE_METABOX_GALLERY = 'fii_pregatit_galerie';
   const CAMPAIGN_METABOX_ATTACHMENTS = 'fii_pregatit_atasamente';
   const CAMPAIGN_METABOX_VIDEO_GROUP = 'fii_pregatit_video_list';
+  const ABOUT_PAGE_METABOX_PARTNERS = 'fii_pregatit_parteneri';
+  const ABOUT_PAGE_METABOX_PARTNER_DESC = 'fii_pregatit_descriere_parteneri';
 
   const PAGE_PERSONAL_PLAN = 'plan-personal';
   const PAGE_FIRST_AID = 'prim-ajutor';

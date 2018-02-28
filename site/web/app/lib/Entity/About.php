@@ -8,6 +8,7 @@ final class About extends Entity {
   private $parteneri;
   private $echipa;
   private $permalink;
+  private $descriereParteneri;
 
   public function getDespre(): string {
     return $this->despre;
@@ -27,11 +28,22 @@ final class About extends Entity {
     return $this;
   }
 
-  public function getParteneri(): string {
+  public function getDescriereParteneri(): ?string {
+    return $this->descriereParteneri;
+  }
+
+  public function setDescriereParteneri(
+    ?string $descriereParteneri
+  ): About {
+    $this->descriereParteneri = $descriereParteneri;
+    return $this;
+  }
+
+  public function getParteneri(): array {
     return $this->parteneri;
   }
 
-  public function setParteneri(string $parteneri): About {
+  public function setParteneri(array $parteneri): About {
     $this->parteneri = $parteneri;
     return $this;
   }

@@ -92,7 +92,7 @@
           CommonMetaCategory::COPYRIGHT => 'Copyright © 2018-' . date('Y') . '. Departamentul pentru Situații de Urgență. Toate drepturile rezervate.',
           CommonMetaCategory::AUTHOR => 'Departamentul pentru Situații de Urgență',
           CommonMetaCategory::TITLE => 'fiipregatit.ro',
-          CommonMetaCategory::DESCRIPTION => 'Platforma Națională pentru Situații de Urgență',
+          CommonMetaCategory::DESCRIPTION => 'Platforma Națională de Pregătire pentru Situații de Urgență',
         )
       );
     }

@@ -16,7 +16,12 @@
     public function getAllTagPairs(): /* array<Pair>*/ array {
       $flat_list = array();
       foreach(OpenGraphMetaCategory::getList() as $category) {
-        foreach($this->getTagPairs($category) as $key => $tag) {
+        $pairs = $this->getTagPairs($category);
+        if (!$pairs) {
+          continue;
+        }
+
+        foreach($pairs as $key => $tag) {
           $flat_list[] = $tag;
         }
       }

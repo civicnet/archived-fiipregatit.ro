@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <?php
-    if (is_single()) {
+    if (is_singular()) {
       $generator = MetaGenerator::get(get_post());
       $og_decorator = new OpenGraphMetaDecorator($generator);
       $all_partials = $og_decorator->getAllTagPairs();

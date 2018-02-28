@@ -171,6 +171,18 @@
               </div>
             </div>
           {{/ has_extra_info }}
+
+          {{# pdf_guide.url }}
+            <div class="download-guide">
+              <a href="{{ . }}" target="_blank">
+                <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
+                <strong>Descarcă ghidul</strong>
+                {{# pdf_size }}
+                  (PDF, {{ . }})
+                {{/ pdf_size }}
+              </a>
+            </div>
+          {{/ pdf_guide.url }}
         </div>
       </div>
       <div class="col col-lg-3 col-md-12 guide-sidebar d-none d-lg-block">
@@ -187,16 +199,5 @@
         </ul>
       </div>
     </div>
-    {{# pdf_guide.url }}
-      <div class="download-guide">
-        <a href="{{ . }}" target="_blank">
-          <i class="far fa-file-pdf" data-fa-transform="grow-20"></i>
-          <strong>Descarcă ghidul</strong>
-          {{# pdf_size }}
-            (PDF, {{ . }})
-          {{/ pdf_size }}
-        </a>
-      </div>
-    {{/ pdf_guide.url }}
   </div>
 </div>

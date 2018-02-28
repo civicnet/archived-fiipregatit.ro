@@ -17,7 +17,7 @@
     final public static function get(
       ?WP_Post $post
     ): MetaGenerator {
-      if (!$post) { 
+      if (!$post) {
         return new GenericMetaGenerator($post);
       }
 
@@ -121,8 +121,7 @@
       $tags = $this->getCustomTags();
 
       foreach ($this->importCommonTagsToOpenGraph() as $og_key => $common_key) {
-        $tags[MetaCategories::OPEN_GRAPH][$og_key]
-          = $this->getCommonTag($common_key);
+        $tags[MetaCategories::OPEN_GRAPH][$og_key]= $this->getCommonTag($common_key);
       }
 
       foreach ($this->importCommonTagsToMeta() as $meta_key => $common_key) {

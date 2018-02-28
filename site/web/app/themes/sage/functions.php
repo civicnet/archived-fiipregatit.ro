@@ -44,6 +44,7 @@ $sage_includes = [
 
   'lib/Meta/Decorators/BaseDecorator.php',
   'lib/Meta/Decorators/OpenGraphMetaDecorator.php',
+  'lib/Meta/Decorators/MetaMetaDecorator.php',
 
   'lib/Meta/constants/MetaCategories.php',
 

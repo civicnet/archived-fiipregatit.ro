@@ -102,6 +102,7 @@
     			});
   		  },
   		  suggestion: function (hit) {
+          console.log(hit);
     			for (var key in hit._highlightResult) {
     			  /* We do not deal with arrays. */
     			  if (typeof hit._highlightResult[key].value !== 'string') {

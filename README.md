@@ -11,6 +11,8 @@ Platforma națională de informare pentru Situații de Urgență
 
 Mai multe informații pe [pagina de proiect fiipregatit.ro](https://civictech.ro/proiecte/fiipregatit-ro-platoforma-de-informare-pentru-situatii-de-urgenta)
 
+![promo](https://fiipregatit.ro/app/themes/sage/dist/images/share_fb_default.jpg)
+
 # Installation notes
 This application uses Wordpress as a CMS.
 

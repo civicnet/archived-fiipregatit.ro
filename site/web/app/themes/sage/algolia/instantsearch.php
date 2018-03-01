@@ -38,16 +38,12 @@
 <script type="text/html" id="tmpl-instantsearch-hit">
 		<div class="ais-hits--content">
 			<h4 itemprop="name headline">
-        <a
-          href="{{ data.permalink }}"
-          title="{{ data.title }}"
-          itemprop="url"
-          style="display:block; margin-bottom: 8px;">
-          {{{ data._highlightResult.title.value }}}
-        </a>
-        <div class="content-label badge">
+        <span class="content-label badge">
           {{ data.type }}
-        </div>
+        </span>
+				<a href="{{ data.permalink }}" title="{{ data.title }}" itemprop="url">
+					{{{ data._highlightResult.title.value }}}
+				</a>
 			</h4>
 			<div class="excerpt">
 				<p>
@@ -104,7 +100,7 @@
                 return '<h2>Nu ai căutat nimic încă</h2>';
               }
 
-							return '<h2><em>' + obj.nbHits + '</em>' + ' rezultate pentru <em>"' + obj.query + '"</em></h2>';
+							return '<h2><em>\"{{obj.nbHits}}\"</em> rezultate pentru <em>\"{{obj.query}}\"</em></h2>';
 						}
 					}
 				})

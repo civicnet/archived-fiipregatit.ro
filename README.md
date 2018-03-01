@@ -1,6 +1,10 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/civictechro/fiipregatit.ro/badge.svg?targetFile=site/web/app/themes/sage/package.json)](https://snyk.io/test/github/civictechro/fiipregatit.ro) [![Status CivicTech](https://img.shields.io/badge/status-80%25-green.svg)](https://civictech.ro/proiecte/fiipregatit-ro-platoforma-de-informare-pentru-situatii-de-urgenta) [![GitHub (pre-)release](https://img.shields.io/github/release/civictechro/fiipregatit.ro/all.svg)](https://github.com/civictechro/fiipregatit.ro) [![GitHub issues](https://img.shields.io/github/issues/civictechro/fiipregatit.ro.svg)](https://github.com/civictechro/fiipregatit.ro/issues)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-[![Build Status](https://travis-ci.org/civictechro/fiipregatit.ro.svg?branch=master)](https://travis-ci.org/civictechro/fiipregatit.ro)
+[![Known Vulnerabilities](https://snyk.io/test/github/civictechro/fiipregatit.ro/badge.svg?targetFile=site/web/app/themes/sage/package.json)](https://snyk.io/test/github/civictechro/fiipregatit.ro) [![Build Status](https://travis-ci.org/civictechro/fiipregatit.ro.svg?branch=master)](https://travis-ci.org/civictechro/fiipregatit.ro) [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+
+[![GitHub license](https://img.shields.io/github/license/civictechro/fiipregatit.ro.svg)](https://github.com/civictechro/fiipregatit.ro/blob/master/LICENSE) [![GitHub issues by-label](https://img.shields.io/github/issues-raw/civictechro/fiipregatit.ro/help%20wanted.svg)](https://github.com/civictechro/fiipregatit.ro/issues) 
+
+[![Uptime Robot ratio](https://img.shields.io/uptimerobot/ratio/m780065655-d0fbe8f3ee56dd3880fdf16b.svg)](https://fiipregatit.ro) [![GitHub release](https://img.shields.io/github/release/civictechro/fiipregatit.ro/all.svg)](https://github.com/civictechro/fiipregatit.ro)
+
+
 
 # [fiipregătit.ro](https://fiipregatit.ro)
 Platforma Națională de Pregătire pentru Situații de Urgență

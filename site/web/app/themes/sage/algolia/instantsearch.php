@@ -104,7 +104,7 @@
                 return '<h2>Nu ai căutat nimic încă</h2>';
               }
 
-							return '<h2><em>' + obj.nbHits + '</em>' + ' rezultate pentru <em>"' + obj.query + '"</em></h2>';
+							return '<h2><em>' + _.escape(obj.nbHits) + '</em>' + ' rezultate pentru <em>"' + _.escape(obj.query) + '"</em></h2>';
 						}
 					}
 				})

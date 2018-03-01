@@ -39,7 +39,7 @@
         <?php
           $links = \RepoManager::getLinkRepository()
             ->getList(App::LINK_COUNT);
-            
+
           foreach($links as $link) {
         ?>
           <li>
@@ -144,6 +144,7 @@
     </div>
   </div>
 </footer>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <script>
@@ -169,3 +170,5 @@
 
   gtag('config', 'UA-114659863-2');
 </script>
+
+<script src="//rum-static.pingdom.net/pa-5a9753150b34680007000379.js" async></script>

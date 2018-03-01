@@ -70,6 +70,7 @@
       'extra_info' => $guide->getInformatiiAditionale(),
       'video' => $guide->getVideoAjutator(),
       'photo_gallery' => $gallery,
+      'photo_gallery_is_single' => count($gallery) === 1,
       'has_extra_info' => (
         $guide->getInformatiiAditionale()
         || $guide->getVideoAjutator()

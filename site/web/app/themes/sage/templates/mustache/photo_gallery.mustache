@@ -19,15 +19,19 @@
                 class="carousel slide"
                 data-ride="carousel"
                 data-interval="false">
-                <ol class="carousel-indicators">
-                  {{# gallery }}
-                    <li
-                      data-target="#indicators-{{ id }}"
-                      data-slide-to="{{ idx }}"
-                      class="{{# first }} active {{/ first }}">
-                    </li>
-                  {{/ gallery }}
-                </ol>
+
+                {{^ photo_gallery_is_single }}
+                  <ol class="carousel-indicators">
+                    {{# gallery }}
+                      <li
+                        data-target="#indicators-{{ id }}"
+                        data-slide-to="{{ idx }}"
+                        class="{{# first }} active {{/ first }}">
+                      </li>
+                    {{/ gallery }}
+                  </ol>
+                {{/ photo_gallery_is_single }}
+
                 <div class="carousel-inner">
                   {{# gallery }}
                       <div
@@ -44,30 +48,34 @@
                   {{/ gallery }}
                 </div>
               </div>
+
+              {{^ photo_gallery_is_single }}
+                <a
+                  class="carousel-control-prev"
+                  href="#controls-{{ id }}"
+                  role="button"
+                  data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Înapoi</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#controls-{{ id }}"
+                  role="button"
+                  data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Înainte</span>
+                </a>
+              {{/ photo_gallery_is_single }}
+
+              </div>
               <a
-                class="carousel-control-prev"
-                href="#controls-{{ id }}"
+                href="{{ permalink }}"
                 role="button"
-                data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Înapoi</span>
+                class="outline-button btn btn-outline-secondary rounded-0 campaign-button">
+                Vezi Ghid {{ title }}
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
               </a>
-              <a
-                class="carousel-control-next"
-                href="#controls-{{ id }}"
-                role="button"
-                data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Înainte</span>
-              </a>
-            </div>
-            <a
-              href="{{ permalink }}"
-              role="button"
-              class="outline-button btn btn-outline-secondary rounded-0 campaign-button">
-              Vezi Ghid {{ title }}
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </a>
           </div>
         </div>
       {{/ photos }}

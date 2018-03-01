@@ -37,6 +37,7 @@
 
     $photos[] = array(
       'gallery' => $gallery,
+      'photo_gallery_is_single' => count($gallery) === 1,
       'id' => 'id-'.preg_replace("/[^a-zA-Z0-9]+/", '', $guide->getTitle()),
       'title' => $guide->getNume(),
       'permalink' => $guide->getPermalink(),

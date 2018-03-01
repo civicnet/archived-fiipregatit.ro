@@ -117,12 +117,16 @@ footer .bottom .copyright {
 
 footer .civictech img {
   width: 150px;
-  height: 45px;
+  //height: 45px;
+  height: unset;
+  margin-top: 10px;
   display: block;
 }
 
 footer .logos-row .contribute svg {
-  margin-right: 5px;
+  //margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 @include media-breakpoint-up(lg) {

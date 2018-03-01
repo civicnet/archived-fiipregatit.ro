@@ -13,105 +13,32 @@ Mai multe informații pe [pagina de proiect fiipregatit.ro](https://civictech.ro
 
 ![promo](https://fiipregatit.ro/app/themes/sage/dist/images/share_fb_default.jpg)
 
-# Installation notes
-This application uses Wordpress as a CMS.
+## Contribuie
 
-Project was set up using Trellis: https://roots.io
-Documentation of Trellis is pretty straight-forward. If you have questions open an issue and label it `question` please.
+Dacă vrei să contribui - ești binevenit(ă) - but we don't have cookies (yet) 
 
+### Proces
+- Vezi documentația tehnică (work in progress) [pe wiki](https://github.com/civictechro/fiipregatit.ro/wiki). Dacă crezi că ne poți ajuta să scriem documentație mai bună, este un prim task bun pentru cei nou veniți în proiect!
+- Dacă nu ești încă înscris(ă) în comunitate, te rog fă-o pe [site-ul CivicTech România](https://civictech.ro/hai-si-tu)
+- Aruncă o privire la [guidelines](https://github.com/civictechro/guidelines/blob/master/CODE_REVIEW.md) pentru code review 
+- Caută în issues un task interesant pentru tine (sau, dacă ai o propunere, deschide un issue / trimite un pull request). Task-urile care sunt [marcate ca fiind nice-to-have](https://github.com/civictechro/fiipregatit.ro/issues?q=is%3Aissue+is%3Aopen+label%3A%22nice+to+have%22) abia așteaptă un asignee.
+- După ce trecem prin code review - celebrate! :tada:
 
-## Getting started
-### Notes: ###
+### Pull Request cheat-sheet
+- Ai un summary complet? Trebuie să fie clar: ce schimbare aduce patch-ul, cum ai testat, și în cazuri unde se fac schimbări majore, dacă e cazul, avem un revert plan?
+- Ai scris teste pentru codul nou adăugat/modificat? 
+- Ai făcut un self review pe propriul diff, urmărind [guidelines](https://github.com/civictechro/guidelines/blob/master/CODE_REVIEW.md)?
 
-- This guide assumes you are using a unix-like based OS and you install the project in a folder called `fiipregatit.ro`
-- Some parts described below can be automated via Vagrant provisioning (post-up)
-- The development environment is configured to show notices. WordPress core being what it is, you might see some E_NOTICE messages pop up in the admin panel - this is expected *sigh*
-- **Some things are subject to change as the project progresses, if you spot any inconsistencies please either open an issue labeled `question`, either send a pull request**
+Dacă răspunsul e "da" pentru toate 3, procesul de code review ar trebui să fie destul de painless, nice work.
 
-### Prerequisites: ###
-- virtualbox (or another vagrant provider): https://www.vagrantup.com/docs/providers/
-- Ansible 2.3.0: http://docs.ansible.com/ansible/latest/intro_installation.html
+### Pull Requests > Issues
+Preferă pull request-uri peste issues unde e posibil, pull request-urile sunt primite cu brațele deschise oricând.  
 
-### Setup for backend dev ###
-```
-$> git clone https://github.com/civictechro/fiipregatit.ro
-$> cd fiipregatit.ro/trellis/group_vars/development/
-$> cp sample.vault.yml vault.yml
-$> vim vault.yml # feel free to change the default admin password
-$> cd ../../../../ # go back to the trellis directory
-$> vagrant up
-```
+## Cum poti intra in contact cu echipa?
+- [Slack](https://civictechro.slack.com/messages/C6FQBM134/)
+- Deschide un issue nou, marcat cu label `question`
+- Sau contactează-ne prin oricare dintre modalitățile disponibile [pe civictech.ro](https://civictech.ro/contact)
 
-Now you should be able to access the dev environment in the browser at `http://dev.fiipregatit.ro`. You'll be welcomed by a default Wordpress installation, so we need to config the environment.
+----------
 
-### Configuration ###
-
-Open `http://dev.fiipregatit.ro/admin`. Use the admin password you just set in `vault.yml` to login, with the username `admin`.
-
-Once logged in, it's time to config a few things in the admin panel:
-
-- Go to `Appearance->Themes` and enable **fiipregătit.ro**, our custom theme
-- Go to `Custom Fields->Tools`, and upload `fiipregatit.ro/site/config/misc/acf-export-yyyy-mm-dd.json` using the `Import Field Groups` panel.
-- The navigation is not enabled by default. To add the main navigation go to `Appearance->Customize->Menus->Main Navigation` and create the menu. Make sure you check the `Main Navigation` menu location here. Publish when you're done.
-- Lastly, it's time to import some scaffolding data. Navigate to `Tools->Import` and select `Run Importer` for the WordPress option (last one). Now import  `fiipregatit.ro/site/config/misc/fiipregtitro.wordpress.yyyy-mm-dd.xml`
-
-#### A note on imports ####
-Unless you're debugging - always import the most recent timestamps.
-
-### Known issues ###
-- The `Export/Import` flow for the data scaffolding is less than ideal since it doesn't take into account the media library so the guides and campaigns are broken and will not display properly. See issue #46
-- The import flow will throw a lot of E_NOTICEs *sigh*
-- Some of the steps described here could probably be automated: issue #48
-
-
-## Setup for frontend dev ##
-### Prerequisites ###
-
-You will need `Node.js` >= 4.5.0 and the latest version of `npm`. Additionally, you will need `gulp` and `bower`.
-
-### Install ###
-```
-$> cd fiipregatit.ro/site/web/app/themes/sage
-$> npm install
-$> bower install
-$> gulp watch // to compile assets and live reload on changes
-```
-
-- To edit templates: `fiipregatit.ro/site/web/app/themes/sage/templates`
-- To edit CSS/JS: `fiipregatit.ro/site/web/app/themes/sage/assests/`
-- Documentation: https://roots.io/sage/docs/theme-development-and-building/
-
-## A note on credentials ##
-Please note `{development,production,staging}/vault.yml` are added to `.gitignore`.
-
-To add your credentials simply copy the `sample.vault.yml` to `vault.yml` and change your credentials accordingly.
-
-**Please change the sample.vault.yml files if you make changes to vault configurations.**
-
-## Working on search? ##
-We use [Algolia](https://www.algolia.com) for search. If you're not actively working
-on search, there's no need for you to read further. If you are:
-
-- You need to create an account on Algolia. They offer a free plan, that should be
-more than enough for development purposes.
-- Go to `Algolia->Settings`: Add the API keys from your [Algolia app dashboard](https://www.algolia.com/manage/applications).
-- Go to `Algolia->Autocomplete`:  Check `Enable autocomplete`, then check `Ghiduri` and `Campanii` and hit `Save changes`. Make sure you re-index both `Ghiduri` and `Campanii`.
-- Go to `Algolia->Search Page`: Check `Use Algolia with Instantsearch.js`. `Save changes` and hit `Re-index search page records`.
-
-Now that you're set, here's the code:
-- `sage/algolia/` contains the templates for the autocomplete dropdown (`autocomplete.php`) and the search results page (`instantsearch.php`)
-- `sage/lib/Algolia/` contains the code used for indexing our custom post types
-
-There are also settings in the Algolia dashboard that you can set, but they are mostly for determining which results are more relevant. You will probably have to go to each index, the `display` tab, and add `preview_text` to the `Attributes to snippet` property. This is the text we display below each search result.
-
-## Troubleshooting ##
-```
-Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime (57)
-```
-Fix:
-- If using node v8.0, bump it down (v6.0 should be fine) - https://github.com/jakearchibald/wittr/issues/20#issuecomment-342469349
-- `npm rebuild node-sass` if the above fails - https://github.com/sass/node-sass/issues/1764\
-
-## More documentation ##
-Frontend work: https://roots.io/sage/docs/theme-development-and-building/
-Backend work: https://roots.io/trellis/docs/local-development-setup/
+**Made with :heart: by [CivicTech România](https://civictech.ro/)**

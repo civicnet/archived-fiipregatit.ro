@@ -135,7 +135,7 @@
       </div>
       <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 logo-box">
         <a href="https://civictech.ro/" class="civictech" target="_blank">
-          <img src="<?=Assets\asset_path('images/civictech_logo.svg');?>" alt="Logo CivicTech"/>
+          <img src="<?=Assets\asset_path('images/logo-civictech-small.png');?>" alt="Logo CivicTech"/>
         </a>
         <a class="contribute" href="https://github.com/civictechro/fiipregatit.ro" target="_blank"  rel="nofollow">
           <i class="fab fa-github"></i> Contribuie și tu!

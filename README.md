@@ -51,4 +51,4 @@ Preferă pull request-uri peste issues unde e posibil, pull request-urile sunt p
 
 ----------
 
-**Made with :heart: by [CivicTech România](https://civictech.ro/)**
+**Made with :heart: & :coffee: by [CivicTech România](https://civictech.ro/)**

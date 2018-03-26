@@ -41,7 +41,7 @@ TemplateEngine::get()->render(
       ),
       array(
         'index' => 2,
-        'title' => 'Pierderea cunoștinței',
+        'title' => 'Pierderea conștienței',
         'content' => $first_aid->getPierdereCunostinta(),
         'collapsed' => true,
       ),

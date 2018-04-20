@@ -1,0 +1,10 @@
+# Documentation: https://roots.io/trellis/docs/vault/
+vault_mysql_root_password: devpwroot
+
+# Variables to accompany `group_vars/development/wordpress_sites.yml`
+vault_wordpress_sites:
+  dev.fiipregatit.ro:
+    admin_password: admin_pass
+    env:
+      db_user: db_user
+      db_password: db_password

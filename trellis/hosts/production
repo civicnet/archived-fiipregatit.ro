@@ -1,8 +1,0 @@
-# Add each host to the [production] group and to a "type" group such as [web] or [db].
-# List each machine only once per [group], even if it will host multiple sites.
-
-[production]
-193.226.0.188
-
-[web]
-193.226.0.188

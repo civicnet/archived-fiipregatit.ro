@@ -2,9 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-#18.196.247.159
-188.166.115.62
+fiipregatit.civictech.ro
 
 [web]
-#18.196.247.159
-188.166.115.62
+fiipregatit.civictech.ro

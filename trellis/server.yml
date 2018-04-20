@@ -1,5 +1,5 @@
 ---
-- include: variable-check.yml
+- import_playbook: variable-check.yml
   vars:
     playbook: server.yml
 
@@ -19,7 +19,7 @@
       register: python_check
       changed_when: not python_check.stdout | search('/usr/bin/python')
 
-- name: WordPress Server - Install LEMP Stack with PHP 7.1 and MariaDB MySQL
+- name: WordPress Server - Install LEMP Stack with PHP 7.2 and MariaDB MySQL
   hosts: web:&{{ env }}
   become: yes
   roles:
@@ -40,4 +40,3 @@
     - { role: wp-cli, tags: [wp-cli] }
     - { role: letsencrypt, tags: [letsencrypt], when: sites_using_letsencrypt | count }
     - { role: wordpress-setup, tags: [wordpress, wordpress-setup, letsencrypt] }
-    - { role: bedrock-site-protect, tags: [htpasswd] }

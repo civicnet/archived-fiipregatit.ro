@@ -10,7 +10,7 @@ final class App {
   const HOMEPAGE_CAMPAIGNS_COUNT = 4;
   const HOMEPAGE_GUIDE_COUNT = 7;
 
-  const LINK_COUNT = 7;
+  const LINK_COUNT = 12;
 
   const GUIDE_METABOX_GALLERY = 'fii_pregatit_galerie';
   const CAMPAIGN_METABOX_ATTACHMENTS = 'fii_pregatit_atasamente';

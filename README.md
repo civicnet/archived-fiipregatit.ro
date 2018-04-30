@@ -30,14 +30,14 @@ Dacă vrei să contribui - ești binevenit(ă) - but we don't have cookies (yet)
 ### Proces
 - Vezi documentația tehnică (work in progress) [pe wiki](https://github.com/civictechro/fiipregatit.ro/wiki). Dacă crezi că ne poți ajuta să scriem documentație mai bună, este un prim task bun pentru cei nou veniți în proiect!
 - Dacă nu ești încă înscris(ă) în comunitate, te rog fă-o pe [site-ul CivicTech România](https://civictech.ro/hai-si-tu)
-- Aruncă o privire la [guidelines](https://github.com/civictechro/guidelines/blob/master/CODE_REVIEW.md) pentru code review 
+- Aruncă o privire la [guidelines](https://civictechro.github.io/guidelines/#play5) pentru code review 
 - Caută în issues un task interesant pentru tine (sau, dacă ai o propunere, deschide un issue / trimite un pull request). Task-urile care sunt [marcate ca fiind nice-to-have](https://github.com/civictechro/fiipregatit.ro/issues?q=is%3Aissue+is%3Aopen+label%3A%22nice+to+have%22) abia așteaptă un asignee.
 - După ce trecem prin code review - celebrate! :tada:
 
 ### Pull Request cheat-sheet
 - Ai un summary complet? Trebuie să fie clar: ce schimbare aduce patch-ul, cum ai testat, și în cazuri unde se fac schimbări majore, dacă e cazul, avem un revert plan?
 - Ai scris teste pentru codul nou adăugat/modificat? 
-- Ai făcut un self review pe propriul diff, urmărind [guidelines](https://github.com/civictechro/guidelines/blob/master/CODE_REVIEW.md)?
+- Ai făcut un self review pe propriul diff, urmărind [guidelines](https://civictechro.github.io/guidelines/#play6)?
 
 Dacă răspunsul e "da" pentru toate 3, procesul de code review ar trebui să fie destul de painless, nice work.
 

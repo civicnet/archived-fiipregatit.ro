@@ -170,5 +170,3 @@
 
   gtag('config', 'UA-114659863-2');
 </script>
-
-<script src="//rum-static.pingdom.net/pa-5a9753150b34680007000379.js" async></script>

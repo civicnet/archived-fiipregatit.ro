@@ -1,0 +1,313 @@
+# Translation of Themes - Twenty Fifteen in Romanian
+# This file is distributed under the same license as the Themes - Twenty Fifteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-11 09:19:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ro\n"
+"Project-Id-Version: Themes - Twenty Fifteen\n"
+
+#. Description of the plugin/theme
+msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
+msgstr "Tema noastră de bază 2015 este curată, orientată către blog și proiectată pentru claritate. Grafia simplă și directă din Twenty Fifteen este lizibilă pe o mare varietate de ecrane de diferite mărimi și potrivită pentru mai multe limbi. Am proiectat-o folosind o abordare cu prioritate pentru mobilitate, ceea ce înseamnă că am acordat conținutului rolul central, indiferent dacă vizitatorii vor veni pe situl tău cu un smartphone, o tabletă, un laptop sau computer de birou."
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Fifteen"
+msgstr "Twenty Fifteen"
+
+#. translators: %s: post title
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Un comentariu la &bdquo;%s&rdquo;"
+
+#. translators: %s: post title
+#: inc/template-tags.php:130
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Lasă un comentariu<span class=\"screen-reader-text\"> pentru %s</span>"
+
+#: single.php:39
+msgid "Previous post:"
+msgstr "Articolul anterior:"
+
+#: single.php:38
+msgid "Previous"
+msgstr "Precedent"
+
+#: single.php:36
+msgid "Next post:"
+msgstr "Articolul următor:"
+
+#: single.php:35
+msgid "Next"
+msgstr "Pasul următor"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Rezultate căutare pentru: %s"
+
+#: inc/template-tags.php:120
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "Mărime completă"
+
+#: inc/template-tags.php:108
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr "Etichete"
+
+#: inc/template-tags.php:99
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr "Categorii"
+
+#: inc/template-tags.php:95 inc/template-tags.php:104
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:89
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr "Autor"
+
+#: inc/template-tags.php:79
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr "Publicat pe"
+
+#: inc/template-tags.php:56
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Format"
+
+#: inc/template-tags.php:49
+msgid "Featured"
+msgstr "Evidențiat"
+
+#: inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr "Comentarii mai noi"
+
+#: inc/template-tags.php:26
+msgid "Older Comments"
+msgstr "Comentarii mai vechi"
+
+#: inc/template-tags.php:23
+msgid "Comment navigation"
+msgstr "Navigare comentarii"
+
+#: inc/customizer.php:226
+msgid "Blue"
+msgstr "Albastru"
+
+#: inc/customizer.php:215
+msgid "Purple"
+msgstr "Violet"
+
+#: inc/customizer.php:204
+msgid "Pink"
+msgstr "Roz"
+
+#: inc/customizer.php:193
+msgid "Yellow"
+msgstr "Galben"
+
+#: inc/customizer.php:182
+msgid "Dark"
+msgstr "Întunecat"
+
+#: inc/customizer.php:171
+msgid "Default"
+msgstr "Implicit"
+
+#: inc/customizer.php:93
+msgid "Header and Sidebar Background Color"
+msgstr "Culoare fundal pentru antet și bara laterală"
+
+#: inc/customizer.php:72 inc/customizer.php:94 inc/customizer.php:101
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr "Pentru ecranele mici se aplică pe antet iar pentru ecranele mari se aplică pe bara laterală."
+
+#: inc/customizer.php:71
+msgid "Header and Sidebar Text Color"
+msgstr "Culoare text pentru antet și bara laterală"
+
+#: inc/customizer.php:51
+msgid "Base Color Scheme"
+msgstr "Schema de culoarea de bază"
+
+#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:62
+msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Fifteen necesită cel puțin WordPress versiunea 4.1. Folosești versiunea %s. Te rog actualizează și mai încearcă încă o dată."
+
+#: image.php:88
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">Publicat în</span><span class=\"post-title\">%title</span>"
+
+#: image.php:25
+msgid "Next Image"
+msgstr "Imaginea următoare"
+
+#: image.php:25
+msgid "Previous Image"
+msgstr "Imaginea precedentă"
+
+#: header.php:49
+msgid "Menu and widgets"
+msgstr "Meniu și widget-uri"
+
+#: header.php:26
+msgid "Skip to content"
+msgstr "Sari la conținut"
+
+#: functions.php:312
+msgid "collapse child menu"
+msgstr "restrânge meniul copil"
+
+#: functions.php:311
+msgid "expand child menu"
+msgstr "extinde meniul copil"
+
+#. Translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: functions.php:238
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Inconsolata, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:230
+msgctxt "Inconsolata font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Noto Serif, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:222
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Noto Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:214
+msgctxt "Noto Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:187
+msgid "Add widgets here to appear in your sidebar."
+msgstr "Adaugă piese aici ca să apară în bara ta laterală."
+
+#: functions.php:185
+msgid "Widget Area"
+msgstr "Zonă asamblabilă"
+
+#: functions.php:87
+msgid "Social Links Menu"
+msgstr "Meniu legături sociale"
+
+#: functions.php:86
+msgid "Primary Menu"
+msgstr "Meniu principal"
+
+#: footer.php:31
+msgid "Proudly powered by %s"
+msgstr "Propulsat de %s"
+
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 2.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:30
+msgid "https://wordpress.org/"
+msgstr "https://ro.wordpress.org/"
+
+#: content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Se pare că nu putem găsi ceea ce cauți. Probabil o căutare poate ajuta."
+
+#: content-none.php:26
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Regret, dar nimic nu s-a potrivit cu termenii de căutare. Te rog încearcă din nou cu alte cuvinte cheie."
+
+#: content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Ești gata să-ți publici primul articol? <a href=\"%1$s\">Începe de aici</a>."
+
+#: content-none.php:15
+msgid "Nothing Found"
+msgstr "N-am găsit nimic"
+
+#: content-link.php:60 content-page.php:37 content-search.php:28
+#: content-search.php:33 content.php:61 image.php:74
+msgid "Edit"
+msgstr "Editează"
+
+#: content-link.php:39 content-page.php:26 content.php:41 image.php:61
+msgid "Pages:"
+msgstr "Pagini:"
+
+#. translators: %s: Name of current post
+#: content-link.php:32 content.php:34 inc/template-tags.php:249
+msgid "Continue reading %s"
+msgstr "Continuă să citești %s"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un comentariu la &bdquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentarii la &bdquo;%2$s&rdquo;"
+msgstr[2] "%1$s de comentarii la &bdquo;%2$s&rdquo;"
+
+#: author-bio.php:34
+msgid "View all posts by %s"
+msgstr "Toate articolele lui %s"
+
+#: author-bio.php:12
+msgid "Published by"
+msgstr "Publicat de"
+
+#: archive.php:53 content-link.php:43 content-page.php:30 content.php:45
+#: image.php:65 index.php:50 search.php:43
+msgid "Page"
+msgstr "Pagină"
+
+#: archive.php:52 index.php:49 search.php:42
+msgid "Next page"
+msgstr "Pagina următoare"
+
+#: archive.php:51 index.php:48 search.php:41
+msgid "Previous page"
+msgstr "Pagina anterioară"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Se pare că n-am găsit nimic la această locație. Poate încerci o căutare?"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hopa! Această pagină nu poate fi găsită."
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "echipa WordPress"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyfifteen/"
+msgstr "https://wordpress.org/themes/twentyfifteen/"

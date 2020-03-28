@@ -1,3 +1,12 @@
+# Versiune arhivată
+**Versiunea [1.1.11](https://github.com/civicnet/archived-fiipregatit.ro/releases/tag/1.1.11)** a fost arhivată (*activă în perioada 1 martie 2018 - 18 martie 2020*)
+
+**Versiunea actualizată**, disponbilă online de pe 18 martie 2020, poate fi găsită la [/civicnet/fiipregatit.ro](https://github.com/civicnet/fiipregatit.ro)
+
+
+---------
+
+
 [![Known Vulnerabilities](https://snyk.io/test/github/civictechro/fiipregatit.ro/badge.svg?targetFile=site/web/app/themes/sage/package.json)](https://snyk.io/test/github/civictechro/fiipregatit.ro) [![Build Status](https://travis-ci.org/civictechro/fiipregatit.ro.svg?branch=master)](https://travis-ci.org/civictechro/fiipregatit.ro) [![Maintainability](https://api.codeclimate.com/v1/badges/f49d0f2956c946dca950/maintainability)](https://codeclimate.com/github/civictechro/fiipregatit.ro/maintainability) [![Language Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/civictechro/fiipregatit.ro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/civictechro/fiipregatit.ro/context:javascript)
 
 [![GitHub license](https://img.shields.io/github/license/civictechro/fiipregatit.ro.svg)](https://github.com/civictechro/fiipregatit.ro/blob/master/LICENSE) [![GitHub issues by-label](https://img.shields.io/github/issues-raw/civictechro/fiipregatit.ro/help%20wanted.svg)](https://github.com/civictechro/fiipregatit.ro/issues) [![GitHub issues by-label](https://img.shields.io/github/issues-raw/civictechro/fiipregatit.ro/good%20first%20task.svg)](https://github.com/civictechro/fiipregatit.ro/issues) [![Slack](https://img.shields.io/badge/slack-%23team--fiipregatit-green.svg)](https://civictechro.slack.com/messages/C6FQBM134/) 
